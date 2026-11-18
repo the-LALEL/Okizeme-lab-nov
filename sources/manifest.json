@@ -109,6 +109,27 @@
   "sha256": "f8247cdfe810b3f1e6f3bd6434d1b606b21d5d566a9398334c25d7de4993c2d7",
   "url": "https://www.streetfighter.com/6/buckler/ja-jp/battle_change/20261013"
  },
+ "capcom/frame-blanka.html": {
+  "bytes": 393251,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'BLANKA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "6a71ee678edbc8e3c8205a8c7dd23d9ed631b13bd95361f6904e4953dd8e6a9f",
+  "url": "https://www.streetfighter.com/6/en-us/character/blanka/frame"
+ },
+ "capcom/frame-blanka.rows.json": {
+  "bytes": 22511,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'BLANKA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 98,
+  "sha256": "9be261a6a637c270303ca72054ac2c2efe93bdb5835ff697d825bb8070fe0a03",
+  "url": "https://www.streetfighter.com/6/en-us/character/blanka/frame"
+ },
  "capcom/frame-cammy.html": {
   "bytes": 371187,
   "family": "capcom",
@@ -150,6 +171,48 @@
   "rows": 112,
   "sha256": "1d70c471803e80223665b34bbf48429c7a297ec6607d6d7f3ac3a4c419b2ef3e",
   "url": "https://www.streetfighter.com/6/en-us/character/deejay/frame"
+ },
+ "capcom/frame-ehonda.html": {
+  "bytes": 370787,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'E.HONDA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "a120b5f8d66242564652bb8ab0e5524c33edc135cb7da03c7454d37d7798517e",
+  "url": "https://www.streetfighter.com/6/en-us/character/ehonda/frame"
+ },
+ "capcom/frame-ehonda.rows.json": {
+  "bytes": 17710,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'E.HONDA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 77,
+  "sha256": "75b2e6ededa60f1445e9a9cfbf0ace0e0b634d4be1f0453bb0f036174007a71c",
+  "url": "https://www.streetfighter.com/6/en-us/character/ehonda/frame"
+ },
+ "capcom/frame-guile.html": {
+  "bytes": 377867,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'GUILE FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "e6d04cf2c389a723c20ffe56ed0574c0cdbfc2f3a33038a7a766f3910160a019",
+  "url": "https://www.streetfighter.com/6/en-us/character/guile/frame"
+ },
+ "capcom/frame-guile.rows.json": {
+  "bytes": 18142,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'GUILE FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 87,
+  "sha256": "15077124467937e3cdaee1d0970a11b38076c57a5fc5d9cb64a44cae0be929c7",
+  "url": "https://www.streetfighter.com/6/en-us/character/guile/frame"
  },
  "capcom/frame-jamie.html": {
   "bytes": 423228,
@@ -213,6 +276,27 @@
   "rows": 94,
   "sha256": "2ddc3181f5c26e6f6ac923326abef10954e009b48474bf10eea0279474ab4a70",
   "url": "https://www.streetfighter.com/6/en-us/character/juri/frame"
+ },
+ "capcom/frame-ken.html": {
+  "bytes": 372709,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'KEN FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "e8a47e13b2356729a3c43063dfa6a0246e832c6e42c4a3a9e3fe16c776cce271",
+  "url": "https://www.streetfighter.com/6/en-us/character/ken/frame"
+ },
+ "capcom/frame-ken.rows.json": {
+  "bytes": 17397,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'KEN FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 83,
+  "sha256": "4534aabaf1571de7be5b71a7d775ff48ed0faa9986efa6ec08b09c251275348d",
+  "url": "https://www.streetfighter.com/6/en-us/character/ken/frame"
  },
  "capcom/frame-kimberly.html": {
   "bytes": 387203,
