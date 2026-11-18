@@ -1,0 +1,133 @@
+{
+ "character": "C.Viper",
+ "slug": "c-viper",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3(6+40+3)",
+  "prejump": 4,
+  "total": 94
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "21",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "214214P",
+   "name": "Mission Complete",
+   "move_id": "c.viper_214214p",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-10 Full",
+   "armor_text": "Break",
+   "block_text": "-29",
+   "total_text": "55",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Limit Decoupler",
+   "move_id": "c.viper_236236k",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-11 Strike/Throw, 12-20 Air",
+   "armor_text": "Break",
+   "block_text": "-34",
+   "total_text": "73",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Hard Luck Rejector",
+   "move_id": "c.viper_214214k",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-38",
+   "total_text": "67",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Hard Luck Rejector (CA)",
+   "move_id": "c.viper_214214k(ca)",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-38",
+   "total_text": "67",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236K Limit Decoupler",
+  "214214P Mission Complete",
+  "214214K Hard Luck Rejector",
+  "214214K Hard Luck Rejector (CA)"
+ ],
+ "armor": [
+  {
+   "input": "214KK",
+   "name": "OD Focus Force (Lv.1)",
+   "move_id": "c.viper_214kk",
+   "startup_text": "10+10",
+   "startup": 10,
+   "invuln_text": "",
+   "armor_text": "3-10(19)",
+   "block_text": "-16",
+   "total_text": "67",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "214{KK}",
+   "name": "OD Focus Force (Lv.2)",
+   "move_id": "c.viper_214kk_partial_hold",
+   "startup_text": "20~56+10",
+   "startup": 20,
+   "invuln_text": "",
+   "armor_text": "3~release",
+   "block_text": "-16",
+   "total_text": "77~113",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "214[KK]",
+   "name": "OD Focus Force (Lv.3)",
+   "move_id": "c.viper_214kk_hold",
+   "startup_text": "57+10",
+   "startup": 57,
+   "invuln_text": "",
+   "armor_text": "3-57",
+   "block_text": "-10",
+   "total_text": "114",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Counter Spark (Recovery)",
+  "move_id": "c.viper_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

@@ -1,0 +1,95 @@
+{
+ "character": "Guile",
+ "slug": "guile",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "21",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "[2]8KK",
+   "name": "OD Somersault Kick",
+   "move_id": "Guile_28kk",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-11 Full",
+   "armor_text": "",
+   "block_text": "-33(-37)",
+   "total_text": "57",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "[4]646P",
+   "name": "Sonic Hurricane",
+   "move_id": "Guile_4646p",
+   "startup_text": "8(11)",
+   "startup": 8,
+   "invuln_text": "1-8 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-26",
+   "total_text": "89",
+   "resource": "super"
+  },
+  {
+   "input": "[4]646K",
+   "name": "Crossfire Somersault",
+   "move_id": "Guile_4646k",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-59",
+   "total_text": "84",
+   "resource": "super"
+  },
+  {
+   "input": "[4]646K",
+   "name": "Crossfire Somersault (CA)",
+   "move_id": "Guile_4646k(ca)",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-59",
+   "total_text": "84",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "[2]8KK OD Somersault Kick",
+  "[4]646P Sonic Hurricane",
+  "[4]646K Crossfire Somersault",
+  "[4]646K Crossfire Somersault (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Strike Eagle (Recovery)",
+  "move_id": "Guile_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

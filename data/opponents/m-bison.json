@@ -1,0 +1,136 @@
+{
+ "character": "M.Bison",
+ "slug": "m-bison",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "19",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "5LK"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "214214P",
+   "name": "Final Psycho Crusher",
+   "move_id": "m.bison_214214p",
+   "startup_text": "9(15)",
+   "startup": 9,
+   "invuln_text": "1-69 Full",
+   "armor_text": "Break",
+   "block_text": "-94(-88)",
+   "total_text": "117",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Knee Press Nightmare",
+   "move_id": "m.bison_236236k",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-11 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-41",
+   "total_text": "113",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Unlimited Psycho Crusher",
+   "move_id": "m.bison_236236p",
+   "startup_text": "10(5)",
+   "startup": 10,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-46",
+   "total_text": "80",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Unlimited Psycho Crusher (CA)",
+   "move_id": "m.bison_236236p(ca)",
+   "startup_text": "10(5)",
+   "startup": 10,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-46",
+   "total_text": "80",
+   "resource": "super"
+  },
+  {
+   "input": "623PP",
+   "name": "Psycho Burst",
+   "move_id": "m.bison_623pp",
+   "startup_text": "15",
+   "startup": 15,
+   "invuln_text": "1-18 Full",
+   "armor_text": "",
+   "block_text": "-28",
+   "total_text": "65",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "214214K",
+   "name": "Psycho Punisher",
+   "move_id": "m.bison_214214k",
+   "startup_text": "24",
+   "startup": 24,
+   "invuln_text": "1-30 Full",
+   "armor_text": "Break",
+   "block_text": "-34",
+   "total_text": "82",
+   "resource": "super"
+  },
+  {
+   "input": "6 or 4 + PPP/KKK",
+   "name": "Bison Warp",
+   "move_id": "m.bison_4ppp",
+   "startup_text": "-",
+   "startup": null,
+   "invuln_text": "1-16 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "43",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "[2]8KK OD Shadow Rise",
+  "236236K Knee Press Nightmare",
+  "214214K Psycho Punisher",
+  "236236P Unlimited Psycho Crusher",
+  "236236P Unlimited Psycho Crusher (CA)",
+  "6 or 4 + PPP/KKK Bison Warp",
+  "623PP Psycho Burst",
+  "214214P Final Psycho Crusher"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Hell Drive (Recovery)",
+  "move_id": "m.bison_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

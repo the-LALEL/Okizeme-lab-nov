@@ -1,0 +1,135 @@
+{
+ "character": "Ingrid",
+ "slug": "ingrid",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "20",
+ "throw_range": "0.80",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "360+KK",
+   "name": "Sun Octopus",
+   "move_id": "ingrid_360kk",
+   "startup_text": "6+0",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "108",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Shining Sun (0 Stock)",
+   "move_id": "ingrid_236236k_0stock",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-15 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-99",
+   "total_text": "129",
+   "resource": "super"
+  },
+  {
+   "input": "236236{K}",
+   "name": "Shining Sun (1 Stock)",
+   "move_id": "ingrid_236236k_hold_1stock",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-15 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-99",
+   "total_text": "129",
+   "resource": "super"
+  },
+  {
+   "input": "236236[K]",
+   "name": "Shining Sun (2 Stock)",
+   "move_id": "ingrid_236236k_hold_2stock",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-15 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-99",
+   "total_text": "129",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Cosmic Ray",
+   "move_id": "ingrid_236236p",
+   "startup_text": "20",
+   "startup": 20,
+   "invuln_text": "1-22 Full",
+   "armor_text": "Break",
+   "block_text": "-45",
+   "total_text": "90",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Cosmic Ray (CA)",
+   "move_id": "ingrid_236236p(ca)",
+   "startup_text": "20",
+   "startup": 20,
+   "invuln_text": "1-22 Full",
+   "armor_text": "Break",
+   "block_text": "-45",
+   "total_text": "90",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236K Shining Sun (0 Stock)",
+  "236236{K} Shining Sun (1 Stock)",
+  "236236[K] Shining Sun (2 Stock)",
+  "236236P Cosmic Ray",
+  "236236P Cosmic Ray (CA)",
+  "360+KK Sun Octopus"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "360+KK",
+   "name": "Sun Octopus",
+   "move_id": "ingrid_360kk",
+   "startup_text": "6+0",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "108",
+   "resource": "super"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Odd Flight (Recovery)",
+  "move_id": "ingrid_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

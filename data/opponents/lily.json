@@ -1,0 +1,209 @@
+{
+ "character": "Lily",
+ "slug": "lily",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "5+39+3",
+  "prejump": 5,
+  "total": 47
+ },
+ "backdash_total": "24",
+ "forward_dash_total": "21",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "5LK"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "214214P",
+   "name": "Raging Typhoon",
+   "move_id": "lily_214214p",
+   "startup_text": "5+2",
+   "startup": 5,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "114",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Raging Typhoon (CA)",
+   "move_id": "lily_214214p(ca)",
+   "startup_text": "5+2",
+   "startup": 5,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "114",
+   "resource": "super"
+  },
+  {
+   "input": "j.236236K",
+   "name": "Soaring Thunderbird",
+   "move_id": "lily_j236236k",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-12 Full, 13-41 Projectile",
+   "armor_text": "Break",
+   "block_text": "-54(-66)",
+   "total_text": "-",
+   "resource": "super"
+  },
+  {
+   "input": "j.236236K",
+   "name": "Soaring Thunderbird (Windclad)",
+   "move_id": "lily_j236236k_1stock",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-12 Full, 13-41 Projectile",
+   "armor_text": "Break",
+   "block_text": "-51(-65)",
+   "total_text": "-",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Thunderbird",
+   "move_id": "lily_236236k",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-12 Full, 13-41 Projectile",
+   "armor_text": "Break",
+   "block_text": "-60(-66)",
+   "total_text": "104",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Thunderbird (Windclad)",
+   "move_id": "lily_236236k_1stock",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-12 Full, 13-41 Projectile",
+   "armor_text": "Break",
+   "block_text": "-59(-65)",
+   "total_text": "104",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Breezing Hawk",
+   "move_id": "lily_236236p",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-11 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-36",
+   "total_text": "101",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623PP OD Tomahawk Buster",
+  "W.623PP OD Tomahawk Buster (Windclad)",
+  "236236P Breezing Hawk",
+  "236236K Thunderbird",
+  "236236K Thunderbird (Windclad)",
+  "j.236236K Soaring Thunderbird",
+  "j.236236K Soaring Thunderbird (Windclad)",
+  "214214P Raging Typhoon",
+  "214214P Raging Typhoon (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "360+LP",
+   "name": "LP Mexican Typhoon",
+   "move_id": "lily_360lp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "none"
+  },
+  {
+   "input": "360+MP",
+   "name": "MP Mexican Typhoon",
+   "move_id": "lily_360mp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "none"
+  },
+  {
+   "input": "360+HP",
+   "name": "HP Mexican Typhoon",
+   "move_id": "lily_360hp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "none"
+  },
+  {
+   "input": "360+PP",
+   "name": "OD Mexican Typhoon",
+   "move_id": "lily_360pp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "214214P",
+   "name": "Raging Typhoon",
+   "move_id": "lily_214214p",
+   "startup_text": "5+2",
+   "startup": 5,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "114",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Raging Typhoon (CA)",
+   "move_id": "lily_214214p(ca)",
+   "startup_text": "5+2",
+   "startup": 5,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "114",
+   "resource": "super"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Cross Hammer (Recovery)",
+  "move_id": "lily_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

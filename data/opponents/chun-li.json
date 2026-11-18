@@ -1,0 +1,110 @@
+{
+ "character": "Chun-Li",
+ "slug": "chun-li",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+42+3",
+  "prejump": 4,
+  "total": 49
+ },
+ "backdash_total": "25",
+ "forward_dash_total": "19",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LK",
+   "2LP",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "22KK",
+   "name": "OD Tensho Kicks",
+   "move_id": "Chun-Li_22kk",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-40",
+   "total_text": "57",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236P",
+   "name": "Kikosho",
+   "move_id": "Chun-Li_236236p",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-7 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-22",
+   "total_text": "122",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Soten Ranka",
+   "move_id": "Chun-Li_214214k",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-24",
+   "total_text": "82",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Soten Ranka (CA)",
+   "move_id": "Chun-Li_214214k(ca)",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-24",
+   "total_text": "82",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Hoyoku-sen",
+   "move_id": "Chun-Li_236236k",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-12 Full",
+   "armor_text": "Break",
+   "block_text": "-35",
+   "total_text": "144",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "22KK OD Tensho Kicks",
+  "236236P Kikosho",
+  "236236K Hoyoku-sen",
+  "214214K Soten Ranka",
+  "214214K Soten Ranka (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Hoyoku Kick (Recovery)",
+  "move_id": "Chun-Li_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break (1st hit)",
+  "block_text": "-6",
+  "total_text": "59(66)",
+  "resource": "none"
+ }
+}

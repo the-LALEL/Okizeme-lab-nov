@@ -1,0 +1,133 @@
+{
+ "character": "Jamie",
+ "slug": "jamie",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "19",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "623KK",
+   "name": "OD Arrow Kick",
+   "move_id": "Jamie_623kk_dl2",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-9 Full, 10-12 Air, 10-21 Lower Body",
+   "armor_text": "",
+   "block_text": "-43",
+   "total_text": "65",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236K",
+   "name": "Breakin'",
+   "move_id": "Jamie_236236k_dl2",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-12 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-60",
+   "total_text": "208",
+   "resource": "super"
+  },
+  {
+   "input": "236236K~[2]",
+   "name": "Breakin'~Drink",
+   "move_id": "Jamie_236236k_drink_dl2",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-12 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-93 (DL3: -72)",
+   "total_text": "201(180)",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Getsuga Saiho",
+   "move_id": "Jamie_236236p_dl2",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-12 Full",
+   "armor_text": "Break",
+   "block_text": "-27",
+   "total_text": "70",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Getsuga Saiho (CA)",
+   "move_id": "Jamie_236236p(ca)_dl2",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-12 Full",
+   "armor_text": "Break",
+   "block_text": "-27",
+   "total_text": "70",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623KK OD Arrow Kick",
+  "236236K Breakin'",
+  "236236K~[2] Breakin'~Drink",
+  "236236P Getsuga Saiho",
+  "236236P Getsuga Saiho (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "63214K",
+   "name": "Tenshin (DL3)",
+   "move_id": "Jamie_63214k_dl3",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "none"
+  },
+  {
+   "input": "63214KK",
+   "name": "OD Tenshin (DL3)",
+   "move_id": "Jamie_63214kk_dl3",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Leg Sweep (Recovery)",
+  "move_id": "Jamie_6hphk_dl2_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

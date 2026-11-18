@@ -1,0 +1,160 @@
+{
+ "character": "Akuma",
+ "slug": "akuma",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "9000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "19",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "214214K",
+   "name": "Misogi",
+   "move_id": "akuma_214214k",
+   "startup_text": "5(9~10)",
+   "startup": 5,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-58(-57)",
+   "total_text": "99(96)",
+   "resource": "super"
+  },
+  {
+   "input": "623PP",
+   "name": "OD Gou Shoryuken",
+   "move_id": "akuma_623pp",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-41",
+   "total_text": "68",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "22PPP",
+   "name": "Kongou-Kokuretsuzan",
+   "move_id": "akuma_22ppp",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-39",
+   "total_text": "78",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Sip of Calamity",
+   "move_id": "akuma_236236k",
+   "startup_text": "8(2)",
+   "startup": 8,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-41",
+   "total_text": "69",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Sip of Calamity (CA)",
+   "move_id": "akuma_236236k(ca)",
+   "startup_text": "8(2)",
+   "startup": 8,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-41",
+   "total_text": "69",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Empyrean’s End",
+   "move_id": "akuma_214214p",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-35",
+   "total_text": "63",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Messatsu Gohado",
+   "move_id": "akuma_236236p",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-41",
+   "total_text": "106",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623PP OD Gou Shoryuken",
+  "236236P Messatsu Gohado",
+  "214214P Empyrean’s End",
+  "236236K Sip of Calamity",
+  "236236K Sip of Calamity (CA)",
+  "214214K Misogi",
+  "22PPP Kongou-Kokuretsuzan"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "6KKK~LPLK",
+   "name": "Oboro Throw",
+   "move_id": "akuma_6kkk_lplk",
+   "startup_text": "(21~37)+8",
+   "startup": 21,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "81(97)",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "LP~LP~6LK~HP",
+   "name": "Shun Goku Satsu (CA)",
+   "move_id": "akuma_lp_lp_6lk_hp(ca)",
+   "startup_text": "6+0",
+   "startup": 6,
+   "invuln_text": "1 Full, 6-27 Projectile",
+   "armor_text": "Break",
+   "block_text": "-",
+   "total_text": "84",
+   "resource": "super"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Souha Double Palm (Recovery)",
+  "move_id": "akuma_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

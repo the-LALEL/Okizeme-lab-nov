@@ -1,0 +1,187 @@
+{
+ "character": "Ryu",
+ "slug": "ryu",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "19",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "236236K",
+   "name": "Shin Shoryuken",
+   "move_id": "ryu_236236k",
+   "startup_text": "5(2)",
+   "startup": 5,
+   "invuln_text": "1-16 Full",
+   "armor_text": "Break",
+   "block_text": "-50(-54)",
+   "total_text": "87",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Shin Shoryuken (CA)",
+   "move_id": "ryu_236236k(ca)",
+   "startup_text": "5(2)",
+   "startup": 5,
+   "invuln_text": "1-16 Full",
+   "armor_text": "Break",
+   "block_text": "-50(-54)",
+   "total_text": "87",
+   "resource": "super"
+  },
+  {
+   "input": "623PP",
+   "name": "OD Shoryuken",
+   "move_id": "ryu_623pp",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-40",
+   "total_text": "67",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236P",
+   "name": "Denjin Hadoken",
+   "move_id": "ryu_236236p_denjin",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-8 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-24",
+   "total_text": "89",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Shinku Hadoken",
+   "move_id": "ryu_236236p",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-8 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-24",
+   "total_text": "86",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Denjin Hashogeki Lv.1",
+   "move_id": "ryu_214214p_denjin",
+   "startup_text": "12",
+   "startup": 12,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-20",
+   "total_text": "56",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Shin Hashogeki Lv.1",
+   "move_id": "ryu_214214p",
+   "startup_text": "12",
+   "startup": 12,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-20",
+   "total_text": "56",
+   "resource": "super"
+  },
+  {
+   "input": "214214{P}",
+   "name": "Denjin Hashogeki Lv.2",
+   "move_id": "ryu_214214p_denjin_lv2",
+   "startup_text": "18~",
+   "startup": 18,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-20",
+   "total_text": "62~",
+   "resource": "super"
+  },
+  {
+   "input": "214214{P}",
+   "name": "Shin Hashogeki Lv.2",
+   "move_id": "ryu_214214p_lv2",
+   "startup_text": "18~",
+   "startup": 18,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-20",
+   "total_text": "62~",
+   "resource": "super"
+  },
+  {
+   "input": "214214[P]",
+   "name": "Denjin Hashogeki Lv.3",
+   "move_id": "ryu_214214p_denjin_lv3",
+   "startup_text": "50~",
+   "startup": 50,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-20",
+   "total_text": "94~",
+   "resource": "super"
+  },
+  {
+   "input": "214214[P]",
+   "name": "Shin Hashogeki Lv.3",
+   "move_id": "ryu_214214p_lv3",
+   "startup_text": "50~",
+   "startup": 50,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-20",
+   "total_text": "94~",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623PP OD Shoryuken",
+  "236236P Shinku Hadoken",
+  "236236P Denjin Hadoken",
+  "214214P Shin Hashogeki Lv.1",
+  "214214P Denjin Hashogeki Lv.1",
+  "214214{P} Shin Hashogeki Lv.2",
+  "214214{P} Denjin Hashogeki Lv.2",
+  "214214[P] Shin Hashogeki Lv.3",
+  "214214[P] Denjin Hashogeki Lv.3",
+  "236236K Shin Shoryuken",
+  "236236K Shin Shoryuken (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Chest Strike (Recovery)",
+  "move_id": "ryu_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

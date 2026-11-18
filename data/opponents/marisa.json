@@ -1,0 +1,133 @@
+{
+ "character": "Marisa",
+ "slug": "marisa",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10500",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "25",
+ "forward_dash_total": "22",
+ "throw_range": "0.9",
+ "throw_hurtbox": "0.38",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "236236[P]",
+   "name": "Javelin of Marisa (Counter)",
+   "move_id": "marisa_236236p_counter",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-10 Full",
+   "armor_text": "Break",
+   "block_text": "-37",
+   "total_text": "63",
+   "resource": "super"
+  },
+  {
+   "input": "214214P~4/5/6",
+   "name": "Meteorite",
+   "move_id": "marisa_214214p",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-16 Full",
+   "armor_text": "Break",
+   "block_text": "-44(-77)",
+   "total_text": "110",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Goddess of the Hunt",
+   "move_id": "marisa_236236k",
+   "startup_text": "13",
+   "startup": 13,
+   "invuln_text": "1-19 Full",
+   "armor_text": "Break",
+   "block_text": "-39(-33)",
+   "total_text": "79",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Goddess of the Hunt (CA)",
+   "move_id": "marisa_236236k(ca)",
+   "startup_text": "13",
+   "startup": 13,
+   "invuln_text": "1-19 Full",
+   "armor_text": "Break",
+   "block_text": "-39(-33)",
+   "total_text": "79",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236[P] Javelin of Marisa (Counter)",
+  "214214P~4/5/6 Meteorite",
+  "236236K Goddess of the Hunt",
+  "236236K Goddess of the Hunt (CA)"
+ ],
+ "armor": [
+  {
+   "input": "214K",
+   "name": "Scutum",
+   "move_id": "marisa_214k",
+   "startup_text": "3(8)",
+   "startup": 3,
+   "invuln_text": "",
+   "armor_text": "3-28(118) Upper Body",
+   "block_text": "-",
+   "total_text": "54(144)",
+   "resource": "none"
+  },
+  {
+   "input": "214KK",
+   "name": "OD Scutum",
+   "move_id": "marisa_214kk",
+   "startup_text": "1",
+   "startup": 1,
+   "invuln_text": "",
+   "armor_text": "1-28(58) 2-hit",
+   "block_text": "-",
+   "total_text": "57(87)",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "command_grabs": [
+  {
+   "input": "214K~LPLK",
+   "name": "Enfold",
+   "move_id": "marisa_214k_lplk",
+   "startup_text": "8+5",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "none"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Love Tap (Recovery)",
+  "move_id": "marisa_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

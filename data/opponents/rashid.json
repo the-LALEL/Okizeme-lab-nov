@@ -1,0 +1,109 @@
+{
+ "character": "Rashid",
+ "slug": "rashid",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "25",
+ "forward_dash_total": "18",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "5LK",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "236PP",
+   "name": "OD Spinning Mixer (Air Current)",
+   "move_id": "rashid_236pp_enhanced",
+   "startup_text": "4",
+   "startup": 4,
+   "invuln_text": "1-6 Full",
+   "armor_text": "",
+   "block_text": "-77(-89)",
+   "total_text": "119",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236PP",
+   "name": "OD Spinning Mixer",
+   "move_id": "rashid_236pp",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-8 Full, 9-13 Air",
+   "armor_text": "",
+   "block_text": "-53",
+   "total_text": "110(77)",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236K",
+   "name": "Super Rashid Kick",
+   "move_id": "rashid_236236k",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-15 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-53",
+   "total_text": "91",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Altair",
+   "move_id": "rashid_236236p",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-75",
+   "total_text": "110",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Altair (CA)",
+   "move_id": "rashid_236236p(ca)",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-75",
+   "total_text": "110",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236PP OD Spinning Mixer",
+  "236PP OD Spinning Mixer (Air Current)",
+  "236236K Super Rashid Kick",
+  "236236P Altair",
+  "236236P Altair (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Eagle Slash (Recovery)",
+  "move_id": "rashid_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

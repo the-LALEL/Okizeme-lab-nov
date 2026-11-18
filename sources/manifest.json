@@ -109,6 +109,216 @@
   "sha256": "f8247cdfe810b3f1e6f3bd6434d1b606b21d5d566a9398334c25d7de4993c2d7",
   "url": "https://www.streetfighter.com/6/buckler/ja-jp/battle_change/20261013"
  },
+ "capcom/frame-cammy.html": {
+  "bytes": 371187,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'CAMMY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "1789d97d3e7ad7a76e0d662a41b336265787ffcd1d042cde2939fbd1849d62a1",
+  "url": "https://www.streetfighter.com/6/en-us/character/cammy/frame"
+ },
+ "capcom/frame-cammy.rows.json": {
+  "bytes": 17096,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'CAMMY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 82,
+  "sha256": "eef51cd290723c30a5828488f19e306f1742a3bcff4eb61293ef386507bc0779",
+  "url": "https://www.streetfighter.com/6/en-us/character/cammy/frame"
+ },
+ "capcom/frame-deejay.html": {
+  "bytes": 425290,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'DEE JAY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "d86e1796526c02b0adf863034f26376effff485cb2e581adc40727e7c808d743",
+  "url": "https://www.streetfighter.com/6/en-us/character/deejay/frame"
+ },
+ "capcom/frame-deejay.rows.json": {
+  "bytes": 22286,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'DEE JAY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 112,
+  "sha256": "1d70c471803e80223665b34bbf48429c7a297ec6607d6d7f3ac3a4c419b2ef3e",
+  "url": "https://www.streetfighter.com/6/en-us/character/deejay/frame"
+ },
+ "capcom/frame-jamie.html": {
+  "bytes": 423228,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'JAMIE FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "f2af2e862537e29e50b31f0bc76c6d9ebe304f139aa7ff97a63eb7a92ceeddfe",
+  "url": "https://www.streetfighter.com/6/en-us/character/jamie/frame"
+ },
+ "capcom/frame-jamie.rows.json": {
+  "bytes": 21738,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'JAMIE FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 110,
+  "sha256": "8043b0ab37443460ffc0cd103fe62ec4525f79883fab8461cd8188fb6c5c4832",
+  "url": "https://www.streetfighter.com/6/en-us/character/jamie/frame"
+ },
+ "capcom/frame-jp.html": {
+  "bytes": 364580,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'JP FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "d842ba1918e5a6ff6c1fc03e796680c082461b3f12841296b4a71b3d6ecf0ae9",
+  "url": "https://www.streetfighter.com/6/en-us/character/jp/frame"
+ },
+ "capcom/frame-jp.rows.json": {
+  "bytes": 14482,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'JP FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 76,
+  "sha256": "452d3ea8d0970c273d5bdfd6c4ec7ae6ce5b63e360d6090d4a15662dc9cf66b5",
+  "url": "https://www.streetfighter.com/6/en-us/character/jp/frame"
+ },
+ "capcom/frame-juri.html": {
+  "bytes": 385312,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'JURI FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "5e31e1f3c6dff4cb57c890b225b9e9e9f795ac051abdd3f29f1dd964a3f94998",
+  "url": "https://www.streetfighter.com/6/en-us/character/juri/frame"
+ },
+ "capcom/frame-juri.rows.json": {
+  "bytes": 18710,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'JURI FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 94,
+  "sha256": "2ddc3181f5c26e6f6ac923326abef10954e009b48474bf10eea0279474ab4a70",
+  "url": "https://www.streetfighter.com/6/en-us/character/juri/frame"
+ },
+ "capcom/frame-kimberly.html": {
+  "bytes": 387203,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'KIMBERLY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "3704f91543069d5408a28fe4af591b611cb014df0751450610e59ff24128f05a",
+  "url": "https://www.streetfighter.com/6/en-us/character/kimberly/frame"
+ },
+ "capcom/frame-kimberly.rows.json": {
+  "bytes": 19332,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'KIMBERLY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 93,
+  "sha256": "b0836540f3452cf1ad7862cafb500545a2f6c99330ae8318d01962f72ec7e8f3",
+  "url": "https://www.streetfighter.com/6/en-us/character/kimberly/frame"
+ },
+ "capcom/frame-lily.html": {
+  "bytes": 373208,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'LILY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "2079b179b3ac925084b2887e09c5a257eadf6b051b498b06e5e5361d67d3eb34",
+  "url": "https://www.streetfighter.com/6/en-us/character/lily/frame"
+ },
+ "capcom/frame-lily.rows.json": {
+  "bytes": 18985,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'LILY FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 81,
+  "sha256": "97f22500610f5383d3af99c7c3e8cea987d6480b4fe95b362a2496e0642e4d46",
+  "url": "https://www.streetfighter.com/6/en-us/character/lily/frame"
+ },
+ "capcom/frame-luke.html": {
+  "bytes": 372314,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'LUKE FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "c995934a078228169bc1f49ab0002b058de9b85379c2c4ff88ef39076d7264bf",
+  "url": "https://www.streetfighter.com/6/en-us/character/luke/frame"
+ },
+ "capcom/frame-luke.rows.json": {
+  "bytes": 16427,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'LUKE FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 83,
+  "sha256": "4d31df3da594efd7ea8a2db73bb6089835ddbbf2f2ec98d219b5bcc9f064a590",
+  "url": "https://www.streetfighter.com/6/en-us/character/luke/frame"
+ },
+ "capcom/frame-manon.html": {
+  "bytes": 357902,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'MANON FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "e97381809420fb8116ad38d74a88c65ce23e3894f64e92e382ae0068ae11f677",
+  "url": "https://www.streetfighter.com/6/en-us/character/manon/frame"
+ },
+ "capcom/frame-manon.rows.json": {
+  "bytes": 18167,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'MANON FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 66,
+  "sha256": "38bcf2f6f91913f2948ab1b7585188a3f6dd8b9c1d788bf4ee8c0098567b66d4",
+  "url": "https://www.streetfighter.com/6/en-us/character/manon/frame"
+ },
+ "capcom/frame-marisa.html": {
+  "bytes": 390487,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'MARISA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "829eb61768661f29bc122b9991e3a42fa28301ea686f3ab7596fb42fe04ee54b",
+  "url": "https://www.streetfighter.com/6/en-us/character/marisa/frame"
+ },
+ "capcom/frame-marisa.rows.json": {
+  "bytes": 19705,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'MARISA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 98,
+  "sha256": "77966cce73c3fdd28570000ac808fce6910a82917afe76e84f99ddc74da673b4",
+  "url": "https://www.streetfighter.com/6/en-us/character/marisa/frame"
+ },
  "capcom/frame-ryu.html": {
   "bytes": 376899,
   "family": "capcom",
@@ -173,6 +383,17 @@
   "sha256": "478bdc0899d9c42df8953ce1ed331edeaf807c6424bccf310f5962d4e4a8a415",
   "url": "https://wiki.supercombo.gg/api.php?action=cargofields&table=SF6_CharacterData&format=json"
  },
+ "supercombo/cargo/SF6_CharacterData.roster.json": {
+  "bytes": 16608,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "database rows of SF6_CharacterData for every character",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API (paged, rows re-serialised sorted)",
+  "rows": 34,
+  "sha256": "85e6acd0e7451f127c718bc4070818b988feb9a983955afb531a8a11d8c2a1f7",
+  "url": "https://wiki.supercombo.gg/api.php?action=cargoquery&tables=SF6_CharacterData&where=1%3D1"
+ },
  "supercombo/cargo/SF6_FrameData.Ryu.json": {
   "bytes": 118843,
   "family": "supercombo",
@@ -193,6 +414,17 @@
   "route": "curl MediaWiki API",
   "sha256": "c3f547f5d2786b6bc4fbcbaf3c60772a5b767fea43a484653bd140493fa6c4bc",
   "url": "https://wiki.supercombo.gg/api.php?action=cargofields&table=SF6_FrameData&format=json"
+ },
+ "supercombo/cargo/SF6_FrameData.roster.json": {
+  "bytes": 4055713,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "database rows of SF6_FrameData for every character",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API (paged, rows re-serialised sorted)",
+  "rows": 2445,
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "url": "https://wiki.supercombo.gg/api.php?action=cargoquery&tables=SF6_FrameData&where=1%3D1"
  },
  "supercombo/revisions/Defense.json": {
   "bytes": 3214,

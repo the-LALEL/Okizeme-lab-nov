@@ -1,0 +1,170 @@
+{
+ "character": "Manon",
+ "slug": "manon",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "25",
+ "forward_dash_total": "21",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2HP~HP",
+   "2LP",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "236236P",
+   "name": "Pas de Deux",
+   "move_id": "manon_236236p",
+   "startup_text": "6+1",
+   "startup": 6,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "80",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Pas de Deux (CA)",
+   "move_id": "manon_236236p(ca)",
+   "startup_text": "6+1",
+   "startup": 6,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "80",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Étoile",
+   "move_id": "manon_214214k",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-61(-118)",
+   "total_text": "152",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Arabesque",
+   "move_id": "manon_236236k",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-13 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-49(-46)",
+   "total_text": "78",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236K Arabesque",
+  "214214K Étoile",
+  "236236P Pas de Deux",
+  "236236P Pas de Deux (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "63214LP",
+   "name": "LP Manège Doré",
+   "move_id": "manon_63214lp",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "none"
+  },
+  {
+   "input": "63214MP",
+   "name": "MP Manège Doré",
+   "move_id": "manon_63214mp",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "none"
+  },
+  {
+   "input": "63214HP",
+   "name": "HP Manège Doré",
+   "move_id": "manon_63214hp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "none"
+  },
+  {
+   "input": "63214PP",
+   "name": "OD Manège Doré",
+   "move_id": "manon_63214pp",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "60",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236P",
+   "name": "Pas de Deux",
+   "move_id": "manon_236236p",
+   "startup_text": "6+1",
+   "startup": 6,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "80",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Pas de Deux (CA)",
+   "move_id": "manon_236236p(ca)",
+   "startup_text": "6+1",
+   "startup": 6,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "80",
+   "resource": "super"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Écarté (Recovery)",
+  "move_id": "manon_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

@@ -1,0 +1,133 @@
+{
+ "character": "Cammy",
+ "slug": "cammy",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "18",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "623KK",
+   "name": "OD Cannon Spike",
+   "move_id": "cammy_623kk",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-40",
+   "total_text": "63",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236P",
+   "name": "Delta Red Assault",
+   "move_id": "cammy_236236p",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-33(-23)",
+   "total_text": "61",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Delta Red Assault (CA)",
+   "move_id": "cammy_236236p(ca)",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-33(-23)",
+   "total_text": "61",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Spin Drive Smasher",
+   "move_id": "cammy_236236k",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-11 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-24(-22)",
+   "total_text": "62",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623KK OD Cannon Spike",
+  "236236K Spin Drive Smasher",
+  "236236P Delta Red Assault",
+  "236236P Delta Red Assault (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "236P~LPLK",
+   "name": "Fatal Leg Twister",
+   "move_id": "cammy_236p_lplk",
+   "startup_text": "20+10",
+   "startup": 20,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "69/67/64~",
+   "resource": "none"
+  },
+  {
+   "input": "236[HP]~LPLK",
+   "name": "Fatal Leg Twister (HP Hold)",
+   "move_id": "cammy_236hp_hold_lplk",
+   "startup_text": "38+10",
+   "startup": 38,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "82~",
+   "resource": "none"
+  },
+  {
+   "input": "236PP~LPLK",
+   "name": "OD Fatal Leg Twister",
+   "move_id": "cammy_236pp_lplk",
+   "startup_text": "20+10",
+   "startup": 20,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "69/67/64~",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Countersnipe (Recovery)",
+  "move_id": "cammy_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

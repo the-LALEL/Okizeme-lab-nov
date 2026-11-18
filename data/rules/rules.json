@@ -1,0 +1,1258 @@
+{
+ "rules": [
+  {
+   "rule_id": "R01",
+   "question": "When a move's knockdown advantage is listed as +N, how many frames pass before the knocked-down character can act, and how is a 'meaty' defined in frame terms?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "A knockdown advantage of +N is defined as the attacker being able to act N frames before the defender finishes the wakeup animation; the sources never give the defender's first actionable frame as an explicit frame index. 'Meaty' is used throughout but never defined in frame terms in the saved files.",
+    "parameters": {
+     "defender_first_actionable_frame_relative_to_N": "Attacker can act N frames before the defender finishes the wakeup animation (+3 = act 3 frames before the opponent); an explicit index such as N or N+1 for the defender's first actionable frame is not stated",
+     "meaty_definition": "not stated"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Glossary@367082.txt",
+      "line": 146,
+      "text": "KD refers to knockdown on hit, and the listed KD Advantage refers to how many frames the attacker can act before the defender finishes their wakeup animation.",
+      "supports": "defender_first_actionable_frame_relative_to_N"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Game_Data@384214.txt",
+      "line": 6,
+      "text": "+3 means the character can act 3 frames before the opponent, while -6 means the opponent can act 6 frames before you",
+      "supports": "defender_first_actionable_frame_relative_to_N"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 153,
+      "text": "If you leave yourself at a Knockdown Advantage of +11 and immediately perform a {{clr|DR|Drive Rush}} button, the first frame of the normal will occur on the frame the opponent can first perform an action.",
+      "supports": "defender_first_actionable_frame_relative_to_N"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "Meaty is used without a frame definition at Offense line 60 ('a second meaty throw on the opponent's wakeup'), Defense line 49 (links out to Infil's glossary, which is not a saved source) and Game_Data line 80. Derivation, not a quote: with throws at 5f startup / 3f active (Offense line 16), the +5 wake-up throw with 1 throw-invulnerable frame (Offense line 54) and the +4 tick throw with 2 throw-invulnerable frames (Offense line 55) are both consistent with the defender's first actionable frame being the attacker's frame N+1 and the throw catching on its last active frame; no source spells this out. from memory, unquoted: a meaty is an attack whose active frames are already out on the first frame the rising opponent can be hit, usually connecting on a later active frame."
+   }
+  },
+  {
+   "rule_id": "R02",
+   "question": "What rise options does a knocked-down character have, how is each chosen, and do they differ in timing or only in position?",
+   "family": "defense",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "quoted",
+    "statement": "A knocked-down character rises with either a Normal Rise or a Back Rise; holding or inputting 2 buttons upon landing gives the Back Rise, otherwise a Normal Rise occurs. The sources say the two do not differ in knockdown frame advantage, only in where the character ends up (Back Rise can put a midscreen opponent out of throw distance).",
+    "parameters": {
+     "rise_options": "Normal Rise (called Neutral Rise once on the Offense page) and Back Rise",
+     "input_for_back_rise": "hold or input 2 buttons upon landing; otherwise Normal Rise",
+     "timing_difference_between_rises": "none: no difference in knockdown frame advantage",
+     "position_difference": "Back Rise ends farther away (can be too far for throw distance midscreen); distance not quantified"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 34,
+      "text": "There are two types of wakeups in Street Fighter 6: Normal Rise and Back Rise.",
+      "supports": "rise_options"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 34,
+      "text": "Holding or inputting 2 buttons upon landing will result in a Back Rise",
+      "supports": "input_for_back_rise"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 34,
+      "text": "There is no difference in the knockdown frame advantage, so meaty setups are unaffected as long as the opponent remains close enough to attack.",
+      "supports": "timing_difference_between_rises, position_difference"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 62,
+      "text": "Throw loops typically only work in the corner, as a midscreen opponent can easily [[Street_Fighter_6/Defense#Wake-up|Back Rise]] too far to remain in throw distance.",
+      "supports": "position_difference"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 140,
+      "text": "Midscreen empty jump setups are generally only worthwhile if they cover both Neutral Rise and Back Rise, otherwise you may just be swapping sides for no benefit.",
+      "supports": "rise_options, position_difference"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The Back Rise distance is not given in any of the listed files. Capcom's own wording for the option is 'backwards recover' (battle_change-202506-en.txt line 195); the listed Capcom files do not describe the input. The Defense page wording is 'upon landing', i.e. the choice is made when the character hits the ground."
+   }
+  },
+  {
+   "rule_id": "R03",
+   "question": "Which knockdowns remove the back-rise option (hard knockdown), and how do sources name the causes?",
+   "family": "defense",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "quoted",
+    "statement": "A Hard Knockdown prevents Back Rise entirely. The cause the sources name is a normal throw (air throws included) that lands as a Punish Counter; the Gauges page also says an opponent stunned by a Drive Impact (cornered, in Burnout) and then left untouched falls over into a Hard Knockdown state.",
+    "parameters": {
+     "hard_knockdown_effect": "prevents (disables) Back Rise entirely",
+     "causes_listed": "normal throw (incl. air throw) landing as Punish Counter; Drive Impact stun on a cornered Burnout opponent left untouched for 195 frames; Punish Counter sweep only implied (Capcom 202506)"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 34,
+      "text": "Hard Knockdowns (such as a Throw that connects as a {{clr|PC|Punish Counter}}) prevent Back Rise entirely.",
+      "supports": "hard_knockdown_effect, causes_listed"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 20,
+      "text": "throws gain 70% extra damage, become a Hard Knockdown preventing Back Rise, and drain 1 bar of Drive Gauge from the opponent.",
+      "supports": "hard_knockdown_effect, causes_listed"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 62,
+      "text": "The exception to this is when a throw lands as a {{clr|PC|Punish Counter}}, giving a Hard Knockdown that disables the opponent's Back Rise.",
+      "supports": "hard_knockdown_effect, causes_listed"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 91,
+      "text": "All normal Throws (including Air Throws) can land as a {{clr|PC|Punish Counter}}, gaining a 70% damage boost, Hard Knockdown status, and draining an entire {{clr|DR|Drive}} bar from the opponent.",
+      "supports": "causes_listed"
+     },
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "Properties change to the following when the attack lands as a Punish Counter: - Deals 2040 damage - Super Art gauge increases by 4000 - Forces a hard knockdown",
+      "supports": "causes_listed"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Gauges@376566.txt",
+      "line": 97,
+      "text": "'''Stun/Dizzy:''' occurs when Drive Impact connects on a cornered opponent while in '''Burnout''' state.",
+      "supports": "causes_listed"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Gauges@376566.txt",
+      "line": 103,
+      "text": "The opponent can be hit for the next 195 frames from the moment they hit the wall; if untouched, they fall over into a Hard Knockdown state",
+      "supports": "causes_listed"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-202506-en.txt",
+      "line": 195,
+      "text": "1. Behavior on hit and counter hit has been unified, and you may now backwards recover from both.",
+      "supports": "causes_listed"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-202506-en.txt",
+      "line": 109,
+      "text": "Due to this change, the strategy of knocking down an opponent and switching sides before they get up is now gone, except if the attack lands as a Punish Counter.",
+      "supports": "causes_listed"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The Gauges line 103 quote sits under the Stun/Dizzy bullet list (line 97), not the plain Wall Splat list. The Capcom frame table quote is from Ryu's Shoulder Throw row (the Somersault Throw row carries the same text). The Capcom 202506 lines are about Crouching Heavy Kick (sweeps): normal hit and counter-hit now allow backward recovery, and Punish Counter is named as the exception for the old side-switch strategy; that page never uses the words 'hard knockdown' for it, so treat the sweep case as implied, not stated. No listed file gives a complete list of hard-knockdown causes."
+   }
+  },
+  {
+   "rule_id": "R04",
+   "question": "After a grounded wake-up, for how many frames can the rising character not be thrown, and at what attacker frame advantage does a throw connect or whiff?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "A knocked-down character cannot be thrown, and has 1 frame of throw invincibility after a grounded wakeup, so a throw input at +5 on a downed opponent can connect. The sources do not state an advantage at which the throw whiffs.",
+    "parameters": {
+     "wakeup_throw_invulnerable_frames": "1",
+     "largest_advantage_at_which_throw_connects": "+5 (stated as: a throw input at +5 on a downed opponent can connect; not explicitly called the largest)",
+     "advantage_at_which_throw_whiffs": "not stated"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 54,
+      "text": "There is 1 frame of throw invincibility after a grounded wakeup, so inputting a throw at {{sf6-adv|VP|+5}} on a downed opponent can connect.",
+      "supports": "wakeup_throw_invulnerable_frames, largest_advantage_at_which_throw_connects"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 54,
+      "text": "* Opponents cannot be thrown while knocked down.",
+      "supports": "wakeup_throw_invulnerable_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 16,
+      "text": "Throws are universally 5f startup and 3f active, with a total whiff animation of 30f.",
+      "supports": "largest_advantage_at_which_throw_connects"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "Derivation, not a quote: with 5f startup, 3 active frames and 1 throw-invulnerable wake-up frame, +5 puts the throw's last active frame on the first throwable frame, so +6 or more would whiff; the sources do not say this in words."
+   }
+  },
+  {
+   "rule_id": "R05",
+   "question": "After hitstun or blockstun ends, for how many frames can the character not be thrown, and what frame advantage does a tick throw need?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "A character cannot be thrown during hitstun or blockstun (including Parry blockstun) and keeps 2 frames of throw invulnerability after leaving it, so a throw input at +4 can still land as a tick throw. Because strikes beat throws on the same frame, a defensive 4-frame normal is called a strong option against tick throws from +1 or worse.",
+    "parameters": {
+     "throw_invulnerable_frames_after_stun": "2",
+     "tick_throw_advantage_rule": "A throw input at +4 can lead to a successful tick throw; from +1 advantage or worse a defender's 4-frame normal is a strong answer because strikes beat throws on the same frame"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 55,
+      "text": "There are 2 frames of throw invulnerability after exiting hitstun and blockstun, so inputting a throw at {{sf6-adv|VP|+4}} can lead to a successful tick throw.",
+      "supports": "throw_invulnerable_frames_after_stun, tick_throw_advantage_rule"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 55,
+      "text": "* Opponents cannot be thrown while in hitstun or blockstun (including Parry blockstun).",
+      "supports": "throw_invulnerable_frames_after_stun"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 6,
+      "text": "This means that a defensive 4-frame normal is a strong option against tick throws from {{sf6-adv|P|+1}} advantage or worse.",
+      "supports": "tick_throw_advantage_rule"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The sources do not say in words that +4 is the largest advantage for a tick throw or that +5 whiffs; that follows only by arithmetic from 5f startup / 3f active (Offense line 16). Gauges line 101 (Burnout stun section) separately says 'A blockstring gap of 6f or more can be thrown', which concerns the defender throwing through a gap, not tick throws."
+   }
+  },
+  {
+   "rule_id": "R06",
+   "question": "What are a normal throw's startup, active frames, recovery and total; its range; the throw-escape (tech) window; and the cases where a throw cannot be escaped or counts as a counter-hit or Punish Counter?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "Normal throws are universally 5f startup, 3f active, 30f total on whiff (Capcom's Ryu table: start-up 5, active 5-7, recovery 23); most characters including Ryu have throw range 0.80. The escape window lasts until the 9th frame of being thrown; throws cannot be escaped when the defender is unable to throw, during Drive Rush movement frames (counter-hit) or against Drive Parry (Punish Counter: 70% more damage, hard knockdown, 1 Drive bar drained).",
+    "parameters": {
+     "throw_startup": "5f",
+     "throw_active": "3f (Capcom Ryu table: active on frames 5-7)",
+     "throw_recovery_or_total": "30f total whiff animation (SuperCombo); Capcom Ryu table lists recovery 23",
+     "throw_range": "0.80 throw range, 0.33 throw hurtbox, 0.47 relative for 'Everyone Else' (Ryu is not among the listed exceptions); Zangief 1.02, Marisa 0.90, Blanka/E. Honda 0.90, Alex/Arjun/Sagat 0.85; unit not stated",
+     "tech_window": "Until the 9th frame of being thrown, counting the frame the throw connects",
+     "unescapable_cases": "Throw connecting while the defender is unable to throw (e.g. punish during recovery frames); throw connecting during Drive Rush movement frames (counts as Counter-hit); throw on any active or recovery frame of Drive Parry; command grabs and air throws; escape also denied if a non-throw input (other than forward dash) is made in the 9-frame window",
+     "punish_counter_throw_effects": "70% extra damage (Ryu 1200 to 2040), Hard Knockdown preventing Back Rise, drains 1 Drive bar, attacker Super Art gauge 4000; throws always land as Punish Counter against Drive Parry"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 16,
+      "text": "Throws are universally 5f startup and 3f active, with a total whiff animation of 30f.",
+      "supports": "throw_startup, throw_active, throw_recovery_or_total"
+     },
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "[\"Shoulder Throw (When near opponent) L L\",\"5\",\"5-7\",\"23\",\"D\"",
+      "supports": "throw_startup, throw_active, throw_recovery_or_total"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 44,
+      "text": "| Everyone Else || 0.80 || 0.33 || 0.47",
+      "supports": "throw_range"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 34,
+      "text": "! Character !! Throw Range !! Throw Hurtbox !! Relative Throw Range",
+      "supports": "throw_range"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 36,
+      "text": "| Zangief || 1.02 || 0.49 || 0.53",
+      "supports": "throw_range"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 38,
+      "text": "| Marisa || 0.90 || 0.38 || 0.52",
+      "supports": "throw_range"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 40,
+      "text": "| Blanka / E. Honda || 0.90 || 0.43 || 0.47",
+      "supports": "throw_range"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 42,
+      "text": "| Alex / Arjun / Sagat || 0.85 || 0.38 || 0.47",
+      "supports": "throw_range"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 47,
+      "text": "Blanka and Ryu can both throw each other from the exact same range, as Blanka's extra throw range is counteracted by his wider throw hurtbox.",
+      "supports": "throw_range"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 20,
+      "text": "The input window for a Throw Escape lasts until the 9th frame of being thrown (including the frame that the Throw connects).",
+      "supports": "tech_window"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 20,
+      "text": "Throws that connect when the other character is unable to throw, such as when landing as a punish during an attack's recovery frames, cannot be escaped",
+      "supports": "unescapable_cases"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 20,
+      "text": "any throw that connects during the {{clr|DR|DR}} movement frames is considered a {{clr|PC|Counter-hit}} and can no longer be escaped",
+      "supports": "unescapable_cases"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 20,
+      "text": "a Throw Escape can not be performed if any input that would prevent a grounded throw from being performed in neutral is done during the 9 frame window",
+      "supports": "unescapable_cases"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 16,
+      "text": "This only works against grounded normal throws; command grabs and air throws cannot be defended against in this way.",
+      "supports": "unescapable_cases"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Gauges@376566.txt",
+      "line": 219,
+      "text": "* Throws (including Command Throws) hit as a {{clr|PC|Punish Counter}}, dealing high damage and draining 1 Drive bar",
+      "supports": "unescapable_cases, punish_counter_throw_effects"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Gauges@376566.txt",
+      "line": 220,
+      "text": "** This applies to all active and recovery frames of the Parry; the throw cannot be escaped",
+      "supports": "unescapable_cases"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 20,
+      "text": "When used as a [[#Punish Counters|{{clr|PC|Punish Counter}}]], throws gain 70% extra damage, become a Hard Knockdown preventing Back Rise, and drain 1 bar of Drive Gauge from the opponent.",
+      "supports": "punish_counter_throw_effects"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 91,
+      "text": "Throws will always land as a {{clr|PC|Punish Counter}} against Drive Parry.",
+      "supports": "punish_counter_throw_effects"
+     },
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "\"Properties change to the following when the attack lands as a Punish Counter: - Deals 2040 damage - Super Art gauge increases by 4000 - Forces a hard knockdown\"",
+      "supports": "punish_counter_throw_effects"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-20260528-en.txt",
+      "line": 81,
+      "text": "Updated opponent's Super Art gauge increase when a normal throw lands as a punish counter to match the increase on normal hit.",
+      "supports": "punish_counter_throw_effects"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The two timing figures agree: Game_Data line 19 says total = Startup + Active + Recovery - 1, and 5 + 3 + 23 - 1 = 30. The frame-ryu.rows.json file is a single line, so its quotes are on line 1 and keep the JSON punctuation. Defense line 20 also says a throw landing during another throw's startup or active frames is automatically escaped. Capcom 2026-05-28 (lines 83-89) lists Super Art gain on a normal throw as attacker 2000 / opponent 1400 on normal hit and attacker 4000 / opponent 1400 (was 2800) on Punish Counter."
+   }
+  },
+  {
+   "rule_id": "R07",
+   "question": "When a strike and a throw become active on the same frame, or two throws do, what happens?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "When a strike and a throw connect on the same frame the strike takes priority, unlike earlier Street Fighter games; this also applies to air throws against airborne strikes. A throw that lands during the other player's throw startup or active frames is automatically escaped, and when the throw inputs are simultaneous the game randomly decides who is credited with the escape.",
+    "parameters": {
+     "strike_vs_throw_same_frame": "The strike takes priority and beats the throw (also air throw vs airborne strike)",
+     "throw_vs_throw_same_frame": "The throw is automatically escaped (teched); with simultaneous inputs the game randomly decides which player gets the Throw Escape and its meter; Capcom states the same-time result is intended to be random"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 22,
+      "text": "If a throw and a strike connect on the same frame, the strike will take priority (unlike in previous Street Fighter titles).",
+      "supports": "strike_vs_throw_same_frame"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 22,
+      "text": "This also applies to air throws vs. airborne strikes.",
+      "supports": "strike_vs_throw_same_frame"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 6,
+      "text": "Unlike in previous entries, strikes beat throws when they connect on the same frame.",
+      "supports": "strike_vs_throw_same_frame"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Game_Data@384214.txt",
+      "line": 60,
+      "text": "Unlike most previous SF titles, strikes actually have priority over throws when they collide on the same frame.",
+      "supports": "strike_vs_throw_same_frame"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 20,
+      "text": "(unless it lands during another throw's startup or active frames, in which case it is automatically escaped)",
+      "supports": "throw_vs_throw_same_frame"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 22,
+      "text": "If performed simultaneously, the game will randomly decide which player teched the throw (and who will gain the extra meter).",
+      "supports": "throw_vs_throw_same_frame"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-202506-en.txt",
+      "line": 189,
+      "text": "Fixed an issue where if two players attempt a throw at the same time, under certain circumstances the result be fixed to one side rather than be random as intended.",
+      "supports": "throw_vs_throw_same_frame"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The Capcom 2025-06 line sits under the heading 'Normal Throws and Command Throws' (line 187) and does not say what the random result is for a command throw against a normal throw. Offense line 4 adds that two strikes colliding on the same frame both count as a Counter-hit (a trade)."
+   }
+  },
+  {
+   "rule_id": "R08",
+   "question": "How long is the input buffer for a reversal on wake-up and after hitstun or blockstun, and what did the 2026-03-17 and 2026-04-15 patches change about wake-up buffering?",
+   "family": "defense",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "sources_conflict",
+    "statement": "The two SuperCombo pages disagree on the wake-up reversal buffer: the Defense page says 10 frames (11-frame window), the Game Data page says 7 frames (8-frame window); both give 4 frames (5-frame window) after hitstun or blockstun. Capcom's 2026-03-17 page adds 3 frames to the wake-up buffer, and the 2026-04-15 page takes those 3 frames back off only when a Drive Rush overlaps with the wake-up.",
+    "parameters": {
+     "wakeup_reversal_buffer_frames": "conflict: 10 (Defense page; 11-frame total window) vs 7 (Game_Data page; 8-frame total window)",
+     "post_stun_reversal_buffer_frames": "4 (5-frame total window); Defense page applies the same 4 to air reset",
+     "change_2026_03_17": "3 frames added to buffer input time on wake-up (universal adjustment)",
+     "change_2026_04_15": "if a Drive Rush overlaps with a wake-up, the buffer is decreased by 3 frames, back to its pre-Alex-release length"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 51,
+      "text": "There is a 10 frame buffer when performing a reversal move on wakeup, or 4 frames after hitstun, blockstun, or air reset.",
+      "supports": "wakeup_reversal_buffer_frames, post_stun_reversal_buffer_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 51,
+      "text": "After including the true reversal frame, this makes the total timing window 11 frames on wakeup or 5 frames in any other defensive scenario.",
+      "supports": "wakeup_reversal_buffer_frames, post_stun_reversal_buffer_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Game_Data@384214.txt",
+      "line": 35,
+      "text": "Dashes and Wakeup Reversals have an increased buffer window of 7 frames (so, an 8 frame total window).",
+      "supports": "wakeup_reversal_buffer_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Game_Data@384214.txt",
+      "line": 33,
+      "text": "For most applications, any move can be buffered up to 4 frames early, meaning that there is a 5 frame window to get the follow-up input at the earliest possible timing.",
+      "supports": "post_stun_reversal_buffer_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Game_Data@384214.txt",
+      "line": 33,
+      "text": "The same holds true when attempting an invincible reversal out of hitstun or blockstun.",
+      "supports": "post_stun_reversal_buffer_frames"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-20260317-en.txt",
+      "line": 91,
+      "text": "3 frames added to buffer input time on wake-up.",
+      "supports": "change_2026_03_17"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-20260317-en.txt",
+      "line": 89,
+      "text": "Buffer Input on Wake-up",
+      "supports": "change_2026_03_17"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-20260415-en.txt",
+      "line": 66,
+      "text": "we added an adjustment where the buffer input on wake-up was increased by 3 frames",
+      "supports": "change_2026_03_17, change_2026_04_15"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-20260415-en.txt",
+      "line": 68,
+      "text": "if Drive Rush overlaps with a wake-up, the buffer input will be decreased by 3 frames so that the buffer input active time is the same as it was pre-Alex release.",
+      "supports": "change_2026_04_15"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 53,
+      "text": "The buffer window for Dashes is intended to be 7 frames in all scenarios, but some appear to still be bugged",
+      "supports": "wakeup_reversal_buffer_frames"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "Conflict is between Defense@364973 (2026-05-30: 10 frames) and Game_Data@384214 (2026-10-26: 7 frames); no winner picked. Observation only: Capcom's '+3 frames' applied to 7 gives 10, but neither Capcom page states the absolute buffer length before or after. The patch dates come from the file names; the body text read does not print a date. All three SuperCombo pages give dashes a 7-frame buffer (Defense line 53, Movement line 22, Game Data line 35); they differ only on the wake-up reversal number."
+   }
+  },
+  {
+   "rule_id": "R09",
+   "question": "Is a rising character forced to stand for some frames on wake-up, and for how many (grounded wake-up and after an air reset)?",
+   "family": "defense",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "quoted",
+    "statement": "Yes. A character rising from a knockdown is in a standing state, and crouching incurs 4 frames of forced standing before the hurtbox shrinks on frame 5; after landing from an air reset there are only 2 forced standing frames, not counting the landing frame. The transition can be skipped by waking up with a crouching attack or by triggering crouching proximity guard.",
+    "parameters": {
+     "forced_standing_frames_grounded_wakeup": "4 (hurtbox shrinks on frame 5); skippable by a crouching attack or crouching proximity guard",
+     "forced_standing_frames_after_air_reset": "2 (not counting the landing frame itself)"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 36,
+      "text": "A character is considered to be in a standing state when rising from a knockdown.",
+      "supports": "forced_standing_frames_grounded_wakeup"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 36,
+      "text": "The crouching animation incurs 4 frames of forced standing before the hurtbox shrinks on frame 5, just like it would when crouching from a neutral state.",
+      "supports": "forced_standing_frames_grounded_wakeup"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 36,
+      "text": "After landing from an air reset, there are only 2 forced standing frames (not counting the landing frame itself).",
+      "supports": "forced_standing_frames_after_air_reset"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 36,
+      "text": "This transition period can be skipped by waking up with a crouching attack",
+      "supports": "forced_standing_frames_grounded_wakeup, forced_standing_frames_after_air_reset"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Game_Data@384214.txt",
+      "line": 82,
+      "text": "In Street Fighter 6, there is still technically a transition period between standing and crouching, with the hurtbox fully shifting on the 5th frame.",
+      "supports": "forced_standing_frames_grounded_wakeup"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 43,
+      "text": "These attacks still whiff when used meaty on the opponent's wakeup, as the proximity guard is triggered first before the hitbox can interact with the forced standing frames.",
+      "supports": "forced_standing_frames_grounded_wakeup"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "Only the SuperCombo Defense and Game Data pages cover this; no listed Capcom file mentions forced standing frames. Defense line 43 adds that a meaty performed from near max range, outside the proximity guard box, can still hit a crouch-blocking opponent during these frames."
+   }
+  },
+  {
+   "rule_id": "R10",
+   "question": "How many pre-jump frames does a jump have (and which characters differ), what are their properties (throwable, able to block, hit state if struck), and how long is a full jump in frames including landing?",
+   "family": "movement",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "quoted",
+    "statement": "Jumps begin with 4 prejump frames (5 for Lily and Zangief, 6 for C. Viper's High Jump); prejump frames cannot be thrown and count as grounded if hit by a strike or projectile. The Offense page calls the standard jump a 45-frame jump (A.K.I., Chun-Li, Lily and Zangief are slower), and the Movement page gives 3 landing recovery frames; whether a character can block during prejump is not stated.",
+    "parameters": {
+     "prejump_frames_standard": "4",
+     "characters_with_different_prejump": "Lily and Zangief: 5; C. Viper's High Jump: 6",
+     "prejump_throw_invulnerable": "yes: prejump frames are unthrowable",
+     "prejump_can_block": "not stated",
+     "hit_during_prejump_state": "considered grounded if hit by a strike or projectile",
+     "jump_total_frames_standard": "45 ('standard 45-frame jump'); whether the 45 includes the 3 landing frames is not stated",
+     "characters_with_different_jump_total": "A.K.I., Chun-Li, Lily, Zangief (slower jump; frame counts not stated)",
+     "landing_recovery_frames": "3"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 43,
+      "text": "Jumps begin with '''4 prejump frames''' ('''5''' for '''Lily'''/'''Zangief''' and '''6''' for '''C. Viper's''' High Jump)",
+      "supports": "prejump_frames_standard, characters_with_different_prejump"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 44,
+      "text": "Prejump frames are unthrowable, but considered grounded if hit by a strike or projectile.",
+      "supports": "prejump_throw_invulnerable, hit_during_prejump_state"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 53,
+      "text": "Opponents cannot be thrown during pre-jump frames, or while airborne (except for Air Throws).",
+      "supports": "prejump_throw_invulnerable"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 127,
+      "text": "For most characters with a standard 45-frame jump, this requires a +42 knockdown to beat 5-frame anti-air",
+      "supports": "jump_total_frames_standard"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 127,
+      "text": "Characters with a slower jump like A.K.I., Chun-Li, Lily, and Zangief require slightly more advantage to set up their safe jumps.",
+      "supports": "characters_with_different_jump_total"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 53,
+      "text": "There are '''3 landing recovery frames''' at the end of a jump.",
+      "supports": "landing_recovery_frames"
+     },
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "\"Jumping Light Punch (During a jump) L\",\"4\",\"4-13\",\"3 frame(s) after landing\"",
+      "supports": "landing_recovery_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 57,
+      "text": "This means that for most characters, KD +44 sets up an Empty Jump + 4f Normal and KD +45 sets up Empty Jump + Throw or 5f Normal",
+      "supports": "jump_total_frames_standard, landing_recovery_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 54,
+      "text": "If no air normal was used ('''Empty Jump'''), you can block and tech throws during Landing Recovery",
+      "supports": "landing_recovery_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 46,
+      "text": "Cannot cancel into techniques like Drive Impact or Drive Parry",
+      "supports": "prejump_can_block"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "prejump_can_block: no listed file says whether blocking is possible during prejump; the nearest statements are that prejump can be canceled into special moves but not into Drive Impact or Drive Parry (Movement lines 45-46). Landing details from the Movement page: the 1st landing frame cannot be canceled into any action, the 2nd and 3rd of an empty jump can be canceled into any attack, and using an air normal removes blocking and throw teching during landing and gives a Punish Counter state (lines 55-58). The Capcom Ryu table has no jump row; it only lists '3 frame(s) after landing' as recovery on jumping normals. from memory, unquoted: the 45 is normally counted as 4 prejump + 38 airborne + 3 landing."
+   }
+  },
+  {
+   "rule_id": "R11",
+   "question": "What are a back dash's total frames and its invulnerability or other properties, and what are a forward dash's total frames?",
+   "family": "movement",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "quoted",
+    "statement": "Capcom's Ryu table lists Backward Dash at 23 total frames, invincible to throws from frame 1 to frame 15, and Forward Dash at 19 total frames; no listed file gives a cast-wide typical total. SuperCombo says a dash is vulnerable throughout and cannot be canceled to block or tech, and a backdash has no airborne frames and being hit during it is not a Counter-hit.",
+    "parameters": {
+     "backdash_total_frames_typical": "Ryu: 23 total frames (Capcom table); no cast-wide typical value stated",
+     "backdash_throw_invulnerable_frames": "frames 1-15",
+     "backdash_strike_vulnerability_or_state": "vulnerable to strikes throughout; cannot cancel to block or tech; no airborne frames; being hit is not a Counter-hit",
+     "forward_dash_total_frames_typical": "Ryu: 19 total frames (Capcom table); no cast-wide typical value stated"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "\"Backward Dash\",\"\",\"\",\"23 total frames\"",
+      "supports": "backdash_total_frames_typical"
+     },
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "\"Forward Dash\",\"\",\"\",\"19 total frames\"",
+      "supports": "forward_dash_total_frames_typical"
+     },
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "Invincible to throws from frame 1 to frame 15.",
+      "supports": "backdash_throw_invulnerable_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 20,
+      "text": "Backdashes are also Throw Invincible from frames 1-15, making them useful for escaping pressure.",
+      "supports": "backdash_throw_invulnerable_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 22,
+      "text": "Opponents are also throw invincible during backdashes for the first 15 frames, and some specific attacks can have their own throw invincibility.",
+      "supports": "backdash_throw_invulnerable_frames"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 20,
+      "text": "you are vulnerable throughout the entire animation and cannot cancel it to block or tech a throw",
+      "supports": "backdash_strike_vulnerability_or_state"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 20,
+      "text": "Unlike some previous Street Fighter titles, there are no Airborne frames during a backdash, and being hit during the animation does not result in a {{clr|PC|Counter-hit}}.",
+      "supports": "backdash_strike_vulnerability_or_state"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 20,
+      "text": "Characters usually start moving backward on frame 5 (frame 6 or 7 for a few characters)",
+      "supports": "backdash_strike_vulnerability_or_state"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Game_Data@384214.txt",
+      "line": 4,
+      "text": "As an example, if Chun-Li has a backdash with a duration of 25 frames, this is equal to 25/60 or 5/12 of a second in real time.",
+      "supports": "backdash_total_frames_typical"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The only dash totals in the listed files are Ryu's rows in the Capcom table and the Game Data page's worded example of a 25-frame Chun-Li backdash ('As an example, if'). The SuperCombo per-character movement tables are cargo queries whose values are not in the saved text, and they list dash speed and distance, not total frames. Movement line 20 also says the first 2 frames of Forward Dash are cancelable into Parry."
+   }
+  },
+  {
+   "rule_id": "R12",
+   "question": "For Drive Parry: when does it become active, what is the Perfect Parry window, what does a Perfect Parry give the defender (advantage, scaling), can a parry stop a throw, and what happens when a parrying character is thrown?",
+   "family": "gauges"
+  },
+  {
+   "rule_id": "R13",
+   "question": "For Drive Reversal: startup out of blockstun and on wake-up (recovery), invulnerable frames, advantage on block, Drive cost, knockdown advantage on hit, and any screen freeze.",
+   "family": "gauges"
+  },
+  {
+   "rule_id": "R14",
+   "question": "For Drive Impact: startup, active frames, armor (how many hits, which frames), advantage on block, what happens on hit, at the wall, against a burned-out opponent, and when two Drive Impacts meet.",
+   "family": "gauges"
+  },
+  {
+   "rule_id": "R15",
+   "question": "For Drive Rush: how many frames before an attack can come out from a Parry Drive Rush and from a Drive Rush cancel, the Drive cost of each, the frame-advantage bonus and which moves get it, and any special hit or throw properties during the rush.",
+   "family": "gauges"
+  },
+  {
+   "rule_id": "R16",
+   "question": "What changes for a character in Burnout: blockstun, hitstun, chip damage, lost options, and stun conditions?",
+   "family": "gauges"
+  },
+  {
+   "rule_id": "R17",
+   "question": "What frame-advantage bonuses do Counter Hit and Punish Counter give, and when does each apply?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "A Counter-hit (striking the opponent during their startup or active frames) adds +2 frame advantage and 20% damage; a Punish Counter (attacking during their recovery frames) adds +4 frame advantage, 20% damage and drains some Drive. Counter-hit knockdowns usually gain no extra knockdown advantage, and some moves have their own Punish Counter properties.",
+    "parameters": {
+     "counter_hit_bonus": "+2 frame advantage and 20% additional damage; counter-hits that knock down usually gain no extra knockdown advantage",
+     "punish_counter_bonus": "+4 frame advantage, 20% more damage, depletes some of the opponent's Drive; specific moves gain extra properties",
+     "counter_hit_condition": "Striking the opponent during their startup or active frames; both attacks in a trade; any hit (including throws) that connects during Drive Rush movement frames",
+     "punish_counter_condition": "Attacking the opponent during their recovery frames; also Drive Parry (always in Punish Counter state), chained lights and multi-hit attacks after the first set of active frames, and landing recovery after an air normal"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 83,
+      "text": "{{clr|PC|Counter-hits}} add {{sf6-adv|P|+2}} to the frame advantage of the move, and deal an additional 20% damage.",
+      "supports": "counter_hit_bonus"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 83,
+      "text": "{{clr|PC|Counter-hits}} that cause a knockdown usually do not gain any extra knockdown frame advantage.",
+      "supports": "counter_hit_bonus"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Glossary@367082.txt",
+      "line": 147,
+      "text": "* Note that generally, there is an extra +2 hit advantage on Counterhits and +4 hit advantage on Punish Counters (exceptions are noted in the description).",
+      "supports": "counter_hit_bonus, punish_counter_bonus"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 87,
+      "text": "{{clr|PC|Punish Counters}} add {{sf6-adv|VP|+4}} to the frame advantage of the move, deal 20% more damage, and depletes some of the opponent's {{clr|DR|Drive}} meter.",
+      "supports": "punish_counter_bonus"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 73,
+      "text": "it's important to remember that your first attack will have 4 extra frames of hit advantage",
+      "supports": "punish_counter_bonus"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 83,
+      "text": "A {{clr|PC|Counter-hit}} ({{clr|PC|CH}}) occurs when you strike your opponent during their startup or active frames.",
+      "supports": "counter_hit_condition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 83,
+      "text": "Attacks that trade with each other both land as a Counter-hit.",
+      "supports": "counter_hit_condition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Gauges@376566.txt",
+      "line": 310,
+      "text": "any hit that connects during the {{clr|DR|Drive Rush}} movement frames is considered a {{clr|PC|Counter-hit}}, including Throws",
+      "supports": "counter_hit_condition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 87,
+      "text": "A {{clr|PC|Punish Counter}} ({{clr|PC|PC}}) occurs when you attack your opponent during their recovery frames.",
+      "supports": "punish_counter_condition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 93,
+      "text": "Chained light normals and multi-hit attacks (e.g. Jamie's {{clr|H|5HP}}) are in a {{clr|PC|Punish Counter}} state after the first set of active frames ends.",
+      "supports": "punish_counter_condition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Movement@376569.txt",
+      "line": 58,
+      "text": "* Using an air normal prevents you from blocking, crouching, or teching throws during Landing Recovery, and results in a '''Punish Counter''' state",
+      "supports": "punish_counter_condition"
+     },
+     {
+      "file": "sources/raw/capcom/frame-ryu.rows.json",
+      "line": 1,
+      "text": "Always in Punish Counter state during execution.",
+      "supports": "punish_counter_condition"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "Exceptions stated: Movement line 20 says being hit during a backdash does not result in a Counter-hit; Offense line 91 says Super Arts can hit as Counter-hit or Punish Counter but gain no additional damage, Drive depletion or knockdown advantage except in very rare cases; Capcom's Ryu table marks Supers with 'Values do not change when the attack lands as a counter or Punish Counter'. Offense line 87 adds that Punish Counter sweeps become a Hard Knockdown. The Capcom quote 'Always in Punish Counter state during execution.' is from the Drive Parry row."
+   }
+  },
+  {
+   "rule_id": "R18",
+   "question": "What do sources say about safe jumps: the knockdown advantages that make a jump-in safe against reversals of a given startup, the characters that are exceptions, and what defeats a safe jump (armor, parry, others)?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "For most characters with a standard 45-frame jump, a safe jump needs a +42 knockdown to be safe against a 5-frame anti-air such as LP Shoryuken, or +41 against a 6-frame reversal; A.K.I., Chun-Li, Lily and Zangief jump slower and need slightly more. Perfect Parry (attacker left at -2), certain armored moves and a charge character's normal parry are listed as answers.",
+    "parameters": {
+     "safe_jump_advantage_rules": "Standard 45-frame jump: +42 knockdown beats a 5-frame anti-air (e.g. LP Shoryuken); +41 beats a 6-frame reversal (most invincible OD reversals)",
+     "exception_characters": "A.K.I., Chun-Li, Lily, Zangief (slower jump; need slightly more advantage)",
+     "what_beats_a_safe_jump": "Perfect Parry; armored moves with a set hitstop (notably E. Honda OD Sumo Headbutt) make medium/heavy jump-ins unsafe; a charge character's normal parry keeps down charge for an immediate reversal; a quick light normal timed after the landing stops any empty-jump strike/throw follow-up",
+     "perfect_parry_versus_safe_jump": "Fairly easy to time on wakeup because the timing is always the same; attacker is left at -2 on a perfect setup; attacker can bait it with empty jump + throw"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 127,
+      "text": "For most characters with a standard 45-frame jump, this requires a +42 knockdown to beat 5-frame anti-air (common with moves like {{clr|L|LP Shoryuken}}), or +41 to beat a 6-frame reversal (applies to most invincible {{clr|OD|OD}} reversals).",
+      "supports": "safe_jump_advantage_rules"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 127,
+      "text": "Characters with a slower jump like A.K.I., Chun-Li, Lily, and Zangief require slightly more advantage to set up their safe jumps.",
+      "supports": "exception_characters"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 132,
+      "text": "* '''Perfect Parry''' - Since the attack timing is always the same, it's fairly easy to time this on wakeup. The attacker is left at {{sf6-adv|M|-2}} on a perfect setup.",
+      "supports": "what_beats_a_safe_jump, perfect_parry_versus_safe_jump"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 132,
+      "text": "The attacker can bait this out with an empty jump + throw, but this runs the risk of losing your offensive momentum.",
+      "supports": "perfect_parry_versus_safe_jump"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Gauges@376566.txt",
+      "line": 259,
+      "text": "* Perfect Parrying a deep jump-in does not always guarantee a punish; can be as safe as {{sf6-adv|M|-2}} at the latest possible timing",
+      "supports": "perfect_parry_versus_safe_jump"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 133,
+      "text": "* '''Armor''' - Some armored moves (notably E. Honda's {{clr|OD|OD Sumo Headbutt}}) have a set amount of hitstop when absorbing a jump-in, while the attacker's hitstop is left unchanged.",
+      "supports": "what_beats_a_safe_jump"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 133,
+      "text": "As a result, medium and heavy normals become unsafe to use in safe jump setups.",
+      "supports": "what_beats_a_safe_jump"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 134,
+      "text": "* If a charge character performs a normal parry, they can maintain down charge while blocking the safe jump.",
+      "supports": "what_beats_a_safe_jump"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 129,
+      "text": "If the opponent times a quick light normal right after you would land, they will safely block a safe jump while interrupting any strike or throw on the ground.",
+      "supports": "what_beats_a_safe_jump"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "Offense line 129 also says a correct safe jump always gets the maximum frame advantage on the jump-in and forces charge characters to stand to block. Offense line 138 gives the separate empty-jump rule (+45 or slightly better; not safe from invincible reversals) and Movement line 57 says KD +44 sets up Empty Jump + 4f normal and KD +45 Empty Jump + throw or 5f normal. No source in the assigned list names Ryu's own jump length; the 45-frame figure is given for 'most characters'."
+   }
+  },
+  {
+   "rule_id": "R19",
+   "question": "After an air reset (flip-out), what are the landing properties: frames unable to be thrown, forced standing, anything else stated?",
+   "family": "defense",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "quoted",
+    "statement": "After an air reset (the opponent flips out of the air and lands without a knockdown) the opponent cannot be thrown during the 2 landing recovery frames, but can still block, tech or attack on those frames. The Defense page adds 2 forced standing frames after landing (not counting the landing frame) and a 4-frame reversal buffer after an air reset.",
+    "parameters": {
+     "air_reset_landing_throw_invulnerable_frames": "2 (the 2 landing recovery frames)",
+     "other_air_reset_properties": "can still block, tech or attack on those frames; 2 forced standing frames (not counting the landing frame); 4-frame reversal buffer; lands without a knockdown"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 56,
+      "text": "Opponents cannot be thrown during the 2 landing recovery frames after an air reset (when the opponent flips out of the air and lands without a knockdown).",
+      "supports": "air_reset_landing_throw_invulnerable_frames, other_air_reset_properties"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 56,
+      "text": "The opponent can still block, tech, or perform an attack on these frames.",
+      "supports": "other_air_reset_properties"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 36,
+      "text": "After landing from an air reset, there are only 2 forced standing frames (not counting the landing frame itself).",
+      "supports": "other_air_reset_properties"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 51,
+      "text": "There is a 10 frame buffer when performing a reversal move on wakeup, or 4 frames after hitstun, blockstun, or air reset.",
+      "supports": "other_air_reset_properties"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Glossary@367082.txt",
+      "line": 97,
+      "text": "While in this state, an air knockdown will occur when being hit by any attack, even if it would otherwise cause an air reset.",
+      "supports": "other_air_reset_properties"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The Offense page counts '2 landing recovery frames' after an air reset while the Movement page gives 3 landing recovery frames for a normal jump; no file relates the two counts, and the Defense page's 2 forced standing frames are counted excluding the landing frame. The Glossary quote is the Forced Knockdown rule: a character in that state is knocked down instead of air reset. No listed Capcom file describes air reset landing."
+   }
+  },
+  {
+   "rule_id": "R20",
+   "question": "What do sources say about screen-freeze (Super and Drive) input buffers: can the opponent buffer or change inputs during the freeze, and by how many frames?",
+   "family": "data"
+  },
+  {
+   "rule_id": "R21",
+   "question": "How does frame advantage change when an attack connects on a later active frame, and are there moves where it does not change?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "not_found",
+    "statement": "None of the assigned sources states a rule for how frame advantage changes when an attack connects on a later active frame, or lists moves where it does not change.",
+    "parameters": {
+     "later_active_frame_rule": "not stated",
+     "exceptions": "not stated"
+    },
+    "quotes": [],
+    "quotes_failed_check": 0,
+    "notes": "Nearest passages, none of which states the rule: Offense line 129 ('you will always get the maximum frame advantage on your jump-in attack'), Offense line 155 (+11 on hit/block 'rarely achievable without a setup into a deep jumping attack'), Gauges line 259 (Perfect Parry of a deep jump-in 'can be as safe as -2 at the latest possible timing'). Outside the assigned list, a grep surfaced per-move notes in /home/user/Okizeme-lab-nov/sources/raw/supercombo/cargo/SF6_FrameData.Ryu.json (lines 430, 577, 920, 1018) that mention meaty timing: 'up to +5 on hit with meaty timing', 'on block, always plays out a fixed 29f recovery (cannot be made safer with meaty timing)', and '5f less hitstun on active frames 2-5'; that file was not in my source list, so nothing from it is used as a value. from memory, unquoted: each later active frame that connects normally adds one frame of advantage on hit and block."
+   }
+  },
+  {
+   "rule_id": "R22",
+   "question": "What do sources say about chaining light normals (rapid cancel): which frames can cancel, and does a whiffed light recover faster when chained?",
+   "family": "data"
+  },
+  {
+   "rule_id": "R23",
+   "question": "What do sources say about proximity guard (being put in a blocking stance near an attack): when it applies and how it affects walking backward?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "Proximity guard: holding back during the startup of an opponent's attack puts the defender into a blocking animation before the move connects; in SF6 it is usually not triggered from outside the attack's maximum range and projectiles have a reduced activation range. It makes walking back out of a poke's range at the last moment harder, and slow long-range attacks such as Drive Impact are very effective at stopping back walk during startup.",
+    "parameters": {
+     "proximity_guard_rule": "Holding back during the startup of an opponent's attack makes the defender enter a blocking animation before the move connects; usually not triggered from outside the attack's maximum range; projectiles have reduced activation range; JP's Amnesia bombs are an exception that locks the opponent into it",
+     "effect_on_walking_back": "Makes it harder to walk back out of an opponent's poke range at the last possible moment; slow, long-range attacks like Drive Impact and some heavy command normals are very effective at preventing back walk during startup"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 10,
+      "text": "'''Proximity Guard:''' holding back during the startup of an opponent's attack will cause the defending character to enter a blocking animation before the move actually connects.",
+      "supports": "proximity_guard_rule"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 10,
+      "text": "in general, proximity guard will usually not be triggered from outside the attack's maximum range",
+      "supports": "proximity_guard_rule"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 10,
+      "text": "Projectiles also have reduced proximity guard activation range, making slow fireballs less effective at controlling the opponent's positioning.",
+      "supports": "proximity_guard_rule"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 12,
+      "text": "One notable exception to the rule is JP's Amnesia bombs, which lock the opponent into proximity guard before they detonate.",
+      "supports": "proximity_guard_rule"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 10,
+      "text": "Proximity guard still has an impact in neutral, making it harder to walk back out of an opponent's poke range at the last possible moment.",
+      "supports": "effect_on_walking_back"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Defense@364973.txt",
+      "line": 10,
+      "text": "Slow, long-range attacks like {{clr|DR|Drive Impact}} and some heavy command normals are still very effective at preventing the opponent's back walk during startup.",
+      "supports": "effect_on_walking_back"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "The Offense page does not mention proximity guard; the rule is on the Defense page. Related wake-up effect: Game_Data line 82 says entering proximity guard from an attack's startup lets the defender skip the stand-to-crouch transition frames, and Defense line 43 says some attacks have a hitbox that extends slightly beyond the proximity guard box. No source gives a frame count or distance for proximity guard in general. Outside the assigned list, a grep showed a per-move note in /home/user/Okizeme-lab-nov/sources/raw/supercombo/cargo/SF6_FrameData.Ryu.json line 1116 ('proximity guard box begins on frame 2 and reaches the maximum attack range'); not used as a value."
+   }
+  },
+  {
+   "rule_id": "R24",
+   "question": "What do sources say about throw loops: which characters can loop throws midscreen or in the corner, and what is said about Ryu?",
+   "family": "offense",
+   "extract": {
+    "reader": "extract-offense",
+    "status": "quoted",
+    "statement": "A throw loop is a community term for a throw that leaves enough frame advantage to attempt a second meaty throw on wakeup; it typically works only in the corner because a midscreen Back Rise leaves throw distance, except after a Punish Counter throw. Ryu is named only among characters who can Drive Rush midscreen into a meaty normal that sets up a tick throw, which is not a true throw loop.",
+    "parameters": {
+     "throw_loop_definition": "Community term for throws that give enough frame advantage to attempt a second meaty throw on the opponent's wakeup; typically corner-only since a midscreen Back Rise escapes throw distance, except after a Punish Counter throw (Hard Knockdown)",
+     "what_is_said_about_ryu": "Named with Ken, Luke and Cammy as able to use Drive Rush (midscreen, vs Back Rise) to land a meaty normal that sets up a tick throw; unlike a true throw loop this is susceptible to Perfect Parry. No Ryu-specific corner statement beyond 'most characters' having a meterless corner throw loop; Ryu has the standard throw range",
+     "season_changes_to_throw_loops": "No source names a seasonal change to throw loops as such. Related: SuperCombo says Season 3 expanded Zangief's throw hurtbox; Capcom 2024-05 made repeated throws after a back throw into the corner harder and added wake-up Drive Reversal; 2025-06 raised throw-escape gauge gain; 2026-05-28 cut it (Drive 10000 to 5000) and gave 10,000 Drive for escaping a throw with Recovery Drive Reversal"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 60,
+      "text": "A term coined by the community to describe throws that provide enough frame advantage that you can attempt a second meaty throw on the opponent's wakeup.",
+      "supports": "throw_loop_definition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 62,
+      "text": "Throw loops typically only work in the corner, as a midscreen opponent can easily [[Street_Fighter_6/Defense#Wake-up|Back Rise]] too far to remain in throw distance.",
+      "supports": "throw_loop_definition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 62,
+      "text": "The exception to this is when a throw lands as a {{clr|PC|Punish Counter}}, giving a Hard Knockdown that disables the opponent's Back Rise.",
+      "supports": "throw_loop_definition"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 76,
+      "text": "A decent portion of the cast (such as Ken, Ryu, Luke, and Cammy) can use {{clr|DR|Drive Rush}} to land a meaty normal, setting up a tick throw.",
+      "supports": "what_is_said_about_ryu"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 76,
+      "text": "Unlike a true throw loop, this is susceptible to Perfect Parry.",
+      "supports": "what_is_said_about_ryu"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 76,
+      "text": "* Only [[Street Fighter 6/Zangief|Zangief's]] 3LPLK grants a genuine throw loop against midscreen Back Rise, though it requires {{clr|DR|Drive Rush}} and a 2-frame timing window against standard characters.",
+      "supports": "what_is_said_about_ryu"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 66,
+      "text": "* Most characters can walk and/or forward dash to perform a meterless corner throw loop.",
+      "supports": "what_is_said_about_ryu"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 47,
+      "text": "Blanka and Ryu can both throw each other from the exact same range, as Blanka's extra throw range is counteracted by his wider throw hurtbox.",
+      "supports": "what_is_said_about_ryu"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 49,
+      "text": "''Note: As of Season 3, Zangief's throw hurtbox was expanded, bringing his relative throw range more in line with the rest of the cast.''",
+      "supports": "season_changes_to_throw_loops"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 47,
+      "text": "A wider throw hurtbox makes a character more susceptible to throw loops, sometimes even against characters who normally do not normally have one.",
+      "supports": "season_changes_to_throw_loops"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-202405-en.txt",
+      "line": 106,
+      "text": "Characters who could perform a back throw into the corner, and then repeatedly throw opponents in any situation will now have a harder time doing so.",
+      "supports": "season_changes_to_throw_loops"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-202405-en.txt",
+      "line": 170,
+      "text": "Drive Reversal can now be performed during the recovery from a knockdown.",
+      "supports": "season_changes_to_throw_loops"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-202506-en.txt",
+      "line": 93,
+      "text": "The player who escapes a throw will now receive more Drive Gauge and Super Art gauge than before.",
+      "supports": "season_changes_to_throw_loops"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-20260528-en.txt",
+      "line": 93,
+      "text": "1. Drive Gauge increase changed from 10000 to 5000",
+      "supports": "season_changes_to_throw_loops"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-20260528-en.txt",
+      "line": 78,
+      "text": "If you escape a throw during the invincibility period that occurs before an attack startup, your Drive Gauge will increase by 10,000",
+      "supports": "season_changes_to_throw_loops"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Gauges@376566.txt",
+      "line": 171,
+      "text": "This makes it easier to defend against corner throw loops without putting yourself into a poor meter position.",
+      "supports": "season_changes_to_throw_loops"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "Characters the Offense page names (lines 66-76): Ken (frame-perfect walk), Rashid (Drive Rush or Run, meterless), Marisa (Drive Rush, 2f window), Alex and Sagat (Drive Rush, 4f window; Alex also a walking loop from his stance throw), Guile and Lily (Drive Rush, cannot block a 6f OD reversal), Elena and Ed (Drive Rush), Ingrid (no true loop), Chun-Li (no standard loop), E. Honda (no loop at all), Zangief 3LPLK (only genuine midscreen loop, with Drive Rush). Whether Ryu's corner loop is by walk or dash, and its leniency, is not stated in the assigned sources; Ryu_Strategy@376493.txt and Ryu_Data@378774.txt sit in the same folder but were outside my list and were not read. The Capcom pages never use the words 'throw loop'. The Capcom 2026-05-28 prose is internally inconsistent: line 61 says the throw-escape gauge gain was 'limited' while line 63 says 'we've increased the amount of gauge gained'; the change table (lines 93-94) shows a decrease (Drive 10000 to 5000, Super Art 1000 to 0), matching Defense line 16 (5000 Drive)."
+   }
+  },
+  {
+   "rule_id": "R25",
+   "question": "What general input buffer lengths are stated (normal moves, specials, dashes), and any stated bugs or exceptions?",
+   "family": "data"
+  },
+  {
+   "rule_id": "R26",
+   "question": "Is knockdown and wake-up timing the same against every character, or do sources name characters whose wake-up timing or hurtbox on wake-up differs?",
+   "family": "defense",
+   "extract": {
+    "reader": "extract-defense-movement",
+    "status": "quoted",
+    "statement": "No listed file says whether wake-up timing is the same for every character or names a character whose wake-up timing differs. What the sources do vary by character is throw hurtbox width (Zangief, Blanka, E. Honda, Marisa, Alex, Arjun and Sagat are wider than everyone else), which changes throw-loop timing on their wake-up.",
+    "parameters": {
+     "wakeup_timing_character_dependence": "not stated",
+     "characters_named": "none for wake-up timing; wider throw hurtbox: Zangief 0.49, Blanka / E. Honda 0.43, Marisa 0.38, Alex / Arjun / Sagat 0.38, everyone else 0.33"
+    },
+    "quotes": [
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 71,
+      "text": "They can also walk to perform a precise throw loop against '''Blanka''' and '''E. Honda''' (1f timing) and '''Zangief''' (3f timing) due to their wider throw hurtbox.",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 47,
+      "text": "A wider throw hurtbox makes a character more susceptible to throw loops, sometimes even against characters who normally do not normally have one.",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 34,
+      "text": "! Character !! Throw Range !! Throw Hurtbox !! Relative Throw Range",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 36,
+      "text": "| Zangief || 1.02 || 0.49 || 0.53",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 38,
+      "text": "| Marisa || 0.90 || 0.38 || 0.52",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 40,
+      "text": "| Blanka / E. Honda || 0.90 || 0.43 || 0.47",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 42,
+      "text": "| Alex / Arjun / Sagat || 0.85 || 0.38 || 0.47",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 44,
+      "text": "| Everyone Else || 0.80 || 0.33 || 0.47",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Offense@380932.txt",
+      "line": 68,
+      "text": "though it requires a 2-frame timing window against standard characters.",
+      "supports": "characters_named"
+     },
+     {
+      "file": "sources/raw/supercombo/text/Glossary@367082.txt",
+      "line": 146,
+      "text": "KD refers to knockdown on hit, and the listed KD Advantage refers to how many frames the attacker can act before the defender finishes their wakeup animation.",
+      "supports": "wakeup_timing_character_dependence"
+     },
+     {
+      "file": "sources/raw/capcom/battle_change-202506-en.txt",
+      "line": 107,
+      "text": "Each character will have a different wake-up gameplay now so study up.",
+      "supports": "wakeup_timing_character_dependence"
+     }
+    ],
+    "quotes_failed_check": 0,
+    "notes": "wakeup_timing_character_dependence is left 'not stated' because the files neither assert a universal wake-up duration nor name an exception; the Glossary only defines KD Advantage as counted to the end of the defender's wakeup animation, and the Defense page's 'no difference in the knockdown frame advantage' compares Normal Rise with Back Rise, not characters. The Capcom 202506 sentence is about sweeps and the attacker's situation ('The status on hit changes depending on the character', line 196), not the defender's rise time. The throw hurtbox is the general one, not a wake-up-only hurtbox. Capcom 202405 (lines 131-135) raised jump landing hurtboxes for Chun-Li, Dhalsim, Lily and A.K.I.; that is jump landing, not wake-up. from memory, unquoted: wake-up duration is usually treated as the same for the whole cast."
+   }
+  }
+ ],
+ "quote_check": {
+  "total": 144,
+  "failed": 0
+ }
+}

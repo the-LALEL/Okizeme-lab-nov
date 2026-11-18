@@ -1,0 +1,111 @@
+{
+ "character": "Juri",
+ "slug": "juri",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "22",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "2LP (FSE Chain)",
+   "5LP",
+   "5LP (FSE Chain)"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "623PP",
+   "name": "OD Tensenrin",
+   "move_id": "Juri_623PP",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-9 Full",
+   "armor_text": "",
+   "block_text": "-48",
+   "total_text": "75",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236K",
+   "name": "Sakkai Fuhazan",
+   "move_id": "Juri_236236k",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-8 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-32",
+   "total_text": "201",
+   "resource": "super"
+  },
+  {
+   "input": "236236[K]",
+   "name": "Sakkai Fuhazan (hold)",
+   "move_id": "Juri_236236k_hold",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-8 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-32",
+   "total_text": "201",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Kaisen Dankai Raku",
+   "move_id": "Juri_214214k",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-36",
+   "total_text": "65",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Kaisen Dankai Raku (CA)",
+   "move_id": "Juri_214214k(ca)",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-36",
+   "total_text": "65",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623PP OD Tensenrin",
+  "236236K Sakkai Fuhazan",
+  "236236[K] Sakkai Fuhazan (hold)",
+  "214214K Kaisen Dankai Raku",
+  "214214K Kaisen Dankai Raku (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Kaita Raid (Recovery)",
+  "move_id": "Juri_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

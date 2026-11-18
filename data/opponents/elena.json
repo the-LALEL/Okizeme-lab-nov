@@ -1,0 +1,108 @@
+{
+ "character": "Elena",
+ "slug": "elena",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "20",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "623KK",
+   "name": "OD Scratch Wheel",
+   "move_id": "elena_623kk",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-8 Full",
+   "armor_text": "",
+   "block_text": "-46",
+   "total_text": "72",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "214214K",
+   "name": "Song of the Grasslands",
+   "move_id": "elena_214214k",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-54",
+   "total_text": "79",
+   "resource": "super"
+  },
+  {
+   "input": "214214K",
+   "name": "Song of the Grasslands (CA)",
+   "move_id": "elena_214214k(ca)",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-54",
+   "total_text": "79",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Revival Dance",
+   "move_id": "elena_236236p",
+   "startup_text": "12",
+   "startup": 12,
+   "invuln_text": "1-17 Full",
+   "armor_text": "Break",
+   "block_text": "-47",
+   "total_text": "79",
+   "resource": "super"
+  },
+  {
+   "input": "236236P~[2]",
+   "name": "Revival Dance (Healing)",
+   "move_id": "elena_236236p_2_hold",
+   "startup_text": "12",
+   "startup": 12,
+   "invuln_text": "1-17 Full",
+   "armor_text": "Break",
+   "block_text": "-47",
+   "total_text": "79",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623KK OD Scratch Wheel",
+  "236236P Revival Dance",
+  "236236P~[2] Revival Dance (Healing)",
+  "214214K Song of the Grasslands",
+  "214214K Song of the Grasslands (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Boar Charge (Recovery)",
+  "move_id": "elena_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

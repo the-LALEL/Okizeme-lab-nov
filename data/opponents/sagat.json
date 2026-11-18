@@ -1,0 +1,160 @@
+{
+ "character": "Sagat",
+ "slug": "sagat",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "23",
+ "throw_range": "0.85",
+ "throw_hurtbox": "0.38",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "623PP",
+   "name": "OD Tiger Uppercut",
+   "move_id": "sagat_623pp",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-12 Full",
+   "armor_text": "",
+   "block_text": "-43",
+   "total_text": "72",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "214214K",
+   "name": "Savage Tiger",
+   "move_id": "sagat_214214k",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-58",
+   "total_text": "87",
+   "resource": "super"
+  },
+  {
+   "input": "214214K~4",
+   "name": "Savage Tiger Pendulum(Side Switch)",
+   "move_id": "sagat_214214k_4",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-58",
+   "total_text": "87",
+   "resource": "super"
+  },
+  {
+   "input": "214214K~5",
+   "name": "Savage Tiger Raid(Damage)",
+   "move_id": "sagat_214214k_5",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-58",
+   "total_text": "87",
+   "resource": "super"
+  },
+  {
+   "input": "214214K~2",
+   "name": "Savage Tiger Stomp(Oki)",
+   "move_id": "sagat_214214k_2",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-58",
+   "total_text": "87",
+   "resource": "super"
+  },
+  {
+   "input": "214214K~6",
+   "name": "Savage Tiger Zenith(Launcher)",
+   "move_id": "sagat_214214k_6",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-58",
+   "total_text": "87",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Tiger Vanquisher",
+   "move_id": "sagat_236236k",
+   "startup_text": "12(2)",
+   "startup": 12,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-51",
+   "total_text": "82",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Tiger Vanquisher (CA)",
+   "move_id": "sagat_236236k(ca)",
+   "startup_text": "12(2)",
+   "startup": 12,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-51",
+   "total_text": "82",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Tiger Cannon",
+   "move_id": "sagat_236236p",
+   "startup_text": "13",
+   "startup": 13,
+   "invuln_text": "1-13 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-31",
+   "total_text": "109",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623PP OD Tiger Uppercut",
+  "236236P Tiger Cannon",
+  "214214K Savage Tiger",
+  "214214K~5 Savage Tiger Raid(Damage)",
+  "214214K~6 Savage Tiger Zenith(Launcher)",
+  "214214K~4 Savage Tiger Pendulum(Side Switch)",
+  "214214K~2 Savage Tiger Stomp(Oki)",
+  "236236K Tiger Vanquisher",
+  "236236K Tiger Vanquisher (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Tiger Twin Babel (Recovery)",
+  "move_id": "sagat_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

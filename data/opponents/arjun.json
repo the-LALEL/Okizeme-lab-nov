@@ -1,0 +1,120 @@
+{
+ "character": "Arjun",
+ "slug": "arjun",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10500",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "25",
+ "forward_dash_total": "22",
+ "throw_range": "0.85",
+ "throw_hurtbox": "0.38",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "236236K",
+   "name": "Howling Destruction",
+   "move_id": "arjun_236236k",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-8 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-46",
+   "total_text": "136",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Instant Oblivion",
+   "move_id": "arjun_214214p",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-12 Full",
+   "armor_text": "Break",
+   "block_text": "-41",
+   "total_text": "69",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Yaksha's Order",
+   "move_id": "arjun_236236p",
+   "startup_text": "13",
+   "startup": 13,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-41",
+   "total_text": "73",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Yaksha's Order (CA)",
+   "move_id": "arjun_236236p(ca)",
+   "startup_text": "13",
+   "startup": 13,
+   "invuln_text": "1-15 Full",
+   "armor_text": "Break",
+   "block_text": "-41",
+   "total_text": "73",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236K Howling Destruction",
+  "214214P Instant Oblivion",
+  "236236P Yaksha's Order",
+  "236236P Yaksha's Order (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "63214P",
+   "name": "Ghastly Interrogation",
+   "move_id": "arjun_63214p",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "45",
+   "resource": "none"
+  },
+  {
+   "input": "63214PP",
+   "name": "OD Ghastly Interrogation",
+   "move_id": "arjun_63214pp",
+   "startup_text": "26",
+   "startup": 26,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "66",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Shield of the Vindicator (Recovery)",
+  "move_id": "arjun_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

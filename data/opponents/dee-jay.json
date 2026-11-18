@@ -1,0 +1,173 @@
+{
+ "character": "Dee Jay",
+ "slug": "dee-jay",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "19",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "~HP (End)",
+   "name": "Climactic Strike",
+   "move_id": "dee_jay_236236mp_lp_mp_hp_lk_mk_hk_hp",
+   "startup_text": "1",
+   "startup": 1,
+   "invuln_text": "1-181 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "181",
+   "resource": "super"
+  },
+  {
+   "input": "~HP (End)",
+   "name": "Climactic Strike",
+   "move_id": "dee_jay_236236hp_lp_mp_hp_lk_mk_hk_hp",
+   "startup_text": "1",
+   "startup": 1,
+   "invuln_text": "1-181 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "",
+   "resource": "super"
+  },
+  {
+   "input": "~HK (End)",
+   "name": "Encore Beat",
+   "move_id": "dee_jay_236236mp_lp_mp_hp_lk_mk_hk_hk",
+   "startup_text": "1",
+   "startup": 1,
+   "invuln_text": "1-151 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "151",
+   "resource": "super"
+  },
+  {
+   "input": "~HK (End)",
+   "name": "Encore Beat",
+   "move_id": "dee_jay_236236hp_lp_mp_hp_lk_mk_hk_hk",
+   "startup_text": "1",
+   "startup": 1,
+   "invuln_text": "1-151 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "",
+   "resource": "super"
+  },
+  {
+   "input": "[2]8KK",
+   "name": "OD Jackknife Maximum",
+   "move_id": "dee_jay_28kk",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-11 Full",
+   "armor_text": "",
+   "block_text": "-55",
+   "total_text": "77",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "214214P",
+   "name": "Weekend Pleasure",
+   "move_id": "dee_jay_214214p",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-28",
+   "total_text": "61",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Weekend Pleasure (CA)",
+   "move_id": "dee_jay_214214p(ca)",
+   "startup_text": "9",
+   "startup": 9,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-28",
+   "total_text": "61",
+   "resource": "super"
+  },
+  {
+   "input": "236236HP",
+   "name": "Headliner Sunrise Festival",
+   "move_id": "dee_jay_236236hp",
+   "startup_text": "12",
+   "startup": 12,
+   "invuln_text": "1-16 Full",
+   "armor_text": "Break",
+   "block_text": "-29",
+   "total_text": "62",
+   "resource": "super"
+  },
+  {
+   "input": "236236LP",
+   "name": "Lowkey Sunrise Festival",
+   "move_id": "dee_jay_236236lp",
+   "startup_text": "12",
+   "startup": 12,
+   "invuln_text": "1-16 Full",
+   "armor_text": "Break",
+   "block_text": "-29",
+   "total_text": "62",
+   "resource": "super"
+  },
+  {
+   "input": "236236MP",
+   "name": "Marvelous Sunrise Festival",
+   "move_id": "dee_jay_236236mp",
+   "startup_text": "12",
+   "startup": 12,
+   "invuln_text": "1-16 Full",
+   "armor_text": "Break",
+   "block_text": "-29",
+   "total_text": "62",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "[2]8KK OD Jackknife Maximum",
+  "236236LP Lowkey Sunrise Festival",
+  "236236MP Marvelous Sunrise Festival",
+  "~HP (End) Climactic Strike",
+  "~HK (End) Encore Beat",
+  "236236HP Headliner Sunrise Festival",
+  "~HP (End) Climactic Strike",
+  "~HK (End) Encore Beat",
+  "214214P Weekend Pleasure",
+  "214214P Weekend Pleasure (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Leg Scratch (Recovery)",
+  "move_id": "dee_jay_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

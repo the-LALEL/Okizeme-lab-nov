@@ -1,0 +1,144 @@
+{
+ "character": "Kimberly",
+ "slug": "kimberly",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "18",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "236236P",
+   "name": "Bushin Ninjastar Cypher",
+   "move_id": "kimberly_236236p",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-35",
+   "total_text": "64",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Bushin Ninjastar Cypher (CA)",
+   "move_id": "kimberly_236236p(ca)",
+   "startup_text": "8",
+   "startup": 8,
+   "invuln_text": "1-13 Full",
+   "armor_text": "Break",
+   "block_text": "-35",
+   "total_text": "64",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Bushin Beats",
+   "move_id": "kimberly_236236k_0stock",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-12 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-25",
+   "total_text": "66",
+   "resource": "super"
+  },
+  {
+   "input": "236236[K]",
+   "name": "Bushin Thunderous Beats",
+   "move_id": "kimberly_236236k_1stock",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-12 Strike/Throw",
+   "armor_text": "Break",
+   "block_text": "-25",
+   "total_text": "66",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236K Bushin Beats",
+  "236236[K] Bushin Thunderous Beats",
+  "236236P Bushin Ninjastar Cypher",
+  "236236P Bushin Ninjastar Cypher (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [
+  {
+   "input": "236K (close)~P",
+   "name": "Bushin Izuna Otoshi",
+   "move_id": "kimberly_236k_prox_p",
+   "startup_text": "8+15+13",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "58",
+   "resource": "none"
+  },
+  {
+   "input": "236KK (close)~P",
+   "name": "OD Bushin Izuna Otoshi",
+   "move_id": "kimberly_236kk_prox_p",
+   "startup_text": "8+13+13",
+   "startup": 8,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "58",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "j.236P",
+   "name": "Nue Twister",
+   "move_id": "kimberly_j236p",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "-",
+   "resource": "none"
+  },
+  {
+   "input": "j.236PP",
+   "name": "OD Nue Twister",
+   "move_id": "kimberly_j236pp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "-",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Shapeless State (Recovery)",
+  "move_id": "kimberly_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

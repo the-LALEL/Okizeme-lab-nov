@@ -1,0 +1,123 @@
+{
+ "character": "Mai",
+ "slug": "mai",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+38+3",
+  "prejump": 4,
+  "total": 45
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "18",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LP",
+   "5LK",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "623KK",
+   "name": "OD Hishou Ryuuenjin",
+   "move_id": "mai_623kk",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-8 Full, 9-10 Air",
+   "armor_text": "",
+   "block_text": "-40(-47)",
+   "total_text": "57(64)",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "623KK",
+   "name": "OD Hishou Ryuuenjin (Flame)",
+   "move_id": "mai_623kk_flame",
+   "startup_text": "6",
+   "startup": 6,
+   "invuln_text": "1-8 Full, 9-10 Air",
+   "armor_text": "",
+   "block_text": "-40(-47)",
+   "total_text": "57(64)",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236K",
+   "name": "Chou Hissatsu Shinobi Bachi",
+   "move_id": "mai_236236k",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-8 Full",
+   "armor_text": "Break",
+   "block_text": "-24",
+   "total_text": "68(79)",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Chou Hissatsu Shinobi Bachi (Flame)",
+   "move_id": "mai_236236k_flame",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-8 Full, 9-12 Projectile",
+   "armor_text": "Break",
+   "block_text": "-24",
+   "total_text": "73(79)",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Shiranui Ryuu: Enbu Ada Zakura",
+   "move_id": "mai_214214p",
+   "startup_text": "10(3)",
+   "startup": 10,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-33",
+   "total_text": "94",
+   "resource": "super"
+  },
+  {
+   "input": "214214P",
+   "name": "Shiranui Ryuu: Enbu Ada Zakura (CA)",
+   "move_id": "mai_214214p(ca)",
+   "startup_text": "10(3)",
+   "startup": 10,
+   "invuln_text": "1-11 Full",
+   "armor_text": "Break",
+   "block_text": "-33",
+   "total_text": "94",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "623KK OD Hishou Ryuuenjin",
+  "623KK OD Hishou Ryuuenjin (Flame)",
+  "236236K Chou Hissatsu Shinobi Bachi",
+  "236236K Chou Hissatsu Shinobi Bachi (Flame)",
+  "214214P Shiranui Ryuu: Enbu Ada Zakura",
+  "214214P Shiranui Ryuu: Enbu Ada Zakura (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Yusura Ume (Recovery)",
+  "move_id": "mai_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}

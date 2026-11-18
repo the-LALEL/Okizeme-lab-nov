@@ -1,0 +1,112 @@
+{
+ "character": "Dhalsim",
+ "slug": "dhalsim",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "10000",
+ "jump": {
+  "text": "4+68+3",
+  "prejump": 4,
+  "total": 75
+ },
+ "backdash_total": "23",
+ "forward_dash_total": "25",
+ "throw_range": "0.8",
+ "throw_hurtbox": "0.33",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LK",
+   "5LP"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "214214K",
+   "name": "Yoga Sunburst",
+   "move_id": "dhalsim_214214k",
+   "startup_text": "7",
+   "startup": 7,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-4",
+   "total_text": "67",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Merciless Yoga",
+   "move_id": "dhalsim_236236k",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-62",
+   "total_text": "89",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Merciless Yoga (CA)",
+   "move_id": "dhalsim_236236k(ca)",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "1-14 Full",
+   "armor_text": "Break",
+   "block_text": "-62",
+   "total_text": "89",
+   "resource": "super"
+  },
+  {
+   "input": "214214{K}",
+   "name": "Yoga Sunburst",
+   "move_id": "dhalsim_214214k_partial_hold",
+   "startup_text": "23~70",
+   "startup": 23,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-",
+   "total_text": "81~128",
+   "resource": "super"
+  },
+  {
+   "input": "214214[K]",
+   "name": "Yoga Sunburst",
+   "move_id": "dhalsim_214214k_hold",
+   "startup_text": "71~91",
+   "startup": 71,
+   "invuln_text": "1-9 Full",
+   "armor_text": "Break",
+   "block_text": "-",
+   "total_text": "129~148",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236LP Yoga Inferno",
+  "236236MP Yoga Inferno",
+  "236236HP Yoga Inferno",
+  "214214K Yoga Sunburst",
+  "214214{K} Yoga Sunburst",
+  "214214[K] Yoga Sunburst",
+  "236236K Merciless Yoga",
+  "236236K Merciless Yoga (CA)"
+ ],
+ "armor": [],
+ "command_grabs": [],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Yoga Illusion (Recovery)",
+  "move_id": "dhalsim_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break (1st hit)",
+  "block_text": "-6",
+  "total_text": "55(61)",
+  "resource": "none"
+ }
+}

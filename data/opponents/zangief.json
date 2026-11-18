@@ -1,0 +1,302 @@
+{
+ "character": "Zangief",
+ "slug": "zangief",
+ "source": {
+  "snapshot": "supercombo/cargo/SF6_FrameData.roster.json",
+  "sha256": "073ab9847c8cd8c9fd3e7f156800106cf09d35c55ff40a15ef9923aa5c9e5fca",
+  "retrieved_on": "2026-11-18"
+ },
+ "health": "11000",
+ "jump": {
+  "text": "5+38+3",
+  "prejump": 5,
+  "total": 46
+ },
+ "backdash_total": "25",
+ "forward_dash_total": "22",
+ "throw_range": "1.02",
+ "throw_hurtbox": "0.49",
+ "fastest_normals": {
+  "startup": 4,
+  "inputs": [
+   "2LK"
+  ]
+ },
+ "reversals": [
+  {
+   "input": "720+P",
+   "name": "Bolshoi Storm Buster",
+   "move_id": "zangief_720p",
+   "startup_text": "6+0",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "123",
+   "resource": "super"
+  },
+  {
+   "input": "720+P",
+   "name": "Bolshoi Storm Buster (CA)",
+   "move_id": "zangief_720p(ca)",
+   "startup_text": "6+0",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "123",
+   "resource": "super"
+  },
+  {
+   "input": "236236K",
+   "name": "Aerial Russian Slam",
+   "move_id": "zangief_236236k",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-17 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "77",
+   "resource": "super"
+  },
+  {
+   "input": "236236P",
+   "name": "Cyclone Lariat",
+   "move_id": "zangief_236236p",
+   "startup_text": "18",
+   "startup": 18,
+   "invuln_text": "1-18 Full, 19-119 Projectile",
+   "armor_text": "Break",
+   "block_text": "-35",
+   "total_text": "171",
+   "resource": "super"
+  },
+  {
+   "input": "236236[P]",
+   "name": "Cyclone Lariat (Hold)",
+   "move_id": "zangief_236236p_hold_p",
+   "startup_text": "18",
+   "startup": 18,
+   "invuln_text": "1-18 Full, 19-122 Projectile",
+   "armor_text": "Break",
+   "block_text": "-35",
+   "total_text": "172",
+   "resource": "super"
+  }
+ ],
+ "throw_immune_from_frame_1": [
+  "236236K Aerial Russian Slam",
+  "236236P Cyclone Lariat",
+  "236236[P] Cyclone Lariat (Hold)",
+  "720+P Bolshoi Storm Buster",
+  "720+P Bolshoi Storm Buster (CA)"
+ ],
+ "armor": [
+  {
+   "input": "63214KK (Far)",
+   "name": "OD Siberian Express",
+   "move_id": "zangief_63214kk_far",
+   "startup_text": "54(81)",
+   "startup": 54,
+   "invuln_text": "",
+   "armor_text": "3~ (2-hit)",
+   "block_text": "-",
+   "total_text": "95(123)",
+   "resource": "2 Drive bars"
+  }
+ ],
+ "command_grabs": [
+  {
+   "input": "360+LP",
+   "name": "LP Screw Piledriver",
+   "move_id": "zangief_360lp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "none"
+  },
+  {
+   "input": "360+MP",
+   "name": "MP Screw Piledriver",
+   "move_id": "zangief_360mp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "none"
+  },
+  {
+   "input": "360+HP",
+   "name": "HP Screw Piledriver",
+   "move_id": "zangief_360hp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "none"
+  },
+  {
+   "input": "360+PP",
+   "name": "OD Screw Piledriver",
+   "move_id": "zangief_360pp",
+   "startup_text": "5",
+   "startup": 5,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "j.360+K",
+   "name": "Borscht Dynamite",
+   "move_id": "zangief_j360k",
+   "startup_text": "4",
+   "startup": 4,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "-",
+   "resource": "none"
+  },
+  {
+   "input": "j.360+KK",
+   "name": "OD Borscht Dynamite",
+   "move_id": "zangief_j360kk",
+   "startup_text": "4",
+   "startup": 4,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "-",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "63214HK or 63214K (Close)",
+   "name": "Russian Suplex",
+   "move_id": "zangief_63214k_close",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "none"
+  },
+  {
+   "input": "63214KK (Close)",
+   "name": "OD Russian Suplex",
+   "move_id": "zangief_63214kk_close",
+   "startup_text": "10",
+   "startup": 10,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "61",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "63214K (Mid)",
+   "name": "Siberian Express",
+   "move_id": "zangief_63214k_mid",
+   "startup_text": "28",
+   "startup": 28,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "70",
+   "resource": "none"
+  },
+  {
+   "input": "63214KK (Mid)",
+   "name": "OD Siberian Express",
+   "move_id": "zangief_63214kk_mid",
+   "startup_text": "23",
+   "startup": 23,
+   "invuln_text": "",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "68",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "63214K (Far)",
+   "name": "Siberian Express",
+   "move_id": "zangief_63214k_far",
+   "startup_text": "55(81)",
+   "startup": 55,
+   "invuln_text": "",
+   "armor_text": "11~",
+   "block_text": "-",
+   "total_text": "96(123)",
+   "resource": "none"
+  },
+  {
+   "input": "63214KK (Far)",
+   "name": "OD Siberian Express",
+   "move_id": "zangief_63214kk_far",
+   "startup_text": "54(81)",
+   "startup": 54,
+   "invuln_text": "",
+   "armor_text": "3~ (2-hit)",
+   "block_text": "-",
+   "total_text": "95(123)",
+   "resource": "2 Drive bars"
+  },
+  {
+   "input": "236236K",
+   "name": "Aerial Russian Slam",
+   "move_id": "zangief_236236k",
+   "startup_text": "11",
+   "startup": 11,
+   "invuln_text": "1-17 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "77",
+   "resource": "super"
+  },
+  {
+   "input": "720+P",
+   "name": "Bolshoi Storm Buster",
+   "move_id": "zangief_720p",
+   "startup_text": "6+0",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "123",
+   "resource": "super"
+  },
+  {
+   "input": "720+P",
+   "name": "Bolshoi Storm Buster (CA)",
+   "move_id": "zangief_720p(ca)",
+   "startup_text": "6+0",
+   "startup": 6,
+   "invuln_text": "1-7 Full",
+   "armor_text": "",
+   "block_text": "-",
+   "total_text": "123",
+   "resource": "super"
+  }
+ ],
+ "drive_reversal_on_wakeup": {
+  "input": "6HPHK",
+  "name": "Reverse Russian Kick (Recovery)",
+  "move_id": "zangief_6hphk_recovery",
+  "startup_text": "18",
+  "startup": 18,
+  "invuln_text": "1-20 Full",
+  "armor_text": "Break",
+  "block_text": "-6",
+  "total_text": "46(51)",
+  "resource": "none"
+ }
+}
