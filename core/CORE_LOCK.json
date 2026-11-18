@@ -1,0 +1,56 @@
+{
+  "_about": "The sealed core: the verified frame-kill solver and its inputs, copied in unchanged. Nothing outside core/ may edit these files; tests/test_core.py fails the build if any hash differs. Outer layers read the solver's JSON output and never import or modify it.",
+  "vendored_on": "2026-11-18",
+  "inputs_verified_on": "2026-09-28",
+  "patch_state_at_verification": "latest Ryu battle change 2026-08-03",
+  "files": {
+    "fk_calc.py": {
+      "sha256": "e4bbf49de0c69f3c00ec77cf8f26cddda4526496ce1130ff5a0479220226367a",
+      "origin": "sf6-frame-kills skill, SKILL.md fenced block, lines 61-326"
+    },
+    "ryu_calc.json": {
+      "sha256": "3108c51b2551e22fed956e6dabc54283d36fe7af60d9b479f8cb9bf3dbcd2865",
+      "origin": "sf6-frame-kills skill, SKILL.md fenced block, lines 332-383"
+    },
+    "ryu_inputs.json": {
+      "sha256": "649d5cf5c808f004dc4ccdddbfaa12ac0258aab20a6245f2a6518a7dab4e62cd",
+      "origin": "sf6-frame-kill-audit skill, references/ryu_inputs.json"
+    },
+    "recompute.py": {
+      "sha256": "16d8cdac4d4f6d04a520022a6c88ec8e7ad66a28846a8c0b4ef3382f8c9b68e0",
+      "origin": "sf6-frame-kill-audit skill, scripts/recompute.py"
+    },
+    "method.md": {
+      "sha256": "3813cda03716028612d29b51841b54d578bc60d2f36cc7fa6a5755b5c2e142fe",
+      "origin": "sf6-frame-kill-audit skill, references/method.md"
+    },
+    "ryu-verified-data.md": {
+      "sha256": "f57cc32bc4b0fefa06401e544d28abeb7945870f762cf6a4e25cf1f34fa41d00",
+      "origin": "sf6-frame-kill-audit skill, references/ryu-verified-data.md"
+    }
+  },
+  "expected_output": {
+    "command": "python core/fk_calc.py core/ryu_inputs.json core/ryu_calc.json --out <prefix>",
+    "enders": 40,
+    "rows": 1134,
+    "enders_without_rows": 2,
+    "output_sha256": "9415fa1a294a5359832290f5b9a2785e46997253e0dd972451bbfac5dc444ae6",
+    "json_file_sha256": "daa67ba2e1c32ab5c7f9cf953a36cb2902133a28daea793c83a62ac856315f49",
+    "md_file_sha256": "3ca68e9c79cf8c268afe768b42ac398c051dda4625dda58451c80ed4eb335414"
+  },
+  "anchors": [
+    {
+      "ender": "LK Tatsu",
+      "seq": "dash > LP Hashogeki",
+      "block": 2,
+      "hit": 7,
+      "published_by": "four independent published setups (see core/method.md, worked example)"
+    },
+    {
+      "ender": "LK Tatsu",
+      "seq": "5LP > OD Hashogeki",
+      "block": 8,
+      "published_by": "one published in-game result; depends on the disputed 6th active frame of OD Hashogeki"
+    }
+  ]
+}

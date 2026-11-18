@@ -1,0 +1,13 @@
+# Tool state
+.mokata/
+__pycache__/
+.pytest_cache/
+
+# Raw copies of third-party sources: fingerprints and links are committed, the copies are not
+sources/raw/
+
+# Anything from private documents never enters this public repository
+private/
+
+# Scratch output
+out/

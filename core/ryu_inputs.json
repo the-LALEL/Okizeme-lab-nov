@@ -1,0 +1,210 @@
+{
+  "_about": "Ryu inputs for scripts/recompute.py, verified Sept 28, 2026 (patch state: latest Ryu change Aug 3, 2026). Single-hit values are Capcom official. Multi-hit meaties are derived from SuperCombo per-hit data (active windows, per-hit blockstun/hitstun, total); published in-game values are kept as cross-checks. Re-run the freshness and patch-drift checks before reusing.",
+  "character": "Ryu",
+  "single": {
+    "5LP": {
+      "startup": 4,
+      "active": 3,
+      "block": -1,
+      "hit": 4,
+      "dr": true
+    },
+    "2LP": {
+      "startup": 4,
+      "active": 2,
+      "block": -1,
+      "hit": 4,
+      "dr": true
+    },
+    "2LK": {
+      "startup": 5,
+      "active": 2,
+      "block": -1,
+      "hit": 3,
+      "dr": true
+    },
+    "5LK": {
+      "startup": 5,
+      "active": 3,
+      "block": -4,
+      "hit": 2,
+      "dr": true
+    },
+    "5MP": {
+      "startup": 6,
+      "active": 4,
+      "block": -1,
+      "hit": 7,
+      "dr": true
+    },
+    "2MP": {
+      "startup": 6,
+      "active": 4,
+      "block": 0,
+      "hit": 5,
+      "dr": true
+    },
+    "2MK": {
+      "startup": 8,
+      "active": 3,
+      "block": -6,
+      "hit": 1,
+      "dr": true
+    },
+    "5MK": {
+      "startup": 9,
+      "active": 3,
+      "block": -4,
+      "hit": 4,
+      "dr": true
+    },
+    "5HP": {
+      "startup": 10,
+      "active": 5,
+      "block": -2,
+      "hit": 4,
+      "dr": true
+    },
+    "6HK": {
+      "startup": 16,
+      "active": 4,
+      "block": -4,
+      "hit": 2,
+      "dr": true
+    },
+    "LP Hashogeki": {
+      "startup": 12,
+      "active": 6,
+      "block": -3,
+      "hit": 2,
+      "dr": false
+    },
+    "OD Hashogeki": {
+      "startup": 18,
+      "active": 6,
+      "block": 3,
+      "hit": 3,
+      "dr": false,
+      "drive": 2,
+      "_note": "Capcom prints 18-22 (5 active); SuperCombo/FAT/UFD/seesaawiki 6; Masaguru Dec 2024 in-game +8 after LK Tatsu > 5LP needs 6. Unresolved until frame-meter test."
+    },
+    "Denjin OD Hashogeki": {
+      "startup": 18,
+      "active": 6,
+      "block": 4,
+      "hit": "KD / launch",
+      "dr": false,
+      "drive": 2,
+      "stock": true
+    },
+    "HK High Blade Kick": {
+      "startup": 27,
+      "active": 9,
+      "block": -3,
+      "hit": "KD / launch",
+      "dr": false
+    }
+  },
+  "multi": {
+    "6HP": {
+      "label": "multihit timing",
+      "dr": true,
+      "total": 40,
+      "hits": [
+        {
+          "first": 20,
+          "last": 21,
+          "blockstun": 8,
+          "hitstun": 25
+        },
+        {
+          "first": 22,
+          "last": 24,
+          "blockstun": 22,
+          "hitstun": 25
+        }
+      ],
+      "published_check": {
+        "19": 3,
+        "20": 3,
+        "21": 3,
+        "22": 4,
+        "23": 5
+      },
+      "_note": "Per-hit data: SuperCombo active '2,3', blockstun 8,22, hitstun 25,25, total 40; unchanged June 2025 -> Sept 2026. Derived block/hit match every published value (nikotaro, Cauterize, SuperCombo).",
+      "labels": {
+        "both": "multihit timing",
+        "last_first": "multihit timing",
+        "late": "multihit timing"
+      }
+    },
+    "6MP": {
+      "label": "late second hit",
+      "dr": true,
+      "total": 42,
+      "hits": [
+        {
+          "first": 20,
+          "last": 20,
+          "blockstun": 17,
+          "hitstun": 17
+        },
+        {
+          "first": 21,
+          "last": 23,
+          "blockstun": 19,
+          "hitstun": 25
+        }
+      ],
+      "published_check": {
+        "21": -2,
+        "22": -1
+      },
+      "_note": "Post Mar 17, 2026 (2nd-hit blockstun 21 -> 19, SuperCombo revs 357767 -> 358561). With the pre-patch blockstun 21 the same derivation gives the 2025 notes' 0/+1, which confirms the method.",
+      "labels": {
+        "both": "both hits, 1st on wake-up",
+        "last_first": "2nd hit only",
+        "late": "late second hit"
+      }
+    },
+    "HP Hashogeki": {
+      "label": "fixed two-hit sequence",
+      "dr": false,
+      "fixed_block": 2,
+      "hit": "KD / launch",
+      "startup": 30,
+      "active": 6,
+      "no_stock": true,
+      "_note": "Two hits: 30-34 then 35 (Capcom '30-34.35'); SuperCombo: '2 hits, even if it connects on final active frame'. The final hit always lands on move frame 35 wherever the first connects, so block advantage is fixed at +2 for every contact c = 1..6 (published at R29, 32, 33)."
+    }
+  },
+  "preparations": {
+    "whiff": {
+      "5LP": 13,
+      "2LP": 14,
+      "2LK": 16,
+      "5LK": 18,
+      "5MP": 22,
+      "2MP": 24,
+      "5MK": 29,
+      "5HP": 32,
+      "2HK": 34,
+      "2HP": 35,
+      "6HK": 39,
+      "6HP": 40,
+      "6MP": 42,
+      "4HK": 43
+    },
+    "dash": 19,
+    "denjin": 52,
+    "instant_dr": 11
+  },
+  "scope": {
+    "min_block": 0,
+    "sequences": "none | one whiff/dash/Denjin | dash + one whiff | dash + dash; any non-Denjin sequence may end with instant DR (normals and command normals only after DR)",
+    "stock_forces_denjin_versions": [
+      "HP Hashogeki",
+      "OD Hashogeki"
+    ]
+  }
+}
