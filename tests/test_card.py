@@ -149,3 +149,34 @@ def test_throw_timings_on_cards_are_the_extension_rows(lab):
             assert tier["pick"] == in_tier[0] and tier["count"] == len(in_tier)
         seen += bool(got)
     assert seen > 100
+
+
+def test_late_strikes_and_block_numbers_come_from_the_extension_layer(lab):
+    inputs = json.loads((ROOT / "core" / "ryu_inputs.json").read_text())
+    totals = json.loads((ROOT / "data" / "ryu" / "meaty_totals.json").read_text())
+    sigs = extensions.prep_signatures(inputs, lab["k_range"][1])
+    shown = 0
+    for card in lab["enders"] + lab["by_k"]:
+        kd_low = card["kd"] if isinstance(card["kd"], int) else card["kd"][0]
+        for row in card["rows"]:
+            assert row["blocks_from"] == extensions.blocks_reversal_from(totals[row["meaty"]]["total"], kd_low - row["frames_spent"])
+        if not isinstance(card["kd"], int):
+            assert card["late"] is None
+            continue
+        want = extensions.late_meaty_rows(card["kd"], sigs, inputs)
+        got = card["late"]["rows"]
+        assert [(r["prep"], r["meaty"], r["block"][0], r["first_active_wake_frame"]) for r in got] == \
+            [(r["prep"], r["meaty"], r["block"], r["first_active_wake_frame"]) for r in want]
+        best_true = {}
+        for r in card["rows"]:
+            best_true.setdefault(r["drive"], r["block"][0])
+        for tier in card["late"]["tiers"]:
+            pick = got[tier["pick"]]
+            assert pick["drive"] == tier["drive"]
+            assert tier["drive"] not in best_true or pick["block"][0] > best_true[tier["drive"]]
+            shown += 1
+    assert shown > 0
+    # forward throw (+17): the late 6HP (+3 on block) beats every true meaty available without Drive
+    k17 = next(c for c in lab["by_k"] if c["kd"] == 17)
+    top = k17["late"]["rows"][k17["late"]["tiers"][0]["pick"]]
+    assert (top["prep"], top["meaty"], top["block"][0]) == ([], "6HP", 3)

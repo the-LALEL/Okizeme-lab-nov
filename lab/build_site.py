@@ -3,8 +3,8 @@
 This layer sits outside core/ and never edits it. It runs the solver as a
 subprocess (once for the 40 named enders, once for every knockdown number from
 1 to 110), checks the named run against the lock, then SELECTS and LABELS rows
-for display. It does no frame arithmetic: every number on the page is a number
-the solver printed.
+for display. Frame formulas live in the sealed core and in lab/extensions.py only; this
+file selects and labels.
 
 Usage: python lab/build_site.py
 Writes: out/ (scratch solver output) and site/index.html
@@ -39,7 +39,7 @@ NOT_YET = [
     {"title": "Reach",
      "text": "Whether a strike still connects, or a throw is still in range, after a back rise. Frame data cannot show this."},
     {"title": "Shimmies and safe jumps",
-     "text": "Only meaty strikes and throw timing are computed so far."},
+     "text": "Only strikes and throw timing are computed so far."},
 ]
 
 
@@ -132,7 +132,7 @@ def slug(name):
     return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
-def shape_rows(solver_rows, move_flags, prep_disputes, published):
+def shape_rows(solver_rows, move_flags, prep_disputes, published, kd_low, totals):
     rows = []
     for row in solver_rows:
         dispute = None
@@ -153,6 +153,10 @@ def shape_rows(solver_rows, move_flags, prep_disputes, published):
             "dispute": dispute,
             "prep_dispute": next((prep_disputes[p] for p in row["prep"] if p in prep_disputes), None),
             "published": row["seq"] in published,
+            # worst case across a knockdown range is its lowest value (fewest frames left)
+            "blocks_from": extensions.blocks_reversal_from(totals[row["follow_up"]]["total"],
+                                                          kd_low - row["frames_spent"]),
+            "blocks_disputed": totals[row["follow_up"]]["status"] != "agree",
         })
     return rows
 
@@ -187,8 +191,34 @@ def shape_throws(kd, signatures, prep_disputes):
     return {"rows": rows, "tiers": tiers}
 
 
-def build_card(ender, move_flags, prep_disputes, signatures, published=frozenset(), named=True):
-    rows = shape_rows(ender["rows"], move_flags, prep_disputes, published)
+def shape_late(kd, ctx, true_rows):
+    """Strikes that come out 1 or 2 frames after wake-up (lab/extensions.py). A Drive tier's late pick
+    is shown only where it gives more block advantage than that tier's true meaty, or the tier has none."""
+    rows = []
+    for r in extensions.late_meaty_rows(kd, ctx["signatures"], ctx["inputs"]):
+        rows.append({"prep": r["prep"], "meaty": r["meaty"], "block": [r["block"], r["block"]],
+                     "hit": r["hit"] if isinstance(r["hit"], str) else [r["hit"], r["hit"]],
+                     "drive": r["drive"], "frames_spent": r["frames_spent"],
+                     "first_active_wake_frame": r["first_active_wake_frame"],
+                     "prep_dispute": next((ctx["prep_disputes"][p] for p in r["prep"] if p in ctx["prep_disputes"]), None),
+                     "blocks_from": extensions.blocks_reversal_from(ctx["totals"][r["meaty"]]["total"], r["remaining"]),
+                     "blocks_disputed": ctx["totals"][r["meaty"]]["status"] != "agree"})
+    best_true = {}
+    for r in true_rows:
+        best_true.setdefault(r["drive"], r["block"][0])
+    tiers = []
+    for drive in sorted({r["drive"] for r in rows}, key=drive_order):
+        in_tier = [i for i, r in enumerate(rows) if r["drive"] == drive]
+        pick = in_tier[0]
+        if drive not in best_true or rows[pick]["block"][0] > best_true[drive]:
+            tiers.append({"drive": drive, "label": drive_label(drive), "pick": pick, "count": len(in_tier)})
+    return {"rows": rows, "tiers": tiers}
+
+
+def build_card(ender, move_flags, ctx, published=frozenset(), named=True):
+    prep_disputes, signatures = ctx["prep_disputes"], ctx["signatures"]
+    kd_low = ender["kd"] if isinstance(ender["kd"], int) else ender["kd"][0]
+    rows = shape_rows(ender["rows"], move_flags, prep_disputes, published, kd_low, ctx["totals"])
     card = {
         "id": slug(ender["name"]) if named else f"k{ender['kd']}",
         "ender": ender["name"],
@@ -197,6 +227,7 @@ def build_card(ender, move_flags, prep_disputes, signatures, published=frozenset
         "tiers": tiers_for(rows),
         "rows": rows,
         "throws": shape_throws(ender["kd"], signatures, prep_disputes) if isinstance(ender["kd"], int) else None,
+        "late": shape_late(ender["kd"], ctx, rows) if isinstance(ender["kd"], int) else None,
     }
     if named:
         card["prevalence"] = {"rank": ender["prevalence_rank"], "combo_count": ender["combo_count"]}
@@ -219,10 +250,12 @@ def build_data(named, every_k, lock):
     anchors = {}
     for a in lock["anchors"]:
         anchors.setdefault(a["ender"], set()).add(a["seq"])
-    signatures = extensions.prep_signatures(inputs, K_MAX)
-    enders = [build_card(e, named["move_flags"], prep_disputes, signatures, frozenset(anchors.get(e["name"], ())))
+    ctx = {"inputs": inputs, "prep_disputes": prep_disputes,
+           "signatures": extensions.prep_signatures(inputs, K_MAX),
+           "totals": json.loads((ROOT / "data" / "ryu" / "meaty_totals.json").read_text())}
+    enders = [build_card(e, named["move_flags"], ctx, frozenset(anchors.get(e["name"], ())))
               for e in named["enders"]]
-    by_k = sorted((build_card(e, every_k["move_flags"], prep_disputes, signatures, named=False)
+    by_k = sorted((build_card(e, every_k["move_flags"], ctx, named=False)
                    for e in every_k["enders"]), key=lambda c: c["kd"])
     return {
         "enders": enders,
@@ -236,6 +269,11 @@ def build_data(named, every_k, lock):
         "no_rows_text": "No modelled strike can be timed to meet wake-up from this knockdown with at least +0 on block.",
         "throw_rule": "Timing only. A throw has to be pressed with 2 to 5 frames left: the first wake-up frame "
                       "cannot be thrown, and any later than that loses to a 4-frame button.",
+        "late_rule": "These come out 1 or 2 frames after the first wake-up frame, so they hit on their first "
+                     "active frame with no late-frame bonus. They still beat a 4-frame button. Shown only where "
+                     "they give more block advantage than the true meaty at the same Drive cost.",
+        "blocks_rule": "If they wake up with an invincible move and your strike whiffs, you recover in time to "
+                       "block one that takes this many frames or longer. Supers that freeze the screen are not covered yet.",
         "throw_fragile": "Connects on the throw's last active frame. One frame early and it whiffs.",
         "no_rows_range_text": "No single timing works at every value in this range. Open the exact value below.",
         "flag_text": FLAG_TEXT,

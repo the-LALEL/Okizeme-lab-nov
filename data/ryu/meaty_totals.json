@@ -1,0 +1,176 @@
+{
+ "2LK": {
+  "sources": {
+   "capcom_derived": 16,
+   "capcom_text": "5 / 5-6 / 10",
+   "fat_total": "16",
+   "supercombo_total": "16"
+  },
+  "status": "agree",
+  "total": 16
+ },
+ "2LP": {
+  "sources": {
+   "capcom_derived": 14,
+   "capcom_text": "4 / 4-5 / 9",
+   "fat_total": "14",
+   "supercombo_total": "14"
+  },
+  "status": "agree",
+  "total": 14
+ },
+ "2MK": {
+  "sources": {
+   "capcom_derived": 29,
+   "capcom_text": "8 / 8-10 / 19",
+   "fat_total": "29",
+   "supercombo_total": "29"
+  },
+  "status": "agree",
+  "total": 29
+ },
+ "2MP": {
+  "sources": {
+   "capcom_derived": 24,
+   "capcom_text": "6 / 6-9 / 13",
+   "fat_total": "22(24)",
+   "supercombo_total": "22(24)"
+  },
+  "status": "agree",
+  "total": 24
+ },
+ "5HP": {
+  "sources": {
+   "capcom_derived": 32,
+   "capcom_text": "10 / 10-14 / 18",
+   "fat_total": "32",
+   "supercombo_total": "32"
+  },
+  "status": "agree",
+  "total": 32
+ },
+ "5LK": {
+  "sources": {
+   "capcom_derived": 18,
+   "capcom_text": "5 / 5-7 / 11",
+   "fat_total": "18",
+   "supercombo_total": "18"
+  },
+  "status": "agree",
+  "total": 18
+ },
+ "5LP": {
+  "sources": {
+   "capcom_derived": 13,
+   "capcom_text": "4 / 4-6 / 7",
+   "fat_total": "13",
+   "supercombo_total": "13"
+  },
+  "status": "agree",
+  "total": 13
+ },
+ "5MK": {
+  "sources": {
+   "capcom_derived": 29,
+   "capcom_text": "9 / 9-11 / 18",
+   "fat_total": "29",
+   "supercombo_total": "29"
+  },
+  "status": "agree",
+  "total": 29
+ },
+ "5MP": {
+  "sources": {
+   "capcom_derived": 22,
+   "capcom_text": "6 / 6-9 / 11",
+   "fat_total": "20(22)",
+   "supercombo_total": "20(22)"
+  },
+  "status": "agree",
+  "total": 22
+ },
+ "6HK": {
+  "sources": {
+   "capcom_derived": 39,
+   "capcom_text": "16 / 16-19 / 20",
+   "fat_total": "39",
+   "supercombo_total": "39"
+  },
+  "status": "agree",
+  "total": 39
+ },
+ "6HP": {
+  "sources": {
+   "capcom_derived": 40,
+   "capcom_text": "20 / 20-24 / 16",
+   "fat_total": "40",
+   "supercombo_total": "40"
+  },
+  "status": "agree",
+  "total": 40
+ },
+ "6MP": {
+  "sources": {
+   "capcom_derived": 42,
+   "capcom_text": "20 / 20-23 / 19",
+   "fat_total": "42",
+   "supercombo_total": "42"
+  },
+  "status": "agree",
+  "total": 42
+ },
+ "Denjin OD Hashogeki": {
+  "sources": {
+   "capcom_derived": 42,
+   "capcom_text": "18 / 18-23 / 19",
+   "fat_total": "42",
+   "supercombo_total": "42"
+  },
+  "status": "agree",
+  "total": 42
+ },
+ "HK High Blade Kick": {
+  "sources": {
+   "capcom_derived": 50,
+   "capcom_text": "27 / 27-35 / 15",
+   "fat_total": "50",
+   "supercombo_total": "50"
+  },
+  "status": "agree",
+  "total": 50
+ },
+ "HP Hashogeki": {
+  "sources": {
+   "capcom_derived": 54,
+   "capcom_text": "30 / 30-34.35 / 19",
+   "fat_total": "54",
+   "supercombo_total": "54"
+  },
+  "status": "agree",
+  "total": 54
+ },
+ "LP Hashogeki": {
+  "sources": {
+   "capcom_derived": 35,
+   "capcom_text": "12 / 12-17 / 18",
+   "fat_total": "35",
+   "supercombo_total": "35"
+  },
+  "status": "agree",
+  "total": 35
+ },
+ "OD Hashogeki": {
+  "candidates": [
+   42,
+   43
+  ],
+  "sources": {
+   "capcom_derived": 42,
+   "capcom_text": "18 / 18-22 / 20",
+   "fat_total": "43",
+   "supercombo_total": "43"
+  },
+  "status": "conflict",
+  "total": 43
+ }
+}

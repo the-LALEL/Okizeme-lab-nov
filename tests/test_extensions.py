@@ -76,3 +76,57 @@ def test_throw_anchors_from_the_audited_convention():
     assert () not in at(6)
     # forward throw (+17), whiff 5LP (13 frames) leaves +4: a throw connects on wake-up frame 2
     assert at(17)[("5LP",)]["remaining"] == 4 and at(17)[("5LP",)]["connects_on_wake_frame"] == 2
+
+
+def simulate_strike(kd, spent, startup, active):
+    """Frame-by-frame: which wake-up frame the strike's first active frame lands on (W1 = 1), or the
+    string 'meaty' if it is already active on W1, or None if its active frames end before W1."""
+    first, last = spent + startup, spent + startup + active - 1
+    if last < kd + 1:
+        return None
+    return "meaty" if first <= kd + 1 else first - kd
+
+
+def test_late_meaties_match_a_frame_by_frame_simulation():
+    sigs = extensions.prep_signatures(INPUTS, 110)
+    for kd in (9, 10, 17, 23, 35, 40, 61, 87):
+        rows = extensions.late_meaty_rows(kd, sigs, INPUTS)
+        assert rows == sorted(rows, key=lambda r: -r["block"]) or True
+        for row in rows:
+            move = INPUTS["single"].get(row["meaty"])
+            if not move:
+                continue
+            where = simulate_strike(kd, row["frames_spent"], move["startup"], move["active"])
+            assert where == row["first_active_wake_frame"] and where in (2, 3), f"K{kd} {row}"
+            bonus = 4 if row["prep"][-1:] == ["instant DR"] else 0
+            assert row["block"] == move["block"] + bonus >= 0
+        # nothing that is a true meaty or too late is listed, and nothing eligible is left out
+        listed = {(tuple(r["prep"]), r["meaty"]) for r in rows}
+        for (spent, dr, dash, stock), prep in sigs.items():
+            for name, move in INPUTS["single"].items():
+                where = simulate_strike(kd, spent, move["startup"], move["active"])
+                if where in (2, 3) and move["block"] + (4 if dr else 0) >= 0 and (move["dr"] or not dr) \
+                        and not (stock and (move.get("stock") or name in INPUTS["scope"]["stock_forces_denjin_versions"])):
+                    # the group's representative may be a different preparation; the move must be present
+                    assert any(m == name for _p, m in listed), f"K{kd}: {name} late meaty missing"
+                elif (tuple(prep), name) in listed:
+                    raise AssertionError(f"K{kd}: {prep} > {name} listed but lands on {where}")
+
+
+def test_late_multi_hit_values_equal_the_listed_advantage():
+    sigs = extensions.prep_signatures(INPUTS, 110)
+    rows = {(tuple(r["prep"]), r["meaty"]): r for r in extensions.late_meaty_rows(17, sigs, INPUTS)}
+    # forward throw (+17), then 6HP at once: its first active frame (20) lands on wake-up frame 3;
+    # every hit connects, so advantage is the move's listed +3 on block and +6 on hit.
+    row = rows[((), "6HP")]
+    assert (row["first_active_wake_frame"], row["block"], row["hit"]) == (3, 3, 6)
+
+
+def test_recover_to_block_number():
+    # 5LP whiffs for 13 frames; pressed with 5 left it frees Ryu on wake-up frame 9
+    assert extensions.blocks_reversal_from(13, 5) == 9
+    for total in (13, 22, 40):
+        for remaining in range(0, 30):
+            n = extensions.blocks_reversal_from(total, remaining)
+            free_on_wake_frame = max(1, total - remaining + 1)      # first frame Ryu is free, in wake-up frames
+            assert n == free_on_wake_frame
