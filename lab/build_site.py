@@ -238,6 +238,44 @@ def build_card(ender, move_flags, ctx, published=frozenset(), named=True):
     return card
 
 
+PAGE_RULES = ["R04", "R07", "R05", "R06", "R03", "R02", "R10", "R11", "R13", "R15", "R18", "R12", "R16", "R17"]
+
+
+def source_label(path):
+    name = pathlib.Path(path).name
+    m = re.match(r"(.+)@(\d+)\.txt$", name)
+    if m:
+        return f"SuperCombo {m.group(1).replace('_', ' ')}, revision {m.group(2)}"
+    m = re.match(r"battle_change-(\d{4})(\d{2})(\d{2})?-en\.txt$", name)
+    if m:
+        return "Capcom battle changes " + "-".join(x for x in m.groups() if x)
+    return "Capcom official Ryu frame table" if name == "frame-ryu.rows.json" else name
+
+
+def rules_for_page():
+    """The cited rules the page rests on, from the machine-checked ledger (lab/rules_ledger.py).
+    Only quotes that passed the check are in the ledger; a rule with none is not shown as cited."""
+    path = ROOT / "data" / "rules" / "rules.json"
+    if not path.exists():
+        return {"state": "pending", "rules": []}
+    ledger = json.loads(path.read_text())
+    by_id = {r["rule_id"]: r for r in ledger["rules"]}
+    out = []
+    for rid in PAGE_RULES:
+        first, second = by_id[rid].get("extract"), by_id[rid].get("blind")
+        if not first or not first["quotes"]:
+            continue
+        prose = [q for q in first["quotes"] if not q["text"].lstrip().startswith(("!", "|", "[", '"')) and len(q["text"]) >= 30]
+        quote = (prose or first["quotes"])[0]
+        out.append({"id": rid, "statement": first["statement"], "status": first["status"],
+                    "quote": quote["text"], "source": source_label(quote["file"]), "line": quote["line"],
+                    "second_reader": second["status"] if second else None})
+    return {"state": "cited", "rules": out, "quotes_checked": ledger["quote_check"]["total"],
+            "quotes_failed": ledger["quote_check"]["failed"],
+            "open_conflicts": [r["rule_id"] for r in ledger["rules"]
+                               if "sources_conflict" in (r.get("extract", {}).get("status"), r.get("blind", {}).get("status"))]}
+
+
 def build_data(named, every_k, lock):
     freshness, prep_disputes = load_freshness(lock)
     inputs = json.loads((CORE / "ryu_inputs.json").read_text())
@@ -268,7 +306,9 @@ def build_data(named, every_k, lock):
                         "opponent data exists; the real ranking is what each pick beats.",
         "no_rows_text": "No modelled strike can be timed to meet wake-up from this knockdown with at least +0 on block.",
         "throw_rule": "Timing only. A throw has to be pressed with 2 to 5 frames left: the first wake-up frame "
-                      "cannot be thrown, and any later than that loses to a 4-frame button.",
+                      "cannot be thrown (rule R04), and any later than that loses to a 4-frame button, because a "
+                      "strike beats a throw on the same frame (rule R07).",
+        "rules": rules_for_page(),
         "late_rule": "These come out 1 or 2 frames after the first wake-up frame, so they hit on their first "
                      "active frame with no late-frame bonus. They still beat a 4-frame button. Shown only where "
                      "they give more block advantage than the true meaty at the same Drive cost.",

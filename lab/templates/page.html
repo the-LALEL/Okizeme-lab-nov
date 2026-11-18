@@ -135,6 +135,13 @@ details.all summary:focus-visible, a:focus-visible { outline: 2px solid var(--ac
 .rows .m .tag.dispute { color: var(--dispute); }
 .rows .m .tag.good { color: var(--plus); }
 
+.rule-note { margin: 0.5rem 0 0; font-size: 0.875rem; color: var(--ink-2); }
+.cited { margin: 0.5rem 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.cited li { display: flex; flex-direction: column; gap: 0.375rem; padding: 0.75rem 0; border-bottom: 1px solid var(--rule); }
+.cited .id { font-family: var(--font-data); font-size: 0.75rem; color: var(--accent); font-weight: 600; }
+.cited blockquote { margin: 0; padding-left: 0.75rem; border-left: 3px solid var(--rule); font-size: 0.875rem; color: var(--ink-2); overflow-wrap: anywhere; }
+.cited .src { font-size: 0.75rem; color: var(--ink-2); }
+
 footer { font-size: 0.8125rem; color: var(--ink-2); display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
 footer p { margin: 0; }
 </style>
@@ -187,6 +194,12 @@ footer p { margin: 0; }
   <details class="all" id="all">
     <summary id="all-summary"></summary>
     <ul class="rows" id="rows"></ul>
+  </details>
+
+  <details class="all" id="rules" hidden>
+    <summary id="rules-summary"></summary>
+    <p class="rule-note" id="rules-note"></p>
+    <ul class="cited" id="rules-list"></ul>
   </details>
 
   <footer>
@@ -455,6 +468,21 @@ footer p { margin: 0; }
   lab.not_yet.forEach(function (x) {
     var li = el('li'); li.appendChild(el('b', null, x.title)); li.appendChild(document.createTextNode(x.text)); $('not-yet').appendChild(li);
   });
+  if (lab.rules.state === 'cited') {
+    $('rules').hidden = false;
+    $('rules-summary').textContent = 'Rules this page rests on (' + lab.rules.rules.length + ')';
+    $('rules-note').textContent = lab.rules.quotes_checked + ' quotes were checked by script against saved copies of the sources; '
+      + lab.rules.quotes_failed + ' failed. Each rule was read by two independent readers.'
+      + (lab.rules.open_conflicts.length ? ' Sources disagree on ' + lab.rules.open_conflicts.join(', ') + '; none of those changes the attacker\u2019s timing.' : '');
+    lab.rules.rules.forEach(function (r) {
+      var li = el('li');
+      li.appendChild(el('span', 'id', r.id));
+      li.appendChild(el('span', null, r.statement));
+      li.appendChild(el('blockquote', null, r.quote));
+      li.appendChild(el('span', 'src', r.source + ', line ' + r.line));
+      $('rules-list').appendChild(li);
+    });
+  }
   $('throw-rule').textContent = lab.throw_rule;
   $('late-rule').textContent = lab.late_rule;
   $('rule').textContent = lab.ranking_rule;

@@ -1,0 +1,813 @@
+{
+ "later_changes": [
+  {
+   "rule_id": "R08",
+   "patch": "2026-03-17",
+   "effect": "Universal adjustment: 3 frames added to the wake-up input buffer. Capcom gives no absolute number. Two wiki pages give different absolute numbers for the wake-up reversal buffer: Defense (2026-05-30) says 10 frames, Game Data (2026-10-26) says 7 frames. The patch post-dates neither page's last edit, but 7 + 3 = 10, so the Game Data figure reads like the pre-patch value; that is an inference, not a quote. Movement (2026-08-26) and Defense give 7 frames for a wake-up DASH; Capcom does not say whether the +3 applies to dashes.",
+   "contradicts_a_wiki_statement": true,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260317-en.txt",
+     "line": 91,
+     "text": "3 frames added to buffer input time on wake-up."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Defense@364973.txt",
+     "line": 51,
+     "text": "There is a 10 frame buffer when performing a reversal move on wakeup, or 4 frames after hitstun, blockstun, or air reset."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Game_Data@384214.txt",
+     "line": 35,
+     "text": "Dashes and Wakeup Reversals have an increased buffer window of 7 frames (so, an 8 frame total window)."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Movement@376569.txt",
+     "line": 22,
+     "text": "When attempting to dash on wakeup or after hitstun/blockstun, there is usually a 7f window to input it with reversal timing"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Defense@364973.txt",
+     "line": 53,
+     "text": "The buffer window for Dashes is intended to be 7 frames in all scenarios"
+    }
+   ]
+  },
+  {
+   "rule_id": "R08",
+   "patch": "2026-04-15",
+   "effect": "Adjustment / bug fix: when the opponent's Drive Rush overlaps with the wake-up, the wake-up buffer is reduced by 3 frames, back to its length before the 2026-03-17 patch ('pre-Alex release'). No wiki page mentions this exception; Defense states its 10-frame wake-up figure without any condition, so in the Drive Rush overlap case the wiki figure is contradicted (all later than the patch: Defense 2026-05-30, Game Data 2026-10-26).",
+   "contradicts_a_wiki_statement": true,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260415-en.txt",
+     "line": 66,
+     "text": "we added an adjustment where the buffer input on wake-up was increased by 3 frames"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260415-en.txt",
+     "line": 68,
+     "text": "if Drive Rush overlaps with a wake-up, the buffer input will be decreased by 3 frames so that the buffer input active time is the same as it was pre-Alex release."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Defense@364973.txt",
+     "line": 51,
+     "text": "There is a 10 frame buffer when performing a reversal move on wakeup"
+    }
+   ]
+  },
+  {
+   "rule_id": "R20",
+   "patch": "2026-03-17",
+   "effect": "Universal adjustment: an Up input during a Drive Rush screen freeze is now kept, so the character jumps after the freeze; only when the character is in a neutral state, and other buffered commands can take priority. Bears on R20 (drive_freeze_buffer) and R15. Gauges (2026-08-26, after the patch) agrees.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260317-en.txt",
+     "line": 103,
+     "text": "Characters will now jump after a Drive Rush screen freeze, if Up is input during the screen freeze."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260317-en.txt",
+     "line": 104,
+     "text": "This adjustment only applies if the character is in a neutral state during the screen freeze, and doesn't apply if they are recovering from an attack, or being knocked back by an opponent's attack on either block or hit."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260317-en.txt",
+     "line": 84,
+     "text": "Finally, a neutral jump input can be overwritten by a forward or backward jump input."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 304,
+     "text": "During this freeze, the defender's attacks, dashes, and jumps will be buffered."
+    }
+   ]
+  },
+  {
+   "rule_id": "R15",
+   "patch": "2026-03-17",
+   "effect": "Universal adjustment: overhead unique attacks that combo from Drive Rush are unified to -3 on block (+1 after Drive Rush), with pushback set so that a normal throw or two lights do not reach afterwards. Consistent with the wiki's +4 Drive Rush bonus; bears on advantage_bonus and on throw follow-ups after a Drive Rush overhead.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260317-en.txt",
+     "line": 68,
+     "text": "1. They are now -3 frames on block (so +1 with a Drive Rush)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260317-en.txt",
+     "line": 94,
+     "text": "if the opponent continues to hold back (standing block), normal throws and 2 light attacks including low attacks cannot reach the attacker."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 302,
+     "text": "Any Normal or Command Normal used during this dash gains '''+4''' advantage on Hit or Block"
+    }
+   ]
+  },
+  {
+   "rule_id": "R25",
+   "patch": "2026-03-17",
+   "effect": "Bug fix to input overwriting: a Drive Rush / Drive Impact input after a cancelable normal into a special whose conditions are not met is now performed instead of being lost. Input-priority exception; no wiki statement on it.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260317-en.txt",
+     "line": 108,
+     "text": "When performing a cancelable normal attack into a Special Move, normally Drive Rush/Drive Impacts inputs wouldn't overwrite the previous input and the Drive attacks couldn't be performed."
+    }
+   ]
+  },
+  {
+   "rule_id": "R15",
+   "patch": "2026-04-15",
+   "effect": "Bug fix: after a Drive Parry absorbs an attack and blockstun ends, there was a period where Drive Rush could not be performed; fixed. Bears on parry_drive_rush_frames_before_attack and R12. Gauges (2026-08-26) agrees with the fixed behaviour.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260415-en.txt",
+     "line": 63,
+     "text": "Fixed an issue where after stopping an attack with Drive Parry and block stun ends, there was some period of time where Drive Rush couldn't be performed."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 198,
+     "text": "After holding a successful Parry, {{clr|DR|Drive Rush}} can be input immediately after Parry blockstun ends"
+    }
+   ]
+  },
+  {
+   "rule_id": "R20",
+   "patch": "2026-04-15",
+   "effect": "Bug fix, Modern controls only: an assisted jumping attack input during the opponent's Drive Rush screen flash (while in certain mid-air techniques) did not come out for a while; fixed. Screen-freeze input handling; no wiki statement.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260415-en.txt",
+     "line": 71,
+     "text": "if the opponent activates Drive Rush, attempting to perform a jumping attack (assisted) with Auto+Attack during the screen flash would result in attacks not coming out for a certain period of time."
+    }
+   ]
+  },
+  {
+   "rule_id": "R13",
+   "patch": "2026-05-28",
+   "effect": "Adjustment: avoiding a throw with the invincibility of a Recovery (wake-up) Drive Reversal now gives the defender 10,000 Drive. Gauges (2026-08-26) agrees ('refund you 1 Drive bar').",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260528-en.txt",
+     "line": 78,
+     "text": "If you escape a throw during the invincibility period that occurs before an attack startup, your Drive Gauge will increase by 10,000"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 171,
+     "text": "This throw interaction '''will refund you 1 Drive bar.'''"
+    }
+   ]
+  },
+  {
+   "rule_id": "R06",
+   "patch": "2026-05-28",
+   "effect": "Adjustment: gauge gained on a successful throw escape reduced: Drive 10000 -> 5000, Super Art 1000 -> 0 (this reverses most of the 202506 increase). Defense (2026-05-30) agrees on 5000 Drive. Gauges (2026-08-26, after the patch) still says Super meter is gained when a Throw Escape is performed, which the patch contradicts. Note Capcom's own overview paragraph on line 63 says 'increased' while line 61 and the table say limited/reduced.",
+   "contradicts_a_wiki_statement": true,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260528-en.txt",
+     "line": 93,
+     "text": "1. Drive Gauge increase changed from 10000 to 5000"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260528-en.txt",
+     "line": 94,
+     "text": "2. Super Art gauge increase changed from 1000 to 0"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260528-en.txt",
+     "line": 61,
+     "text": "With this update we've limited the amount of gauge gained from a successful throw escape."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Defense@364973.txt",
+     "line": 16,
+     "text": "It also builds {{clr|DR|5000 Drive Gauge (1/2 bar)}} for the defender"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 430,
+     "text": "Characters gain {{clr|SA|Super}} meter when an attack connects on hit or block, or when a Throw Escape is performed"
+    }
+   ]
+  },
+  {
+   "rule_id": "R06",
+   "patch": "2026-05-28",
+   "effect": "Adjustment: when a normal throw lands as a Punish Counter, the thrown player's Super Art gain is 1400 (was 2800); the thrower still gains 4000. Bears on punish_counter_throw_effects. Capcom's Ryu frame table agrees on 4000 for the thrower; no wiki page states the thrown player's figure on the pages in the brief.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260528-en.txt",
+     "line": 81,
+     "text": "Updated opponent's Super Art gauge increase when a normal throw lands as a punish counter to match the increase on normal hit."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260528-en.txt",
+     "line": 89,
+     "text": "Opponent: changed from 2800 to 1400"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/frame-ryu.rows.json",
+     "line": 1,
+     "text": "- Super Art gauge increases by 4000 - Forces a hard knockdown"
+    }
+   ]
+  },
+  {
+   "rule_id": "R20",
+   "patch": "2026-08-03",
+   "effect": "Bug fix (the only universal item in this patch): holding back during the screen freeze of the opponent's Drive Reversal cancelled a previous command or button input; fixed. Bears on R20 (drive_freeze_buffer) and R13 (screen_freeze). Post-dates Defense (2026-05-30) and Glossary (2026-06-20); neither page describes this behaviour, so nothing is contradicted. Gauges (2026-08-26) describes the freeze itself.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260803-en.txt",
+     "line": 75,
+     "text": "Fixed an issue where holding back during the screen-freeze of an opponent's Drive Reversal would cancel out a previous command or button inputs."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-20260803-en.txt",
+     "line": 63,
+     "text": "Please note that there are no adjustments applied universally to all characters."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 160,
+     "text": "There is a short 4-frame screen freeze that occurs after the 6th startup frame of Drive Reversal out of blockstun (but not on wakeup)."
+    }
+   ]
+  },
+  {
+   "rule_id": "R16",
+   "patch": "2026-10-13 (Version 2.05)",
+   "effect": "No universal or system-level change in the Version 2.05 notes: character bug fixes only. The one item touching a ledger topic is character-specific (M. Bison Psycho Mine: opponent's Drive gain during Burnout was lower than usual; fixed). This patch post-dates Defense, Gauges, Movement and Glossary; it contradicts none of their statements. (The Capcom overview file for 2026-10-13 is not in the brief's list; it has no Universal section.)",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Version_2.05@380923.txt",
+     "line": 5,
+     "text": "|summary='''Arjun release'''. Bug fixes for a few characters."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Version_2.05@380923.txt",
+     "line": 47,
+     "text": "** Fixed issue where the opponent's Drive Gain during Burnout was lower than usual"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Version_2.05@380923.txt",
+     "line": 18,
+     "text": "** Fixed issue where the stance would not be canceled with Up input if performed during a screen freeze"
+    }
+   ]
+  },
+  {
+   "rule_id": "R12",
+   "patch": "202405",
+   "effect": "Drive Parry adjustment: throw hurtbox expanded during parry; hurtbox expanded from frame 3; minimum active time 8 -> 12 frames; recovery 29 -> 33 frames. Gauges agrees on 12 active / 33 recovery in its table and Regular Parry list, but one line of the same page still calls the recovery 'the standard 29f', which the patch (and Capcom's Ryu table, 33) contradicts.",
+   "contradicts_a_wiki_statement": true,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 141,
+     "text": "1. Throw hurtbox has been expanded while the technique is being performed."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 143,
+     "text": "3. The shortest possible active parry hitbox time has changed from 8 frames to 12 frames."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 144,
+     "text": "4. Recovery after the active frames has changed from 29 frames to 33 frames."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 191,
+     "text": "* Parry '''recovery''' lasts 33f after releasing the buttons"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 278,
+     "text": "You can hold the Parry input up to 13 additional frames without incurring the standard 29f parry recovery afterward"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/frame-ryu.rows.json",
+     "line": 1,
+     "text": "\"Drive Parry M M\",\"1\",\"[*2] 1-12\",\"33\""
+    }
+   ]
+  },
+  {
+   "rule_id": "R12",
+   "patch": "202405",
+   "effect": "Perfect Parry adjustment: after a Perfect Parry, Super gain is 80% for both players and Drive gain/loss is 50%, for the whole combo. The overview also places the Perfect Parry window before frame 3. Gauges agrees.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 150,
+     "text": "1. Super Art gauge increase has changed from 100% to 80% for both the attacker and damage-taker."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 151,
+     "text": "2. Drive gauge increase for the attacker has changed from 100% to 50%"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 86,
+     "text": "For Drive Parries, the hurtbox after the Perfect Parry window has passed (frame 3 and later) is expanding, allowing it to absorb attacks from further away."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 249,
+     "text": "The attacker builds 50% less Drive gauge and the defender takes 50% less Drive Damage after a Perfect Parry"
+    }
+   ]
+  },
+  {
+   "rule_id": "R15",
+   "patch": "202405",
+   "effect": "Drive Rush adjustment: strike and throw hurtboxes of Parry Drive Rush enlarged to be no smaller than Drive Parry's. Bears on throw properties during the rush; no conflicting wiki statement.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 155,
+     "text": "Expanded the attack and throw hurtboxes of the Parry Drive Rush so that they're no longer smaller than the ones for a Drive Parry."
+    }
+   ]
+  },
+  {
+   "rule_id": "R14",
+   "patch": "202405",
+   "effect": "Drive Impact adjustment: input buffer at the end of Drive Impact recovery changed from 5 to 10 frames (when the Punish Counter cutscene is not triggered). Also bears on R25 (buffer exceptions). The wiki pages give only the general 4-frame buffer and do not mention this exception.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 158,
+     "text": "Buffer input window has changed from 5 frames to 10 frames to ensure easier movement immediately after the recovery ends for cases where the Punish Counter cutscene is not triggered."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Game_Data@384214.txt",
+     "line": 33,
+     "text": "For most applications, any move can be buffered up to 4 frames early"
+    }
+   ]
+  },
+  {
+   "rule_id": "R14",
+   "patch": "202405",
+   "effect": "Bug fix to Burnout stun: a blocked Drive Impact near (not at) the corner against a burned-out opponent, followed by a technique just before the stun, gave an unscaled combo; fixed. Bears on R14 (versus_burnout) and R16 (stun_condition).",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 138,
+     "text": "if an opponent in Burnout blocks a Drive Impact a certain distance away from the corner of the screen, and the player performs a technique just before stun occurs"
+    }
+   ]
+  },
+  {
+   "rule_id": "R13",
+   "patch": "202405",
+   "effect": "Drive Reversal adjustment: -8 -> -6 on block; hitbox extended downward; pushback on close block made near-uniform; bug fix: damage no longer increases on counter-hit. Gauges agrees on -6.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 161,
+     "text": "1. Recovery on block has changed from -8 to -6 frames"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 167,
+     "text": "Damage no longer increases on counter hit."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 158,
+     "text": "All Drive Reversals are punishable at {{sf6-adv|VM|-6}} on block"
+    }
+   ]
+  },
+  {
+   "rule_id": "R13",
+   "patch": "202405",
+   "effect": "Recovery Drive Reversal introduced: Drive Reversal can be done during knockdown recovery; 18-frame startup (2 faster), no screen darkening or time stop. Gauges and Capcom's Ryu table agree.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 170,
+     "text": "Drive Reversal can now be performed during the recovery from a knockdown."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 172,
+     "text": "Note: This version of the Drive Reversal will not darken the screen or stop time, and the attack start-up is 18 frames, which is 2 frames faster than the normal Drive Reversal."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 167,
+     "text": "This version '''starts up 2 frames faster (18f)''' than the version performed out of blockstun"
+    }
+   ]
+  },
+  {
+   "rule_id": "R10",
+   "patch": "202405",
+   "effect": "Jump landing hurtbox adjustment: Chun-Li, Dhalsim, Lily and A.K.I. had their landing hurtbox moved up to match the rest of the cast. No frame counts change; no wiki statement on it.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 133,
+     "text": "The following characters have had their hurtbox while landing from a jump moved upwards to match other characters, as it was previously lower and caused unanticipated attacks to hit them."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 135,
+     "text": "Chun-Li, Dhalsim, Lily, A.K.I."
+    }
+   ]
+  },
+  {
+   "rule_id": "R18",
+   "patch": "202405",
+   "effect": "Cross-up capable jumping light attacks: hit/block advantage matched to the longest value, so some characters (Ryu included) have 1 more frame of recovery on block. Bears on jump-in advantage in safe-jump follow-ups; no wiki statement on it.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 178,
+     "text": "some character's jumping weak attack on block or guard will have an additional 1 frame of recovery."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 180,
+     "text": "This change applies to Luke, Jamie, Marisa, Lily, Juri, Ryu, E. Honda, Guile, Ken and A.K.I."
+    }
+   ]
+  },
+  {
+   "rule_id": "R25",
+   "patch": "202405",
+   "effect": "Input recognition adjustment: the window to press the button after a special-move motion was shortened (quarter-circle on the ground 11 -> 9 frames, half-circle 12 -> 9; air quarter-circle stays 11). The wiki pages in the brief do not state these windows.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 115,
+     "text": "1. For ↓↘→ or ↓↙← commands while standing on the ground, the Input Recognition Frame has been changed from 11 to 9 frames."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 121,
+     "text": "2. For ←↙↓↘→ or →↘↓↙← commands, the Input Recognition Frame has been changed from 12 frames to 9 frames."
+    }
+   ]
+  },
+  {
+   "rule_id": "R24",
+   "patch": "202405",
+   "effect": "Back throws: stated in the overview only (no line in the Universal table): characters who could back-throw an opponent into the corner and then keep throwing will find it harder. Bears on season_changes_to_throw_loops. Offense treats back throws as outside throw loops; no contradiction.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202405-en.txt",
+     "line": 106,
+     "text": "Characters who could perform a back throw into the corner, and then repeatedly throw opponents in any situation will now have a harder time doing so."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 62,
+     "text": "While some Back Throws may allow for strike/throw oki when cornering the opponent, these are not usually considered \"throw loops\" because it can only be done once."
+    }
+   ]
+  },
+  {
+   "rule_id": "R12",
+   "patch": "202506",
+   "effect": "Perfect Parry requirements: against strikes the screen-freeze Perfect Parry now needs the correct block direction (back for high/overhead, down-back for low); a wrong direction gives a normal parry with extra Drive. Projectiles unchanged. Also bears on R18 (perfect_parry_versus_safe_jump). Gauges and Capcom's Ryu table agree.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 141,
+     "text": "The screen freeze that occurs with a Perfect Parry will no longer occur if the correct block direction input is not used."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 146,
+     "text": "If a player performs an incorrect block input, a Perfect Parry will not trigger, but they will recover more Drive gauge than a normal parry."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 254,
+     "text": "The correct block direction must be held to get this screen freeze: Down+Back for Low attacks, Back for High/Mid attacks"
+    }
+   ]
+  },
+  {
+   "rule_id": "R20",
+   "patch": "202506",
+   "effect": "Bug fix: a buffered input was lost when a Perfect Parry happened during an attack with a long buffer period; fixed. Bears on R20 and R25. No wiki statement on it.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 152,
+     "text": "Fixed an issue where a buffered input would be completely lost when performing a Perfect Parry during an attack that has a long buffer input period."
+    }
+   ]
+  },
+  {
+   "rule_id": "R20",
+   "patch": "202506",
+   "effect": "Bug fix: a back throw was read as a forward throw when the opponent started a move with a dark screen transition just as the thrower's recovery ended; fixed. Screen-freeze input handling for throws; no wiki statement on it.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 186,
+     "text": "Fixed an issue where a back throw would be misinterpreted as a forward throw when the opponent performs a technique that causes a dark screen transition just as the player's attack recovery is about to end."
+    }
+   ]
+  },
+  {
+   "rule_id": "R07",
+   "patch": "202506",
+   "effect": "Bug fix: when two players throw at the same time the result is meant to be random; cases where it was fixed to one side were corrected. Bears on throw_vs_throw_same_frame. Defense agrees.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 189,
+     "text": "Fixed an issue where if two players attempt a throw at the same time, under certain circumstances the result be fixed to one side rather than be random as intended."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Defense@364973.txt",
+     "line": 22,
+     "text": "If performed simultaneously, the game will randomly decide which player teched the throw (and who will gain the extra meter)."
+    }
+   ]
+  },
+  {
+   "rule_id": "R06",
+   "patch": "202506",
+   "effect": "Bug fix: a normal throw after a Drive Parry could miss even in a Punish Counter situation (A.K.I. forward/back throws, M. Bison back throw); fixed. Listed under Universal but affects two characters.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 183,
+     "text": "Fixed an issue where a throw would miss even in a Punish Counter situation when performing a normal throw after a Drive Parry."
+    }
+   ]
+  },
+  {
+   "rule_id": "R06",
+   "patch": "202506",
+   "effect": "Throw escapes: Drive and Super Art gain on a successful throw escape increased. Superseded by the 2026-05-28 reduction (Drive 5000, Super 0); the Gauges line about Super meter from a Throw Escape matches this older state.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 192,
+     "text": "Increased the amount of Drive and Super Art gauge gained after a successful throw escape."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 93,
+     "text": "The player who escapes a throw will now receive more Drive Gauge and Super Art gauge than before."
+    }
+   ]
+  },
+  {
+   "rule_id": "R03",
+   "patch": "202506",
+   "effect": "Crouching heavy kick (sweep) adjustment: normal hit and counter-hit unified and both now allow back recovery; only a Punish Counter keeps the hard knockdown; hurtbox on the 1st active frame reduced; buffer at the end of recovery increased (also R25). A.K.I. and Ed: applies to crouching heavy punch; not Dee Jay; sliding attacks excluded. Offense and Capcom's Ryu table agree that the Punish Counter sweep is a Hard Knockdown.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 195,
+     "text": "1. Behavior on hit and counter hit has been unified, and you may now backwards recover from both."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 109,
+     "text": "Due to this change, the strategy of knocking down an opponent and switching sides before they get up is now gone, except if the attack lands as a Punish Counter."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 197,
+     "text": "This change affects A.K.I. and Ed's crouching heavy punch instead of their crouching heavy kick, and does not apply to Dee Jay."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 200,
+     "text": "3. Increased buffer input time at the end of recovery."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/frame-ryu.rows.json",
+     "line": 1,
+     "text": "Knockdown time extended when the attack lands as a Punish Counter, and changes to Hard Knockdown"
+    }
+   ]
+  },
+  {
+   "rule_id": "R10",
+   "patch": "202506",
+   "effect": "Bug fix: forward jump on a cornered opponent behaved differently for Player 1 and Player 2; fixed. No frame counts change.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 129,
+     "text": "Fixed an issue where Player 1 and Player 2 behavior would differ when performing a forward jump on an opponent who is in the corner of the stage."
+    }
+   ]
+  },
+  {
+   "rule_id": "R22",
+   "patch": "202506",
+   "effect": "Light attacks: Modern controls gain an Assisted Combo started from a rapid-cancelable light; the overview says advantage and pushback on block of lights were altered so consecutive lights reach more often (done per character). Neither states which frames can rapid cancel nor anything about whiffed lights.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 164,
+     "text": "By pressing ↓+Assist Button+Light Attack button after a rapid cancelable light attack, players can now perform a new Assisted Combo starting from a low attack."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 87,
+     "text": "We have also made it more likely for consecutive light attacks to reach with alterations to advantage and pushback on block to light moves."
+    }
+   ]
+  },
+  {
+   "rule_id": "R05",
+   "patch": "202506",
+   "effect": "Overview-level statement (implemented per character, not in the Universal table): after a blocked Drive Rush > light > cancelable crouching medium kick, the attacker can no longer evade the defender's throw. Bears on throw timing after blockstrings.",
+   "contradicts_a_wiki_statement": false,
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/battle_change-202506-en.txt",
+     "line": 84,
+     "text": "characters that are able to cancel their crouching medium kicks will no longer be able to evade an opponent's throw after having their Drive Rush > Light Attack blocked from crouching medium kick."
+    }
+   ]
+  }
+ ],
+ "claim_checks": [
+  {
+   "claim_id": "C1",
+   "verdict": "contradicted",
+   "reasoning": "Only one source addresses throw invulnerability on a grounded wake-up: the Offense page (2026-10-13) says it is 1 frame, not 2. The 2-frame figures on the same page belong to other situations (after hitstun/blockstun, and landing from an air reset). Defense, Movement, Gauges, Game Data, Glossary, Version 2.05, Capcom's Ryu frame table and the Capcom battle-change files say nothing about wake-up throw invulnerability, so there is no conflict among sources. With 1 frame the earliest meaty throw would land on wake-up frame 2, not 3 (arithmetic, not a quote).",
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 54,
+     "text": "There is 1 frame of throw invincibility after a grounded wakeup, so inputting a throw at {{sf6-adv|VP|+5}} on a downed opponent can connect."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 55,
+     "text": "There are 2 frames of throw invulnerability after exiting hitstun and blockstun, so inputting a throw at {{sf6-adv|VP|+4}} can lead to a successful tick throw."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 56,
+     "text": "Opponents cannot be thrown during the 2 landing recovery frames after an air reset"
+    }
+   ]
+  },
+  {
+   "claim_id": "C2",
+   "verdict": "contradicted",
+   "reasoning": "The claim's upper bound is contradicted: Offense says a throw input at +5 on a downed opponent can connect, and +5 is outside the claimed set {2,3,4}. The sources do not list which advantages connect or whiff beyond that single statement, so the lower values (+2, +3, +4) and any 'only' rule are not addressed. Throw timing is 5 frames startup with 3 active frames (Offense; Capcom's Ryu table shows active 5-7), which is what makes +5 land on the last active frame after 1 invulnerable frame (arithmetic, not a quote). The claimed 2-4 window is what 2 frames of wake-up throw invulnerability would give, so C2 stands or falls with C1. No other source file addresses this.",
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 54,
+     "text": "There is 1 frame of throw invincibility after a grounded wakeup, so inputting a throw at {{sf6-adv|VP|+5}} on a downed opponent can connect."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 16,
+     "text": "Throws are universally 5f startup and 3f active, with a total whiff animation of 30f."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/frame-ryu.rows.json",
+     "line": 1,
+     "text": "\"Shoulder Throw (When near opponent) L L\",\"5\",\"5-7\",\"23\""
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 22,
+     "text": "You cannot throw an opponent if they are in hitstun, blockstun, or knocked down."
+    }
+   ]
+  },
+  {
+   "claim_id": "C3",
+   "verdict": "contradicted",
+   "reasoning": "Partly supported, contradicted on the part that produces the result. Supported: 4 pre-jump frames (Movement) and 38 airborne frames (only in Ryu_Data, a file outside the brief's list: jumpSpd 4+38+3; Offense's 'standard 45-frame jump' is consistent with 4+38+3). Contradicted: landing recovery is 3 frames, not 4 (Movement; Capcom's Ryu table lists every jumping normal as '3 frame(s) after landing'; Ryu_Data's +3). Movement confirms a jumper who used an air normal cannot block during landing recovery. So the sources give 45 frames in total and blocking from frame 46, not 47 (arithmetic, not a quote). The only stated way to get one more frame is different from the claim: an air normal input on the final airborne frame extends the airborne time by 1. Sources agree with each other.",
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Movement@376569.txt",
+     "line": 43,
+     "text": "Jumps begin with '''4 prejump frames''' ('''5''' for '''Lily'''/'''Zangief''' and '''6''' for '''C. Viper's''' High Jump)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Movement@376569.txt",
+     "line": 53,
+     "text": "There are '''3 landing recovery frames''' at the end of a jump."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Movement@376569.txt",
+     "line": 58,
+     "text": "Using an air normal prevents you from blocking, crouching, or teching throws during Landing Recovery, and results in a '''Punish Counter''' state"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Movement@376569.txt",
+     "line": 59,
+     "text": "Inputting an air normal on the final airborne frame causes it to come out (and extends the airborne jump duration by 1 frame)."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 127,
+     "text": "For most characters with a standard 45-frame jump, this requires a +42 knockdown to beat 5-frame anti-air"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/frame-ryu.rows.json",
+     "line": 1,
+     "text": "\"Jumping Heavy Kick (During a jump) H\",\"10\",\"10-17\",\"3 frame(s) after landing\""
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Ryu_Data@378774.txt",
+     "line": 19,
+     "text": "| jumpSpd       = 4+38+3"
+    }
+   ]
+  },
+  {
+   "claim_id": "C4",
+   "verdict": "not_addressed",
+   "reasoning": "No source says a whiffed light can be rapid-cancelled (chained), and no source gives a 12-frame figure. What the sources do say: Capcom's Ryu table marks crouching light kick 'Can be rapid canceled' with startup 5, active 5-6, recovery 10, without saying on which frames or whether on whiff; Game Data's formula (startup + active + recovery - 1) makes the full length 16 frames, and Ryu_Data (outside the brief's list) lists total 16 and 'Chains into 5LP/2LP/2LK'. The only whiff-cancel statements are about Drive Rush, not rapid cancel: Gauges says light normals can be cancelled into Drive Rush on whiff. Glossary only defines the 'Chn' label. The 202506 Capcom notes mention rapid-cancel lights for Modern Assisted Combos without frame detail.",
+   "quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/capcom/frame-ryu.rows.json",
+     "line": 1,
+     "text": "\"Crouching Light Kick L\",\"5\",\"5-6\",\"10\",\"3\",\"-1\",\"\",\"200\",\"Starter scaling 20%\",\"250\",\"-500\",\"-2000\",\"300\",\"Low\",\"Can be rapid canceled\""
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Game_Data@384214.txt",
+     "line": 19,
+     "text": "if you want to know the total frame count of an attack, you should add Startup + Active + Recovery frames and then subtract 1 to account for that overlap."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Gauges@376566.txt",
+     "line": 316,
+     "text": "Light normals are also cancelable on whiff, which prevents them from being used as a low-risk buffer in neutral."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Glossary@367082.txt",
+     "line": 49,
+     "text": "* \"Chn\": Chain cancel (Light normals; specific chain options listed in Description)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Ryu_Data@378774.txt",
+     "line": 461,
+     "text": "| notes         = Chains into 5LP/2LP/2LK"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Ryu_Data@378774.txt",
+     "line": 438,
+     "text": "| total         = 16"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/supercombo/text/Offense@380932.txt",
+     "line": 8,
+     "text": "Light normals can still frame trap the opponent by chaining them together, but most of them do not create true blockstrings"
+    }
+   ]
+  }
+ ]
+}

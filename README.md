@@ -39,6 +39,9 @@ The tests prove the build is deterministic, that every row on the page equals th
 
 - Inch 3: the inputs are proven current. `lab/freshness.py` compares every solver input and all 40 knockdown values with Capcom's official table, SuperCombo's database and FAT; `data/freshness.json` holds the result (307 comparisons, none unexplained).
 - Inch 4: every knockdown number from 1 to 110 has a card, from the same sealed solver. The page has a picker: choose a named ender or type the number off the frame meter.
+- Inch 5: throw timing, late strikes and the slowest wake-up reversal Ryu can still block, all in `lab/extensions.py`, each checked against a frame-by-frame simulation.
+- Inch 6: the rules ledger. `data/rules/rules.json` holds 26 system rules, each read by two independent readers, with 694 quotes checked by script against the saved sources (none failed). The page lists the rules it rests on.
+- Inch 7 (started): draft wake-up profiles for all 32 characters in `data/opponents/`, parsed from one roster-wide data pull. Capcom's official page is saved for every character; the cross-check and verification come next.
 
 ## Refresh the sources
 

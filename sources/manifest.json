@@ -109,6 +109,69 @@
   "sha256": "f8247cdfe810b3f1e6f3bd6434d1b606b21d5d566a9398334c25d7de4993c2d7",
   "url": "https://www.streetfighter.com/6/buckler/ja-jp/battle_change/20261013"
  },
+ "capcom/frame-aki.html": {
+  "bytes": 358170,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'A.K.I. FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "6e995fe2d10cf2062e0f168b4c37a0527e2afba86122587acfa0d3bc8a4a604a",
+  "url": "https://www.streetfighter.com/6/en-us/character/aki/frame"
+ },
+ "capcom/frame-aki.rows.json": {
+  "bytes": 15226,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'A.K.I. FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 71,
+  "sha256": "78319b22fc2a0f3ae3d88a0e254a1ef2390b360c417ed9e2677fab3bd25a75d9",
+  "url": "https://www.streetfighter.com/6/en-us/character/aki/frame"
+ },
+ "capcom/frame-alex.html": {
+  "bytes": 367986,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Alex FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "02d4e64fb7eeb2514494d37a5f6780dba0c99d39b50dadb73d25c5d87f1942a8",
+  "url": "https://www.streetfighter.com/6/en-us/character/alex/frame"
+ },
+ "capcom/frame-alex.rows.json": {
+  "bytes": 17293,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Alex FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 81,
+  "sha256": "0b58573de96bc9f888db64eb718bc6d1050f0f73c9c287282c8f8a852389df8a",
+  "url": "https://www.streetfighter.com/6/en-us/character/alex/frame"
+ },
+ "capcom/frame-arjun.html": {
+  "bytes": 373027,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Arjun FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "d02aa0072be3a73796d64173182a9fc2a48e1c0f4b85bf8bc1d693efa14f1d9a",
+  "url": "https://www.streetfighter.com/6/en-us/character/arjun/frame"
+ },
+ "capcom/frame-arjun.rows.json": {
+  "bytes": 19616,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Arjun FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 83,
+  "sha256": "cfd2839757b5900ccfa6db0b70da7c97b17095f03677ecc9675ae1c5de62a2fc",
+  "url": "https://www.streetfighter.com/6/en-us/character/arjun/frame"
+ },
  "capcom/frame-blanka.html": {
   "bytes": 393251,
   "family": "capcom",
@@ -151,6 +214,48 @@
   "sha256": "eef51cd290723c30a5828488f19e306f1742a3bcff4eb61293ef386507bc0779",
   "url": "https://www.streetfighter.com/6/en-us/character/cammy/frame"
  },
+ "capcom/frame-chunli.html": {
+  "bytes": 379111,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'CHUN-LI FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "71bd289d90b0c011c4c6279c4bbdf6ca053cee9a3b9a3e30246a34be5f09f5cb",
+  "url": "https://www.streetfighter.com/6/en-us/character/chunli/frame"
+ },
+ "capcom/frame-chunli.rows.json": {
+  "bytes": 17610,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'CHUN-LI FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 85,
+  "sha256": "d5b959d8357a8c30cf39360a55d61a240d379a5e79c7f3c9cc21d52f95d6580c",
+  "url": "https://www.streetfighter.com/6/en-us/character/chunli/frame"
+ },
+ "capcom/frame-cviper.html": {
+  "bytes": 366665,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'C. Viper FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "78fada7f9b6f75ac5ba5df345846c8a30e2039bde0155763c193c9ee2c3d1372",
+  "url": "https://www.streetfighter.com/6/en-us/character/cviper/frame"
+ },
+ "capcom/frame-cviper.rows.json": {
+  "bytes": 17376,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'C. Viper FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 76,
+  "sha256": "5afe3e2cd5bb0d5637edca476fc7b84af1d80ea00d249c0b642b9e1b445977b7",
+  "url": "https://www.streetfighter.com/6/en-us/character/cviper/frame"
+ },
  "capcom/frame-deejay.html": {
   "bytes": 425290,
   "family": "capcom",
@@ -171,6 +276,48 @@
   "rows": 112,
   "sha256": "1d70c471803e80223665b34bbf48429c7a297ec6607d6d7f3ac3a4c419b2ef3e",
   "url": "https://www.streetfighter.com/6/en-us/character/deejay/frame"
+ },
+ "capcom/frame-dhalsim.html": {
+  "bytes": 391270,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'DHALSIM FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "902e52e8556504c0d20f4a864ed0ae2672665b45e7e689304921fb6acf1332b8",
+  "url": "https://www.streetfighter.com/6/en-us/character/dhalsim/frame"
+ },
+ "capcom/frame-dhalsim.rows.json": {
+  "bytes": 17026,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'DHALSIM FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 96,
+  "sha256": "d9ceb719561f3518b271c145b324d525eba55ffd868483aa533445bb6feb66eb",
+  "url": "https://www.streetfighter.com/6/en-us/character/dhalsim/frame"
+ },
+ "capcom/frame-ed.html": {
+  "bytes": 362749,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'ED FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "9879052b9c65ad36dcc6be24d0d7125a195279ccef19e5b1c0a02794ef2b6968",
+  "url": "https://www.streetfighter.com/6/en-us/character/ed/frame"
+ },
+ "capcom/frame-ed.rows.json": {
+  "bytes": 15961,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'ED FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 77,
+  "sha256": "404b1c5d0bbcfa8c844d3d4730c2d956bb32ee184d9e9171001b35e0a9b4ffbc",
+  "url": "https://www.streetfighter.com/6/en-us/character/ed/frame"
  },
  "capcom/frame-ehonda.html": {
   "bytes": 370787,
@@ -193,6 +340,48 @@
   "sha256": "75b2e6ededa60f1445e9a9cfbf0ace0e0b634d4be1f0453bb0f036174007a71c",
   "url": "https://www.streetfighter.com/6/en-us/character/ehonda/frame"
  },
+ "capcom/frame-elena.html": {
+  "bytes": 377640,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Elena FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "7bddbed5c4256da0cd8a275afdc521825e109acb18aedde198c177ee56aaebeb",
+  "url": "https://www.streetfighter.com/6/en-us/character/elena/frame"
+ },
+ "capcom/frame-elena.rows.json": {
+  "bytes": 18027,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Elena FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 86,
+  "sha256": "a23e44aaa6251399ed3aca12ae1603fc2b847c758491c5be12a7bff85fa18f47",
+  "url": "https://www.streetfighter.com/6/en-us/character/elena/frame"
+ },
+ "capcom/frame-gouki_akuma.html": {
+  "bytes": 392716,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'AKUMA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "3a789c19c0bb62252fbfe215c030c57890e63953b783f8c615f7d98a6ee11774",
+  "url": "https://www.streetfighter.com/6/en-us/character/gouki_akuma/frame"
+ },
+ "capcom/frame-gouki_akuma.rows.json": {
+  "bytes": 19153,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'AKUMA FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 98,
+  "sha256": "aaf998a71f6d32b7a8e028dda9fbee5fd5ee8c0d01608602f674141d8371033d",
+  "url": "https://www.streetfighter.com/6/en-us/character/gouki_akuma/frame"
+ },
  "capcom/frame-guile.html": {
   "bytes": 377867,
   "family": "capcom",
@@ -213,6 +402,27 @@
   "rows": 87,
   "sha256": "15077124467937e3cdaee1d0970a11b38076c57a5fc5d9cb64a44cae0be929c7",
   "url": "https://www.streetfighter.com/6/en-us/character/guile/frame"
+ },
+ "capcom/frame-ingrid.html": {
+  "bytes": 376089,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Ingrid FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "f16dca18874a46e781d677bce1432ffb402525bb904d09d433240b317c03ea83",
+  "url": "https://www.streetfighter.com/6/en-us/character/ingrid/frame"
+ },
+ "capcom/frame-ingrid.rows.json": {
+  "bytes": 17380,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Ingrid FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 82,
+  "sha256": "b00ca4f34a7f6b06ebee791679b3d0926db14b3965db008c94e8e14d8886204f",
+  "url": "https://www.streetfighter.com/6/en-us/character/ingrid/frame"
  },
  "capcom/frame-jamie.html": {
   "bytes": 423228,
@@ -361,6 +571,27 @@
   "sha256": "4d31df3da594efd7ea8a2db73bb6089835ddbbf2f2ec98d219b5bcc9f064a590",
   "url": "https://www.streetfighter.com/6/en-us/character/luke/frame"
  },
+ "capcom/frame-mai.html": {
+  "bytes": 398611,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Mai FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "7b9db99e2855fbab7b86aae96b2d1379526784735315a21b419cf9d262cb4f3d",
+  "url": "https://www.streetfighter.com/6/en-us/character/mai/frame"
+ },
+ "capcom/frame-mai.rows.json": {
+  "bytes": 21918,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Mai FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 97,
+  "sha256": "d5354657bf261179b44c69dc20f9a73a002de9ad6e070d17b6e5f1ae2e93fb13",
+  "url": "https://www.streetfighter.com/6/en-us/character/mai/frame"
+ },
  "capcom/frame-manon.html": {
   "bytes": 357902,
   "family": "capcom",
@@ -403,6 +634,27 @@
   "sha256": "77966cce73c3fdd28570000ac808fce6910a82917afe76e84f99ddc74da673b4",
   "url": "https://www.streetfighter.com/6/en-us/character/marisa/frame"
  },
+ "capcom/frame-rashid.html": {
+  "bytes": 388538,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'RASHID FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "12f2a22b1cc094c7eb47862a349be595dc3f6dc6004c9b84104baad067a66e78",
+  "url": "https://www.streetfighter.com/6/en-us/character/rashid/frame"
+ },
+ "capcom/frame-rashid.rows.json": {
+  "bytes": 21770,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'RASHID FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 92,
+  "sha256": "c1a9357792f2efcd7f026ff2e6176ab175cc077c3e597161714439d3643c0a31",
+  "url": "https://www.streetfighter.com/6/en-us/character/rashid/frame"
+ },
  "capcom/frame-ryu.html": {
   "bytes": 376899,
   "family": "capcom",
@@ -423,6 +675,111 @@
   "rows": 82,
   "sha256": "36e12528676519c24b2969dfe7750c840f75290162fad72964d4f29f2b6cdae0",
   "url": "https://www.streetfighter.com/6/en-us/character/ryu/frame"
+ },
+ "capcom/frame-sagat.html": {
+  "bytes": 365267,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Sagat FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "1c3477b506376d379c4bcc9b1d66eeb3cf4999786d4389b5bd6f0b8c9aef27cc",
+  "url": "https://www.streetfighter.com/6/en-us/character/sagat/frame"
+ },
+ "capcom/frame-sagat.rows.json": {
+  "bytes": 15661,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Sagat FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 77,
+  "sha256": "68318a69b4cc61289bb85ddcfcd7a953da3174fddfd01a7031cabd668e788394",
+  "url": "https://www.streetfighter.com/6/en-us/character/sagat/frame"
+ },
+ "capcom/frame-terry.html": {
+  "bytes": 359901,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Terry FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "7b3aabed4ceb0aeb9822a1fafdfc87a3bcd4ea5eee241b006bac780805df29b4",
+  "url": "https://www.streetfighter.com/6/en-us/character/terry/frame"
+ },
+ "capcom/frame-terry.rows.json": {
+  "bytes": 13692,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Terry FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 73,
+  "sha256": "07d820c5547279615d078eef5ecfface5c05df2f0ca21a70b82122c7a92cd873",
+  "url": "https://www.streetfighter.com/6/en-us/character/terry/frame"
+ },
+ "capcom/frame-vega_mbison.html": {
+  "bytes": 369575,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'M. Bison FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "12936921aeddd2dabd271a8ec9fa2ae3f0a83c14ee9b07489451ac99fbf28cb0",
+  "url": "https://www.streetfighter.com/6/en-us/character/vega_mbison/frame"
+ },
+ "capcom/frame-vega_mbison.rows.json": {
+  "bytes": 16615,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'M. Bison FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 79,
+  "sha256": "a00827d2ed433ebc3969fc219d2b036f6d7cc96971f5e396a945f87833ce2ee2",
+  "url": "https://www.streetfighter.com/6/en-us/character/vega_mbison/frame"
+ },
+ "capcom/frame-yasmine.html": {
+  "bytes": 377923,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'Yasmine FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "28042c2116bad59fb3e5ab38a9586f0dc248733436f1b06f26f3055d713e2165",
+  "url": "https://www.streetfighter.com/6/en-us/character/yasmine/frame"
+ },
+ "capcom/frame-yasmine.rows.json": {
+  "bytes": 17486,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'Yasmine FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 88,
+  "sha256": "910fcba1de18696d2d080a75a44856a9b4aadb9928272333039e77bb0bf2ff40",
+  "url": "https://www.streetfighter.com/6/en-us/character/yasmine/frame"
+ },
+ "capcom/frame-zangief.html": {
+  "bytes": 368806,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'ZANGIEF FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "17c3e3ab88265d40f8e20d225e9341678f124081662d8117e5b3b869cb35b798",
+  "url": "https://www.streetfighter.com/6/en-us/character/zangief/frame"
+ },
+ "capcom/frame-zangief.rows.json": {
+  "bytes": 17498,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'ZANGIEF FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 79,
+  "sha256": "0d64728b15792fed3dcd67042957167645bf468b26ca2353927f6e86f7e664ed",
+  "url": "https://www.streetfighter.com/6/en-us/character/zangief/frame"
  },
  "capcom/versions.json": {
   "bytes": 1041,
