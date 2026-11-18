@@ -16,6 +16,9 @@ import sys
 import pytest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "lab"))
+import extensions  # noqa: E402
+
 PAGE = ROOT / "site" / "index.html"
 ROW_FIELDS = ("seq", "block", "hit", "drive", "frames_spent", "actions")
 
@@ -127,3 +130,22 @@ def test_page_script_does_no_frame_arithmetic(built):
     # No data field is ever added to, subtracted from or multiplied with another value.
     for field in ("block", "hit", "frames_spent", "kd", "first", "last", "of", "frames"):
         assert not re.search(rf"\.{field}(\[\d\])?\s*[-+*/]\s*(?![\"'])[\w(]", script), f"arithmetic on .{field}"
+
+
+def test_throw_timings_on_cards_are_the_extension_rows(lab):
+    inputs = json.loads((ROOT / "core" / "ryu_inputs.json").read_text())
+    sigs = extensions.prep_signatures(inputs, lab["k_range"][1])
+    seen = 0
+    for card in lab["enders"] + lab["by_k"]:
+        if not isinstance(card["kd"], int):
+            assert card["throws"] is None
+            continue
+        want = extensions.throw_rows(card["kd"], sigs)
+        got = card["throws"]["rows"]
+        assert [(r["prep"], r["remaining"], r["connects_on_wake_frame"], r["drive"], r["flags"]) for r in got] == \
+            [(r["prep"], r["remaining"], r["connects_on_wake_frame"], r["drive"], r["flags"]) for r in want]
+        for tier in card["throws"]["tiers"]:
+            in_tier = [i for i, r in enumerate(got) if r["drive"] == tier["drive"]]
+            assert tier["pick"] == in_tier[0] and tier["count"] == len(in_tier)
+        seen += bool(got)
+    assert seen > 100

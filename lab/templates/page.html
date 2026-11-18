@@ -99,6 +99,11 @@ body { background: var(--paper); color: var(--ink); font-family: var(--font-body
 .sturdier { font-size: 0.875rem; color: var(--ink-2); display: flex; flex-direction: column; gap: 0.375rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule); }
 .sturdier .line { color: var(--ink); }
 
+#throws { gap: 0.625rem; }
+#throws .rule { margin: 0; font-size: 0.875rem; color: var(--ink-2); }
+#throw-tiers { gap: 1rem; }
+.pick .lead { font-weight: 600; }
+
 /* Exact values inside a knockdown range */
 .per-kd { display: flex; flex-direction: column; gap: 0.5rem; }
 .per-kd p { margin: 0; font-size: 0.875rem; color: var(--ink-2); }
@@ -153,6 +158,12 @@ footer p { margin: 0; }
   </header>
 
   <section class="tiers" id="tiers" aria-label="Picks by Drive cost"></section>
+
+  <section class="tiers" id="throws" aria-labelledby="throws-h" hidden>
+    <div class="tier-head"><span class="label" id="throws-h">Throw</span><span class="count" id="throws-count"></span></div>
+    <p class="rule" id="throw-rule"></p>
+    <div class="tiers" id="throw-tiers"></div>
+  </section>
 
   <section class="per-kd" id="per-kd" aria-labelledby="per-kd-h" hidden>
     <span class="label" id="per-kd-h">At each exact value</span>
@@ -301,6 +312,39 @@ footer p { margin: 0; }
       tiers.appendChild(sec);
     });
 
+    var th = card.throws;
+    $('throws').hidden = !(th && th.rows.length);
+    clear($('throw-tiers'));
+    if (th && th.rows.length) {
+      $('throws-count').textContent = th.rows.length + (th.rows.length === 1 ? ' timing' : ' timings');
+      th.tiers.forEach(function (t) {
+        var row = th.rows[t.pick];
+        var sec = el('section', 'tier');
+        var pick = el('div', 'pick');
+        pick.appendChild(el('span', 'label', t.label));
+        var ul = el('ul', 'steps');
+        row.prep.map(function (name) { return lab.preps[name]; }).concat([{ kind: 'meaty', label: 'throw', frames: null }])
+          .forEach(function (s) {
+            var li = el('li'), chip = el('span', 'step ' + s.kind, s.label);
+            if (s.frames != null) chip.appendChild(el('small', null, s.frames + 'f'));
+            li.appendChild(chip); ul.appendChild(li);
+          });
+        pick.appendChild(ul);
+        pick.appendChild(el('div', 'contact', 'Connects on wake-up frame ' + row.connects_on_wake_frame
+          + ', before a 4-frame button can come out.'));
+        var notesUl = el('ul', 'notes');
+        if (row.flags.indexOf('last active frame') >= 0) {
+          var w = el('li', 'warn'); w.appendChild(el('b', null, 'Fragile. ')); w.appendChild(document.createTextNode(lab.throw_fragile)); notesUl.appendChild(w);
+        }
+        if (row.prep_dispute) {
+          var d = el('li', 'dispute'); d.appendChild(el('b', null, 'Disputed preparation length. ')); d.appendChild(document.createTextNode(row.prep_dispute)); notesUl.appendChild(d);
+        }
+        if (notesUl.children.length) pick.appendChild(notesUl);
+        sec.appendChild(pick);
+        $('throw-tiers').appendChild(sec);
+      });
+    }
+
     var per = card.per_kd || [];
     $('per-kd').hidden = !per.length;
     var list = $('per-kd-list');
@@ -366,6 +410,7 @@ footer p { margin: 0; }
   lab.not_yet.forEach(function (x) {
     var li = el('li'); li.appendChild(el('b', null, x.title)); li.appendChild(document.createTextNode(x.text)); $('not-yet').appendChild(li);
   });
+  $('throw-rule').textContent = lab.throw_rule;
   $('rule').textContent = lab.ranking_rule;
   $('prov').textContent = 'Solver output ' + lab.provenance.output + ' (named enders) and ' + lab.provenance.every_k_output
     + ' (every number) · inputs ' + lab.provenance.inputs + ' · knockdown table ' + lab.provenance.calc + '.';

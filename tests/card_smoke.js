@@ -28,6 +28,8 @@ const { chromium } = require('playwright');
     expect(await text('#tiers .tier .block') === '+4', `first block ${await text('#tiers .tier .block')}`);
     expect(await text('#all-summary') === 'All 22 timings', `summary ${await text('#all-summary')}`);
     expect(await count('#pick-ender option') === 41, `picker options ${await count('#pick-ender option')}`);
+    expect(await count('#throw-tiers .tier') >= 1, 'default card should show throw timing');
+    expect((await text('#throw-tiers .tier .steps') || '').includes('throw'), 'throw pick should end in a throw');
     expect(await sideways() <= 0, 'default card scrolls sideways');
     await page.screenshot({ path: path.join(outDir, `card-${scheme}.png`), fullPage: true });
 

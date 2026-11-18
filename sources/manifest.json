@@ -1,4 +1,59 @@
 {
+ "capcom/battle_change-202405-en.txt": {
+  "bytes": 11398,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"202405 Ver. Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "8375a404bad777dd52bcc96ff19653891f5a355b17212bb3c0e1bca1be456719",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/202405"
+ },
+ "capcom/battle_change-202506-en.txt": {
+  "bytes": 13274,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"202506 Ver. Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "d67840e4c91a41fd0efb6a556049dc84dd9cb18e955f8b2fcc2d6234d5b33e60",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/202506"
+ },
+ "capcom/battle_change-20260317-en.txt": {
+  "bytes": 7291,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"03.17.2026 update Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "72da22e2aa736a8e7afb76d7b10659d5c8087f2fcd62a9473cc70b5ff4250298",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20260317"
+ },
+ "capcom/battle_change-20260415-en.txt": {
+  "bytes": 2963,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"04.15.2026 update Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "f909de5a99cb5918f697eaa825109d0470f26d692e40bd36b1c0fd70b780e6ce",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20260415"
+ },
+ "capcom/battle_change-20260528-en.txt": {
+  "bytes": 5796,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"05.28.2026 update Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "6acdbad448743175900c6b152eba335d9758cd3c2eea2052dd0c9d027d37ae9f",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20260528"
+ },
  "capcom/battle_change-20260803-en-ryu.txt": {
   "bytes": 3953,
   "family": "capcom",
@@ -9,6 +64,17 @@
   "route": "headless Chromium",
   "sha256": "471e8d9e7665fc0aa37a6836cc6a5346e59b6d0aaa468e5701e119c619c72070",
   "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20260803/ryu"
+ },
+ "capcom/battle_change-20260803-en.txt": {
+  "bytes": 3280,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"08.03.2026 update Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "73cfcb3c45a0dd7f4c04735b34f98893ff2d5556ccefb9b6d048b1ab92ef7609",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20260803"
  },
  "capcom/battle_change-20261013-en-ryu.txt": {
   "bytes": 413,

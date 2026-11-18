@@ -17,6 +17,9 @@ import subprocess
 import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
+sys.path.insert(0, str(ROOT / "lab"))
+import extensions  # noqa: E402
+
 CORE = ROOT / "core"
 OUT = ROOT / "out"
 SITE = ROOT / "site"
@@ -34,9 +37,9 @@ NOT_YET = [
     {"title": "Against your opponent",
      "text": "Which of their wake-up options each pick beats and which it loses to."},
     {"title": "Reach",
-     "text": "Whether the pick still connects after a back rise. Frame data cannot show this."},
-    {"title": "Throws, shimmies and safe jumps",
-     "text": "Only meaty strikes are computed so far."},
+     "text": "Whether a strike still connects, or a throw is still in range, after a back rise. Frame data cannot show this."},
+    {"title": "Shimmies and safe jumps",
+     "text": "Only meaty strikes and throw timing are computed so far."},
 ]
 
 
@@ -169,7 +172,22 @@ def tiers_for(rows):
     return tiers
 
 
-def build_card(ender, move_flags, prep_disputes, published=frozenset(), named=True):
+def shape_throws(kd, signatures, prep_disputes):
+    """Meaty throw timings (lab/extensions.py). Selection only: rows arrive sorted by Drive cost,
+    then sturdier first, then fewer actions; a tier's pick is its first row."""
+    rows = [{"prep": r["prep"], "frames_spent": r["frames_spent"], "remaining": r["remaining"],
+             "connects_on_wake_frame": r["connects_on_wake_frame"], "drive": r["drive"], "flags": r["flags"],
+             "prep_dispute": next((prep_disputes[p] for p in r["prep"] if p in prep_disputes), None)}
+            for r in extensions.throw_rows(kd, signatures)]
+    tiers = []
+    for drive in sorted({r["drive"] for r in rows}):
+        in_tier = [i for i, r in enumerate(rows) if r["drive"] == drive]
+        tiers.append({"drive": drive, "label": "No Drive" if drive == 0 else "1 Drive bar",
+                      "pick": in_tier[0], "count": len(in_tier)})
+    return {"rows": rows, "tiers": tiers}
+
+
+def build_card(ender, move_flags, prep_disputes, signatures, published=frozenset(), named=True):
     rows = shape_rows(ender["rows"], move_flags, prep_disputes, published)
     card = {
         "id": slug(ender["name"]) if named else f"k{ender['kd']}",
@@ -178,6 +196,7 @@ def build_card(ender, move_flags, prep_disputes, published=frozenset(), named=Tr
         "kd": ender["kd"],
         "tiers": tiers_for(rows),
         "rows": rows,
+        "throws": shape_throws(ender["kd"], signatures, prep_disputes) if isinstance(ender["kd"], int) else None,
     }
     if named:
         card["prevalence"] = {"rank": ender["prevalence_rank"], "combo_count": ender["combo_count"]}
@@ -200,10 +219,11 @@ def build_data(named, every_k, lock):
     anchors = {}
     for a in lock["anchors"]:
         anchors.setdefault(a["ender"], set()).add(a["seq"])
-    enders = [build_card(e, named["move_flags"], prep_disputes, frozenset(anchors.get(e["name"], ())))
+    signatures = extensions.prep_signatures(inputs, K_MAX)
+    enders = [build_card(e, named["move_flags"], prep_disputes, signatures, frozenset(anchors.get(e["name"], ())))
               for e in named["enders"]]
-    by_k = sorted((build_card(e, every_k["move_flags"], prep_disputes, named=False) for e in every_k["enders"]),
-                  key=lambda c: c["kd"])
+    by_k = sorted((build_card(e, every_k["move_flags"], prep_disputes, signatures, named=False)
+                   for e in every_k["enders"]), key=lambda c: c["kd"])
     return {
         "enders": enders,
         "by_k": by_k,
@@ -214,6 +234,9 @@ def build_data(named, every_k, lock):
         "ranking_rule": "Ranked by block advantage within each Drive cost. This is a stand-in until "
                         "opponent data exists; the real ranking is what each pick beats.",
         "no_rows_text": "No modelled strike can be timed to meet wake-up from this knockdown with at least +0 on block.",
+        "throw_rule": "Timing only. A throw has to be pressed with 2 to 5 frames left: the first wake-up frame "
+                      "cannot be thrown, and any later than that loses to a 4-frame button.",
+        "throw_fragile": "Connects on the throw's last active frame. One frame early and it whiffs.",
         "no_rows_range_text": "No single timing works at every value in this range. Open the exact value below.",
         "flag_text": FLAG_TEXT,
         "not_yet": NOT_YET,
