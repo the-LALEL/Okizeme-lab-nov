@@ -1,0 +1,274 @@
+<title>Ryu Oki Lab</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: one phone-width column. The header states the situation; then one block per
+   Drive cost, each anchored by its block-advantage number, with the preparation as a
+   row of steps and the contact frame drawn as a strip of active frames; then the parts
+   not built yet, said plainly; then every timing as a stacked list, folded away. */
+:root {
+  --paper: #F3F5F9;
+  --surface: #FFFFFF;
+  --ink: #131A29;
+  --ink-2: #505B70;
+  --rule: #D4DAE5;
+  --accent: #B3202A;
+  --plus: #0A7450;
+  --warn: #8F5200;
+  --dispute: #643A9C;
+  --cell: #DFE4EC;
+  --cell-on: #B3202A;
+  --font-display: "Barlow Semi Condensed", "Arial Narrow", system-ui, sans-serif;
+  --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-data: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0E1320; --surface: #171D2C; --ink: #EDF0F6; --ink-2: #A4AEC1; --rule: #2B3449;
+    --accent: #FF6169; --plus: #4CCB9C; --warn: #F0AE4B; --dispute: #BBA0EA;
+    --cell: #283149; --cell-on: #FF6169; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0E1320; --surface: #171D2C; --ink: #EDF0F6; --ink-2: #A4AEC1; --rule: #2B3449;
+  --accent: #FF6169; --plus: #4CCB9C; --warn: #F0AE4B; --dispute: #BBA0EA;
+  --cell: #283149; --cell-on: #FF6169; color-scheme: dark;
+}
+
+body { background: var(--paper); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
+.wrap {
+  max-width: 34rem; margin: 0 auto; padding-block: 1.25rem 2.5rem;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: flex; flex-direction: column; gap: 1.5rem;
+}
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+.label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
+
+/* Situation */
+.situation { display: flex; flex-direction: column; gap: 0.5rem; border-bottom: 2px solid var(--ink); padding-bottom: 1rem; }
+.situation h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 2.5rem; line-height: 1; text-wrap: balance; }
+.situation .kd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; }
+.situation .kd b { font-family: var(--font-data); font-weight: 600; font-size: 1.25rem; color: var(--accent); }
+.situation p { margin: 0; color: var(--ink-2); font-size: 0.875rem; }
+
+/* Tiers */
+.tiers { display: flex; flex-direction: column; gap: 1.75rem; }
+.tier { display: flex; flex-direction: column; gap: 0.625rem; min-width: 0; }
+.tier-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; }
+.tier-head .count { font-size: 0.75rem; color: var(--ink-2); }
+.pick { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 0.875rem; display: flex; flex-direction: column; gap: 0.75rem; min-width: 0; }
+.adv { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
+.adv .block { font-family: var(--font-data); font-weight: 600; font-size: 2.25rem; line-height: 1; color: var(--plus); }
+.adv .unit { font-size: 0.875rem; color: var(--ink-2); }
+.adv .hit { font-family: var(--font-data); font-weight: 600; font-size: 1.125rem; }
+.steps { display: flex; flex-wrap: wrap; align-items: center; gap: 0.375rem; margin: 0; padding: 0; list-style: none; }
+.steps li { display: flex; align-items: center; gap: 0.375rem; }
+.steps li + li::before { content: "›"; color: var(--ink-2); font-weight: 600; }
+.step { border: 1px solid var(--rule); border-radius: 4px; padding: 0.1875rem 0.5rem; font-weight: 500; font-size: 0.9375rem; white-space: nowrap; }
+.step small { font-family: var(--font-data); font-size: 0.75rem; color: var(--ink-2); margin-left: 0.25rem; }
+.step.meaty { background: var(--ink); color: var(--paper); border-color: var(--ink); font-weight: 600; }
+.step.drive { border-color: var(--plus); color: var(--plus); }
+.contact { display: flex; align-items: center; flex-wrap: wrap; gap: 0.5rem 0.75rem; font-size: 0.875rem; color: var(--ink-2); }
+.strip { display: inline-flex; gap: 2px; }
+.strip i { width: 0.75rem; height: 1rem; background: var(--cell); border-radius: 1px; }
+.strip i.on { background: var(--cell-on); }
+.notes { display: flex; flex-direction: column; gap: 0.375rem; margin: 0; padding: 0; list-style: none; font-size: 0.875rem; }
+.notes li { padding-left: 0.75rem; border-left: 3px solid var(--rule); color: var(--ink-2); }
+.notes li.warn { border-left-color: var(--warn); }
+.notes li.dispute { border-left-color: var(--dispute); }
+.notes li.good { border-left-color: var(--plus); }
+.notes b { color: var(--ink); font-weight: 600; }
+.sturdier { font-size: 0.875rem; color: var(--ink-2); display: flex; flex-direction: column; gap: 0.375rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule); }
+.sturdier .line { color: var(--ink); }
+
+/* Not built yet */
+.pending { display: flex; flex-direction: column; gap: 0.75rem; }
+.pending ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.pending li { border: 1px dashed var(--rule); border-radius: 6px; padding: 0.625rem 0.75rem; font-size: 0.875rem; color: var(--ink-2); }
+.pending li b { display: block; color: var(--ink); font-weight: 600; }
+
+/* Every timing */
+details.all { border-top: 1px solid var(--rule); padding-top: 0.75rem; }
+details.all summary { cursor: pointer; font-weight: 600; padding: 0.375rem 0; }
+details.all summary:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.rows { margin: 0.5rem 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.rows li { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: 0.125rem 0.75rem; padding: 0.625rem 0; border-bottom: 1px solid var(--rule); }
+.rows .b { font-family: var(--font-data); font-weight: 600; font-size: 1.125rem; color: var(--plus); grid-row: span 2; }
+.rows .s { font-weight: 500; overflow-wrap: anywhere; }
+.rows .m { font-size: 0.8125rem; color: var(--ink-2); }
+.rows .m .tag { white-space: nowrap; }
+.rows .m .tag.warn { color: var(--warn); }
+.rows .m .tag.dispute { color: var(--dispute); }
+.rows .m .tag.good { color: var(--plus); }
+
+footer { font-size: 0.8125rem; color: var(--ink-2); display: flex; flex-direction: column; gap: 0.5rem; border-top: 1px solid var(--rule); padding-top: 1rem; }
+footer p { margin: 0; }
+</style>
+
+<main class="wrap">
+  <header class="situation">
+    <span class="label">After you land</span>
+    <h1 id="ender"></h1>
+    <div class="kd"><b class="num" id="kd"></b><span id="kd-plain"></span></div>
+    <p id="status"></p>
+  </header>
+
+  <section class="tiers" id="tiers" aria-label="Picks by Drive cost"></section>
+
+  <section class="pending" aria-labelledby="pending-h">
+    <span class="label" id="pending-h">Not built yet</span>
+    <ul id="not-yet"></ul>
+  </section>
+
+  <details class="all">
+    <summary id="all-summary"></summary>
+    <ul class="rows" id="rows"></ul>
+  </details>
+
+  <footer>
+    <p id="rule"></p>
+    <p id="search"></p>
+    <p id="prov"></p>
+  </footer>
+</main>
+
+<script type="application/json" id="card">__CARD_JSON__</script>
+<script>
+// Lookups and formatting only. Every number shown is a number in the embedded data,
+// which the build copied from the solver's output.
+(function () {
+  var card = JSON.parse(document.getElementById('card').textContent);
+  function el(tag, cls, text) {
+    var n = document.createElement(tag);
+    if (cls) n.className = cls;
+    if (text != null) n.textContent = text;
+    return n;
+  }
+  function signed(v) { return (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v); }
+  function adv(v) {
+    if (typeof v === 'string') return v === 'KD / launch' ? 'knockdown' : v;
+    return v[0] === v[1] ? signed(v[0]) : signed(v[0]) + ' to ' + signed(v[1]);
+  }
+  function seqText(row) {
+    return row.steps.map(function (s) { return s.label; }).join(' › ');
+  }
+  function steps(row) {
+    var ul = el('ul', 'steps');
+    row.steps.forEach(function (s) {
+      var li = el('li');
+      var chip = el('span', 'step ' + s.kind, s.label);
+      if (s.frames != null) chip.appendChild(el('small', null, s.frames + 'f'));
+      li.appendChild(chip);
+      ul.appendChild(li);
+    });
+    return ul;
+  }
+  function contact(row) {
+    var c = row.contact, box = el('div', 'contact');
+    if (c.kind === 'active') {
+      var strip = el('span', 'strip');
+      strip.setAttribute('role', 'img');
+      var which = c.first === c.last ? 'frame ' + c.first : 'frames ' + c.first + ' to ' + c.last;
+      strip.setAttribute('aria-label', 'Active ' + which + ' of ' + c.of);
+      for (var i = 1; i <= c.of; i++) strip.appendChild(el('i', i >= c.first && i <= c.last ? 'on' : ''));
+      box.appendChild(strip);
+      box.appendChild(el('span', null, 'Meets wake-up on active ' + which + ' of ' + c.of));
+    } else if (c.kind === 'frame') {
+      var f = c.first === c.last ? 'frame ' + c.first : 'frames ' + c.first + ' to ' + c.last;
+      box.appendChild(el('span', null, 'Multi-hit move: its ' + f + ' meets wake-up'));
+    } else {
+      box.appendChild(el('span', null, c.text));
+    }
+    return box;
+  }
+  function notes(row) {
+    var ul = el('ul', 'notes');
+    if (row.published) {
+      var g = el('li', 'good'); g.appendChild(el('b', null, 'Matches a published in-game result.')); ul.appendChild(g);
+    }
+    row.flags.forEach(function (f) {
+      if (f === 'ceiling') return;
+      var li = el('li', f === 'conflict' ? 'dispute' : 'warn');
+      li.appendChild(el('b', null, f === 'conflict' ? 'Disputed input. ' : 'Fragile. '));
+      li.appendChild(document.createTextNode(f === 'conflict' && row.dispute ? row.dispute : card.flag_text[f]));
+      ul.appendChild(li);
+    });
+    return ul.children.length ? ul : null;
+  }
+  function tags(row) {
+    var out = [];
+    if (row.published) out.push(['published result', 'good']);
+    if (row.flags.indexOf('last active frame') >= 0) out.push(['fragile', 'warn']);
+    if (row.flags.indexOf('conflict') >= 0) out.push(['disputed input', 'dispute']);
+    return out;
+  }
+
+  document.getElementById('ender').textContent = card.ender;
+  var kdText = typeof card.kd === 'number' ? '+' + card.kd : '+' + card.kd[0] + ' to +' + card.kd[1];
+  document.getElementById('kd').textContent = 'Knockdown ' + kdText;
+  document.getElementById('kd-plain').textContent = typeof card.kd === 'number'
+    ? 'You can act ' + card.kd + ' frames before they can.' : '';
+  document.getElementById('status').textContent = 'Timing only, computed from inputs verified on '
+    + card.status.inputs_verified_on + ' (' + card.status.patch_state + '). Re-check against today’s sources: '
+    + card.status.freshness + '.';
+
+  var tiers = document.getElementById('tiers');
+  card.tiers.forEach(function (t) {
+    var row = card.rows[t.pick];
+    var sec = el('section', 'tier');
+    var head = el('div', 'tier-head');
+    head.appendChild(el('span', 'label', t.label));
+    head.appendChild(el('span', 'count', t.count + (t.count === 1 ? ' timing' : ' timings')));
+    sec.appendChild(head);
+    var pick = el('div', 'pick');
+    var a = el('div', 'adv');
+    var b = el('span'); b.appendChild(el('span', 'block', adv(row.block))); b.appendChild(el('span', 'unit', ' on block'));
+    var h = el('span'); h.appendChild(el('span', 'hit', adv(row.hit))); h.appendChild(el('span', 'unit', ' on hit'));
+    a.appendChild(b); a.appendChild(h);
+    pick.appendChild(a);
+    pick.appendChild(steps(row));
+    pick.appendChild(contact(row));
+    var n = notes(row); if (n) pick.appendChild(n);
+    if (t.sturdier != null) {
+      var s = card.rows[t.sturdier], box = el('div', 'sturdier');
+      box.appendChild(el('span', 'label', 'Sturdier pick'));
+      box.appendChild(el('span', 'line', seqText(s) + ': ' + adv(s.block) + ' on block, ' + adv(s.hit) + ' on hit'));
+      pick.appendChild(box);
+    }
+    sec.appendChild(pick);
+    tiers.appendChild(sec);
+  });
+
+  var ny = document.getElementById('not-yet');
+  card.not_yet.forEach(function (x) {
+    var li = el('li'); li.appendChild(el('b', null, x.title)); li.appendChild(document.createTextNode(x.text)); ny.appendChild(li);
+  });
+
+  document.getElementById('all-summary').textContent = 'All ' + card.rows.length + ' timings';
+  var rows = document.getElementById('rows');
+  card.rows.forEach(function (r) {
+    var li = el('li');
+    li.appendChild(el('span', 'b', adv(r.block)));
+    li.appendChild(el('span', 's', seqText(r)));
+    var m = el('span', 'm');
+    var bars = parseInt(r.drive, 10);
+    var cost = (bars === 0 ? 'no Drive' : bars + (bars === 1 ? ' bar' : ' bars')) + (r.drive.indexOf('stock') >= 0 ? ' + stock' : '');
+    m.appendChild(document.createTextNode(adv(r.hit) + ' on hit · ' + cost));
+    tags(r).forEach(function (t) {
+      m.appendChild(document.createTextNode(' · '));
+      m.appendChild(el('span', 'tag ' + t[1], t[0]));
+    });
+    li.appendChild(m);
+    rows.appendChild(li);
+  });
+
+  document.getElementById('rule').textContent = card.ranking_rule;
+  document.getElementById('search').textContent = (card.search.exhaustive ? 'Exhaustive search: ' : 'Capped search: ')
+    + 'every preparation of up to ' + card.search.depth + ' actions (' + card.search.timings + ' distinct timings) against '
+    + card.search.meaties + ' meaties. Common-ender rank ' + card.prevalence.rank + ' ('
+    + card.prevalence.combo_count + ' combos end on it in the combo guide used as a stand-in for match data).';
+  document.getElementById('prov').textContent = 'Solver output ' + card.provenance.output + ' · inputs '
+    + card.provenance.inputs + ' · knockdown table ' + card.provenance.calc + '.';
+})();
+</script>
