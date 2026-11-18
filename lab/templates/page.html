@@ -194,13 +194,19 @@ footer p { margin: 0; }
       li.appendChild(document.createTextNode(f === 'conflict' && row.dispute ? row.dispute : card.flag_text[f]));
       ul.appendChild(li);
     });
+    if (row.prep_dispute) {
+      var pd = el('li', 'dispute');
+      pd.appendChild(el('b', null, 'Disputed preparation length. '));
+      pd.appendChild(document.createTextNode(row.prep_dispute));
+      ul.appendChild(pd);
+    }
     return ul.children.length ? ul : null;
   }
   function tags(row) {
     var out = [];
     if (row.published) out.push(['published result', 'good']);
     if (row.flags.indexOf('last active frame') >= 0) out.push(['fragile', 'warn']);
-    if (row.flags.indexOf('conflict') >= 0) out.push(['disputed input', 'dispute']);
+    if (row.flags.indexOf('conflict') >= 0 || row.prep_dispute) out.push(['disputed input', 'dispute']);
     return out;
   }
 
@@ -209,9 +215,17 @@ footer p { margin: 0; }
   document.getElementById('kd').textContent = 'Knockdown ' + kdText;
   document.getElementById('kd-plain').textContent = typeof card.kd === 'number'
     ? 'You can act ' + card.kd + ' frames before they can.' : '';
-  document.getElementById('status').textContent = 'Timing only, computed from inputs verified on '
-    + card.status.inputs_verified_on + ' (' + card.status.patch_state + '). Re-check against today’s sources: '
-    + card.status.freshness + '.';
+  var fr = card.status.freshness, statusText = 'Timing only, computed from inputs verified on '
+    + card.status.inputs_verified_on + ' (' + card.status.patch_state + '). ';
+  if (fr.state === 'checked') {
+    statusText += 'Re-checked on ' + fr.checked_on + ' against Capcom, SuperCombo and FAT: ' + fr.match + ' of '
+      + fr.comparisons + ' comparisons match, ' + fr.explained + ' explained, ' + fr.open_conflicts
+      + ' open disagreements' + (fr.unexplained ? ', ' + fr.unexplained + ' UNEXPLAINED' : '') + '. The '
+      + fr.latest_patch + ' patch ' + (fr.latest_patch_touched_ryu ? 'changed Ryu.' : 'did not change Ryu.');
+  } else {
+    statusText += 'Re-check against today’s sources: pending.';
+  }
+  document.getElementById('status').textContent = statusText;
 
   var tiers = document.getElementById('tiers');
   card.tiers.forEach(function (t) {

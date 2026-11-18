@@ -1,0 +1,371 @@
+{
+ "capcom/battle_change-20260803-en-ryu.txt": {
+  "bytes": 3953,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"RYU-08.03.2026 update Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "471e8d9e7665fc0aa37a6836cc6a5346e59b6d0aaa468e5701e119c619c72070",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20260803/ryu"
+ },
+ "capcom/battle_change-20261013-en-ryu.txt": {
+  "bytes": 413,
+  "family": "capcom",
+  "http_status": 404,
+  "independence_group": "capcom-official",
+  "note": "page title 'Page cannot be found.'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "06ce5939590d52fcc37e496d630fb929c34f6f22b0afb4ceaacd49ea3ab57f95",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20261013/ryu"
+ },
+ "capcom/battle_change-20261013-en.txt": {
+  "bytes": 1752,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"10.13.2026 update Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "a24f0b896dbb9641abbfccfed383a4e67ae869b53501401097ed440fe40deca3",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20261013"
+ },
+ "capcom/battle_change-20261013-ja-jp.txt": {
+  "bytes": 2036,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"バトル変更リスト 2026.10.13 update｜Buckler's Boot Camp（バックラーズブートキャンプ）｜STREET FIGHTER 6（ストリートファイター6）｜CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "f8247cdfe810b3f1e6f3bd6434d1b606b21d5d566a9398334c25d7de4993c2d7",
+  "url": "https://www.streetfighter.com/6/buckler/ja-jp/battle_change/20261013"
+ },
+ "capcom/frame-ryu.html": {
+  "bytes": 376899,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "full rendered page; page title 'RYU FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "085c857c15cf17ca116e56e210402d8da3e3c305cac5a491c571b219b84dc47a",
+  "url": "https://www.streetfighter.com/6/en-us/character/ryu/frame"
+ },
+ "capcom/frame-ryu.rows.json": {
+  "bytes": 18254,
+  "family": "capcom",
+  "independence_group": "capcom-official",
+  "note": "table rows as rendered; page title 'RYU FRAME DATA | STREET FIGHTER 6 | CAPCOM'",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "rows": 82,
+  "sha256": "36e12528676519c24b2969dfe7750c840f75290162fad72964d4f29f2b6cdae0",
+  "url": "https://www.streetfighter.com/6/en-us/character/ryu/frame"
+ },
+ "capcom/versions.json": {
+  "bytes": 1041,
+  "family": "capcom",
+  "http_status": 200,
+  "independence_group": "capcom-official",
+  "note": "page title \"10.13.2026 update Battle Change List | Buckler's Boot Camp | STREET FIGHTER 6 | CAPCOM\"",
+  "retrieved_on": "2026-11-18",
+  "route": "headless Chromium",
+  "sha256": "5f8715a1684adb61e1464f9e9b8c6167d94e0840bfc6e157539ef857578130e0",
+  "url": "https://www.streetfighter.com/6/buckler/en/battle_change"
+ },
+ "fat/SF6FrameData.Ryu.json": {
+  "bytes": 73626,
+  "commit": "33cda6dabcd56ee751f0e75e7ac477e073486e04",
+  "family": "fat",
+  "independence_group": "community-wiki",
+  "note": "Ryu section of FAT's data file, re-serialised sorted; GPL-3.0, used for cross-checking only",
+  "retrieved_on": "2026-11-18",
+  "route": "git clone (pinned commit)",
+  "sha256": "b00198b6e0f01b6da2db3c4f7565aac8e2b1fb50d116a209e8bca72f55793de9",
+  "url": "https://github.com/D4RKONION/FAT/blob/33cda6dabcd56ee751f0e75e7ac477e073486e04/src/js/constants/framedata/SF6FrameData.json"
+ },
+ "supercombo/cargo/SF6_CharacterData.Ryu.json": {
+  "bytes": 478,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "database rows of SF6_CharacterData for Ryu",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API (paged, rows re-serialised sorted)",
+  "rows": 1,
+  "sha256": "cfc5ee893b4b73114c29ca5386c399eaf075ded37656bc749a39ab571c804bdc",
+  "url": "https://wiki.supercombo.gg/api.php?action=cargoquery&tables=SF6_CharacterData&where=chara%3D%22Ryu%22"
+ },
+ "supercombo/cargo/SF6_CharacterData.fields.json": {
+  "bytes": 793,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "field list of database table SF6_CharacterData",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "478bdc0899d9c42df8953ce1ed331edeaf807c6424bccf310f5962d4e4a8a415",
+  "url": "https://wiki.supercombo.gg/api.php?action=cargofields&table=SF6_CharacterData&format=json"
+ },
+ "supercombo/cargo/SF6_FrameData.Ryu.json": {
+  "bytes": 118843,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "database rows of SF6_FrameData for Ryu",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API (paged, rows re-serialised sorted)",
+  "rows": 77,
+  "sha256": "775a26cccbb23c358872c075347e1174a1dab8af4421b4d7013ea48fe010c4f5",
+  "url": "https://wiki.supercombo.gg/api.php?action=cargoquery&tables=SF6_FrameData&where=chara%3D%22Ryu%22"
+ },
+ "supercombo/cargo/SF6_FrameData.fields.json": {
+  "bytes": 1777,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "field list of database table SF6_FrameData",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "c3f547f5d2786b6bc4fbcbaf3c60772a5b767fea43a484653bd140493fa6c4bc",
+  "url": "https://wiki.supercombo.gg/api.php?action=cargofields&table=SF6_FrameData&format=json"
+ },
+ "supercombo/revisions/Defense.json": {
+  "bytes": 3214,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Defense",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "59c34c60b579db90ea788f0bc2e3e01bc7fd63c0b7cfff9e0ac9c0bc6cd97158",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FDefense&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Game_Data.json": {
+  "bytes": 3913,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Game_Data",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "15eb93c1472d1c9017bcb95582dbea1827408eae31d702224738f993cdd30659",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FGame_Data&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Gauges.json": {
+  "bytes": 3377,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Gauges",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "c14c5343bf3ecad87be2447c12d64a0d680a8877cacf8e49e33707de240fa1ce",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FGauges&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Glossary.json": {
+  "bytes": 3289,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Glossary",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "db0d65a52d1c56b26da6206a56f138bfee5a39a786cfffb7c932ab531e92dfb2",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FGlossary&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Movement.json": {
+  "bytes": 3246,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Movement",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "bec01c397aed1cb4fa92c64a17ac975848e72108b0bf17b901e9fb8ad0f1086c",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FMovement&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Offense.json": {
+  "bytes": 3321,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Offense",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "eb3edbb6f86c68d85203886153495f90aed1a63e966bedf3b0c2f9114498b0c7",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FOffense&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Ryu.json": {
+  "bytes": 3872,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Ryu",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "90118b970dbf302249ec24608a4e94a58def1b6cefdbaaa9d6acd2b2330ea558",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FRyu&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Ryu_Combos.json": {
+  "bytes": 3771,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Ryu/Combos",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "954fad96d5a02aa4e2b866563b7b3a93b661562ed918f109dcdcda571b6df371",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FRyu%2FCombos&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Ryu_Data.json": {
+  "bytes": 3370,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Ryu/Data",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "1112c79fb005917f0fd4492fdfc3e1301ac1575a296af06c73dff40125e2b804",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FRyu%2FData&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Ryu_Matchups.json": {
+  "bytes": 3162,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Ryu/Matchups",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "b121ad718c039ffcd16978652b87bee4ddca5ff854ac7412fcb08cbcd986e6dc",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FRyu%2FMatchups&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Ryu_Resources.json": {
+  "bytes": 2384,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Ryu/Resources",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "6fae2c3ca42986d61e3d41e678a07ad11e97bc791a866f478aa8e6bf75127544",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FRyu%2FResources&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Ryu_Strategy.json": {
+  "bytes": 3627,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Ryu/Strategy",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "6b69413ad4922861fdf650eb0c5aef66408225b498940f295624f45804c04388",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FRyu%2FStrategy&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/revisions/Version_2.05.json": {
+  "bytes": 799,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "revision history of Street_Fighter_6/Version/2.05",
+  "retrieved_on": "2026-11-18",
+  "route": "curl MediaWiki API",
+  "sha256": "2344f922cbc28df3b13b7e8b81ae785fdef8088db77cea5416b379a4464245a2",
+  "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FVersion%2F2.05&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+ },
+ "supercombo/wikitext/Defense@364973.json": {
+  "bytes": 13212,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Defense at revision 364973",
+  "retrieved_on": "2026-11-18",
+  "revid": 364973,
+  "route": "curl MediaWiki API",
+  "sha256": "e81024af49af2642d1b8b277075f6cd9c8a6a4fa67459e55e0a5a10567f45ec9",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=364973&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Game_Data@384214.json": {
+  "bytes": 71408,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Game_Data at revision 384214",
+  "retrieved_on": "2026-11-18",
+  "revid": 384214,
+  "route": "curl MediaWiki API",
+  "sha256": "24a1e609a40039b8e988a89e3f131d460be27dc514bc0e1ba471149e562a6189",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=384214&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Gauges@376566.json": {
+  "bytes": 43016,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Gauges at revision 376566",
+  "retrieved_on": "2026-11-18",
+  "revid": 376566,
+  "route": "curl MediaWiki API",
+  "sha256": "1fd1acc083499ef062677f66e3f148f50f1330bcf960be27dbe9d62fef3b5edf",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=376566&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Glossary@367082.json": {
+  "bytes": 15511,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Glossary at revision 367082",
+  "retrieved_on": "2026-11-18",
+  "revid": 367082,
+  "route": "curl MediaWiki API",
+  "sha256": "95d05611d9d92680d71b496aabfae9bb87aa72d604561670b70f48ff4583f367",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=367082&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Movement@376569.json": {
+  "bytes": 6920,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Movement at revision 376569",
+  "retrieved_on": "2026-11-18",
+  "revid": 376569,
+  "route": "curl MediaWiki API",
+  "sha256": "67a0ec52e3cd87225cbf2e8db5becb9f1f5beaed9bf095082ae8cdb05921a6a7",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=376569&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Offense@380932.json": {
+  "bytes": 24086,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Offense at revision 380932",
+  "retrieved_on": "2026-11-18",
+  "revid": 380932,
+  "route": "curl MediaWiki API",
+  "sha256": "e2b87d01b73eed542572b8998ef92ee0cadbac9b1488f519371e73a644eb6b87",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=380932&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Ryu_Combos@330933.json": {
+  "bytes": 112312,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Ryu/Combos at revision 330933",
+  "retrieved_on": "2026-11-18",
+  "revid": 330933,
+  "route": "curl MediaWiki API",
+  "sha256": "cd530ecd4dd291423d6e195e7f637a4af534af270a905c72c6f0d2788d8bf98e",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=330933&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Ryu_Data@378774.json": {
+  "bytes": 93545,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Ryu/Data at revision 378774",
+  "retrieved_on": "2026-11-18",
+  "revid": 378774,
+  "route": "curl MediaWiki API",
+  "sha256": "87b92272b5513c260c472ca20375c53122b14bdac9404582298102430692c8b3",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=378774&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Ryu_Strategy@376493.json": {
+  "bytes": 32129,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Ryu/Strategy at revision 376493",
+  "retrieved_on": "2026-11-18",
+  "revid": 376493,
+  "route": "curl MediaWiki API",
+  "sha256": "f4568dcd2117f3e1ebd303a7aed3eb43e2debf0e4218ad351001f8b87f2df125",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=376493&prop=wikitext&format=json"
+ },
+ "supercombo/wikitext/Version_2.05@380923.json": {
+  "bytes": 2017,
+  "family": "supercombo",
+  "independence_group": "community-wiki",
+  "note": "wikitext of Street_Fighter_6/Version/2.05 at revision 380923",
+  "retrieved_on": "2026-11-18",
+  "revid": 380923,
+  "route": "curl MediaWiki API",
+  "sha256": "37d128045869406c906f5df78accd82c117295c957a2b81c6ea659a5ff4bf52a",
+  "url": "https://wiki.supercombo.gg/api.php?action=parse&oldid=380923&prop=wikitext&format=json"
+ }
+}

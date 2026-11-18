@@ -94,7 +94,35 @@ def drive_label(drive):
     return label + (" and a Denjin stock" if "stock" in drive else "")
 
 
+def load_freshness(lock):
+    """The freshness check (lab/freshness.py) is optional input: without it the card says 'pending'."""
+    path = ROOT / "data" / "freshness.json"
+    if not path.exists():
+        return {"state": "pending"}, {}
+    fresh = json.loads(path.read_text())
+    if fresh["core_inputs_sha256"] != lock["files"]["ryu_inputs.json"]["sha256"]:
+        raise SystemExit("data/freshness.json was computed for different inputs; re-run lab/freshness.py")
+    counts = fresh["counts"]
+    latest = fresh["patch_state"]["latest_patch"]
+    status = {
+        "state": "checked",
+        "checked_on": fresh["checked_on"],
+        "comparisons": sum(counts.values()),
+        "match": counts.get("match", 0),
+        "explained": counts.get("explained", 0),
+        "open_conflicts": counts.get("open_conflict", 0),
+        "unexplained": counts.get("MISMATCH", 0),
+        "latest_patch": f"{latest[:4]}-{latest[4:6]}-{latest[6:]}",
+        "latest_patch_touched_ryu": fresh["patch_state"]["latest_patch_ryu_page_http_status"] == 200,
+    }
+    # A disputed preparation length puts every row that uses that preparation in doubt.
+    prep_disputes = {r["subject"]: r["note"] for r in fresh["rows"]
+                     if r["kind"] == "whiff_total" and r["status"] == "open_conflict"}
+    return status, prep_disputes
+
+
 def build_card(result, lock, ender_name):
+    freshness, prep_disputes = load_freshness(lock)
     inputs = json.loads((CORE / "ryu_inputs.json").read_text())
     p = inputs["preparations"]
     prep_cost = dict(p["whiff"])
@@ -121,6 +149,7 @@ def build_card(result, lock, ender_name):
             "flags": [f for f in row["flags"] if f in FLAG_TEXT],
             "equivalents": next((f for f in row["flags"] if f not in FLAG_TEXT), None),
             "dispute": dispute,
+            "prep_dispute": next((prep_disputes[p] for p in row["prep"] if p in prep_disputes), None),
             "published": row["seq"] in published,
         })
 
@@ -131,7 +160,8 @@ def build_card(result, lock, ender_name):
     for drive in sorted({r["drive"] for r in rows}, key=drive_order):
         in_tier = [i for i, r in enumerate(rows) if r["drive"] == drive]
         top = in_tier[0]
-        sturdy = next((i for i in in_tier if not {"last active frame", "conflict"} & set(rows[i]["flags"])), None)
+        sturdy = next((i for i in in_tier if not {"last active frame", "conflict"} & set(rows[i]["flags"])
+                       and not rows[i]["prep_dispute"]), None)
         tiers.append({"drive": drive, "label": drive_label(drive), "pick": top,
                       "sturdier": sturdy if sturdy != top else None, "count": len(in_tier)})
 
@@ -142,7 +172,7 @@ def build_card(result, lock, ender_name):
                        "source": result["prevalence_source"]},
         "status": {"inputs_verified_on": lock["inputs_verified_on"],
                    "patch_state": lock["patch_state_at_verification"],
-                   "freshness": "pending"},
+                   "freshness": freshness},
         "ranking_rule": "Ranked by block advantage within each Drive cost. This is a stand-in until "
                         "opponent data exists; the real ranking is what each pick beats.",
         "tiers": tiers,

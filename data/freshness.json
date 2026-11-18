@@ -1,0 +1,3143 @@
+{
+ "checked_on": "2026-11-18",
+ "core_inputs_sha256": "649d5cf5c808f004dc4ccdddbfaa12ac0258aab20a6245f2a6518a7dab4e62cd",
+ "patch_state": {
+  "capcom_versions_newest_first": [
+   "20261013",
+   "20260803",
+   "20260528",
+   "20260415",
+   "20260317",
+   "20251216"
+  ],
+  "latest_patch": "20261013",
+  "latest_patch_ryu_page_http_status": 404,
+  "supercombo_ryu_data_latest_revid": 378774,
+  "supercombo_ryu_data_latest_edit": "2026-09-09T08:27:36Z",
+  "audited_revid_2026_09_28": 378774
+ },
+ "counts": {
+  "explained": 1,
+  "match": 303,
+  "open_conflict": 3
+ },
+ "sources": {
+  "capcom/frame-ryu.rows.json": {
+   "sha256": "36e12528676519c24b2969dfe7750c840f75290162fad72964d4f29f2b6cdae0",
+   "retrieved_on": "2026-11-18",
+   "url": "https://www.streetfighter.com/6/en-us/character/ryu/frame"
+  },
+  "supercombo/cargo/SF6_FrameData.Ryu.json": {
+   "sha256": "775a26cccbb23c358872c075347e1174a1dab8af4421b4d7013ea48fe010c4f5",
+   "retrieved_on": "2026-11-18",
+   "url": "https://wiki.supercombo.gg/api.php?action=cargoquery&tables=SF6_FrameData&where=chara%3D%22Ryu%22"
+  },
+  "fat/SF6FrameData.Ryu.json": {
+   "sha256": "b00198b6e0f01b6da2db3c4f7565aac8e2b1fb50d116a209e8bca72f55793de9",
+   "retrieved_on": "2026-11-18",
+   "url": "https://github.com/D4RKONION/FAT/blob/33cda6dabcd56ee751f0e75e7ac477e073486e04/src/js/constants/framedata/SF6FrameData.json"
+  },
+  "supercombo/revisions/Ryu_Data.json": {
+   "sha256": "1112c79fb005917f0fd4492fdfc3e1301ac1575a296af06c73dff40125e2b804",
+   "retrieved_on": "2026-11-18",
+   "url": "https://wiki.supercombo.gg/api.php?action=query&prop=revisions&titles=Street_Fighter_6%2FRyu%2FData&rvprop=ids%7Ctimestamp%7Ccomment&rvlimit=30&format=json"
+  },
+  "capcom/versions.json": {
+   "sha256": "5f8715a1684adb61e1464f9e9b8c6167d94e0840bfc6e157539ef857578130e0",
+   "retrieved_on": "2026-11-18",
+   "url": "https://www.streetfighter.com/6/buckler/en/battle_change"
+  },
+  "capcom/battle_change-20261013-en.txt": {
+   "sha256": "a24f0b896dbb9641abbfccfed383a4e67ae869b53501401097ed440fe40deca3",
+   "retrieved_on": "2026-11-18",
+   "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20261013"
+  },
+  "capcom/battle_change-20261013-ja-jp.txt": {
+   "sha256": "f8247cdfe810b3f1e6f3bd6434d1b606b21d5d566a9398334c25d7de4993c2d7",
+   "retrieved_on": "2026-11-18",
+   "url": "https://www.streetfighter.com/6/buckler/ja-jp/battle_change/20261013"
+  },
+  "capcom/battle_change-20261013-en-ryu.txt": {
+   "sha256": "06ce5939590d52fcc37e496d630fb929c34f6f22b0afb4ceaacd49ea3ab57f95",
+   "retrieved_on": "2026-11-18",
+   "url": "https://www.streetfighter.com/6/buckler/en/battle_change/20261013/ryu"
+  }
+ },
+ "rows": [
+  {
+   "kind": "startup",
+   "subject": "5LP",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "5LP",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "5LP",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "active",
+   "subject": "5LP",
+   "source": "capcom",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "4-6"
+  },
+  {
+   "kind": "active",
+   "subject": "5LP",
+   "source": "supercombo",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "active",
+   "subject": "5LP",
+   "source": "fat",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "block",
+   "subject": "5LP",
+   "source": "capcom",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "5LP",
+   "source": "supercombo",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "5LP",
+   "source": "fat",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "hit",
+   "subject": "5LP",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5LP",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "+4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5LP",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "2LP",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "2LP",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "2LP",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "active",
+   "subject": "2LP",
+   "source": "capcom",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "4-5"
+  },
+  {
+   "kind": "active",
+   "subject": "2LP",
+   "source": "supercombo",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "active",
+   "subject": "2LP",
+   "source": "fat",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "block",
+   "subject": "2LP",
+   "source": "capcom",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "2LP",
+   "source": "supercombo",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "2LP",
+   "source": "fat",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "hit",
+   "subject": "2LP",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "hit",
+   "subject": "2LP",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "+4"
+  },
+  {
+   "kind": "hit",
+   "subject": "2LP",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "2LK",
+   "source": "capcom",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "startup",
+   "subject": "2LK",
+   "source": "supercombo",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "startup",
+   "subject": "2LK",
+   "source": "fat",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "active",
+   "subject": "2LK",
+   "source": "capcom",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "5-6"
+  },
+  {
+   "kind": "active",
+   "subject": "2LK",
+   "source": "supercombo",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "active",
+   "subject": "2LK",
+   "source": "fat",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "block",
+   "subject": "2LK",
+   "source": "capcom",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "2LK",
+   "source": "supercombo",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "2LK",
+   "source": "fat",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "hit",
+   "subject": "2LK",
+   "source": "capcom",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "hit",
+   "subject": "2LK",
+   "source": "supercombo",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "+3"
+  },
+  {
+   "kind": "hit",
+   "subject": "2LK",
+   "source": "fat",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "startup",
+   "subject": "5LK",
+   "source": "capcom",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "startup",
+   "subject": "5LK",
+   "source": "supercombo",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "startup",
+   "subject": "5LK",
+   "source": "fat",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "active",
+   "subject": "5LK",
+   "source": "capcom",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "5-7"
+  },
+  {
+   "kind": "active",
+   "subject": "5LK",
+   "source": "supercombo",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "active",
+   "subject": "5LK",
+   "source": "fat",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "block",
+   "subject": "5LK",
+   "source": "capcom",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "block",
+   "subject": "5LK",
+   "source": "supercombo",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "block",
+   "subject": "5LK",
+   "source": "fat",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5LK",
+   "source": "capcom",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "hit",
+   "subject": "5LK",
+   "source": "supercombo",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "+2"
+  },
+  {
+   "kind": "hit",
+   "subject": "5LK",
+   "source": "fat",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "startup",
+   "subject": "5MP",
+   "source": "capcom",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "startup",
+   "subject": "5MP",
+   "source": "supercombo",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "startup",
+   "subject": "5MP",
+   "source": "fat",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "active",
+   "subject": "5MP",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "6-9"
+  },
+  {
+   "kind": "active",
+   "subject": "5MP",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "active",
+   "subject": "5MP",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "block",
+   "subject": "5MP",
+   "source": "capcom",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "5MP",
+   "source": "supercombo",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "block",
+   "subject": "5MP",
+   "source": "fat",
+   "core": -1,
+   "source_value": -1,
+   "status": "match",
+   "source_text": "-1"
+  },
+  {
+   "kind": "hit",
+   "subject": "5MP",
+   "source": "capcom",
+   "core": 7,
+   "source_value": 7,
+   "status": "match",
+   "source_text": "7"
+  },
+  {
+   "kind": "hit",
+   "subject": "5MP",
+   "source": "supercombo",
+   "core": 7,
+   "source_value": 7,
+   "status": "match",
+   "source_text": "+7"
+  },
+  {
+   "kind": "hit",
+   "subject": "5MP",
+   "source": "fat",
+   "core": 7,
+   "source_value": 7,
+   "status": "match",
+   "source_text": "7"
+  },
+  {
+   "kind": "startup",
+   "subject": "2MP",
+   "source": "capcom",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "startup",
+   "subject": "2MP",
+   "source": "supercombo",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "startup",
+   "subject": "2MP",
+   "source": "fat",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "active",
+   "subject": "2MP",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "6-9"
+  },
+  {
+   "kind": "active",
+   "subject": "2MP",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "active",
+   "subject": "2MP",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "block",
+   "subject": "2MP",
+   "source": "capcom",
+   "core": 0,
+   "source_value": 0,
+   "status": "match",
+   "source_text": "0"
+  },
+  {
+   "kind": "block",
+   "subject": "2MP",
+   "source": "supercombo",
+   "core": 0,
+   "source_value": 0,
+   "status": "match",
+   "source_text": "0"
+  },
+  {
+   "kind": "block",
+   "subject": "2MP",
+   "source": "fat",
+   "core": 0,
+   "source_value": 0,
+   "status": "match",
+   "source_text": "0"
+  },
+  {
+   "kind": "hit",
+   "subject": "2MP",
+   "source": "capcom",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "hit",
+   "subject": "2MP",
+   "source": "supercombo",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "+5"
+  },
+  {
+   "kind": "hit",
+   "subject": "2MP",
+   "source": "fat",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "startup",
+   "subject": "2MK",
+   "source": "capcom",
+   "core": 8,
+   "source_value": 8,
+   "status": "match",
+   "source_text": "8"
+  },
+  {
+   "kind": "startup",
+   "subject": "2MK",
+   "source": "supercombo",
+   "core": 8,
+   "source_value": 8,
+   "status": "match",
+   "source_text": "8"
+  },
+  {
+   "kind": "startup",
+   "subject": "2MK",
+   "source": "fat",
+   "core": 8,
+   "source_value": 8,
+   "status": "match",
+   "source_text": "8"
+  },
+  {
+   "kind": "active",
+   "subject": "2MK",
+   "source": "capcom",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "8-10"
+  },
+  {
+   "kind": "active",
+   "subject": "2MK",
+   "source": "supercombo",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "active",
+   "subject": "2MK",
+   "source": "fat",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "block",
+   "subject": "2MK",
+   "source": "capcom",
+   "core": -6,
+   "source_value": -6,
+   "status": "match",
+   "source_text": "-6"
+  },
+  {
+   "kind": "block",
+   "subject": "2MK",
+   "source": "supercombo",
+   "core": -6,
+   "source_value": -6,
+   "status": "match",
+   "source_text": "-6"
+  },
+  {
+   "kind": "block",
+   "subject": "2MK",
+   "source": "fat",
+   "core": -6,
+   "source_value": -6,
+   "status": "match",
+   "source_text": "-6"
+  },
+  {
+   "kind": "hit",
+   "subject": "2MK",
+   "source": "capcom",
+   "core": 1,
+   "source_value": 1,
+   "status": "match",
+   "source_text": "1"
+  },
+  {
+   "kind": "hit",
+   "subject": "2MK",
+   "source": "supercombo",
+   "core": 1,
+   "source_value": 1,
+   "status": "match",
+   "source_text": "+1"
+  },
+  {
+   "kind": "hit",
+   "subject": "2MK",
+   "source": "fat",
+   "core": 1,
+   "source_value": 1,
+   "status": "match",
+   "source_text": "1"
+  },
+  {
+   "kind": "startup",
+   "subject": "5MK",
+   "source": "capcom",
+   "core": 9,
+   "source_value": 9,
+   "status": "match",
+   "source_text": "9"
+  },
+  {
+   "kind": "startup",
+   "subject": "5MK",
+   "source": "supercombo",
+   "core": 9,
+   "source_value": 9,
+   "status": "match",
+   "source_text": "9"
+  },
+  {
+   "kind": "startup",
+   "subject": "5MK",
+   "source": "fat",
+   "core": 9,
+   "source_value": 9,
+   "status": "match",
+   "source_text": "9"
+  },
+  {
+   "kind": "active",
+   "subject": "5MK",
+   "source": "capcom",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "9-11"
+  },
+  {
+   "kind": "active",
+   "subject": "5MK",
+   "source": "supercombo",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "active",
+   "subject": "5MK",
+   "source": "fat",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "block",
+   "subject": "5MK",
+   "source": "capcom",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "block",
+   "subject": "5MK",
+   "source": "supercombo",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "block",
+   "subject": "5MK",
+   "source": "fat",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5MK",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5MK",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "+4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5MK",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "5HP",
+   "source": "capcom",
+   "core": 10,
+   "source_value": 10,
+   "status": "match",
+   "source_text": "10"
+  },
+  {
+   "kind": "startup",
+   "subject": "5HP",
+   "source": "supercombo",
+   "core": 10,
+   "source_value": 10,
+   "status": "match",
+   "source_text": "10"
+  },
+  {
+   "kind": "startup",
+   "subject": "5HP",
+   "source": "fat",
+   "core": 10,
+   "source_value": 10,
+   "status": "match",
+   "source_text": "10"
+  },
+  {
+   "kind": "active",
+   "subject": "5HP",
+   "source": "capcom",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "10-14"
+  },
+  {
+   "kind": "active",
+   "subject": "5HP",
+   "source": "supercombo",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "active",
+   "subject": "5HP",
+   "source": "fat",
+   "core": 5,
+   "source_value": 5,
+   "status": "match",
+   "source_text": "5"
+  },
+  {
+   "kind": "block",
+   "subject": "5HP",
+   "source": "capcom",
+   "core": -2,
+   "source_value": -2,
+   "status": "match",
+   "source_text": "-2"
+  },
+  {
+   "kind": "block",
+   "subject": "5HP",
+   "source": "supercombo",
+   "core": -2,
+   "source_value": -2,
+   "status": "match",
+   "source_text": "-2"
+  },
+  {
+   "kind": "block",
+   "subject": "5HP",
+   "source": "fat",
+   "core": -2,
+   "source_value": -2,
+   "status": "match",
+   "source_text": "-2"
+  },
+  {
+   "kind": "hit",
+   "subject": "5HP",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5HP",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "+4"
+  },
+  {
+   "kind": "hit",
+   "subject": "5HP",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "6HK",
+   "source": "capcom",
+   "core": 16,
+   "source_value": 16,
+   "status": "match",
+   "source_text": "16"
+  },
+  {
+   "kind": "startup",
+   "subject": "6HK",
+   "source": "supercombo",
+   "core": 16,
+   "source_value": 16,
+   "status": "match",
+   "source_text": "16"
+  },
+  {
+   "kind": "startup",
+   "subject": "6HK",
+   "source": "fat",
+   "core": 16,
+   "source_value": 16,
+   "status": "match",
+   "source_text": "16"
+  },
+  {
+   "kind": "active",
+   "subject": "6HK",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "16-19"
+  },
+  {
+   "kind": "active",
+   "subject": "6HK",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "active",
+   "subject": "6HK",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "block",
+   "subject": "6HK",
+   "source": "capcom",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "block",
+   "subject": "6HK",
+   "source": "supercombo",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "block",
+   "subject": "6HK",
+   "source": "fat",
+   "core": -4,
+   "source_value": -4,
+   "status": "match",
+   "source_text": "-4"
+  },
+  {
+   "kind": "hit",
+   "subject": "6HK",
+   "source": "capcom",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "hit",
+   "subject": "6HK",
+   "source": "supercombo",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "+2"
+  },
+  {
+   "kind": "hit",
+   "subject": "6HK",
+   "source": "fat",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "startup",
+   "subject": "LP Hashogeki",
+   "source": "capcom",
+   "core": 12,
+   "source_value": 12,
+   "status": "match",
+   "source_text": "12"
+  },
+  {
+   "kind": "startup",
+   "subject": "LP Hashogeki",
+   "source": "supercombo",
+   "core": 12,
+   "source_value": 12,
+   "status": "match",
+   "source_text": "12"
+  },
+  {
+   "kind": "startup",
+   "subject": "LP Hashogeki",
+   "source": "fat",
+   "core": 12,
+   "source_value": 12,
+   "status": "match",
+   "source_text": "12"
+  },
+  {
+   "kind": "active",
+   "subject": "LP Hashogeki",
+   "source": "capcom",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "12-17"
+  },
+  {
+   "kind": "active",
+   "subject": "LP Hashogeki",
+   "source": "supercombo",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "active",
+   "subject": "LP Hashogeki",
+   "source": "fat",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "block",
+   "subject": "LP Hashogeki",
+   "source": "capcom",
+   "core": -3,
+   "source_value": -3,
+   "status": "match",
+   "source_text": "-3"
+  },
+  {
+   "kind": "block",
+   "subject": "LP Hashogeki",
+   "source": "supercombo",
+   "core": -3,
+   "source_value": -3,
+   "status": "match",
+   "source_text": "-3"
+  },
+  {
+   "kind": "block",
+   "subject": "LP Hashogeki",
+   "source": "fat",
+   "core": -3,
+   "source_value": -3,
+   "status": "match",
+   "source_text": "-3"
+  },
+  {
+   "kind": "hit",
+   "subject": "LP Hashogeki",
+   "source": "capcom",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "hit",
+   "subject": "LP Hashogeki",
+   "source": "supercombo",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "+2"
+  },
+  {
+   "kind": "hit",
+   "subject": "LP Hashogeki",
+   "source": "fat",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "startup",
+   "subject": "OD Hashogeki",
+   "source": "capcom",
+   "core": 18,
+   "source_value": 18,
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "startup",
+   "subject": "OD Hashogeki",
+   "source": "supercombo",
+   "core": 18,
+   "source_value": 18,
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "startup",
+   "subject": "OD Hashogeki",
+   "source": "fat",
+   "core": 18,
+   "source_value": 18,
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "active",
+   "subject": "OD Hashogeki",
+   "source": "capcom",
+   "core": 6,
+   "source_value": 5,
+   "status": "open_conflict",
+   "source_text": "18-22",
+   "note": "Known: Capcom prints 18-22 (5 active); the community databases list 6. Already flagged in the core; rows on active frame 6 depend on it."
+  },
+  {
+   "kind": "active",
+   "subject": "OD Hashogeki",
+   "source": "supercombo",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "active",
+   "subject": "OD Hashogeki",
+   "source": "fat",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "block",
+   "subject": "OD Hashogeki",
+   "source": "capcom",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "block",
+   "subject": "OD Hashogeki",
+   "source": "supercombo",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "+3"
+  },
+  {
+   "kind": "block",
+   "subject": "OD Hashogeki",
+   "source": "fat",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "hit",
+   "subject": "OD Hashogeki",
+   "source": "capcom",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "hit",
+   "subject": "OD Hashogeki",
+   "source": "supercombo",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "+3"
+  },
+  {
+   "kind": "hit",
+   "subject": "OD Hashogeki",
+   "source": "fat",
+   "core": 3,
+   "source_value": 3,
+   "status": "match",
+   "source_text": "3"
+  },
+  {
+   "kind": "startup",
+   "subject": "Denjin OD Hashogeki",
+   "source": "capcom",
+   "core": 18,
+   "source_value": 18,
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "startup",
+   "subject": "Denjin OD Hashogeki",
+   "source": "supercombo",
+   "core": 18,
+   "source_value": 18,
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "startup",
+   "subject": "Denjin OD Hashogeki",
+   "source": "fat",
+   "core": 18,
+   "source_value": 18,
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "active",
+   "subject": "Denjin OD Hashogeki",
+   "source": "capcom",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "18-23"
+  },
+  {
+   "kind": "active",
+   "subject": "Denjin OD Hashogeki",
+   "source": "supercombo",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "active",
+   "subject": "Denjin OD Hashogeki",
+   "source": "fat",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "block",
+   "subject": "Denjin OD Hashogeki",
+   "source": "capcom",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "block",
+   "subject": "Denjin OD Hashogeki",
+   "source": "supercombo",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "+4"
+  },
+  {
+   "kind": "block",
+   "subject": "Denjin OD Hashogeki",
+   "source": "fat",
+   "core": 4,
+   "source_value": 4,
+   "status": "match",
+   "source_text": "4"
+  },
+  {
+   "kind": "startup",
+   "subject": "HK High Blade Kick",
+   "source": "capcom",
+   "core": 27,
+   "source_value": 27,
+   "status": "match",
+   "source_text": "27"
+  },
+  {
+   "kind": "startup",
+   "subject": "HK High Blade Kick",
+   "source": "supercombo",
+   "core": 27,
+   "source_value": 27,
+   "status": "match",
+   "source_text": "27"
+  },
+  {
+   "kind": "startup",
+   "subject": "HK High Blade Kick",
+   "source": "fat",
+   "core": 27,
+   "source_value": 27,
+   "status": "match",
+   "source_text": "27"
+  },
+  {
+   "kind": "active",
+   "subject": "HK High Blade Kick",
+   "source": "capcom",
+   "core": 9,
+   "source_value": 9,
+   "status": "match",
+   "source_text": "27-35"
+  },
+  {
+   "kind": "active",
+   "subject": "HK High Blade Kick",
+   "source": "supercombo",
+   "core": 9,
+   "source_value": 9,
+   "status": "match",
+   "source_text": "9"
+  },
+  {
+   "kind": "active",
+   "subject": "HK High Blade Kick",
+   "source": "fat",
+   "core": 9,
+   "source_value": 9,
+   "status": "match",
+   "source_text": "9"
+  },
+  {
+   "kind": "block",
+   "subject": "HK High Blade Kick",
+   "source": "capcom",
+   "core": -3,
+   "source_value": -3,
+   "status": "match",
+   "source_text": "-3"
+  },
+  {
+   "kind": "block",
+   "subject": "HK High Blade Kick",
+   "source": "supercombo",
+   "core": -3,
+   "source_value": -3,
+   "status": "match",
+   "source_text": "-3(+5)"
+  },
+  {
+   "kind": "block",
+   "subject": "HK High Blade Kick",
+   "source": "fat",
+   "core": -3,
+   "source_value": -3,
+   "status": "match",
+   "source_text": "-3"
+  },
+  {
+   "kind": "hit_windows",
+   "subject": "6HP",
+   "source": "supercombo",
+   "core": [
+    [
+     20,
+     21
+    ],
+    [
+     22,
+     24
+    ]
+   ],
+   "source_value": [
+    [
+     20,
+     21
+    ],
+    [
+     22,
+     24
+    ]
+   ],
+   "status": "match",
+   "source_text": "2,3"
+  },
+  {
+   "kind": "blockstun_per_hit",
+   "subject": "6HP",
+   "source": "supercombo",
+   "core": [
+    8,
+    22
+   ],
+   "source_value": [
+    8,
+    22
+   ],
+   "status": "match",
+   "source_text": "8,22 (24)"
+  },
+  {
+   "kind": "hitstun_last_hit",
+   "subject": "6HP",
+   "source": "supercombo",
+   "core": 25,
+   "source_value": 25,
+   "status": "match",
+   "source_text": "25,25 (27)"
+  },
+  {
+   "kind": "total",
+   "subject": "6HP",
+   "source": "supercombo",
+   "core": 40,
+   "source_value": [
+    40
+   ],
+   "status": "match",
+   "source_text": "40"
+  },
+  {
+   "kind": "hit_windows",
+   "subject": "6HP",
+   "source": "fat",
+   "core": [
+    [
+     20,
+     21
+    ],
+    [
+     22,
+     24
+    ]
+   ],
+   "source_value": [
+    [
+     20,
+     21
+    ],
+    [
+     22,
+     24
+    ]
+   ],
+   "status": "match",
+   "source_text": "2*3"
+  },
+  {
+   "kind": "blockstun_per_hit",
+   "subject": "6HP",
+   "source": "fat",
+   "core": [
+    8,
+    22
+   ],
+   "source_value": [
+    8,
+    22
+   ],
+   "status": "match",
+   "source_text": "8*22 (24)"
+  },
+  {
+   "kind": "hitstun_last_hit",
+   "subject": "6HP",
+   "source": "fat",
+   "core": 25,
+   "source_value": 25,
+   "status": "match",
+   "source_text": "25*25 (27)"
+  },
+  {
+   "kind": "total",
+   "subject": "6HP",
+   "source": "fat",
+   "core": 40,
+   "source_value": [
+    40
+   ],
+   "status": "match",
+   "source_text": "40"
+  },
+  {
+   "kind": "total",
+   "subject": "6HP",
+   "source": "capcom",
+   "core": 40,
+   "source_value": 40,
+   "status": "match",
+   "source_text": "20 / 20-24 / 16"
+  },
+  {
+   "kind": "hit_windows",
+   "subject": "6MP",
+   "source": "supercombo",
+   "core": [
+    [
+     20,
+     20
+    ],
+    [
+     21,
+     23
+    ]
+   ],
+   "source_value": [
+    [
+     20,
+     20
+    ],
+    [
+     21,
+     23
+    ]
+   ],
+   "status": "match",
+   "source_text": "1,3"
+  },
+  {
+   "kind": "blockstun_per_hit",
+   "subject": "6MP",
+   "source": "supercombo",
+   "core": [
+    17,
+    19
+   ],
+   "source_value": [
+    17,
+    19
+   ],
+   "status": "match",
+   "source_text": "17,19 (20)"
+  },
+  {
+   "kind": "hitstun_last_hit",
+   "subject": "6MP",
+   "source": "supercombo",
+   "core": 25,
+   "source_value": 25,
+   "status": "match",
+   "source_text": "17,25 (26)"
+  },
+  {
+   "kind": "total",
+   "subject": "6MP",
+   "source": "supercombo",
+   "core": 42,
+   "source_value": [
+    42
+   ],
+   "status": "match",
+   "source_text": "42"
+  },
+  {
+   "kind": "hit_windows",
+   "subject": "6MP",
+   "source": "fat",
+   "core": [
+    [
+     20,
+     20
+    ],
+    [
+     21,
+     23
+    ]
+   ],
+   "source_value": [
+    [
+     20,
+     20
+    ],
+    [
+     21,
+     23
+    ]
+   ],
+   "status": "match",
+   "source_text": "1*3"
+  },
+  {
+   "kind": "blockstun_per_hit",
+   "subject": "6MP",
+   "source": "fat",
+   "core": [
+    17,
+    19
+   ],
+   "source_value": [
+    17,
+    19
+   ],
+   "status": "match",
+   "source_text": "17*19 (20)"
+  },
+  {
+   "kind": "hitstun_last_hit",
+   "subject": "6MP",
+   "source": "fat",
+   "core": 25,
+   "source_value": 25,
+   "status": "match",
+   "source_text": "19*25 (26)"
+  },
+  {
+   "kind": "hitstun_hit1",
+   "subject": "6MP",
+   "source": "fat",
+   "core": 17,
+   "source_value": 19,
+   "status": "open_conflict",
+   "source_text": "19*25 (26)",
+   "note": "FAT lists first-hit hitstun 19; SuperCombo lists 17. No effect on any output: a meaty's advantage is set by the last connecting hit, which is never hit 1 alone."
+  },
+  {
+   "kind": "total",
+   "subject": "6MP",
+   "source": "fat",
+   "core": 42,
+   "source_value": [
+    42
+   ],
+   "status": "match",
+   "source_text": "42"
+  },
+  {
+   "kind": "total",
+   "subject": "6MP",
+   "source": "capcom",
+   "core": 42,
+   "source_value": 42,
+   "status": "match",
+   "source_text": "20 / 20-23 / 19"
+  },
+  {
+   "kind": "block",
+   "subject": "HP Hashogeki",
+   "source": "capcom",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "block",
+   "subject": "HP Hashogeki",
+   "source": "supercombo",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "+2"
+  },
+  {
+   "kind": "block",
+   "subject": "HP Hashogeki",
+   "source": "fat",
+   "core": 2,
+   "source_value": 2,
+   "status": "match",
+   "source_text": "2"
+  },
+  {
+   "kind": "startup",
+   "subject": "HP Hashogeki",
+   "source": "capcom",
+   "core": 30,
+   "source_value": 30,
+   "status": "match",
+   "source_text": "30"
+  },
+  {
+   "kind": "active",
+   "subject": "HP Hashogeki",
+   "source": "capcom",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "30-34.35"
+  },
+  {
+   "kind": "active",
+   "subject": "HP Hashogeki",
+   "source": "supercombo",
+   "core": 6,
+   "source_value": 6,
+   "status": "match",
+   "source_text": "6"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5LP",
+   "source": "capcom",
+   "core": 13,
+   "source_value": 13,
+   "status": "match",
+   "source_text": "4 / 4-6 / 7"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5LP",
+   "source": "supercombo",
+   "core": 13,
+   "source_value": [
+    13
+   ],
+   "status": "match",
+   "source_text": "13"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5LP",
+   "source": "fat",
+   "core": 13,
+   "source_value": [
+    13
+   ],
+   "status": "match",
+   "source_text": "13"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2LP",
+   "source": "capcom",
+   "core": 14,
+   "source_value": 14,
+   "status": "match",
+   "source_text": "4 / 4-5 / 9"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2LP",
+   "source": "supercombo",
+   "core": 14,
+   "source_value": [
+    14
+   ],
+   "status": "match",
+   "source_text": "14"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2LP",
+   "source": "fat",
+   "core": 14,
+   "source_value": [
+    14
+   ],
+   "status": "match",
+   "source_text": "14"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2LK",
+   "source": "capcom",
+   "core": 16,
+   "source_value": 16,
+   "status": "match",
+   "source_text": "5 / 5-6 / 10"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2LK",
+   "source": "supercombo",
+   "core": 16,
+   "source_value": [
+    16
+   ],
+   "status": "match",
+   "source_text": "16"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2LK",
+   "source": "fat",
+   "core": 16,
+   "source_value": [
+    16
+   ],
+   "status": "match",
+   "source_text": "16"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5LK",
+   "source": "capcom",
+   "core": 18,
+   "source_value": 18,
+   "status": "match",
+   "source_text": "5 / 5-7 / 11"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5LK",
+   "source": "supercombo",
+   "core": 18,
+   "source_value": [
+    18
+   ],
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5LK",
+   "source": "fat",
+   "core": 18,
+   "source_value": [
+    18
+   ],
+   "status": "match",
+   "source_text": "18"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5MP",
+   "source": "capcom",
+   "core": 22,
+   "source_value": 22,
+   "status": "match",
+   "source_text": "6 / 6-9 / 11 / 2 frames of recovery added when the attack misses"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5MP",
+   "source": "supercombo",
+   "core": 22,
+   "source_value": [
+    20,
+    22
+   ],
+   "status": "match",
+   "source_text": "20(22)"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5MP",
+   "source": "fat",
+   "core": 22,
+   "source_value": [
+    20,
+    22
+   ],
+   "status": "match",
+   "source_text": "20(22)"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2MP",
+   "source": "capcom",
+   "core": 24,
+   "source_value": 24,
+   "status": "match",
+   "source_text": "6 / 6-9 / 13 / 2 frames of recovery added when the attack misses"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2MP",
+   "source": "supercombo",
+   "core": 24,
+   "source_value": [
+    22,
+    24
+   ],
+   "status": "match",
+   "source_text": "22(24)"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2MP",
+   "source": "fat",
+   "core": 24,
+   "source_value": [
+    22,
+    24
+   ],
+   "status": "match",
+   "source_text": "22(24)"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5MK",
+   "source": "capcom",
+   "core": 29,
+   "source_value": 29,
+   "status": "match",
+   "source_text": "9 / 9-11 / 18"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5MK",
+   "source": "supercombo",
+   "core": 29,
+   "source_value": [
+    29
+   ],
+   "status": "match",
+   "source_text": "29"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5MK",
+   "source": "fat",
+   "core": 29,
+   "source_value": [
+    29
+   ],
+   "status": "match",
+   "source_text": "29"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5HP",
+   "source": "capcom",
+   "core": 32,
+   "source_value": 32,
+   "status": "match",
+   "source_text": "10 / 10-14 / 18"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5HP",
+   "source": "supercombo",
+   "core": 32,
+   "source_value": [
+    32
+   ],
+   "status": "match",
+   "source_text": "32"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "5HP",
+   "source": "fat",
+   "core": 32,
+   "source_value": [
+    32
+   ],
+   "status": "match",
+   "source_text": "32"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2HK",
+   "source": "capcom",
+   "core": 34,
+   "source_value": 34,
+   "status": "match",
+   "source_text": "9 / 9-11 / 23"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2HK",
+   "source": "supercombo",
+   "core": 34,
+   "source_value": [
+    34,
+    40
+   ],
+   "status": "match",
+   "source_text": "34(40)"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2HK",
+   "source": "fat",
+   "core": 34,
+   "source_value": [
+    34,
+    40
+   ],
+   "status": "match",
+   "source_text": "34(40)"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2HP",
+   "source": "capcom",
+   "core": 35,
+   "source_value": 36,
+   "status": "explained",
+   "source_text": "9 / 9-14 / 22",
+   "note": "Capcom lists recovery 22; SuperCombo lists '21(22)' and notes '() refers to hit/block recovery on 1st active frame only', so the whiff value is 21."
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2HP",
+   "source": "supercombo",
+   "core": 35,
+   "source_value": [
+    35
+   ],
+   "status": "match",
+   "source_text": "35"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "2HP",
+   "source": "fat",
+   "core": 35,
+   "source_value": [
+    35
+   ],
+   "status": "match",
+   "source_text": "35"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6HK",
+   "source": "capcom",
+   "core": 39,
+   "source_value": 39,
+   "status": "match",
+   "source_text": "16 / 16-19 / 20"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6HK",
+   "source": "supercombo",
+   "core": 39,
+   "source_value": [
+    39
+   ],
+   "status": "match",
+   "source_text": "39"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6HK",
+   "source": "fat",
+   "core": 39,
+   "source_value": [
+    39
+   ],
+   "status": "match",
+   "source_text": "39"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6HP",
+   "source": "capcom",
+   "core": 40,
+   "source_value": 40,
+   "status": "match",
+   "source_text": "20 / 20-24 / 16"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6HP",
+   "source": "supercombo",
+   "core": 40,
+   "source_value": [
+    40
+   ],
+   "status": "match",
+   "source_text": "40"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6HP",
+   "source": "fat",
+   "core": 40,
+   "source_value": [
+    40
+   ],
+   "status": "match",
+   "source_text": "40"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6MP",
+   "source": "capcom",
+   "core": 42,
+   "source_value": 42,
+   "status": "match",
+   "source_text": "20 / 20-23 / 19"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6MP",
+   "source": "supercombo",
+   "core": 42,
+   "source_value": [
+    42
+   ],
+   "status": "match",
+   "source_text": "42"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "6MP",
+   "source": "fat",
+   "core": 42,
+   "source_value": [
+    42
+   ],
+   "status": "match",
+   "source_text": "42"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "4HK",
+   "source": "capcom",
+   "core": 43,
+   "source_value": 44,
+   "status": "open_conflict",
+   "source_text": "10 / 10-23 / 21",
+   "note": "New: Capcom's active window 10-23 gives a 44-frame whiff; SuperCombo and FAT list active 5(5)3 and total 43. Rows that whiff 4HK as preparation depend on it."
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "4HK",
+   "source": "supercombo",
+   "core": 43,
+   "source_value": [
+    43
+   ],
+   "status": "match",
+   "source_text": "43"
+  },
+  {
+   "kind": "whiff_total",
+   "subject": "4HK",
+   "source": "fat",
+   "core": 43,
+   "source_value": [
+    43
+   ],
+   "status": "match",
+   "source_text": "43"
+  },
+  {
+   "kind": "dash",
+   "subject": "forward dash",
+   "source": "capcom",
+   "core": 19,
+   "source_value": 19,
+   "status": "match",
+   "source_text": "19 total frames"
+  },
+  {
+   "kind": "dash",
+   "subject": "forward dash",
+   "source": "fat",
+   "core": 19,
+   "source_value": 19,
+   "status": "match",
+   "source_text": "19"
+  },
+  {
+   "kind": "denjin_total",
+   "subject": "Denjin Charge",
+   "source": "capcom",
+   "core": 52,
+   "source_value": 52,
+   "status": "match",
+   "source_text": "52 total frames"
+  },
+  {
+   "kind": "denjin_total",
+   "subject": "Denjin Charge",
+   "source": "supercombo",
+   "core": 52,
+   "source_value": 52,
+   "status": "match",
+   "source_text": "52"
+  },
+  {
+   "kind": "instant_drive_rush",
+   "subject": "Parry Drive Rush",
+   "source": "supercombo",
+   "core": 11,
+   "source_value": 11,
+   "status": "match",
+   "source_text": "3+8"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HP Shoryuken, active 1-2",
+   "source": "supercombo",
+   "core": 37,
+   "source_value": 37,
+   "status": "match",
+   "source_text": "KD +37(+29)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HP Shoryuken, active 1-2",
+   "source": "fat",
+   "core": 37,
+   "source_value": [
+    37
+   ],
+   "status": "match",
+   "source_text": "KD +37"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HP Shoryuken, late active or juggle",
+   "source": "supercombo",
+   "core": 29,
+   "source_value": 29,
+   "status": "match",
+   "source_text": "KD +37(+29)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA3 / CA",
+   "source": "supercombo",
+   "core": 14,
+   "source_value": 14,
+   "status": "match",
+   "source_text": "HKD +14"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA3 / CA",
+   "source": "fat",
+   "core": 14,
+   "source_value": [
+    14
+   ],
+   "status": "match",
+   "source_text": "HKD +14"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA1",
+   "source": "supercombo",
+   "core": 26,
+   "source_value": 26,
+   "status": "match",
+   "source_text": "KD +26"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA1",
+   "source": "fat",
+   "core": 26,
+   "source_value": [
+    26
+   ],
+   "status": "match",
+   "source_text": "KD +26"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin SA1",
+   "source": "supercombo",
+   "core": 27,
+   "source_value": 27,
+   "status": "match",
+   "source_text": "KD +27"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin SA1",
+   "source": "fat",
+   "core": 27,
+   "source_value": [
+    27
+   ],
+   "status": "match",
+   "source_text": "KD +27"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MK Tatsu, 2 hits",
+   "source": "supercombo",
+   "core": 38,
+   "source_value": 38,
+   "status": "match",
+   "source_text": "KD +23(+38)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MK Tatsu, 2 hits",
+   "source": "fat",
+   "core": 38,
+   "source_value": [
+    23,
+    38
+   ],
+   "status": "match",
+   "source_text": "KD +23*38"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MK Tatsu, 1 hit",
+   "source": "supercombo",
+   "core": 23,
+   "source_value": 23,
+   "status": "match",
+   "source_text": "KD +23(+38)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MK Tatsu, 1 hit",
+   "source": "fat",
+   "core": 23,
+   "source_value": [
+    23,
+    38
+   ],
+   "status": "match",
+   "source_text": "KD +23*38"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MK High Blade Kick",
+   "source": "supercombo",
+   "core": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "source_value": [
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "status": "match",
+   "source_text": "KD +40~46"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MK High Blade Kick",
+   "source": "fat",
+   "core": 40,
+   "source_value": [
+    40
+   ],
+   "status": "match",
+   "source_text": "KD +40"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "LK High Blade Kick",
+   "source": "supercombo",
+   "core": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "source_value": [
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "status": "match",
+   "source_text": "KD +42~46"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "LK High Blade Kick",
+   "source": "fat",
+   "core": 42,
+   "source_value": [
+    42
+   ],
+   "status": "match",
+   "source_text": "KD +42"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK High Blade Kick",
+   "source": "supercombo",
+   "core": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+   ],
+   "source_value": [
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51
+   ],
+   "status": "match",
+   "source_text": "KD +45~51"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK High Blade Kick",
+   "source": "fat",
+   "core": 45,
+   "source_value": [
+    45
+   ],
+   "status": "match",
+   "source_text": "KD +45"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "LP Shoryuken, active 1-2",
+   "source": "supercombo",
+   "core": 38,
+   "source_value": 38,
+   "status": "match",
+   "source_text": "KD +38"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "LP Shoryuken, active 1-2",
+   "source": "fat",
+   "core": 38,
+   "source_value": [
+    38
+   ],
+   "status": "match",
+   "source_text": "KD +38"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MP Shoryuken, active 1-2",
+   "source": "supercombo",
+   "core": 34,
+   "source_value": 34,
+   "status": "match",
+   "source_text": "KD +34"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "MP Shoryuken, active 1-2",
+   "source": "fat",
+   "core": 34,
+   "source_value": [
+    34
+   ],
+   "status": "match",
+   "source_text": "KD +34"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA2 uncharged",
+   "source": "supercombo",
+   "core": 20,
+   "source_value": 20,
+   "status": "match",
+   "source_text": "KD +20"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA2 uncharged",
+   "source": "fat",
+   "core": 20,
+   "source_value": [
+    20,
+    78
+   ],
+   "status": "match",
+   "source_text": "KD +20 (Tumble +78)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD Tatsu",
+   "source": "supercombo",
+   "core": 57,
+   "source_value": 57,
+   "status": "match",
+   "source_text": "KD +57"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD Tatsu",
+   "source": "fat",
+   "core": 57,
+   "source_value": [
+    57
+   ],
+   "status": "match",
+   "source_text": "KD +57"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "6HK > air Tatsu, grounded",
+   "source": "supercombo",
+   "core": 38,
+   "source_value": 38,
+   "status": "match",
+   "source_text": "KD +38"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "6HK > air Tatsu, juggle",
+   "source": "supercombo",
+   "core": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "source_value": [
+    41,
+    42,
+    43,
+    44,
+    45,
+    46
+   ],
+   "status": "match",
+   "source_text": "Version canceled from 6HK; no follow-up juggle like after jumping Air Tatsu; the last frame of recovery puts Ryu in a crouching state; gives great midscreen oki"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "LK Tatsu",
+   "source": "supercombo",
+   "core": 35,
+   "source_value": 35,
+   "status": "match",
+   "source_text": "KD +35"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "LK Tatsu",
+   "source": "fat",
+   "core": 35,
+   "source_value": [
+    35
+   ],
+   "status": "match",
+   "source_text": "KD +35"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK Tatsu, 3 hits",
+   "source": "supercombo",
+   "core": 50,
+   "source_value": 50,
+   "status": "match",
+   "source_text": "KD +20(+35)(+50)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK Tatsu, 3 hits",
+   "source": "fat",
+   "core": 50,
+   "source_value": [
+    20,
+    35,
+    50
+   ],
+   "status": "match",
+   "source_text": "KD +20*35*50"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK Tatsu, 2 hits",
+   "source": "supercombo",
+   "core": 35,
+   "source_value": 35,
+   "status": "match",
+   "source_text": "KD +20(+35)(+50)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK Tatsu, 2 hits",
+   "source": "fat",
+   "core": 35,
+   "source_value": [
+    20,
+    35,
+    50
+   ],
+   "status": "match",
+   "source_text": "KD +20*35*50"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK Tatsu, 1 hit",
+   "source": "supercombo",
+   "core": 20,
+   "source_value": 20,
+   "status": "match",
+   "source_text": "KD +20(+35)(+50)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HK Tatsu, 1 hit",
+   "source": "fat",
+   "core": 20,
+   "source_value": [
+    20,
+    35,
+    50
+   ],
+   "status": "match",
+   "source_text": "KD +20*35*50"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "5HP~HK target combo",
+   "source": "supercombo",
+   "core": 39,
+   "source_value": 39,
+   "status": "match",
+   "source_text": "KD +39"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "5HP~HK target combo",
+   "source": "fat",
+   "core": 39,
+   "source_value": [
+    39
+   ],
+   "status": "match",
+   "source_text": "KD +39"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Forward throw",
+   "source": "supercombo",
+   "core": 17,
+   "source_value": 17,
+   "status": "match",
+   "source_text": "KD +17"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Forward throw",
+   "source": "fat",
+   "core": 17,
+   "source_value": [
+    17
+   ],
+   "status": "match",
+   "source_text": "KD +17"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Back throw",
+   "source": "supercombo",
+   "core": 11,
+   "source_value": 11,
+   "status": "match",
+   "source_text": "KD +11"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Back throw",
+   "source": "fat",
+   "core": 11,
+   "source_value": [
+    11
+   ],
+   "status": "match",
+   "source_text": "KD +11"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Sweep (2HK)",
+   "source": "supercombo",
+   "core": 40,
+   "source_value": 40,
+   "status": "match",
+   "source_text": "KD +40"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Sweep (2HK)",
+   "source": "fat",
+   "core": 40,
+   "source_value": [
+    40
+   ],
+   "status": "match",
+   "source_text": "KD +40"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Sweep, Punish Counter",
+   "source": "supercombo",
+   "core": 47,
+   "source_value": 47,
+   "status": "match",
+   "source_text": "HKD +47"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Sweep, Punish Counter",
+   "source": "fat",
+   "core": 47,
+   "source_value": [
+    47
+   ],
+   "status": "match",
+   "source_text": "HKD +47"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Drive Impact",
+   "source": "supercombo",
+   "core": 35,
+   "source_value": 35,
+   "status": "match",
+   "source_text": "KD +35 / Wall Splat KD +65"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Drive Impact, wall splat",
+   "source": "supercombo",
+   "core": 65,
+   "source_value": 65,
+   "status": "match",
+   "source_text": "KD +35 / Wall Splat KD +65"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Drive Reversal",
+   "source": "supercombo",
+   "core": 23,
+   "source_value": 23,
+   "status": "match",
+   "source_text": "KD +23"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Drive Reversal",
+   "source": "fat",
+   "core": 23,
+   "source_value": [
+    23
+   ],
+   "status": "match",
+   "source_text": "KD +23"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "5MP~LK~HK target combo",
+   "source": "supercombo",
+   "core": 36,
+   "source_value": 36,
+   "status": "match",
+   "source_text": "KD +36"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "5MP~LK~HK target combo",
+   "source": "fat",
+   "core": 36,
+   "source_value": [
+    36
+   ],
+   "status": "match",
+   "source_text": "KD +36"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD Shoryuken",
+   "source": "supercombo",
+   "core": 29,
+   "source_value": 29,
+   "status": "match",
+   "source_text": "KD +29"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD Shoryuken",
+   "source": "fat",
+   "core": 29,
+   "source_value": [
+    29
+   ],
+   "status": "match",
+   "source_text": "KD +29"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "6HK > OD air Tatsu",
+   "source": "supercombo",
+   "core": [
+    47,
+    48
+   ],
+   "source_value": [
+    47,
+    48
+   ],
+   "status": "match",
+   "source_text": "KD +47(+48)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD High Blade Kick",
+   "source": "supercombo",
+   "core": 49,
+   "source_value": 49,
+   "status": "match",
+   "source_text": "Wall Bounce +49(65)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD High Blade Kick",
+   "source": "fat",
+   "core": 49,
+   "source_value": [
+    49,
+    65
+   ],
+   "status": "match",
+   "source_text": "Wall Bounce +49(65)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD High Blade Kick, wall bounce",
+   "source": "supercombo",
+   "core": 65,
+   "source_value": 65,
+   "status": "match",
+   "source_text": "Wall Bounce +49(65)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD High Blade Kick, wall bounce",
+   "source": "fat",
+   "core": 65,
+   "source_value": [
+    49,
+    65
+   ],
+   "status": "match",
+   "source_text": "Wall Bounce +49(65)"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HP Hashogeki",
+   "source": "supercombo",
+   "core": 61,
+   "source_value": 61,
+   "status": "match",
+   "source_text": "KD +61 Spin"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "HP Hashogeki",
+   "source": "fat",
+   "core": 61,
+   "source_value": [
+    61
+   ],
+   "status": "match",
+   "source_text": "KD +61"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin HP Hashogeki",
+   "source": "supercombo",
+   "core": 62,
+   "source_value": 62,
+   "status": "match",
+   "source_text": "KD +62 Spin"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin OD Hashogeki",
+   "source": "supercombo",
+   "core": 87,
+   "source_value": 87,
+   "status": "match",
+   "source_text": "KD +87 Crumple"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin OD Hashogeki",
+   "source": "fat",
+   "core": 87,
+   "source_value": [
+    87
+   ],
+   "status": "match",
+   "source_text": "Crumple +87"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD Hadoken",
+   "source": "supercombo",
+   "core": 54,
+   "source_value": 54,
+   "status": "match",
+   "source_text": "KD +54"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "OD Hadoken",
+   "source": "fat",
+   "core": 54,
+   "source_value": [
+    54
+   ],
+   "status": "match",
+   "source_text": "KD +54"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin HP Hadoken",
+   "source": "supercombo",
+   "core": 54,
+   "source_value": 54,
+   "status": "match",
+   "source_text": "KD +54"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin HP Hadoken",
+   "source": "fat",
+   "core": 54,
+   "source_value": [
+    54
+   ],
+   "status": "match",
+   "source_text": "KD +54"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin OD Hadoken",
+   "source": "supercombo",
+   "core": 57,
+   "source_value": 57,
+   "status": "match",
+   "source_text": "KD +57"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "Denjin OD Hadoken",
+   "source": "fat",
+   "core": 57,
+   "source_value": [
+    57
+   ],
+   "status": "match",
+   "source_text": "KD +57"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA2 tumble",
+   "source": "supercombo",
+   "core": 78,
+   "source_value": 78,
+   "status": "match",
+   "source_text": "KD +78 Tumble"
+  },
+  {
+   "kind": "knockdown",
+   "subject": "SA2 tumble",
+   "source": "fat",
+   "core": 78,
+   "source_value": [
+    20,
+    78
+   ],
+   "status": "match",
+   "source_text": "KD +20 (Tumble +78)"
+  }
+ ]
+}

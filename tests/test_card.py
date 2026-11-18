@@ -68,7 +68,8 @@ def test_tier_picks_obey_the_stated_rule(built):
         in_tier = [i for i, r in enumerate(rows) if r["drive"] == tier["drive"]]
         assert tier["pick"] == in_tier[0]
         assert tier["count"] == len(in_tier)
-        sturdy = next((i for i in in_tier if not {"last active frame", "conflict"} & set(rows[i]["flags"])), None)
+        sturdy = next((i for i in in_tier if not {"last active frame", "conflict"} & set(rows[i]["flags"])
+                       and not rows[i]["prep_dispute"]), None)
         assert tier["sturdier"] == (sturdy if sturdy != tier["pick"] else None)
         # the pick is never beaten on block advantage inside its own tier
         assert all(rows[tier["pick"]]["block"][0] >= rows[i]["block"][0] for i in in_tier)
