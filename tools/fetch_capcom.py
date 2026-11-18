@@ -37,7 +37,7 @@ def main(mode, arg=None):
                         rows=page["rows"] if name.endswith(".json") else None)
         print(f"{arg}: HTTP {page['status']}, {page['rows']} table rows")
     elif mode == "patches":
-        result, files = capture("patches")
+        result, files = capture("patches", *( [arg] if arg else [] ))
         by_file = {p.get("file", "versions.json"): p for p in result["pages"]}
         for name, data in files.items():
             page = by_file[name]

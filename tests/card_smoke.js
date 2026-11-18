@@ -1,5 +1,6 @@
-// Opens the built page at a phone-sized viewport in light and dark, checks that it
-// renders the card with no sideways scroll and no script errors, and saves screenshots.
+// Opens the built page at a phone-sized viewport in light and dark, walks the picker
+// (default card, a typed knockdown number, a number with no answer, a knockdown range and
+// its per-value link), and fails on any sideways scroll or script error. Saves screenshots.
 // Usage: node tests/card_smoke.js <screenshot_dir>
 const path = require('path');
 const { chromium } = require('playwright');
@@ -14,35 +15,46 @@ const { chromium } = require('playwright');
     const page = await ctx.newPage();
     const errors = [];
     page.on('pageerror', e => errors.push(String(e)));
+    const expect = (ok, what) => { if (!ok) failures.push(`${scheme}: ${what}`); };
+    const sideways = () => page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    const text = sel => page.evaluate(s => { const n = document.querySelector(s); return n ? n.textContent : null; }, sel);
+    const count = sel => page.evaluate(s => document.querySelectorAll(s).length, sel);
+
     await page.goto(page_url, { waitUntil: 'domcontentloaded' });
     await page.waitForSelector('#tiers .tier');
-    const facts = await page.evaluate(() => ({
-      ender: document.getElementById('ender').textContent,
-      kd: document.getElementById('kd').textContent,
-      tiers: document.querySelectorAll('#tiers .tier').length,
-      firstBlock: document.querySelector('#tiers .tier .block').textContent,
-      firstSteps: Array.from(document.querySelectorAll('#tiers .tier')[0].querySelectorAll('.step')).map(n => n.firstChild.textContent),
-      rows: document.querySelectorAll('#rows li').length,
-      sideways: document.documentElement.scrollWidth - document.documentElement.clientWidth,
-      bg: getComputedStyle(document.body).backgroundColor,
-    }));
-    if (errors.length) failures.push(`${scheme}: script errors ${errors.join(' | ')}`);
-    if (facts.ender !== 'LK Tatsu') failures.push(`${scheme}: ender ${facts.ender}`);
-    if (facts.kd !== 'Knockdown +35') failures.push(`${scheme}: kd ${facts.kd}`);
-    if (facts.tiers !== 4) failures.push(`${scheme}: tiers ${facts.tiers}`);
-    if (facts.firstBlock !== '+4') failures.push(`${scheme}: first block ${facts.firstBlock}`);
-    if (facts.firstSteps.join('>') !== 'whiff 5LP>6HP') failures.push(`${scheme}: first steps ${facts.firstSteps.join('>')}`);
-    if (facts.rows !== 22) failures.push(`${scheme}: rows ${facts.rows}`);
-    if (facts.sideways > 0) failures.push(`${scheme}: page scrolls sideways by ${facts.sideways}px`);
+    expect(await text('#ender') === 'LK Tatsu', `default ender ${await text('#ender')}`);
+    expect(await text('#kd') === 'Knockdown +35', `default kd ${await text('#kd')}`);
+    expect(await count('#tiers .tier') === 4, 'default card should have 4 Drive tiers');
+    expect(await text('#tiers .tier .block') === '+4', `first block ${await text('#tiers .tier .block')}`);
+    expect(await text('#all-summary') === 'All 22 timings', `summary ${await text('#all-summary')}`);
+    expect(await count('#pick-ender option') === 41, `picker options ${await count('#pick-ender option')}`);
+    expect(await sideways() <= 0, 'default card scrolls sideways');
     await page.screenshot({ path: path.join(outDir, `card-${scheme}.png`), fullPage: true });
-    await page.click('details.all summary');
-    await page.screenshot({ path: path.join(outDir, `card-${scheme}-all.png`), fullPage: true });
-    const after = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
-    if (after > 0) failures.push(`${scheme}: full list scrolls sideways by ${after}px`);
-    console.log(scheme, JSON.stringify(facts));
+
+    await page.fill('#pick-k', '44');
+    expect(await text('#ender') === 'Knockdown +44', `typed 44 gave ${await text('#ender')}`);
+    expect(await count('#tiers .tier') >= 1, 'knockdown +44 should have picks');
+    expect(await sideways() <= 0, 'number card scrolls sideways');
+    await page.screenshot({ path: path.join(outDir, `number-${scheme}.png`), fullPage: true });
+
+    await page.fill('#pick-k', '2');
+    expect(await text('#ender') === 'Knockdown +2', `typed 2 gave ${await text('#ender')}`);
+    expect(await count('#tiers .none') === 1 && await count('#tiers .tier') === 0, 'knockdown +2 should say there is no qualifying strike');
+
+    await page.selectOption('#pick-ender', 'mk-high-blade-kick');
+    expect(await text('#kd') === 'Knockdown +40 to +46', `range kd ${await text('#kd')}`);
+    expect(await count('#per-kd-list a') === 7, `range should list 7 exact values, got ${await count('#per-kd-list a')}`);
+    expect(await sideways() <= 0, 'range card scrolls sideways');
+    await page.screenshot({ path: path.join(outDir, `range-${scheme}.png`), fullPage: true });
+    await page.click('#per-kd-list a');
+    await page.waitForFunction(() => document.getElementById('ender').textContent === 'Knockdown +40');
+
+    await page.selectOption('#pick-ender', 'back-throw');
+    expect((await text('#reach') || '').startsWith('Reach:'), 'back throw should show its reach note');
+    expect(errors.length === 0, `script errors ${errors.join(' | ')}`);
     await ctx.close();
   }
   await browser.close();
   if (failures.length) { console.error('FAIL\n' + failures.join('\n')); process.exit(1); }
-  console.log('OK: card renders at 390x844 in light and dark, no sideways scroll, no script errors');
+  console.log('OK: picker, number entry, no-answer state, knockdown range and reach note all render at 390x844 in light and dark');
 })();

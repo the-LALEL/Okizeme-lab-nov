@@ -45,7 +45,8 @@ function tableRows() {
       Array.from(document.querySelectorAll('select option')).map(o => ({ value: o.value, text: o.textContent.trim() })));
     fs.writeFileSync(path.join(outDir, 'versions.json'), JSON.stringify(versions, null, 0));
     result.pages.push({ url: base, status, title: await page.title(), versions: versions.length });
-    for (const [lang, id, sub] of [['en', '20261013', ''], ['ja-jp', '20261013', ''], ['en', '20261013', '/ryu'], ['en', '20260803', '/ryu']]) {
+    const extra = (arg || '').split(',').filter(Boolean).map(id => ['en', id, '']);
+    for (const [lang, id, sub] of [['en', '20261013', ''], ['ja-jp', '20261013', ''], ['en', '20261013', '/ryu'], ['en', '20260803', '/ryu'], ...extra]) {
       const url = `https://www.streetfighter.com/6/buckler/${lang}/battle_change/${id}${sub}`;
       const p = await open(ctx, url);
       const text = await p.page.evaluate(() => document.body.innerText);

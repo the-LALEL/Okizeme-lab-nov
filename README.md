@@ -37,4 +37,17 @@ The tests prove the build is deterministic, that every row on the page equals th
 - Inch 1: the core runs here and is proven.
 - Inch 2: one real card (LK Tatsu) reads as an answer on a phone-sized page. It shows timing only; opponent data, reach, throws, shimmies and safe jumps are marked as not built yet.
 
-Inputs were verified on 2026-09-28 against the 2026-08-03 Ryu patch; the freshness proof against today's sources is the next step.
+- Inch 3: the inputs are proven current. `lab/freshness.py` compares every solver input and all 40 knockdown values with Capcom's official table, SuperCombo's database and FAT; `data/freshness.json` holds the result (307 comparisons, none unexplained).
+- Inch 4: every knockdown number from 1 to 110 has a card, from the same sealed solver. The page has a picker: choose a named ender or type the number off the frame meter.
+
+## Refresh the sources
+
+```
+python tools/fetch_supercombo.py ryu
+python tools/fetch_supercombo.py system
+python tools/fetch_capcom.py frame ryu
+python tools/fetch_capcom.py patches
+python lab/freshness.py --fat <path to a clone of D4RKONION/FAT>
+```
+
+Raw copies land in `sources/raw/` (never committed); `sources/manifest.json` records each one's address, date and fingerprint.

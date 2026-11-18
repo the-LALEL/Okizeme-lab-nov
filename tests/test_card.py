@@ -1,9 +1,11 @@
-"""Inch 2: one real card reads as an answer, and every number on it is the solver's.
+"""Inches 2 and 4: every card reads as an answer, and every number on it is the solver's.
 
   1. the build is deterministic (two builds, identical bytes);
-  2. every row embedded in the page equals the solver's row for that ender, field by field;
-  3. each Drive tier's pick and sturdier pick obey the stated selection rule;
-  4. the page script contains no frame arithmetic on the data (it only formats and looks up).
+  2. every row of every named-ender card equals the solver's row, field by field;
+  3. every knockdown number from 1 to 110 has a card whose rows equal a direct solver run,
+     and for each named ender with a single knockdown value the two runs agree;
+  4. each Drive tier's pick and sturdier pick obey the stated selection rule;
+  5. the page script contains no frame arithmetic on the data (it only formats and looks up).
 """
 import json
 import pathlib
@@ -15,6 +17,7 @@ import pytest
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PAGE = ROOT / "site" / "index.html"
+ROW_FIELDS = ("seq", "block", "hit", "drive", "frames_spent", "actions")
 
 
 def build():
@@ -29,50 +32,94 @@ def built():
     return first, second
 
 
-def embedded_card(page_bytes):
-    m = re.search(r'<script type="application/json" id="card">(.*?)</script>', page_bytes.decode("utf-8"), re.S)
-    assert m, "embedded card data not found"
+@pytest.fixture(scope="module")
+def lab(built):
+    m = re.search(r'<script type="application/json" id="lab">(.*?)</script>', built[0].decode("utf-8"), re.S)
+    assert m, "embedded data not found"
     return json.loads(m.group(1).replace("<\\/", "</"))
 
 
-def solver_ender(name):
-    result = json.loads((ROOT / "out" / "Ryu_frame_kills.json").read_text())
-    return next(e for e in result["enders"] if e["name"] == name), result
+def solver(name):
+    return json.loads((ROOT / "out" / f"{name}.json").read_text())
+
+
+def assert_rows_equal(card, ender):
+    assert card["kd"] == ender["kd"]
+    assert len(card["rows"]) == len(ender["rows"])
+    for shown, src in zip(card["rows"], ender["rows"]):
+        for field in ROW_FIELDS:
+            assert shown[field] == src[field], f"{ender['name']} > {src['seq']}: {field}"
+        assert shown["contact"]["text"] == src["contact"]
+        assert shown["prep"] == src["prep"] and shown["meaty"] == src["follow_up"]
+        assert set(shown["flags"]) <= set(src["flags"])
 
 
 def test_build_is_deterministic(built):
     assert built[0] == built[1]
 
 
-def test_every_row_equals_the_solver_row(built):
-    card = embedded_card(built[0])
-    ender, result = solver_ender(card["ender"])
-    assert card["kd"] == ender["kd"]
-    assert len(card["rows"]) == len(ender["rows"])
-    for shown, src in zip(card["rows"], ender["rows"]):
-        for field in ("seq", "block", "hit", "drive", "frames_spent", "actions"):
-            assert shown[field] == src[field], f"{src['seq']}: {field}"
-        assert shown["contact"]["text"] == src["contact"]
-        assert [s["label"].replace("whiff ", "") for s in shown["steps"][:-1]] == \
-            [{"instant DR": "Drive Rush", "Denjin": "Denjin Charge"}.get(p, p) for p in src["prep"]]
-        assert shown["steps"][-1]["label"] == src["follow_up"]
-        assert set(shown["flags"]) <= set(src["flags"])
-    assert card["provenance"]["output"] == result["output_sha256"][:12]
+def test_every_named_card_equals_the_solver(lab):
+    result = solver("Ryu_frame_kills")
+    assert [c["ender"] for c in lab["enders"]] == [e["name"] for e in result["enders"]]
+    for card, ender in zip(lab["enders"], result["enders"]):
+        assert_rows_equal(card, ender)
+    assert lab["provenance"]["output"] == result["output_sha256"][:12]
+    assert len({c["id"] for c in lab["enders"]}) == len(lab["enders"])
 
 
-def test_tier_picks_obey_the_stated_rule(built):
-    card = embedded_card(built[0])
-    rows = card["rows"]
-    assert sorted({r["drive"] for r in rows}) == sorted(t["drive"] for t in card["tiers"])
-    for tier in card["tiers"]:
-        in_tier = [i for i, r in enumerate(rows) if r["drive"] == tier["drive"]]
-        assert tier["pick"] == in_tier[0]
-        assert tier["count"] == len(in_tier)
-        sturdy = next((i for i in in_tier if not {"last active frame", "conflict"} & set(rows[i]["flags"])
-                       and not rows[i]["prep_dispute"]), None)
-        assert tier["sturdier"] == (sturdy if sturdy != tier["pick"] else None)
-        # the pick is never beaten on block advantage inside its own tier
-        assert all(rows[tier["pick"]]["block"][0] >= rows[i]["block"][0] for i in in_tier)
+def test_every_knockdown_number_has_an_answer(lab):
+    result = solver("all_k")
+    lo, hi = lab["k_range"]
+    solver_by_k = {e["kd"]: e for e in result["enders"]}
+    assert [c["kd"] for c in lab["by_k"]] == list(range(lo, hi + 1)) == sorted(solver_by_k)
+    assert result["options"]["exhaustive"] is True
+    for card in lab["by_k"]:
+        ender = solver_by_k[card["kd"]]
+        assert card["id"] == f"k{card['kd']}"
+        assert_rows_equal(card, ender)
+        assert bool(card["tiers"]) == bool(card["rows"])
+    assert lab["no_rows_text"]
+
+
+def test_number_cards_agree_with_named_cards(lab):
+    by_k = {c["kd"]: c for c in lab["by_k"]}
+    checked = 0
+    for card in lab["enders"]:
+        if not isinstance(card["kd"], int):
+            continue
+        twin = by_k[card["kd"]]
+        assert [[r[f] for f in ROW_FIELDS] for r in card["rows"]] == [[r[f] for f in ROW_FIELDS] for r in twin["rows"]], card["ender"]
+        checked += 1
+    assert checked >= 30
+    # a knockdown range's per-value table points at the same top row as that number's own card
+    for card in lab["enders"]:
+        for x in card["per_kd"]:
+            top = by_k[x["kd"]]["rows"]
+            assert (x["seq"], x["block"]) == ((top[0]["seq"], top[0]["block"]) if top else (None, None))
+
+
+def test_tier_picks_obey_the_stated_rule(lab):
+    for card in lab["enders"] + lab["by_k"]:
+        rows = card["rows"]
+        assert sorted({r["drive"] for r in rows}) == sorted(t["drive"] for t in card["tiers"])
+        for tier in card["tiers"]:
+            in_tier = [i for i, r in enumerate(rows) if r["drive"] == tier["drive"]]
+            assert tier["pick"] == in_tier[0]
+            assert tier["count"] == len(in_tier)
+            sturdy = next((i for i in in_tier if not {"last active frame", "conflict"} & set(rows[i]["flags"])
+                           and not rows[i]["prep_dispute"]), None)
+            assert tier["sturdier"] == (sturdy if sturdy != tier["pick"] else None)
+            # the pick is never beaten on block advantage inside its own tier
+            assert all(rows[tier["pick"]]["block"][0] >= rows[i]["block"][0] for i in in_tier)
+
+
+def test_disputed_preparations_are_marked(lab):
+    fresh = json.loads((ROOT / "data" / "freshness.json").read_text())
+    disputed = {r["subject"] for r in fresh["rows"] if r["kind"] == "whiff_total" and r["status"] == "open_conflict"}
+    assert disputed, "expected at least the known 4HK whiff-length disagreement"
+    for card in lab["enders"] + lab["by_k"]:
+        for row in card["rows"]:
+            assert bool(row["prep_dispute"]) == bool(disputed & set(row["prep"])), row["seq"]
 
 
 def test_page_script_does_no_frame_arithmetic(built):

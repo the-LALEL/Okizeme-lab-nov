@@ -2,10 +2,11 @@
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&family=IBM+Plex+Mono:wght@400;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
 <style>
-/* Layout: one phone-width column. The header states the situation; then one block per
-   Drive cost, each anchored by its block-advantage number, with the preparation as a
-   row of steps and the contact frame drawn as a strip of active frames; then the parts
-   not built yet, said plainly; then every timing as a stacked list, folded away. */
+/* Layout: one phone-width column. A picker (named ender, or the number off the frame
+   meter) sits on top; the header states the situation; then one block per Drive cost,
+   each anchored by its block-advantage number, with the preparation as a row of steps
+   and the contact frame drawn as a strip of active frames; then the parts not built
+   yet, said plainly; then every timing as a stacked list, folded away. */
 :root {
   --paper: #F3F5F9;
   --surface: #FFFFFF;
@@ -45,15 +46,31 @@ body { background: var(--paper); color: var(--ink); font-family: var(--font-body
 .num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
 .label { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); }
 
+/* Picker */
+.picker { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 0.75rem; align-items: end; }
+.picker .field { display: flex; flex-direction: column; gap: 0.25rem; min-width: 0; }
+.picker select, .picker input {
+  font: inherit; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 6px;
+  min-height: 2.75rem; padding: 0 0.625rem; width: 100%; min-width: 0;
+}
+.picker .k-entry { display: flex; align-items: center; gap: 0.25rem; background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding-left: 0.625rem; }
+.picker .k-entry span { font-family: var(--font-data); font-weight: 600; color: var(--ink-2); }
+.picker .k-entry input { border: 0; padding-left: 0.125rem; background: transparent; font-family: var(--font-data); }
+.picker select:focus-visible, .picker .k-entry:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
+.picker .k-entry input:focus { outline: none; }
+@media (max-width: 22rem) { .picker { grid-template-columns: minmax(0, 1fr); } }
+
 /* Situation */
 .situation { display: flex; flex-direction: column; gap: 0.5rem; border-bottom: 2px solid var(--ink); padding-bottom: 1rem; }
 .situation h1 { margin: 0; font-family: var(--font-display); font-weight: 700; font-size: 2.5rem; line-height: 1; text-wrap: balance; }
 .situation .kd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.25rem 0.75rem; }
 .situation .kd b { font-family: var(--font-data); font-weight: 600; font-size: 1.25rem; color: var(--accent); }
 .situation p { margin: 0; color: var(--ink-2); font-size: 0.875rem; }
+.situation p.reach { color: var(--ink); border-left: 3px solid var(--warn); padding-left: 0.75rem; }
 
 /* Tiers */
 .tiers { display: flex; flex-direction: column; gap: 1.75rem; }
+.tiers .none { background: var(--surface); border: 1px dashed var(--rule); border-radius: 6px; padding: 0.875rem; color: var(--ink-2); }
 .tier { display: flex; flex-direction: column; gap: 0.625rem; min-width: 0; }
 .tier-head { display: flex; justify-content: space-between; align-items: baseline; gap: 0.75rem; }
 .tier-head .count { font-size: 0.75rem; color: var(--ink-2); }
@@ -82,6 +99,15 @@ body { background: var(--paper); color: var(--ink); font-family: var(--font-body
 .sturdier { font-size: 0.875rem; color: var(--ink-2); display: flex; flex-direction: column; gap: 0.375rem; padding-top: 0.75rem; border-top: 1px dashed var(--rule); }
 .sturdier .line { color: var(--ink); }
 
+/* Exact values inside a knockdown range */
+.per-kd { display: flex; flex-direction: column; gap: 0.5rem; }
+.per-kd p { margin: 0; font-size: 0.875rem; color: var(--ink-2); }
+.per-kd ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.per-kd a { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: 0.75rem; padding: 0.625rem 0; border-bottom: 1px solid var(--rule); color: inherit; text-decoration: none; }
+.per-kd a b { font-family: var(--font-data); color: var(--accent); }
+.per-kd a span { overflow-wrap: anywhere; }
+.per-kd a em { font-style: normal; font-family: var(--font-data); color: var(--plus); font-weight: 600; }
+
 /* Not built yet */
 .pending { display: flex; flex-direction: column; gap: 0.75rem; }
 .pending ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
@@ -107,21 +133,39 @@ footer p { margin: 0; }
 </style>
 
 <main class="wrap">
+  <nav class="picker" aria-label="Choose the knockdown">
+    <div class="field">
+      <label class="label" for="pick-ender">I landed</label>
+      <select id="pick-ender"></select>
+    </div>
+    <div class="field">
+      <label class="label" for="pick-k">Or the meter showed</label>
+      <div class="k-entry"><span aria-hidden="true">+</span><input id="pick-k" type="number" inputmode="numeric" placeholder="number"></div>
+    </div>
+  </nav>
+
   <header class="situation">
-    <span class="label">After you land</span>
+    <span class="label" id="eyebrow"></span>
     <h1 id="ender"></h1>
     <div class="kd"><b class="num" id="kd"></b><span id="kd-plain"></span></div>
+    <p class="reach" id="reach" hidden></p>
     <p id="status"></p>
   </header>
 
   <section class="tiers" id="tiers" aria-label="Picks by Drive cost"></section>
+
+  <section class="per-kd" id="per-kd" aria-labelledby="per-kd-h" hidden>
+    <span class="label" id="per-kd-h">At each exact value</span>
+    <p>This knockdown varies with spacing and height. Read the number off the frame meter, then open it. Each line shows the highest block advantage at any Drive cost.</p>
+    <ul id="per-kd-list"></ul>
+  </section>
 
   <section class="pending" aria-labelledby="pending-h">
     <span class="label" id="pending-h">Not built yet</span>
     <ul id="not-yet"></ul>
   </section>
 
-  <details class="all">
+  <details class="all" id="all">
     <summary id="all-summary"></summary>
     <ul class="rows" id="rows"></ul>
   </details>
@@ -133,29 +177,37 @@ footer p { margin: 0; }
   </footer>
 </main>
 
-<script type="application/json" id="card">__CARD_JSON__</script>
+<script type="application/json" id="lab">__LAB_JSON__</script>
 <script>
 // Lookups and formatting only. Every number shown is a number in the embedded data,
 // which the build copied from the solver's output.
 (function () {
-  var card = JSON.parse(document.getElementById('card').textContent);
+  var lab = JSON.parse(document.getElementById('lab').textContent);
+  var byId = {};
+  lab.enders.forEach(function (c) { byId[c.id] = c; });
+  lab.by_k.forEach(function (c) { byId[c.id] = c; });
+  var $ = function (id) { return document.getElementById(id); };
+
   function el(tag, cls, text) {
     var n = document.createElement(tag);
     if (cls) n.className = cls;
     if (text != null) n.textContent = text;
     return n;
   }
+  function clear(node) { while (node.firstChild) node.removeChild(node.firstChild); }
   function signed(v) { return (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v); }
   function adv(v) {
     if (typeof v === 'string') return v === 'KD / launch' ? 'knockdown' : v;
     return v[0] === v[1] ? signed(v[0]) : signed(v[0]) + ' to ' + signed(v[1]);
   }
-  function seqText(row) {
-    return row.steps.map(function (s) { return s.label; }).join(' › ');
+  function kdText(kd) { return typeof kd === 'number' ? '+' + kd : '+' + kd[0] + ' to +' + kd[1]; }
+  function stepList(row) {
+    return row.prep.map(function (name) { return lab.preps[name]; }).concat([{ kind: 'meaty', label: row.meaty, frames: null }]);
   }
+  function seqText(row) { return stepList(row).map(function (s) { return s.label; }).join(' › '); }
   function steps(row) {
     var ul = el('ul', 'steps');
-    row.steps.forEach(function (s) {
+    stepList(row).forEach(function (s) {
       var li = el('li');
       var chip = el('span', 'step ' + s.kind, s.label);
       if (s.frames != null) chip.appendChild(el('small', null, s.frames + 'f'));
@@ -191,7 +243,7 @@ footer p { margin: 0; }
       if (f === 'ceiling') return;
       var li = el('li', f === 'conflict' ? 'dispute' : 'warn');
       li.appendChild(el('b', null, f === 'conflict' ? 'Disputed input. ' : 'Fragile. '));
-      li.appendChild(document.createTextNode(f === 'conflict' && row.dispute ? row.dispute : card.flag_text[f]));
+      li.appendChild(document.createTextNode(f === 'conflict' && row.dispute ? row.dispute : lab.flag_text[f]));
       ul.appendChild(li);
     });
     if (row.prep_dispute) {
@@ -210,13 +262,98 @@ footer p { margin: 0; }
     return out;
   }
 
-  document.getElementById('ender').textContent = card.ender;
-  var kdText = typeof card.kd === 'number' ? '+' + card.kd : '+' + card.kd[0] + ' to +' + card.kd[1];
-  document.getElementById('kd').textContent = 'Knockdown ' + kdText;
-  document.getElementById('kd-plain').textContent = typeof card.kd === 'number'
-    ? 'You can act ' + card.kd + ' frames before they can.' : '';
-  var fr = card.status.freshness, statusText = 'Timing only, computed from inputs verified on '
-    + card.status.inputs_verified_on + ' (' + card.status.patch_state + '). ';
+  function show(card) {
+    $('eyebrow').textContent = card.named ? 'After you land' : 'After any knockdown of';
+    $('ender').textContent = card.ender;
+    $('kd').textContent = card.named ? 'Knockdown ' + kdText(card.kd) : '';
+    $('kd-plain').textContent = typeof card.kd === 'number'
+      ? 'You can act ' + card.kd + ' frames before they can.'
+      : 'Depends on spacing and height. The picks below work across the whole range.';
+    $('reach').hidden = !card.reach_note;
+    $('reach').textContent = card.reach_note ? 'Reach: ' + card.reach_note : '';
+
+    var tiers = $('tiers');
+    clear(tiers);
+    if (!card.rows.length) tiers.appendChild(el('p', 'none', typeof card.kd === 'number' ? lab.no_rows_text : lab.no_rows_range_text));
+    card.tiers.forEach(function (t) {
+      var row = card.rows[t.pick];
+      var sec = el('section', 'tier');
+      var head = el('div', 'tier-head');
+      head.appendChild(el('span', 'label', t.label));
+      head.appendChild(el('span', 'count', t.count + (t.count === 1 ? ' timing' : ' timings')));
+      sec.appendChild(head);
+      var pick = el('div', 'pick');
+      var a = el('div', 'adv');
+      var b = el('span'); b.appendChild(el('span', 'block', adv(row.block))); b.appendChild(el('span', 'unit', ' on block'));
+      var h = el('span'); h.appendChild(el('span', 'hit', adv(row.hit))); h.appendChild(el('span', 'unit', ' on hit'));
+      a.appendChild(b); a.appendChild(h);
+      pick.appendChild(a);
+      pick.appendChild(steps(row));
+      pick.appendChild(contact(row));
+      var n = notes(row); if (n) pick.appendChild(n);
+      if (t.sturdier != null) {
+        var s = card.rows[t.sturdier], box = el('div', 'sturdier');
+        box.appendChild(el('span', 'label', 'Sturdier pick'));
+        box.appendChild(el('span', 'line', seqText(s) + ': ' + adv(s.block) + ' on block, ' + adv(s.hit) + ' on hit'));
+        pick.appendChild(box);
+      }
+      sec.appendChild(pick);
+      tiers.appendChild(sec);
+    });
+
+    var per = card.per_kd || [];
+    $('per-kd').hidden = !per.length;
+    var list = $('per-kd-list');
+    clear(list);
+    per.forEach(function (x) {
+      var li = el('li'), a = el('a');
+      a.href = '#k' + x.kd;
+      a.appendChild(el('b', null, '+' + x.kd));
+      var s = el('span');
+      if (x.seq) {
+        s.appendChild(document.createTextNode(x.seq.split(' > ').join(' › ') + ' '));
+        s.appendChild(el('em', null, adv(x.block)));
+      } else {
+        s.appendChild(document.createTextNode('no qualifying strike'));
+      }
+      a.appendChild(s); li.appendChild(a); list.appendChild(li);
+    });
+
+    $('all').hidden = !card.rows.length;
+    $('all').open = false;
+    $('all-summary').textContent = 'All ' + card.rows.length + ' timings';
+    var rows = $('rows');
+    clear(rows);
+    card.rows.forEach(function (r) {
+      var li = el('li');
+      li.appendChild(el('span', 'b', adv(r.block)));
+      li.appendChild(el('span', 's', seqText(r)));
+      var m = el('span', 'm');
+      var bars = parseInt(r.drive, 10);
+      var cost = (bars === 0 ? 'no Drive' : bars + (bars === 1 ? ' bar' : ' bars')) + (r.drive.indexOf('stock') >= 0 ? ' + stock' : '');
+      m.appendChild(document.createTextNode(adv(r.hit) + ' on hit · ' + cost));
+      tags(r).forEach(function (t) {
+        m.appendChild(document.createTextNode(' · '));
+        m.appendChild(el('span', 'tag ' + t[1], t[0]));
+      });
+      li.appendChild(m);
+      rows.appendChild(li);
+    });
+
+    var p = card.prevalence;
+    $('search').textContent = (lab.search.exhaustive ? 'Exhaustive search: ' : 'Capped search: ')
+      + 'every preparation of up to ' + lab.search.depth + ' actions (' + lab.search.timings + ' distinct timings) against '
+      + lab.search.meaties + ' meaties.'
+      + (card.named ? (p.rank ? ' Common-ender rank ' + p.rank + ' (' + p.combo_count
+        + ' combos end on it in the combo guide used as a stand-in for match data).' : ' No ranking evidence for this ender.') : '');
+
+    $('pick-ender').value = card.named ? card.id : '';
+    if (!card.named) $('pick-k').value = card.kd; else $('pick-k').value = '';
+  }
+
+  // Static parts
+  var fr = lab.status.freshness, statusText = 'Timing only, computed from inputs verified on '
+    + lab.status.inputs_verified_on + ' (' + lab.status.patch_state + '). ';
   if (fr.state === 'checked') {
     statusText += 'Re-checked on ' + fr.checked_on + ' against Capcom, SuperCombo and FAT: ' + fr.match + ' of '
       + fr.comparisons + ' comparisons match, ' + fr.explained + ' explained, ' + fr.open_conflicts
@@ -225,64 +362,38 @@ footer p { margin: 0; }
   } else {
     statusText += 'Re-check against today’s sources: pending.';
   }
-  document.getElementById('status').textContent = statusText;
-
-  var tiers = document.getElementById('tiers');
-  card.tiers.forEach(function (t) {
-    var row = card.rows[t.pick];
-    var sec = el('section', 'tier');
-    var head = el('div', 'tier-head');
-    head.appendChild(el('span', 'label', t.label));
-    head.appendChild(el('span', 'count', t.count + (t.count === 1 ? ' timing' : ' timings')));
-    sec.appendChild(head);
-    var pick = el('div', 'pick');
-    var a = el('div', 'adv');
-    var b = el('span'); b.appendChild(el('span', 'block', adv(row.block))); b.appendChild(el('span', 'unit', ' on block'));
-    var h = el('span'); h.appendChild(el('span', 'hit', adv(row.hit))); h.appendChild(el('span', 'unit', ' on hit'));
-    a.appendChild(b); a.appendChild(h);
-    pick.appendChild(a);
-    pick.appendChild(steps(row));
-    pick.appendChild(contact(row));
-    var n = notes(row); if (n) pick.appendChild(n);
-    if (t.sturdier != null) {
-      var s = card.rows[t.sturdier], box = el('div', 'sturdier');
-      box.appendChild(el('span', 'label', 'Sturdier pick'));
-      box.appendChild(el('span', 'line', seqText(s) + ': ' + adv(s.block) + ' on block, ' + adv(s.hit) + ' on hit'));
-      pick.appendChild(box);
-    }
-    sec.appendChild(pick);
-    tiers.appendChild(sec);
+  $('status').textContent = statusText;
+  lab.not_yet.forEach(function (x) {
+    var li = el('li'); li.appendChild(el('b', null, x.title)); li.appendChild(document.createTextNode(x.text)); $('not-yet').appendChild(li);
   });
+  $('rule').textContent = lab.ranking_rule;
+  $('prov').textContent = 'Solver output ' + lab.provenance.output + ' (named enders) and ' + lab.provenance.every_k_output
+    + ' (every number) · inputs ' + lab.provenance.inputs + ' · knockdown table ' + lab.provenance.calc + '.';
 
-  var ny = document.getElementById('not-yet');
-  card.not_yet.forEach(function (x) {
-    var li = el('li'); li.appendChild(el('b', null, x.title)); li.appendChild(document.createTextNode(x.text)); ny.appendChild(li);
+  // Picker
+  var sel = $('pick-ender');
+  var blank = el('option', null, 'Choose an ender'); blank.value = ''; sel.appendChild(blank);
+  var ranked = el('optgroup'); ranked.label = 'Most common first';
+  var unranked = el('optgroup'); unranked.label = 'No ranking evidence';
+  lab.enders.forEach(function (c) {
+    var o = el('option', null, c.ender + ' (' + kdText(c.kd) + ')'); o.value = c.id;
+    (c.prevalence.rank ? ranked : unranked).appendChild(o);
   });
+  sel.appendChild(ranked); sel.appendChild(unranked);
+  var kIn = $('pick-k');
+  kIn.min = lab.k_range[0]; kIn.max = lab.k_range[1];
 
-  document.getElementById('all-summary').textContent = 'All ' + card.rows.length + ' timings';
-  var rows = document.getElementById('rows');
-  card.rows.forEach(function (r) {
-    var li = el('li');
-    li.appendChild(el('span', 'b', adv(r.block)));
-    li.appendChild(el('span', 's', seqText(r)));
-    var m = el('span', 'm');
-    var bars = parseInt(r.drive, 10);
-    var cost = (bars === 0 ? 'no Drive' : bars + (bars === 1 ? ' bar' : ' bars')) + (r.drive.indexOf('stock') >= 0 ? ' + stock' : '');
-    m.appendChild(document.createTextNode(adv(r.hit) + ' on hit · ' + cost));
-    tags(r).forEach(function (t) {
-      m.appendChild(document.createTextNode(' · '));
-      m.appendChild(el('span', 'tag ' + t[1], t[0]));
-    });
-    li.appendChild(m);
-    rows.appendChild(li);
+  function go(id) { if (byId[id]) { show(byId[id]); if (location.hash !== '#' + id) location.hash = id; } }
+  sel.addEventListener('change', function () { if (sel.value) go(sel.value); });
+  kIn.addEventListener('input', function () {
+    var id = 'k' + kIn.value;
+    if (/^\d+$/.test(kIn.value) && byId[id]) go(id);
   });
-
-  document.getElementById('rule').textContent = card.ranking_rule;
-  document.getElementById('search').textContent = (card.search.exhaustive ? 'Exhaustive search: ' : 'Capped search: ')
-    + 'every preparation of up to ' + card.search.depth + ' actions (' + card.search.timings + ' distinct timings) against '
-    + card.search.meaties + ' meaties. Common-ender rank ' + card.prevalence.rank + ' ('
-    + card.prevalence.combo_count + ' combos end on it in the combo guide used as a stand-in for match data).';
-  document.getElementById('prov').textContent = 'Solver output ' + card.provenance.output + ' · inputs '
-    + card.provenance.inputs + ' · knockdown table ' + card.provenance.calc + '.';
+  window.addEventListener('hashchange', function () {
+    var id = location.hash.slice(1);
+    if (byId[id]) show(byId[id]);
+  });
+  var first = location.hash.slice(1);
+  show(byId[first] || byId['lk-tatsu'] || lab.enders[0]);
 })();
 </script>
