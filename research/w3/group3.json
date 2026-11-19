@@ -317,6 +317,1025 @@
     }
    ],
    "notes": "Capcom's table has no jump row, and the SuperCombo text file has no jump, dash or back dash rows, so the draft jump value cannot be checked from these files. Drive Impact, Drive Parry and back dash throw invulnerability are universal system options listed because the draft does not contain them. Not listed because they start after frame 3 or need the Jus Cool stance first: 2HK (invuln 12-23 Air), 4HK (4-12 Air), SA1 (SuperCombo note: 4-14f low crush, cannot be used as a reversal), Juggling Dash and OD Maximum Strike. No command grab found in either file."
+  },
+  {
+   "slug": "dhalsim",
+   "differences": [
+    {
+     "entry": "214214{K} Yoga Sunburst",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "name": "SA2 Yoga Sunburst(Lv2) Hold",
+      "startup": "7",
+      "total": "80 total frames",
+      "invulnerable": "Completely invincible from frames 1 - 9",
+      "condition": "Hold the button for over 140 frames"
+     },
+     "supercombo": {
+      "startup": "23~70",
+      "total": "81~128",
+      "invulnerable": "1-9 Full"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 78,
+       "text": "SA2 Yoga Sunburst(Lv2) Hold | 7 |  | 80 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 78,
+       "text": "Completely invincible from frames 1 - 9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 78,
+       "text": "Hold the button for over 140 frames to activate the Level 2 version"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 63,
+       "text": "input=214214{K}; name=Yoga Sunburst; moveType=super; startup=23~70"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 63,
+       "text": "total=81~128"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 63,
+       "text": "invuln=1-9 Full; armor=Break"
+      }
+     ],
+     "note": "Partially held version of the 214214K super that the draft already lists (and that matched Capcom's Lv1 row). It needs a held button. Both sources have it and agree on invincibility (frames 1-9), but that ends long before the projectile comes out. Start-up and total differ: Capcom 7 and 80 total frames, SuperCombo 23~70 and 81~128."
+    },
+    {
+     "entry": "214214[K] Yoga Sunburst",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "name": "SA2 Yoga Sunburst(Lv3) Hold",
+      "startup": "7",
+      "total": "128 total frames",
+      "invulnerable": "Completely invincible from frames 1 - 9",
+      "condition": "Hold the button for over 188 frames"
+     },
+     "supercombo": {
+      "startup": "71~91",
+      "total": "129~148",
+      "invulnerable": "1-9 Full"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 79,
+       "text": "SA2 Yoga Sunburst(Lv3) Hold | 7 |  | 128 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 79,
+       "text": "Completely invincible from frames 1 - 9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 79,
+       "text": "Hold the button for over 188 frames to activate the Level 2 version"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 64,
+       "text": "input=214214[K]; name=Yoga Sunburst; moveType=super; startup=71~91"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 64,
+       "text": "total=129~148"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 64,
+       "text": "invuln=1-9 Full; armor=Break"
+      }
+     ],
+     "note": "Fully held version of the 214214K super that the draft already lists. It needs a held button. Both sources have it and agree on invincibility (frames 1-9). Start-up and total differ: Capcom 7 and 128 total frames, SuperCombo 71~91 and 129~148. Capcom's note on the Lv3 row says 'Level 2 version' (copied as written)."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "Yoga Teleport (4 or 6 + PPP/KKK)",
+     "startup": "4 (SuperCombo); Capcom start-up cell is empty",
+     "detail": "Teleport. Completely invincible on frames 5-15 only (both sources agree), so frames 1-4 are vulnerable: not a frame-1 reversal. Total 39 frames forward, 46 backward (both sources agree).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 66,
+       "text": "P Yoga Teleport (Forward) |  |  | 39 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 66,
+       "text": "Completely invincible from frames 5 - 15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 67,
+       "text": "K Yoga Teleport (Forward) |  |  | 39 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 67,
+       "text": "Completely invincible from frames 5 - 15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 70,
+       "text": "Yoga Teleport (Backward) |  |  | 46 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 70,
+       "text": "Completely invincible from frames 5 - 15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 57,
+       "text": "input=4 or 6 + PPP/KKK; name=Yoga Teleport; moveType=special; startup=4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 57,
+       "text": "total=39(46)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 57,
+       "text": "invuln=5-15 Full"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Crouching Light Kick (2LK)",
+     "startup": "4",
+     "detail": "SuperCombo only: semi-low profile from frame 2 to frame 26, plus upper-body projectile invulnerability on frames 4-10. Capcom's row states no such property.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 10,
+       "text": "input=2LK; name=Crouching Light Kick; moveType=ground_normal; startup=4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 10,
+       "text": "invuln=Projectile 4-10 (Upper Body)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 10,
+       "text": "notes=Short range slide; semi-low profile 2-26f (until recovery)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 4 | 4-10 | 16"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "LK Yoga Blast (63214LK)",
+     "startup": "12",
+     "detail": "SuperCombo only: head hurtbox disappears from frame 3 to frame 44 (upper-body evasion starting on frame 3). Capcom's row states no such property.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 49,
+       "text": "input=63214LK; name=LK Yoga Blast; moveType=special; startup=12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 49,
+       "text": "head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 12-21 while active)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 55,
+       "text": "L Yoga Blast L | 12 | 12-21 | 44 total frames"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "MK Yoga Blast (63214MK)",
+     "startup": "15",
+     "detail": "SuperCombo only: head hurtbox disappears from frame 3 to frame 44. Capcom's row states no such property.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 50,
+       "text": "input=63214MK; name=MK Yoga Blast; moveType=special; startup=15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 50,
+       "text": "head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 15-24 while active)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 56,
+       "text": "M Yoga Blast M | 15 | 15-24 | 44 total frames"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "HK Yoga Blast (63214HK)",
+     "startup": "17",
+     "detail": "SuperCombo only: head hurtbox disappears from frame 3 to frame 44. Capcom's row states no such property.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 51,
+       "text": "input=63214HK; name=HK Yoga Blast; moveType=special; startup=17"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 51,
+       "text": "head hurtbox disappears on frames 3-44 (hurtbox shrinks even lower on frames 17-26 while active)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 57,
+       "text": "H Yoga Blast H | 17 | 17-26 | 44 total frames"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "OD Yoga Blast (63214KK)",
+     "startup": "12",
+     "detail": "SuperCombo only: head hurtbox disappears from frame 3 to frame 41; invuln field gives 12-21 Air (Upper Body). Capcom's row states no such property.",
+     "resource": "2 Drive bars (Overdrive; cost not stated in these rows)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 52,
+       "text": "input=63214KK; name=OD Yoga Blast; moveType=special; startup=12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 52,
+       "text": "invuln=12-21 Air (Upper Body)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 52,
+       "text": "head hurtbox disappears on frames 3-41 (hurtbox shrinks even lower on frames 12-21 while active)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 58,
+       "text": "OD Yoga Blast | 12 | 12-21 | 41 total frames"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Yoga Rise (HPHK) [universal system move]",
+     "startup": "26",
+     "detail": "Super Armor for 2 attacks from frame 1 to frame 27 (both sources agree on 1-27). Draft armor list is empty.",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 89,
+       "text": "Drive Impact: Yoga Rise H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 89,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 34,
+       "text": "input=HPHK; name=Yoga Rise; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 34,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK) [universal system move]",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active 12 or until released). Catches strikes from frame 1; Capcom: always in Punish Counter state during execution.",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 92,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 92,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 92,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 37,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 37,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44) [universal system move]",
+     "startup": "not stated",
+     "detail": "Capcom: invincible to throws from frame 1 to frame 15 of the 23-frame back dash. SuperCombo text file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 88,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 88,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [2LK, 5LP]",
+     "capcom": "4 (Standing Light Punch and Crouching Light Kick)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 4 | 4-10 | 16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 5 | 5-7 | 9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 25,
+       "text": "Agile Kick L | 5 | 5-7 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 1,
+       "text": "input=5LP; name=Standing Light Punch; moveType=ground_normal; startup=4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.supercombo.txt",
+       "line": 10,
+       "text": "input=2LK; name=Crouching Light Kick; moveType=ground_normal; startup=4"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+68+3",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 88,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "25",
+     "capcom": "25",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dhalsim.capcom.txt",
+       "line": 87,
+       "text": "Forward Dash |  |  | 25 total frames"
+      }
+     ]
+    }
+   ],
+   "notes": "Capcom's table has no jump row, and the SuperCombo text file has no jump or dash rows, so the draft jump value cannot be checked from these files. Drive Impact, Drive Parry and back dash throw invulnerability are universal system options listed because the draft does not contain them. Not listed because they start after frame 3: 2HP (Low Profile 11-46f), 2MK (semi-low profile 10-30f), 2HK (low profile 8-39f), 4HK (low profile 10-13f), 4MP (8-13 Air), Yoga Float (airborne from frame 13 in both sources). SuperCombo also notes a crouching hurtbox on frames 1-12 for 236236HP Yoga Inferno, which the draft already lists as throw immune. No command grab found in either file (Yoga Smash, Yoga Throw and Yoga Splash are the LPLK normal throws)."
+  },
+  {
+   "slug": "e-honda",
+   "differences": [
+    {
+     "entry": "[extra, not in _capcom_check lists] 236236P Show of Force (SA1)",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "7",
+      "invulnerable": "strikes and projectiles, frames 1 - 11 (throws not mentioned)"
+     },
+     "supercombo": {
+      "startup": "7",
+      "invulnerable": "1-11 Strike/Throw"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 60,
+       "text": "SA1 Show of Force | 7 | 7-11 | 48"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 60,
+       "text": "Invincible to strikes and projectiles from frames 1 - 11"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 63,
+       "text": "input=236236P; name=Show of Force; moveType=super; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 63,
+       "text": "invuln=1-11 Strike/Throw; armor=Break"
+      }
+     ],
+     "note": "The script matched this entry, but the invincibility type differs: Capcom says strikes and projectiles, SuperCombo says Strike/Throw. The draft lists it under throw_immune_from_frame_1 on SuperCombo's wording only; Capcom's row does not state throw invincibility."
+    },
+    {
+     "entry": "[extra, not in _capcom_check lists] [4]6PP OD Sumo Headbutt (draft armor entry)",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "9",
+      "active": "9-56",
+      "armor": "Super Armor for 2 hits from the 1st frame until the end of the active frames"
+     },
+     "supercombo": {
+      "startup": "9",
+      "active": "5,1~30",
+      "armor": "1-8, 9-34 (1 hit before active frames, then another hit until end of active frames)"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 40,
+       "text": "OD Sumo Headbutt | 9 | 9-56 | 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 40,
+       "text": "Super Armor for 2 hits from the 1st frame until the end of the active frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 45,
+       "text": "input=[4]6PP; name=OD Sumo Headbutt; moveType=special; startup=9; active=5,1~30"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 45,
+       "text": "armor=1-8, 9-34"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 45,
+       "text": "1 hit of armor before active frames, then another hit of armor that lasts until end of active frames"
+      }
+     ],
+     "note": "Both sources agree the armor starts on frame 1 and start-up is 9. They differ on the end frame (Capcom: end of active frames, listed as 9-56; SuperCombo: 34) and on how the two hits are split (Capcom: 2 hits for the whole window; SuperCombo: 1 hit on frames 1-8, another on 9-34)."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "Neko Damashi (22P)",
+     "startup": "11",
+     "detail": "SuperCombo only: head invulnerable to airborne attacks on frames 1-14 (invuln field '1-14 Air (Head)'). Not a reversal against grounded strikes or throws. Capcom's row states only a projectile clash.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 62,
+       "text": "input=22P; name=Neko Damashi; moveType=special; startup=11"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 62,
+       "text": "invuln=1-14 Air (Head)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 57,
+       "text": "Neko Damashi | 11 | 11-15 | 14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 57,
+       "text": "Clashes with projectiles (Once)"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Sumo Crunch (HPHK) [universal system move]",
+     "startup": "26",
+     "detail": "Super Armor for 2 attacks from frame 1 to frame 27 (both sources agree on 1-27). Not in the draft armor list.",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 70,
+       "text": "Drive Impact: Sumo Crunch H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 70,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 27,
+       "text": "input=HPHK; name=Sumo Crunch; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 27,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK) [universal system move]",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active 12 or until released). Catches strikes from frame 1; Capcom: always in Punish Counter state during execution.",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 73,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 73,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 73,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 30,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 30,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44) [universal system move]",
+     "startup": "not stated",
+     "detail": "Capcom: invincible to throws from frame 1 to frame 15 of the 23-frame back dash. SuperCombo text file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 69,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 69,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [2LP, 5LK, 5LP~MP]",
+     "capcom": "4 (Standing Light Kick, Crouching Light Punch). Capcom also lists Double Slaps (L M) at start-up 4 under Unique Attacks; SuperCombo's row for it is input 5LP~MP, a Target Combo follow-up to 5LP (start-up 5), so it is not available by itself on wake-up. Correction: drop 5LP~MP from the draft list.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 4 | 4-5 | 9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 5 | 5-7 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 26,
+       "text": "Double Slaps L M | 4 | 4-7 | 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 23,
+       "text": "input=5LP~MP; name=Double Slaps; moveType=ground_normal; startup=4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 23,
+       "text": "MP follow-up can whiff at max range"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 1,
+       "text": "very lenient hitconfirm window into 5LP~MP Target Combo"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 4,
+       "text": "input=5LK; name=Standing Light Kick; moveType=ground_normal; startup=4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.supercombo.txt",
+       "line": 7,
+       "text": "input=2LP; name=Crouching Light Punch; moveType=ground_normal; startup=4"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 69,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/e-honda.capcom.txt",
+       "line": 68,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    }
+   ],
+   "notes": "_capcom_check lists no capcom_only or draft_only entries for E. Honda; the two entries under differences are extra source disagreements found while reading (SA1 invincibility type; OD Sumo Headbutt armor window). Capcom's table has no jump row, and the SuperCombo text file has no jump or dash rows, so the draft jump value cannot be checked from these files. Drive Impact, Drive Parry and back dash throw invulnerability are universal system options listed because the draft does not contain them. Not listed because they start after frame 3: OD Sumo Smash (air invulnerable 5-17, throw invulnerable 5-13, airborne from 5 in both sources), LP/MP/HP Sumo Headbutt (air invulnerable from frame 4/5/6 in both sources), LK/MK/HK Sumo Smash (airborne from frame 7), 3HK Power Stomp (front leg hurtbox lifted on frames 4-20 per SuperCombo). The four Oicho Throw command grabs are already in the draft and both sources give start-up 6."
+  },
+  {
+   "slug": "ed",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "LP Psycho Uppercut (623LP)",
+     "startup": "10",
+     "detail": "Not a full reversal: invulnerable only to airborne attacks (Capcom: mid-air projectiles and strikes with mid-air hitboxes) on frames 1-15; both sources agree. Loses to grounded strikes and throws.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 40,
+       "text": "L Psycho Uppercut L | 10 | 10-17 | 28"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 40,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 40,
+       "text": "input=623LP; name=LP Psycho Uppercut; moveType=Special; startup=10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 40,
+       "text": "invuln=1-15 Air"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "MP Psycho Uppercut (623MP)",
+     "startup": "14",
+     "detail": "Not a full reversal: invulnerable only to airborne attacks on frames 1-19; both sources agree.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 41,
+       "text": "M Psycho Uppercut M | 14 | 14-19 | 32"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 41,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 19"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 41,
+       "text": "input=623MP; name=MP Psycho Uppercut; moveType=Special; startup=14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 41,
+       "text": "invuln=1-19 Air"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "HP Psycho Uppercut (623HP)",
+     "startup": "16",
+     "detail": "Not a full reversal: invulnerable only to airborne attacks on frames 1-19; both sources agree.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 42,
+       "text": "H Psycho Uppercut H | 16 | 16-21 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 42,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 19"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 42,
+       "text": "input=623HP; name=HP Psycho Uppercut; moveType=Special; startup=16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 42,
+       "text": "invuln=1-19 Air"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Kill Rush (Backward) (4KK)",
+     "startup": "not stated (no attack; 31 total frames)",
+     "detail": "SuperCombo only: head hurtbox disappears on frames 1-10 of this backward dash special; counter-hit state for the entire animation. Capcom's row states no properties. Both sources give 31 total frames.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 55,
+       "text": "input=4KK; name=Kill Rush (Backward)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 55,
+       "text": "total=31"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 55,
+       "text": "counter-hit state for entire animation; head hurtbox disappears on frames 1-10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 58,
+       "text": "Kill Rush (Backward) |  |  | 31 total frames"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Kill Rush (Forward) (5/6KK)",
+     "startup": "not stated (no attack; 31 total frames)",
+     "detail": "SuperCombo only: head hurtbox disappears on frames 3-26 of this forward dash special; counter-hit state for the entire animation. Capcom's row states only the follow-up windows. Both sources give 31 total frames.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 56,
+       "text": "input=5/6KK; name=Kill Rush (Forward)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 56,
+       "text": "total=31"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 56,
+       "text": "counter-hit state for entire animation; head hurtbox disappears on frames 3-26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 55,
+       "text": "Kill Rush (Forward) |  |  | 31 total frames"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Turn Punch (HPHK) [universal system move]",
+     "startup": "26",
+     "detail": "Super Armor for 2 attacks from frame 1 to frame 27 (both sources agree on 1-27). Draft armor list is empty.",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 70,
+       "text": "Drive Impact (Turn Punch) H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 70,
+       "text": "Super Armor for 2 attacks between frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 30,
+       "text": "input=HPHK; name=Turn Punch; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 30,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK) [universal system move]",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active 12 or until released). Catches strikes from frame 1; Capcom: always in Punish Counter state during execution.",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 73,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 73,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 73,
+       "text": "Always in Punish Counter state during execution"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 33,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 33,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44) [universal system move]",
+     "startup": "not stated",
+     "detail": "Capcom: invincible to throws between frames 1 - 15 of the 23-frame back dash. SuperCombo text file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 69,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 69,
+       "text": "Invincible to throws between frames 1 - 15"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [2LP, 5LP]",
+     "capcom": "4 (Standing Light Punch and Crouching Light Punch)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-6 | 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 1,
+       "text": "input=5LP; name=Standing Light Punch; moveType=ground_normal; startup=4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.supercombo.txt",
+       "line": 7,
+       "text": "input=2LP; name=Crouching Light Punch; moveType=ground_normal; startup=4"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 69,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ed.capcom.txt",
+       "line": 68,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    }
+   ],
+   "notes": "_capcom_check lists no capcom_only or draft_only entries for Ed, and the three matched reversals (OD Psycho Uppercut, Psycho Storm, Psycho Chamber) carry the same start-up and invincibility frames in both files. Capcom's table has no jump row, and the SuperCombo text file has no jump or dash rows, so the draft jump value cannot be checked from these files. Drive Impact, Drive Parry and back dash throw invulnerability are universal system options listed because the draft does not contain them. Not listed: 6HP Cobra Punch (feet invincible / low crush from frame 7 in both sources), SA2 Psycho Cannon (start-up 8, no invincibility stated in either file). No command grab found in either file."
   }
  ]
 }

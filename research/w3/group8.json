@@ -1,0 +1,1596 @@
+{
+ "characters": [
+  {
+   "slug": "sagat",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "Drive Impact: Tiger Punishment (HPHK)",
+     "startup": "26",
+     "detail": "Universal Drive Impact. Super armor for 2 attacks from frame 1 through frame 27 (both sources). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 70,
+       "text": "Drive Impact: Tiger Punishment H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 70,
+       "text": "Super Armor for 2 attacks between frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 29,
+       "text": "input=HPHK; name=Tiger Punishment"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 29,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal Drive Parry. Parry is active from frame 1 (Capcom active 1-12, extended while the buttons are held; SuperCombo startup 1, active 12 or until released). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 73,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 73,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 32,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 32,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not an attack",
+     "detail": "Universal back dash. Invincible to throws on frames 1-15 of 23 total frames (Capcom only; the SuperCombo rows file has no dash row). Not in the draft profile as a throw-immune option.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 69,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 69,
+       "text": "Invincible to throws between frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "LP Tiger Uppercut (623LP)",
+     "startup": "5",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-14 (Capcom); SuperCombo invuln '1-14 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 9 (Capcom) / 9 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 36,
+       "text": "L Tiger Uppercut L | 5 | 5-14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 36,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14 Considered airborne from frames 9 - 49"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 40,
+       "text": "input=623LP; name=LP Tiger Uppercut"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 40,
+       "text": "invuln=1-14 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 40,
+       "text": "airborne=9-49 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "MP Tiger Uppercut (623MP)",
+     "startup": "10",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-13 (Capcom); SuperCombo invuln '1-13 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 14 (Capcom) / 14 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 37,
+       "text": "M Tiger Uppercut M | 10 | 10-19"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 37,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 13 Considered airborne from frames 14 - 59"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 41,
+       "text": "input=623MP; name=MP Tiger Uppercut"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 41,
+       "text": "invuln=1-13 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 41,
+       "text": "airborne=14-59 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "HP Tiger Uppercut (623HP), uncharged",
+     "startup": "18",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-21 (Capcom); SuperCombo invuln '1-21 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 22 (Capcom) / 22 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 38,
+       "text": "H Tiger Uppercut H | 18 | 18-27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 38,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 21 Considered airborne from frames 22 - 67"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 42,
+       "text": "input=623HP; name=HP Tiger Uppercut"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 42,
+       "text": "invuln=1-21 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 42,
+       "text": "airborne=22-67 (FKD)"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP)",
+     "capcom": "4 (Crouching Light Punch only; Standing LP 5, Crouching LK 5, Standing LK 7)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 5 | 5-7 | 11"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-7 | 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 7 | 7-8 | 15"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3",
+     "capcom": "not stated (Capcom has no jump row; it only gives the landing recovery of jumping normals, 3 frames)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 15,
+       "text": "Jumping Light Punch (During a jump) L | 4 | 4-10 | 3 frame(s) after landing"
+      }
+     ]
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 69,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 68,
+       "text": "Forward Dash |  |  | 23 total frames"
+      }
+     ]
+    }
+   ],
+   "additional_findings": [
+    {
+     "kind": "source_discrepancy",
+     "item": "OD Tiger Uppercut (623PP) airborne start",
+     "capcom": "airborne from frame 13",
+     "supercombo": "airborne from frame 12",
+     "note": "Both agree on startup 8 and full invincibility 1-12; they differ by one frame on when it becomes airborne.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 40,
+       "text": "Completely invincible between frames 1 - 12 Considered airborne from frames 13 - 57"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 44,
+       "text": "invuln=1-12 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 44,
+       "text": "airborne=12-57 (FKD)"
+      }
+     ]
+    },
+    {
+     "kind": "draft_issue",
+     "item": "Draft lists 214214K~4, ~5, ~2, ~6 as four separate reversals",
+     "note": "These are post-hit follow-up branches of Savage Tiger (direction held after the super connects), not separate wake-up options. Capcom gives them no startup of their own; SuperCombo repeats the parent super's numbers on each row.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 57,
+       "text": "Pressing a direction on frame 76 after the attack hits produces a different follow-up attack"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.capcom.txt",
+       "line": 58,
+       "text": "SA2 Savage Tiger Raid (During Savage Tiger)(No input)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/sagat.supercombo.txt",
+       "line": 60,
+       "text": "Goes into one of 4 follow-ups after frame 76 on hit"
+      }
+     ]
+    }
+   ],
+   "notes": "_capcom_check.json lists no capcom_only or draft_only entries for Sagat, so there are no differences to resolve. No command grab, no character-specific armor or counter, and no move that is airborne or throw-invulnerable by frame 3 in either file. The three universal options (Drive Impact, Drive Parry, back dash) are listed because the draft omits them; their Drive cost is not stated in either file. The charged HP Tiger Uppercut (air invulnerability 1-9 and 28-38) needs a held button and is left out. Jump frames are not stated by Capcom. See additional_findings (extra key, same quote format) for one source discrepancy and one draft issue."
+  },
+  {
+   "slug": "terry",
+   "differences": [
+    {
+     "entry": "Jumping Lariat M M M (capcom_only)",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "startup": "24",
+      "invulnerable": "completely invincible frames 1-25",
+      "airborne": "frames 14-25"
+     },
+     "supercombo": {
+      "input": "5MP~MK~MP",
+      "startup": "24",
+      "invulnerable": "1-25 Full",
+      "airborne": "14-25"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 27,
+       "text": "Jumping Lariat M M M | 24 | 24-25 | 18"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 27,
+       "text": "Completely invincible between frames 1 - 25 Considered airborne from frames 14 - 25"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 25,
+       "text": "input=5MP~MK~MP; name=Jumping Lariat"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 25,
+       "text": "startup=24"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 25,
+       "text": "invuln=1-25 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 25,
+       "text": "airborne=14-25"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 25,
+       "text": "full invincibility and no collision box from 5MP~MK is extended until end of active frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 26,
+       "text": "Passing Sway M M | 13 | 13-14 | 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 26,
+       "text": "Fully invincible from frames 20 - 40 on hit only"
+      }
+     ],
+     "note": "Both sources have the move and their numbers agree (startup 24, invincible 1-25, airborne 14-25). It is the third input of the 5MP > MK > MP target combo: it can only be done after Passing Sway (5MP~MK), whose on-hit invincibility it extends. It cannot be done on wake-up, so the draft is right to leave it out of reversals."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "Drive Impact: Back Spin Kick (HPHK)",
+     "startup": "26",
+     "detail": "Universal Drive Impact. Super armor for 2 attacks from frame 1 through frame 27 (both sources). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 66,
+       "text": "Drive Impact: Back Spin Kick H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 66,
+       "text": "Super Armor for 2 attacks between frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 30,
+       "text": "input=HPHK; name=Back Spin Kick"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 30,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal Drive Parry. Parry is active from frame 1 (Capcom active 1-12, extended while the buttons are held; SuperCombo startup 1, active 12 or until released). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 69,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 69,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 33,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 33,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not an attack",
+     "detail": "Universal back dash. Invincible to throws on frames 1-15 of 23 total frames (Capcom only; the SuperCombo rows file has no dash row). Not in the draft profile as a throw-immune option.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 65,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 65,
+       "text": "Invincible to throws between frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "LP Rising Tackle (623LP)",
+     "startup": "5",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-14 (Capcom); SuperCombo invuln '1-14 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 6 (Capcom) / 6 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 48,
+       "text": "L Rising Tackle L | 5 | 5-14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 48,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14 Considered airborne from frames 6 - 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 45,
+       "text": "input=623LP; name=LP Rising Tackle"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 45,
+       "text": "invuln=1-14 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 45,
+       "text": "airborne=6-35 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "MP Rising Tackle (623MP)",
+     "startup": "6",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-10 (Capcom); SuperCombo invuln '1-10 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 8 (Capcom) / 7 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 49,
+       "text": "M Rising Tackle M | 6 | 6-15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 49,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10 Considered airborne from frames 8 - 43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 46,
+       "text": "input=623MP; name=MP Rising Tackle"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 46,
+       "text": "invuln=1-10 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 46,
+       "text": "airborne=7-43 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "HP Rising Tackle (623HP)",
+     "startup": "7",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-8 (Capcom); SuperCombo invuln '1-8 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 8 (Capcom) / 8 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 50,
+       "text": "H Rising Tackle H | 7 | 7-26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 50,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8 Considered airborne from frames 8 - 53"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 47,
+       "text": "input=623HP; name=HP Rising Tackle"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 47,
+       "text": "invuln=1-8 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 47,
+       "text": "airborne=8-53 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Standing Medium Kick (5MK)",
+     "startup": "9",
+     "detail": "SuperCombo note only: the front leg hurtbox is raised on frames 3-20, which helps against low pokes. This is a raised hurtbox, not stated as invulnerability. Capcom gives startup 9 and says nothing about the hurtbox.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 5,
+       "text": "input=5MK; name=Standing Medium Kick"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 5,
+       "text": "startup=9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 5,
+       "text": "front leg hurtbox is raised on frames 3-20 making it strong against low pokes"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 6,
+       "text": "Standing Medium Kick M | 9 | 9-11 | 18"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP, 5LP)",
+     "capcom": "4 (Standing Light Punch and Crouching Light Punch; Standing LK 5, Crouching LK 5)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-6 | 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-6 | 11"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3",
+     "capcom": "not stated (Capcom has no jump row; it only gives the landing recovery of jumping normals, 3 frames)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 15,
+       "text": "Jumping Light Punch (During a jump) L | 4 | 4-10 | 3 frame(s) after landing"
+      }
+     ]
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 65,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 64,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    }
+   ],
+   "additional_findings": [
+    {
+     "kind": "source_discrepancy",
+     "item": "MP Rising Tackle (623MP) airborne start",
+     "capcom": "airborne from frame 8",
+     "supercombo": "airborne from frame 7",
+     "note": "Startup 6 and air invulnerability 1-10 agree.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 49,
+       "text": "Considered airborne from frames 8 - 43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 46,
+       "text": "airborne=7-43 (FKD)"
+      }
+     ]
+    },
+    {
+     "kind": "draft_issue",
+     "item": "Draft lists 214214P~PP~PP Triple Geyser as a reversal",
+     "note": "Triple Geyser is the third stage of SA2 and is only reachable after Power Geyser and then Twin Geyser connect. It is not a wake-up option on its own; its 1-139 invincibility applies during that follow-up.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 54,
+       "text": "Can transition to Twin Geyser between frames 25 - 38 on hit only"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 55,
+       "text": "Can transition to Triple Geyser or Triple Geyser (Dud) between frames 38 - 42 on hit only"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 60,
+       "text": "input=214214P~PP~PP; name=Triple Geyser"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 60,
+       "text": "invuln=1-139 Full"
+      }
+     ]
+    },
+    {
+     "kind": "same_class_as_difference",
+     "item": "Jumping Knee (5MP~MK~MK)",
+     "note": "Same situation as Jumping Lariat: completely invincible 1-25 in both sources, but it is the other third input of the Passing Sway target combo, so not a wake-up reversal. It is not listed in _capcom_check.json.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 28,
+       "text": "Jumping Knee M M M | 24 | 24-25 | 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.capcom.txt",
+       "line": 28,
+       "text": "Completely invincible between frames 1 - 25 Considered airborne from frames 16 - 25"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 26,
+       "text": "input=5MP~MK~MK; name=Jumping Knee"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/terry.supercombo.txt",
+       "line": 26,
+       "text": "invuln=1-25 Full"
+      }
+     ]
+    }
+   ],
+   "notes": "One capcom_only entry resolved (Jumping Lariat: target-combo follow-up, not a wake-up reversal; both sources agree on its numbers). No command grab, no character-specific armor or counter, and nothing airborne or throw-invulnerable by frame 3 in either file (Crack Shoot is airborne from frame 7 at the earliest). The three universal options are listed because the draft omits them; their Drive cost is not stated in either file. Jump frames are not stated by Capcom. See additional_findings (extra key, same quote format)."
+  },
+  {
+   "slug": "yasmine",
+   "differences": [
+    {
+     "entry": "SA1 Hiwa ng Kalangitan (capcom_only)",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "7",
+      "active": "7-12",
+      "invulnerable": "strikes and throws, frames 1-8",
+      "block": "-34"
+     },
+     "supercombo": {
+      "input": "236236K",
+      "startup": "7",
+      "active": "6",
+      "invulnerable": "1-9 Strike/Throw",
+      "block": "-34",
+      "airborne": "10-31"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 71,
+       "text": "SA1 Hiwa ng Kalangitan | 7 | 7-12 | 50 | D | -34"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 71,
+       "text": "Invincible to strikes and throws between frames 1 - 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 62,
+       "text": "input=236236K; name=Hiwa ng Kalangitan"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 62,
+       "text": "startup=7; active=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 62,
+       "text": "blockAdv=-34; invuln=1-9 Strike/Throw"
+      }
+     ],
+     "note": "Same move as the draft_only entry 236236K Hiwa ng Kalangitan. Startup 7 and block -34 agree. The sources differ on the last invincible frame: Capcom says frame 8, SuperCombo says frame 9. The script failed to pair them because of that one-frame difference."
+    },
+    {
+     "entry": "236236K Hiwa ng Kalangitan (draft_only)",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "7",
+      "active": "7-12",
+      "invulnerable": "strikes and throws, frames 1-8",
+      "block": "-34"
+     },
+     "supercombo": {
+      "input": "236236K",
+      "startup": "7",
+      "active": "6",
+      "invulnerable": "1-9 Strike/Throw",
+      "block": "-34",
+      "airborne": "10-31"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 71,
+       "text": "SA1 Hiwa ng Kalangitan | 7 | 7-12 | 50 | D | -34"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 71,
+       "text": "Invincible to strikes and throws between frames 1 - 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 62,
+       "text": "input=236236K; name=Hiwa ng Kalangitan"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 62,
+       "text": "startup=7; active=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 62,
+       "text": "blockAdv=-34; invuln=1-9 Strike/Throw"
+      }
+     ],
+     "note": "Same move as the capcom_only entry SA1 Hiwa ng Kalangitan. Invincible to strikes and throws from frame 1 in both sources; ends on frame 8 (Capcom) or frame 9 (SuperCombo). The draft carries the SuperCombo value 1-9."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "Drive Impact: Dagok sa Katawan (HPHK)",
+     "startup": "26",
+     "detail": "Universal Drive Impact. Super armor for 2 attacks from frame 1 through frame 27 (both sources). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 81,
+       "text": "Drive Impact: Dagok sa Katawan H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 81,
+       "text": "Super Armor for 2 attacks between frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 28,
+       "text": "input=HPHK; name=Dagok sa Katawan"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 28,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal Drive Parry. Parry is active from frame 1 (Capcom active 1-12, extended while the buttons are held; SuperCombo startup 1, active 12 or until released). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 84,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 84,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 31,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 31,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not an attack",
+     "detail": "Universal back dash. Invincible to throws on frames 1-15 of 23 total frames (Capcom only; the SuperCombo rows file has no dash row). Not in the draft profile as a throw-immune option.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 80,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 80,
+       "text": "Invincible to throws between frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "LK Lipad ng Agila (623LK)",
+     "startup": "5",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-14 (Capcom); SuperCombo invuln '1-14 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 7 (Capcom) / 7 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 59,
+       "text": "L Lipad ng Agila L | 5 | 5-14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 59,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14 Considered airborne from frames 7 - 41"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 56,
+       "text": "input=623LK; name=LK Lipad ng Agila"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 56,
+       "text": "invuln=1-14 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 56,
+       "text": "airborne=7-41 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "MK Lipad ng Agila (623MK)",
+     "startup": "6",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-9 (Capcom); SuperCombo invuln '1-9 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 8 (Capcom) / 8 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 60,
+       "text": "M Lipad ng Agila M | 6 | 6-15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 60,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9 Considered airborne from frames 8 - 42"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 57,
+       "text": "input=623MK; name=MK Lipad ng Agila"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 57,
+       "text": "invuln=1-9 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 57,
+       "text": "airborne=8-42 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "HK Lipad ng Agila (623HK)",
+     "startup": "7",
+     "detail": "Partial invulnerability from frame 1: invincible to airborne strikes and airborne projectiles only on frames 1-10 (Capcom); SuperCombo invuln '1-10 Air'. Not strike-invulnerable to grounded attacks, so not a true reversal, but it beats jump-in attacks on wake-up. Airborne from frame 9 (Capcom) / 9 (SuperCombo), so not throw-immune by frame 3. Filed under evasive as the nearest class; it is neither upper-body nor lower-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 61,
+       "text": "H Lipad ng Agila H | 7 | 7-16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 61,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10 Considered airborne from frames 9 - 43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 58,
+       "text": "input=623HK; name=HK Lipad ng Agila"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 58,
+       "text": "invuln=1-10 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 58,
+       "text": "airborne=9-43 (FKD)"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP)",
+     "capcom": "4 (Crouching Light Punch only; Standing LP 5, Standing LK 5, Crouching LK 5)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch: Mabilisang Paglaslas L | 4 | 4-6 | 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch: Magaang na Paglaslas L | 5 | 5-7 | 7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick: Mababang Sipa L | 5 | 5-6 | 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick: Magaang na Sipa L | 5 | 5-7 | 10"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3",
+     "capcom": "not stated (Capcom has no jump row; it only gives the landing recovery of jumping normals, 3 frames)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 15,
+       "text": "(During a jump) L | 4 | 4-8 | 3 frame(s) after landing"
+      }
+     ]
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 80,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 79,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    }
+   ],
+   "additional_findings": [
+    {
+     "kind": "source_discrepancy",
+     "item": "CA Pamumukadkad ng Sampaguita (236236P, Critical Art) block advantage",
+     "capcom": "-45",
+     "supercombo": "-48",
+     "note": "The draft carries -48 for the CA row. Capcom gives -48 for SA3 and -45 for the CA version; SuperCombo gives -48 for both. Startup 10 and invincibility 1-12 agree.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 74,
+       "text": "CA Pamumukadkad ng Sampaguita (when under 25% vitality) | 10 | 10-12 | 70 | D | -45"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 73,
+       "text": "SA3 Pamumukadkad ng Sampaguita | 10 | 10-12 | 70 | D | -48"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 66,
+       "text": "name=Pamumukadkad ng Sampaguita (CA)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 66,
+       "text": "blockAdv=-48; invuln=1-12 Full"
+      }
+     ]
+    },
+    {
+     "kind": "near_miss",
+     "item": "Walis na Pabagsak (4HK) and Standing Medium Kick (5MK) hurtbox shifts",
+     "note": "SuperCombo notes only. Both start after frame 3 (frame 5 and frame 4), so they fall outside the evasive class as defined. 4HK is described as able to avoid throws; startup 22.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 20,
+       "text": "input=4HK; name=Walis na Pabagsak"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 20,
+       "text": "Hurtbox shifts backwards on frames 5-15 before attacking with a low-hitting sweep"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 5,
+       "text": "foot hurtbox shifts backward on frames 4-12f (more effective at counter-hitting low pokes)"
+      }
+     ]
+    },
+    {
+     "kind": "not_a_reversal",
+     "item": "SA2 Nakatagong Lakas (214214P)",
+     "note": "Install super with 10 total frames; neither source states any invincibility, so it is not a wake-up reversal. The draft correctly omits it.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.capcom.txt",
+       "line": 72,
+       "text": "SA2 Nakatagong Lakas |  |  | 10 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/yasmine.supercombo.txt",
+       "line": 63,
+       "text": "input=214214P; name=Nakatagong Lakas; moveType=Super; startup=1"
+      }
+     ]
+    }
+   ],
+   "notes": "The capcom_only and draft_only entries are the same move (SA1); the sources disagree by one frame on where its strike/throw invincibility ends (8 vs 9). No command grab, no character-specific armor or counter, and nothing airborne or throw-invulnerable by frame 3 in either file (Mukha ng Langit is airborne from frame 14). The three universal options are listed because the draft omits them; their Drive cost is not stated in either file. Jump frames are not stated by Capcom. See additional_findings (extra key, same quote format)."
+  },
+  {
+   "slug": "zangief",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "Drive Impact: Double Russian Chop (HPHK)",
+     "startup": "26",
+     "detail": "Universal Drive Impact. Super armor for 2 attacks from frame 1 through frame 27 (both sources). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 72,
+       "text": "Drive Impact: Double Russian Chop H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 72,
+       "text": "Super Armor for 2 hits from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 39,
+       "text": "input=HPHK; name=Double Russian Chop"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 39,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal Drive Parry. Parry is active from frame 1 (Capcom active 1-12, extended while the buttons are held; SuperCombo startup 1, active 12 or until released). Not in the draft profile.",
+     "resource": "Drive gauge (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 75,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 75,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 42,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 42,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not an attack",
+     "detail": "Universal back dash. Invincible to throws on frames 1-15 of 25 total frames (Capcom only; the SuperCombo rows file has no dash row). Not in the draft profile as a throw-immune option.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 71,
+       "text": "Backward Dash |  |  | 25 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 71,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Double Lariat (PP)",
+     "startup": "15",
+     "detail": "SuperCombo note: the head hurtbox disappears on frames 1-5 of startup and the hurtbox shrinks further on frames 6-16; SuperCombo invuln field gives air-attack invulnerability 6-16 and projectile invulnerability 6-45. Capcom states only projectile invincibility on frames 6-45 and says nothing about the head hurtbox or air invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 40,
+       "text": "Double Lariat | 15 | 15-45 | 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 40,
+       "text": "Projectile invincibility from frames 6 - 45"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 45,
+       "text": "input=PP; name=Double Lariat"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 45,
+       "text": "invuln=6-16 Air, 6-45 Projectile"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 45,
+       "text": "head hurtbox disappears on frames 1-5 of startup, then further shrinks hurtbox on frames 6-16"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "OD Double Lariat (PPP)",
+     "startup": "12",
+     "detail": "Projectile invincible from frame 1 through frame 36 (both sources). SuperCombo note: head hurtbox disappears on frames 1-5 of startup, then shrinks further. Invincible to airborne strikes and airborne projectiles on frames 6-12 (Capcom) or 6-13 (SuperCombo). Not strike-invulnerable to grounded attacks.",
+     "resource": "Overdrive (cost not stated in the files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 41,
+       "text": "OD Double Lariat L M H | 12 | 12-36 | 26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 41,
+       "text": "Projectile invincibility from frames 1 - 36 Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 46,
+       "text": "input=PPP; name=OD Double Lariat"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 46,
+       "text": "invuln=6-13 Air, 1-36 Projectile"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 46,
+       "text": "head hurtbox disappears on frames 1-5 of startup, then further shrinks hurtbox on frames 6-13"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Tundra Storm (22HK)",
+     "startup": "5 (Capcom) / 6 (SuperCombo)",
+     "detail": "Counter special missing from the draft. It does NOT meet the by-frame-3 threshold: the counter window starts on frame 5 (Capcom, active 5-55) or frame 6 (SuperCombo, counter active 6-55f). SuperCombo: it only triggers against kick attacks, cannot counter low kicks, and the counter-attack uses a throw hitbox. Capcom tags the move as Throw, so it could equally be filed under command_grab, but it does not grab an opponent who is not kicking.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 54,
+       "text": "Tundra Storm H | 5 | 5-55 | 24 | D"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 54,
+       "text": "-10000 | 2000 | Throw |"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 59,
+       "text": "input=22HK; name=Tundra Storm; moveType=special; startup=6; active=50"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 59,
+       "text": "Counter is active 6-55f; only activates vs. kick attacks that connect with the hitbox between Zangief's arms"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 59,
+       "text": "cannot counter low-hitting kicks"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 59,
+       "text": "on successful counter, the attack uses a throw hitbox, causing it to whiff vs. airborne or throw invincible opponents"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LK)",
+     "capcom": "4 (Crouching Light Kick only; Crouching LP 6, Standing LP 7, Standing LK 7; the 3-frame and 4-frame 'Rapid cancel version' rows apply only when chained from a previous light)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 13,
+       "text": "Crouching Light Kick L | 4 | 4-6 | 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 11,
+       "text": "Crouching Light Punch L | 6 | 6-7 | 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 7 | 7-9 | 9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 5,
+       "text": "Standing Light Kick L | 7 | 7-8 | 17"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 14,
+       "text": "(Rapid cancel version)Crouching Light Kick L | 3 | 3-5 | 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 12,
+       "text": "(Rapid cancel version)Crouching Light Punch L | 3 | 3-4 | 8"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "5+38+3",
+     "capcom": "not stated (Capcom has no jump row; it only gives the landing recovery of jumping normals, 3 frames)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 19,
+       "text": "Jumping Light Punch (During a jump) L | 5 | 5-11 | 3 frame(s) after landing"
+      }
+     ]
+    },
+    {
+     "field": "backdash_total",
+     "draft": "25",
+     "capcom": "25",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 71,
+       "text": "Backward Dash |  |  | 25 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "22",
+     "capcom": "22",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 70,
+       "text": "Forward Dash |  |  | 22 total frames"
+      }
+     ]
+    }
+   ],
+   "additional_findings": [
+    {
+     "kind": "draft_issue",
+     "item": "Draft lists 236236K Aerial Russian Slam under reversals and command_grabs",
+     "note": "Both sources agree on startup 11, full invincibility 1-17 and airborne from frame 2, but both also say it can only hit airborne opponents. It cannot hit a grounded attacker on wake-up; it only escapes or catches a jump-in.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 56,
+       "text": "SA1 Aerial Russian Slam | 11 | 11-17 | 60"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 56,
+       "text": "Completely invincible from frames 1- 17 Considered airborne from frames 2 - 30 Can only work on mid-air opponents"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 60,
+       "text": "invuln=1-17 Full; airborne=2-30 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 60,
+       "text": "Can only hit airborne opponents"
+      }
+     ]
+    },
+    {
+     "kind": "draft_issue",
+     "item": "Draft lists j.360+K Borscht Dynamite and its OD version under command_grabs",
+     "note": "Air-only throw: performed during a jump and only hits airborne opponents, so it is not a wake-up option.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 46,
+       "text": "Borscht Dynamite (During a jump) (When near opponent) | 4 | 4-6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 46,
+       "text": "Only hits airborne opponents"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 51,
+       "text": "input=j.360+K; name=Borscht Dynamite"
+      }
+     ]
+    },
+    {
+     "kind": "near_miss",
+     "item": "Standing Heavy Punch held (5HP / 5[HP]) upper-body armor from frame 4",
+     "note": "Both sources: one hit of super armor on the upper half of the body starting on frame 4 while the button is held (4-34 when fully charged). It misses the brief's 'active by frame 3' cut-off by one frame and needs a held button, so it is not listed under missed_options. SuperCombo adds that the armor loses to hits on the lower body.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 8,
+       "text": "When the button is held, 1 hit of super armor is added to the upper half of the body from frame 4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 9,
+       "text": "Super Armor for 1 attack from frames 4 - 34"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 3,
+       "text": "armor=4-release (Upper Body)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 4,
+       "text": "armor=4-34 (Upper Body)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 4,
+       "text": "Armor loses to hitboxes that connect on Zangief's lower body"
+      }
+     ]
+    },
+    {
+     "kind": "near_miss",
+     "item": "Smetana Dropkick (3HK) throw and lower-body invulnerability from frame 5",
+     "note": "Throw invincible on frames 5-26 in both sources (SuperCombo adds lower-body invulnerability on the same frames). Starts after frame 3, so outside the throw_immune and evasive classes as defined. Startup 16.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 31,
+       "text": "Smetana Dropkick H | 16 | 16-19 | 40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 31,
+       "text": "Throw invincible from frames 5 - 26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 25,
+       "text": "invuln=5-26 Throw/Lower Body"
+      }
+     ]
+    },
+    {
+     "kind": "near_miss",
+     "item": "Knee Hammer (6MK) lower-body invulnerability from frame 7",
+     "note": "SuperCombo only; starts after frame 3. Capcom's row has no note.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 22,
+       "text": "input=6MK; name=Knee Hammer"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 22,
+       "text": "invuln=7-23 Lower Body"
+      }
+     ]
+    },
+    {
+     "kind": "source_discrepancy",
+     "item": "Siberian Express, far version (63214K) armor start",
+     "capcom": "super armor for 1 attack from frame 10",
+     "supercombo": "armor from frame 11",
+     "note": "The draft's command_grabs entry carries SuperCombo's 11~. Startup 55 agrees. The OD version agrees in both sources (2 hits of armor from frame 3).",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 52,
+       "text": "Super Armor for 1 attack from frames 10 - 56"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 57,
+       "text": "input=63214K (Far); name=Siberian Express"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 57,
+       "text": "armor=11~"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 53,
+       "text": "Super Armor for 2 attacks from frames 3 - 55"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 58,
+       "text": "armor=3~ (2-hit)"
+      }
+     ]
+    },
+    {
+     "kind": "source_discrepancy",
+     "item": "Tundra Storm (22HK) startup",
+     "capcom": "5",
+     "supercombo": "6",
+     "note": "See the missed_options entry.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 54,
+       "text": "Tundra Storm H | 5 | 5-55 | 24"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 59,
+       "text": "startup=6; active=50"
+      }
+     ]
+    },
+    {
+     "kind": "source_discrepancy",
+     "item": "OD Double Lariat (PPP) air-attack invulnerability end",
+     "capcom": "frames 6-12",
+     "supercombo": "frames 6-13",
+     "note": "Projectile invulnerability 1-36 agrees.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.capcom.txt",
+       "line": 41,
+       "text": "strikes with mid-air hitboxes from frames 6 - 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/zangief.supercombo.txt",
+       "line": 46,
+       "text": "invuln=6-13 Air, 1-36 Projectile"
+      }
+     ]
+    }
+   ],
+   "notes": "_capcom_check.json lists no capcom_only or draft_only entries for Zangief, so there are no differences to resolve. The draft already holds the Screw Piledrivers, Borscht Dynamite (air only), Russian Suplex, Siberian Express, both throw supers and the OD Siberian Express armor. Missing: the three universal options (Drive cost not stated in either file), the two Double Lariats (head hurtbox gone from frame 1 per SuperCombo; OD is projectile-invincible from frame 1 per both sources) and Tundra Storm (a kick counter that starts on frame 5 or 6, so it fails the frame-3 threshold; listed so the profile owner can decide). Two draft entries are not usable against a grounded attacker: Aerial Russian Slam and Borscht Dynamite only hit airborne opponents (see additional_findings). Jump frames are not stated by Capcom. See additional_findings (extra key, same quote format) for near misses and three source discrepancies."
+  }
+ ]
+}

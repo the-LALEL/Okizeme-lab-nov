@@ -334,7 +334,119 @@
      ]
     }
    ],
-   "notes": "Draft reversals/command grabs otherwise match both files: SA2 Étoile 7 / 1-9 in both; CA Pas de Deux is Capcom line 52 with the same 7 / 1-8 as SA3 (SuperCombo line 57 \"6+1\" / \"1-8 Full\"); Manège Doré start-ups 10/8/5/8 agree in both. Not listed as missed because they fall outside the six classes or start too late: L/M/H Renversé projectile invulnerability from frame 3 (projectile-only); OD Rond-point air invulnerability from frame 4; H Dégagé low invulnerability from frame 9; OD Dégagé airborne from frame 9 and throw invulnerability from frame 11. Borderline, not listed: SuperCombo line 7 says 2LP's \"topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes\" (a hurtbox remark, not labelled as invulnerability). Drive gauge costs for Drive Impact/Parry and the Overdrive cost are not stated in either file; \"2 Drive bars\" follows the draft's own label for OD moves."
+   "notes": "Draft reversals/command grabs otherwise match both files: SA2 Étoile 7 / 1-9 in both; CA Pas de Deux is Capcom line 52 with the same 7 / 1-8 as SA3 (SuperCombo line 57 \"6+1\" / \"1-8 Full\"); Manège Doré start-ups 10/8/5/8 agree in both. Not listed as missed because they fall outside the six classes or start too late: L/M/H Renversé projectile invulnerability from frame 3 (projectile-only); OD Rond-point air invulnerability from frame 4; H Dégagé low invulnerability from frame 9; OD Dégagé airborne from frame 9 and throw invulnerability from frame 11. Borderline, not listed: SuperCombo line 7 says 2LP's \"topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes\" (a hurtbox remark, not labelled as invulnerability). Drive gauge costs for Drive Impact/Parry and the Overdrive cost are not stated in either file; \"2 Drive bars\" follows the draft's own label for OD moves.",
+   "notes_quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 50,
+     "text": "SA2 Étoile | 7 | 7-80"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 50,
+     "text": "Completely invincible from frames 1 - 9"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 55,
+     "text": "input=214214K; name=Étoile; moveType=super; startup=7"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 55,
+     "text": "invuln=1-9 Full"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 52,
+     "text": "CA Pas de Deux (When near opponent)(when under 25% vitality) | 7 | 7-8 | 72 | D"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 52,
+     "text": "Completely invincible from frames 1 - 8"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 57,
+     "text": "input=236236P; name=Pas de Deux (CA); moveType=super; startup=6+1"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 57,
+     "text": "invuln=1-8 Full"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 30,
+     "text": "(When near opponent) L | 10 | 10-12 | 48 | D"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 31,
+     "text": "(When near opponent) M | 8 | 8-10 | 50 | D"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 32,
+     "text": "(When near opponent) H | 5 | 5-7 | 53 | D"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 33,
+     "text": "(When near opponent) | 8 | 8-9 | 51 | D"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 34,
+     "text": "input=63214LP; name=LP Manège Doré; moveType=special; startup=10"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 35,
+     "text": "input=63214MP; name=MP Manège Doré; moveType=special; startup=8"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 36,
+     "text": "input=63214HP; name=HP Manège Doré; moveType=special; startup=5"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 37,
+     "text": "input=63214PP; name=OD Manège Doré; moveType=special; startup=8"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 42,
+     "text": "Projectile invincibility from frames 3 - 23"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 37,
+     "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 4 - 16"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 40,
+     "text": "Low attack invincibility from frames 9 - 19"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+     "line": 41,
+     "text": "Low attack invincibility from frames 11 - 12, as well as throw invincibility Considered airborne from frames 9 - 21"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 45,
+     "text": "invuln=11-24 Throw; airborne=9-21 (FKD)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+     "line": 7,
+     "text": "topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes"
+    }
+   ]
   },
   {
    "slug": "marisa",
@@ -709,7 +821,1184 @@
      "note": "Correction: the draft's parsed startup of 8 is only the stance portion of \"8+5\". Capcom lists 5 for the throw itself and requires the Scutum stance first, so from wake-up the throw is the two parts combined, not 8."
     }
    ],
-   "notes": "No capcom_only / draft_only entries for Marisa. Supers in the draft agree with Capcom: Meteorite 9 / 1-16, Goddess of the Hunt (SA3 and CA) 13 / 1-19, counter version of SA1 7 / 1-10. Small source difference outside the wake-up window: Meteorite airborne frames are 16 - 48 in Capcom and 17-47 in SuperCombo. Not listed as missed because they start after frame 3: L/M/H Gladius upper-body armor (from frame 5), Phalanx armor (from frame 6/7/10), Dimachaerus air invulnerability (from frame 5/6/10). 2HK projectile-only hurtbox invulnerability on frames 1-7 is outside the six classes. Drive gauge costs are not stated in either file; \"2 Drive bars\" follows the draft's own label for OD moves."
+   "notes": "No capcom_only / draft_only entries for Marisa. Supers in the draft agree with Capcom: Meteorite 9 / 1-16, Goddess of the Hunt (SA3 and CA) 13 / 1-19, counter version of SA1 7 / 1-10. Small source difference outside the wake-up window: Meteorite airborne frames are 16 - 48 in Capcom and 17-47 in SuperCombo. Not listed as missed because they start after frame 3: L/M/H Gladius upper-body armor (from frame 5), Phalanx armor (from frame 6/7/10), Dimachaerus air invulnerability (from frame 5/6/10). 2HK projectile-only hurtbox invulnerability on frames 1-7 is outside the six classes. Drive gauge costs are not stated in either file; \"2 Drive bars\" follows the draft's own label for OD moves.",
+   "notes_quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 82,
+     "text": "SA2 Meteorite | 9 | 9-51 | 59 | D | -44"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 82,
+     "text": "Completely invincible from frames 1 - 16"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 82,
+     "text": "Considered airborne from frames 16 - 48"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+     "line": 85,
+     "text": "invuln=1-16 Full; armor=Break; airborne=17-47 (FKD)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 83,
+     "text": "SA3 Goddess of the Hunt | 13 | 13-19 | 60 | D | -39"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 83,
+     "text": "Completely invincible from frames 1 - 19"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 84,
+     "text": "CA Goddess of the Hunt (when under 25% vitality) | 13 | 13-19 | 60 | D | -39"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+     "line": 86,
+     "text": "blockAdv=-39(-33); invuln=1-19 Full"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 46,
+     "text": "Upper body has Super Armor for 1 hit from frames 5 - 10"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 48,
+     "text": "Upper body has Super Armor for 1 hit from frames 5 - 12"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 50,
+     "text": "Upper body has Super Armor for 1 hit from frames 5 - 15"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 62,
+     "text": "Upper body has Super Armor from frames 7 - 11"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 63,
+     "text": "Upper body has Super Armor for 1 hit from frames 7 - 13"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 64,
+     "text": "Upper body has Super Armor from frames 10 - 15"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 65,
+     "text": "Upper body has Super Armor from frames 6 - 12"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+     "line": 69,
+     "text": "armor=Break; 6-17 High/Mid"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+     "line": 54,
+     "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 5 - 15"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+     "line": 59,
+     "text": "invuln=6-19 Air (Upper body)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+     "line": 60,
+     "text": "invuln=10-25 Air (Head)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+     "line": 15,
+     "text": "topmost hurtboxes on frames 1-7 are projectile invincible"
+    }
+   ]
+  },
+  {
+   "slug": "rashid",
+   "differences": [
+    {
+     "entry": "SA1 Super Rashid Kick [capcom_only]",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "9",
+      "active": "9-15",
+      "invulnerable": "Invincible to strikes and throws from frames 1 - 16",
+      "block": "-53",
+      "airborne": "frames 10 - 36"
+     },
+     "supercombo": {
+      "startup": "9",
+      "active": "7",
+      "invulnerable": "1-15 Strike/Throw",
+      "block": "-53",
+      "airborne": "9-35"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 74,
+       "text": "SA1 Super Rashid Kick | 9 | 9-15 | 76 | D | -53"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 74,
+       "text": "Invincible to strikes and throws from frames 1 - 16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 74,
+       "text": "Considered airborne from frames 10 - 36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 73,
+       "text": "input=236236K; name=Super Rashid Kick; moveType=Super; startup=9; active=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 73,
+       "text": "blockAdv=-53; invuln=1-15 Strike/Throw; armor=Break; airborne=9-35 (FKD)"
+      }
+     ],
+     "note": "Same move as draft 236236K Super Rashid Kick. Start-up 9 and block -53 agree. Invulnerability end differs by one frame: Capcom 1-16, SuperCombo 1-15. Airborne window also differs by one frame (Capcom 10-36, SuperCombo 9-35). Both reported; no winner picked."
+    },
+    {
+     "entry": "SA3 Altair [capcom_only]",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "11",
+      "active": "11-28",
+      "invulnerable": "Completely invincible from frame 1 to frame 16",
+      "block": "-75"
+     },
+     "supercombo": {
+      "startup": "11",
+      "active": "18",
+      "invulnerable": "1-15 Full",
+      "block": "-75"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 76,
+       "text": "SA3 Altair | 11 | 11-28 | 82 | D | -75"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 76,
+       "text": "Completely invincible from frame 1 to frame 16."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 75,
+       "text": "input=236236P; name=Altair; moveType=Super; startup=11; active=18; recovery=82; total=110"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 75,
+       "text": "blockAdv=-75; invuln=1-15 Full"
+      }
+     ],
+     "note": "Same move as draft 236236P Altair. Start-up 11 and block -75 agree. Invulnerability end differs by one frame: Capcom frame 1 to frame 16, SuperCombo 1-15. The CA version shows the same split (Capcom line 77, SuperCombo line 76)."
+    },
+    {
+     "entry": "236236P Altair [draft_only]",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "11",
+      "active": "11-28",
+      "invulnerable": "Completely invincible from frame 1 to frame 16",
+      "block": "-75"
+     },
+     "supercombo": {
+      "startup": "11",
+      "active": "18",
+      "invulnerable": "1-15 Full",
+      "block": "-75"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 76,
+       "text": "SA3 Altair | 11 | 11-28 | 82 | D | -75"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 76,
+       "text": "Completely invincible from frame 1 to frame 16."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 75,
+       "text": "input=236236P; name=Altair; moveType=Super; startup=11; active=18; recovery=82; total=110"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 75,
+       "text": "blockAdv=-75; invuln=1-15 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 77,
+       "text": "CA Altair (when under 25% vitality) | 11 | 11-28 | 82 | D | -75"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 77,
+       "text": "Completely invincible from frame 1 to frame 16."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 76,
+       "text": "input=236236P; name=Altair (CA); moveType=Super; startup=11"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 76,
+       "text": "invuln=1-15 Full"
+      }
+     ],
+     "note": "Other half of the SA3 Altair entry: same move, invulnerability 1-16 (Capcom) vs 1-15 (SuperCombo). Draft Altair (CA) has the same one-frame difference."
+    },
+    {
+     "entry": "236236K Super Rashid Kick [draft_only]",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "startup": "9",
+      "active": "9-15",
+      "invulnerable": "Invincible to strikes and throws from frames 1 - 16",
+      "block": "-53",
+      "airborne": "frames 10 - 36"
+     },
+     "supercombo": {
+      "startup": "9",
+      "active": "7",
+      "invulnerable": "1-15 Strike/Throw",
+      "block": "-53",
+      "airborne": "9-35"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 74,
+       "text": "SA1 Super Rashid Kick | 9 | 9-15 | 76 | D | -53"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 74,
+       "text": "Invincible to strikes and throws from frames 1 - 16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 74,
+       "text": "Considered airborne from frames 10 - 36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 73,
+       "text": "input=236236K; name=Super Rashid Kick; moveType=Super; startup=9; active=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 73,
+       "text": "blockAdv=-53; invuln=1-15 Strike/Throw; armor=Break; airborne=9-35 (FKD)"
+      }
+     ],
+     "note": "Other half of the SA1 entry: same move, invulnerability 1-16 (Capcom) vs 1-15 (SuperCombo)."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "no attack (25 total frames)",
+     "detail": "Throw-invulnerable from frame 1 to frame 15 (Capcom only; the SuperCombo file has no dash row).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 84,
+       "text": "Backward Dash |  |  | 25 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 84,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Eagle Edge (HPHK)",
+     "startup": "26",
+     "detail": "Super armor absorbing 2 hits from frame 1 to 27 (SuperCombo armor=1-27).",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 85,
+       "text": "Drive Impact: Eagle Edge H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 85,
+       "text": "Super Armor for 2 hits from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 35,
+       "text": "input=HPHK; name=Eagle Edge; moveType=drive; startup=26; active=2; recovery=35; total=62"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 35,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held); 33 frames recovery; in Punish Counter state throughout.",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 88,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 88,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 38,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released; recovery=33(1)(11); total=45(3)"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (5LK, 5LP)",
+     "capcom": "4 for Standing Light Punch and Standing Light Kick; crouching lights are 5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-5 | 9 | 4 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 4 | 4-6 | 10 | 3 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 5 | 5-7 | 7 | 5 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-7 | 8 | 3 | -1"
+      }
+     ],
+     "note": "Confirmed."
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": [],
+     "note": "Neither file has a ground jump row (SuperCombo only has a Wall Jump row with no frame values)."
+    },
+    {
+     "field": "backdash_total",
+     "draft": "25",
+     "capcom": "25",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 84,
+       "text": "Backward Dash |  |  | 25 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "18",
+     "capcom": "18 (transitions to Run on frame 13)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 83,
+       "text": "Forward Dash |  |  | 18 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 83,
+       "text": "Transitions to Run on frame 13"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full",
+     "capcom": "startup 18, completely invincible frames 1 - 20",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 87,
+       "text": "Eagle Slash (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 87,
+       "text": "Completely invincible on frames 1 - 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 37,
+       "text": "input=6HPHK; name=Eagle Slash (Recovery); moveType=drive; startup=18"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 37,
+       "text": "invuln=1-20 Full"
+      }
+     ]
+    },
+    {
+     "field": "reversals: OD Spinning Mixer (236PP)",
+     "draft": "startup 6, invuln 1-8 Full, 9-13 Air, block -53",
+     "capcom": "startup 6, completely invincible 1 - 8, air-attack invincible 9 - 13, block -42",
+     "supercombo": "startup 6, 1-8 Full, 9-13 Air, block -53",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 41,
+       "text": "OD Spinning Mixer | 6 | 6-48 | 15 frame(s) after landing | D | -42"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 41,
+       "text": "Completely invincible from frames 1 - 8 Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 9 - 13"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 47,
+       "text": "input=236PP; name=OD Spinning Mixer; moveType=Special; startup=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 47,
+       "text": "blockAdv=-53; invuln=1-8 Full, 9-13 Air"
+      }
+     ],
+     "note": "Start-up and invulnerability agree. Block advantage differs: Capcom -42, SuperCombo -53 (the draft carries -53)."
+    },
+    {
+     "field": "reversals: OD Spinning Mixer (Air Current)",
+     "draft": "startup 4, invuln 1-6 Full, block -77(-89)",
+     "capcom": "startup 4, completely invincible 1 - 6, block -72; only when touching an air current",
+     "supercombo": "startup 4, 1-6 Full, block -77(-89)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 42,
+       "text": "[Air Current Boosted] OD Spinning Mixer (when coming in contact with an air current) | 4 | 4-59 | 15 frame(s) after landing | D | -72"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+       "line": 42,
+       "text": "Completely invincible from frames 1 - 6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 48,
+       "text": "input=236PP; name=OD Spinning Mixer (Air Current); moveType=Special; startup=4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 48,
+       "text": "blockAdv=-77(-89); invuln=1-6 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+       "line": 47,
+       "text": "can be affected by Air Current on frames 2-8"
+      }
+     ],
+     "note": "Start-up and invulnerability agree. Block advantage differs: Capcom -72, SuperCombo -77(-89). This version exists only when an Air Current is on screen where Rashid gets up, so it is a conditional wake-up reversal; the draft lists it without that condition."
+    }
+   ],
+   "notes": "Draft lists no armor and no command grabs for Rashid; both files agree there is no special or super throw (only the three normal throws, one of them airborne). Not listed as missed: moves that need a previous action (Backup and Tempest Moon need Run; Rolling Assault / Nail Assault / Wing Stroke need Arabian Cyclone; Arabian Skyhigh needs a forward jump or Front Flip); HP Spinning Mixer throw invulnerability and airborne state start at frame 8 (SuperCombo) or later; Crescent Kick lower-body invulnerability starts at frame 7; Side Flip loses its collision box only from frame 8 and is not described as a teleport or as invulnerable. Outside the six classes but possibly relevant to safe jumps: Air-Current M Spinning Mixer is invulnerable to air attacks from frame 3 (see notes_quotes). Borderline, not listed: SuperCombo says 2LP's topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes. Drive gauge costs are not stated in either file.",
+   "notes_quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+     "line": 23,
+     "text": "Backup (During Run) | 8 | 8-17 | 17 | 7 | -10"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+     "line": 23,
+     "text": "Considered airborne from frames 1 - 17"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+     "line": 38,
+     "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 3 - 17"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+     "line": 44,
+     "text": "invuln=3-17 Air; airborne=9-96 (FKD)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+     "line": 45,
+     "text": "invuln=6-12 Air, 8-10 Throw; airborne=8-63 (FKD)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.capcom.txt",
+     "line": 39,
+     "text": "Considered airborne from frames 13 - 63 Invincible to throws from frames 8 - 10"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+     "line": 22,
+     "text": "invuln=7-19 Lower Body"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+     "line": 29,
+     "text": "collision box disappears frames 8-23, allowing Rashid to pass through opponents"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/rashid.supercombo.txt",
+     "line": 7,
+     "text": "topmost hurtbox on frames 1-7 is vulnerable only to aerial strikes"
+    }
+   ]
+  },
+  {
+   "slug": "ryu",
+   "differences": [
+    {
+     "entry": "SA2 Shin Hashogeki（Lv2） [capcom_only]",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "startup": "20",
+      "active": "20-25",
+      "invulnerable": "Completely invincible from frame 1 to frame 9 (row also says: invincible to strikes and throws from frame 2 to frame 8)",
+      "block": "-20",
+      "condition": "button held for more than 7 frames and then released"
+     },
+     "supercombo": {
+      "startup": "18~",
+      "active": "6",
+      "total": "62~",
+      "invulnerable": "1-9 Full (can be reduced to 1-7 at the minimum Lv.2 hold)",
+      "block": "-20"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 62,
+       "text": "SA2 Shin Hashogeki（Lv2） | 20 | 20-25 | 39 | D | -20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 62,
+       "text": "Completely invincible from frame 1 to frame 9."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 62,
+       "text": "Changes to Level 2 version if the button is held for more than 7 frames and then released."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 62,
+       "text": "Invincible to strikes and throws from frame 2 to frame 8."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 68,
+       "text": "input=214214{P}; name=Shin Hashogeki Lv.2; moveType=Super; startup=18~; active=6; recovery=39; total=62~"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 68,
+       "text": "blockAdv=-20; invuln=1-9 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 68,
+       "text": "Loses 4 invincibility frames if held; invincibility can be reduced to 1-7f if the button is held the minimum length of time for Lv.2 charge (6f after Super freeze)"
+      }
+     ],
+     "note": "Same move as the draft's 214214{P} Lv.2 entries; the script could not pair them because the start-up numbers differ: Capcom 20, SuperCombo \"18~\" (so this is also a same_move_values_differ case). Invulnerability 1-9 is the same in both. Classed not_a_wakeup_reversal because it is the held-charge version of SA2 and its invulnerability ends on frame 9 in both sources, well before the first active frame (20 or 18), so it does not carry Ryu through a meaty; only Lv1 (12 start-up, invincible 1-13) does."
+    },
+    {
+     "entry": "SA2 Shin Hashogeki（Lv3） [capcom_only]",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "startup": "70",
+      "active": "70-75",
+      "invulnerable": "Completely invincible from frame 1 to frame 9 (row also says: invincible to strikes and throws from frame 2 to frame 8)",
+      "block": "-20",
+      "condition": "button held for more than 39 frames and then released"
+     },
+     "supercombo": {
+      "startup": "50~",
+      "active": "6",
+      "total": "94~",
+      "invulnerable": "1-9 Full",
+      "block": "-20"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 63,
+       "text": "SA2 Shin Hashogeki（Lv3） | 70 | 70-75 | 39 | D | -20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 63,
+       "text": "Completely invincible from frame 1 to frame 9."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 63,
+       "text": "Changes to Level 3 version if the button is held for more than 39 frames and then released."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 70,
+       "text": "input=214214[P]; name=Shin Hashogeki Lv.3; moveType=Super; startup=50~; active=6; recovery=39; total=94~"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 70,
+       "text": "blockAdv=-20; invuln=1-9 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 70,
+       "text": "Loses 4 invincibility frames if held"
+      }
+     ],
+     "note": "Same move as the draft's 214214[P] Lv.3 entries; start-up differs: Capcom 70, SuperCombo \"50~\" (also a same_move_values_differ case). Invulnerability 1-9 is the same in both. Classed not_a_wakeup_reversal: full held charge, and invulnerability ends on frame 9, long before the first active frame (70 or 50)."
+    },
+    {
+     "entry": "214214{P} Denjin Hashogeki Lv.2 [draft_only]",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "startup": "20",
+      "active": "20-25",
+      "invulnerable": "Completely invincible from frame 1 to frame 9 (row also says: invincible to strikes and throws from frame 2 to frame 8)",
+      "block": "-20",
+      "condition": "button held for more than 7 frames and then released"
+     },
+     "supercombo": {
+      "startup": "18~",
+      "active": "6",
+      "total": "62~",
+      "invulnerable": "1-9 Full (can be reduced to 1-7 at the minimum Lv.2 hold)",
+      "block": "-20"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 65,
+       "text": "[Denjin Charge]SA2 Shin Hashogeki（Lv2） | 20 | 20-25 | 39 | D | -20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 65,
+       "text": "Completely invincible from frame 1 to frame 9."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 69,
+       "text": "input=214214{P}; name=Denjin Hashogeki Lv.2; moveType=Super; startup=18~; active=6; recovery=39; total=62~"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 69,
+       "text": "blockAdv=-20; invuln=1-9 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 57,
+       "text": "Denjin Charge |  |  | 52 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 57,
+       "text": "Only 1 Denjin Charge stock can be held at a time."
+      }
+     ],
+     "note": "Same move as the draft's 214214{P} Lv.2 entries; the script could not pair them because the start-up numbers differ: Capcom 20, SuperCombo \"18~\" (so this is also a same_move_values_differ case). Invulnerability 1-9 is the same in both. Classed not_a_wakeup_reversal because it is the held-charge version of SA2 and its invulnerability ends on frame 9 in both sources, well before the first active frame (20 or 18), so it does not carry Ryu through a meaty; only Lv1 (12 start-up, invincible 1-13) does. The Denjin version additionally needs a Denjin Charge stock gained beforehand (a separate 52-frame move)."
+    },
+    {
+     "entry": "214214[P] Denjin Hashogeki Lv.3 [draft_only]",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "startup": "70",
+      "active": "70-75",
+      "invulnerable": "Completely invincible from frame 1 to frame 9 (row also says: invincible to strikes and throws from frame 2 to frame 8)",
+      "block": "-20",
+      "condition": "button held for more than 39 frames and then released"
+     },
+     "supercombo": {
+      "startup": "50~",
+      "active": "6",
+      "total": "94~",
+      "invulnerable": "1-9 Full",
+      "block": "-20"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 66,
+       "text": "[Denjin Charge]SA2 Shin Hashogeki（Lv3） | 70 | 70-75 | 39 | D | -20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 66,
+       "text": "Completely invincible from frame 1 to frame 9."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 71,
+       "text": "input=214214[P]; name=Denjin Hashogeki Lv.3; moveType=Super; startup=50~; active=6; recovery=39; total=94~"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 71,
+       "text": "blockAdv=-20; invuln=1-9 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 57,
+       "text": "Denjin Charge |  |  | 52 total frames"
+      }
+     ],
+     "note": "Same move as the draft's 214214[P] Lv.3 entries; start-up differs: Capcom 70, SuperCombo \"50~\" (also a same_move_values_differ case). Invulnerability 1-9 is the same in both. Classed not_a_wakeup_reversal: full held charge, and invulnerability ends on frame 9, long before the first active frame (70 or 50). The Denjin version additionally needs a Denjin Charge stock gained beforehand (a separate 52-frame move)."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "no attack (23 total frames)",
+     "detail": "Throw-invulnerable from frame 1 to frame 15 (Capcom only; the SuperCombo file has no dash row).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 74,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 74,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Shingeki (HPHK)",
+     "startup": "26",
+     "detail": "Super armor absorbing 2 hits from frame 1 to 27 (SuperCombo armor=1-27).",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 75,
+       "text": "Drive Impact: Shingeki H H | 26 | 26-27 | 35 |  | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 75,
+       "text": "Super Armor for 2 hits from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 29,
+       "text": "input=HPHK; name=Shingeki; moveType=drive; startup=26; active=2; recovery=35; total=62"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 29,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held); 33 frames recovery; in Punish Counter state throughout.",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 78,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 78,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 32,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released; recovery=33(1)(11); total=45(3)"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP, 5LP)",
+     "capcom": "4 for Standing Light Punch and Crouching Light Punch",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 7 | 4 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 9 | 4 | -1"
+      }
+     ],
+     "note": "Confirmed."
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": [],
+     "note": "Neither file has a ground jump row; only jumping-attack rows."
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 74,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 73,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full",
+     "capcom": "startup 18, completely invincible frames 1 - 20",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 77,
+       "text": "Chest Strike (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 77,
+       "text": "Completely invincible on frames 1 - 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 31,
+       "text": "input=6HPHK; name=Chest Strike (Recovery); moveType=drive; startup=18"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 31,
+       "text": "invuln=1-20 Full"
+      }
+     ]
+    },
+    {
+     "field": "reversals: Shin Shoryuken (236236K) block advantage",
+     "draft": "startup 5(2), invuln 1-16 Full, block -50(-54)",
+     "capcom": "startup 5, completely invincible frame 1 to frame 16, block -52",
+     "supercombo": "startup 5(2), 1-16 Full, block -50(-54)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 67,
+       "text": "SA3 Shin Shoryuken | 5 | 5-16 | 71 | D | -52"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 67,
+       "text": "Completely invincible from frame 1 to frame 16."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 68,
+       "text": "CA Shin Shoryuken (when under 25% vitality) | 5 | 5-16 | 71 | D | -52"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 72,
+       "text": "input=236236K; name=Shin Shoryuken; moveType=Super; startup=5(2)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 72,
+       "text": "blockAdv=-50(-54); invuln=1-16 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 72,
+       "text": "starts up faster only when canceled from HP Shoryuken"
+      }
+     ],
+     "note": "Start-up and invulnerability agree. Block advantage differs: Capcom -52, SuperCombo -50(-54). The \"(2)\" in the draft start-up is the cancel-from-HP-Shoryuken case, not a wake-up value."
+    },
+    {
+     "field": "reversals: OD Shoryuken (623PP)",
+     "draft": "startup 6, invuln 1-8 Full, block -40",
+     "capcom": "startup 6, completely invincible frames 1 - 8, block -40",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 40,
+       "text": "OD Shoryuken | 6 | 6-15 | 37+15 frame(s) after landing | D | -40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 40,
+       "text": "Completely invincible from frames 1 - 8."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 44,
+       "text": "input=623PP; name=OD Shoryuken; moveType=Special; startup=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 44,
+       "text": "blockAdv=-40; invuln=1-8 Full"
+      }
+     ],
+     "note": "Confirmed."
+    },
+    {
+     "field": "reversals: Shinku Hadoken / Denjin Hadoken (236236P)",
+     "draft": "startup 7, invuln 1-8 Strike/Throw, block -24",
+     "capcom": "startup 7, invincible to strikes and throws frame 1 to frame 8, block -24",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 59,
+       "text": "SA1 Shinku Hadoken | 7 |  | 86 total frames | D | -24"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 59,
+       "text": "Invincible to strikes and throws from frame 1 to frame 8."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 60,
+       "text": "[Denjin Charge]SA1 Shinku Hadoken | 7 |  | 89 total frames | D | -24"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 64,
+       "text": "blockAdv=-24; invuln=1-8 Strike/Throw"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 65,
+       "text": "consumes Denjin stock for slightly more damage and KD Advantage"
+      }
+     ],
+     "note": "Confirmed. Not projectile-invulnerable in either source. The Denjin entry needs a Denjin Charge stock gained earlier."
+    },
+    {
+     "field": "reversals: Shin Hashogeki Lv.1 (214214P)",
+     "draft": "startup 12, invuln 1-13 Full, block -20",
+     "capcom": "startup 12, completely invincible frame 1 to frame 13, block -20",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 61,
+       "text": "SA2 Shin Hashogeki（Lv1） | 12 | 12-17 | 39 | D | -20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 61,
+       "text": "Completely invincible from frame 1 to frame 13."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+       "line": 61,
+       "text": "Invincible to strikes and throws from frame 2 to frame 8."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 66,
+       "text": "input=214214P; name=Shin Hashogeki Lv.1; moveType=Super; startup=12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+       "line": 66,
+       "text": "blockAdv=-20; invuln=1-13 Full"
+      }
+     ],
+     "note": "Confirmed. The Capcom row also carries an extra sentence \"Invincible to strikes and throws from frame 2 to frame 8\", repeated on every SA2 row; the file does not explain how it relates to the 1-13 / 1-9 window."
+    }
+   ],
+   "notes": "Draft lists four held-charge SA2 entries (Lv.2 / Lv.3, plain and Denjin) among reversals and throw-immune options; per the differences above their invulnerability (1-9) ends before they hit, so they are not true wake-up reversals. All Denjin entries need a stock charged beforehand. No command grab and no special-move armor in either file, matching the draft. Outside the six classes but relevant to jump-in pressure: meterless L/M/H Shoryuken are invulnerable to air attacks from frame 1 (not to grounded strikes); see notes_quotes. Not listed as missed because they start after frame 3 or need a previous move: Tatsumaki airborne from frame 5 (L and OD), frame 8 (M), frame 10 (H); the airborne-from-frame-1 Aerial Tatsumaki only exists as a cancel from 6HK or during a jump; 5MK raised leg hurtbox from frame 4; 6HK low crush from frame 13. Borderline, not listed: SuperCombo says the topmost hurtbox of 2LP (frames 1-5) and 2MP (frames 1-9) is vulnerable only to aerial strikes. Other source differences seen outside the wake-up question: H Shoryuken block -36 (Capcom) vs -39 (SuperCombo); OD Shoryuken airborne 8 - 51 (Capcom) vs 8-52 (SuperCombo). Drive gauge costs are not stated in either file.",
+   "notes_quotes": [
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 37,
+     "text": "L Shoryuken L | 5 | 5-14 | 21+12 frame(s) after landing | D | -23"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 37,
+     "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 38,
+     "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 39,
+     "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 41,
+     "text": "input=623LP; name=LP Shoryuken; moveType=Special; startup=5"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 41,
+     "text": "invuln=1-14 Air; airborne=7-35 (FKD)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 42,
+     "text": "invuln=1-9 Air"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 43,
+     "text": "blockAdv=-39; invuln=1-8 Air"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 39,
+     "text": "H Shoryuken H | 7 | 7-16 | 34+12 frame(s) after landing | D | -36"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 41,
+     "text": "Considered airborne from frames 5 - 28."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 44,
+     "text": "Considered airborne from frames 5 - 47."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 42,
+     "text": "Considered airborne from frames 8 - 41."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 43,
+     "text": "Considered airborne from frames 10 - 61."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 50,
+     "text": "input=6HK~214K; name=Aerial Tatsumaki Senpu-kyaku"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 50,
+     "text": "airborne=1-26 (FKD)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 5,
+     "text": "front leg hurtbox is raised on frames 4-11 (can avoid low pokes)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 23,
+     "text": "Low Crush on frames 13-20 (not airborne)"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 7,
+     "text": "topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 8,
+     "text": "topmost hurtbox on frames 1-9 is vulnerable only to aerial strikes"
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.capcom.txt",
+     "line": 40,
+     "text": "Considered airborne from frames 8 - 51."
+    },
+    {
+     "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ryu.supercombo.txt",
+     "line": 44,
+     "text": "airborne=8-52 (FKD)"
+    }
+   ]
   }
  ]
 }

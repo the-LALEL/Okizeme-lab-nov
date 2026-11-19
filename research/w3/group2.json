@@ -262,6 +262,965 @@
     }
    ],
    "notes": "Capcom's table has no jump row, so the jump figures cannot be checked against Capcom. Near-misses that do NOT meet the by-frame-3 bar: Surprise Forward Hop (6KKK) has no head hurtbox from frame 4 and no collision box from frame 4 (SuperCombo notes, line 37); Coward Crouch (2PP) is low profile / upper-body projectile invulnerable only from frame 9 (SuperCombo line 34); meterless Vertical Rolling Attacks are airborne from frame 6 and air-invulnerable from frame 8 in both sources. Rolling Cannon (3f startup) needs Lightning Beast plus a preceding rolling special, so it is not a wake-up option. Draft reversals, the four Wild Hunt command grabs and the wake-up Drive Reversal (startup 18, invincible 1-20) match Capcom lines 52-53, 79, 82-83, 70-73 and 93."
+  },
+  {
+   "slug": "c-viper",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "H Thunder Dash (214HP)",
+     "startup": "7",
+     "detail": "Invincible to mid-air projectiles and strikes with mid-air hitboxes from frame 1 to frame 9 (anti-air invulnerability only, not grounded strikes, so it is not a full reversal); airborne from frame 9 to 31. Both sources agree on startup 7, air invulnerability 1-9, airborne 9-31, -24 on block. SuperCombo adds that the feint-cancelled version keeps the anti-air invincibility on frames 1-6. Does not fit the six classes exactly; listed as evasive because it is partial invulnerability from frame 1.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 30,
+       "text": "H Thunder Dash H | 7 | 7-16 | 37 | D | -24"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 30,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9 Considered airborne from frames 9 - 31"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 33,
+       "text": "input=214HP; name=HP Thunder Dash; moveType=Special; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 33,
+       "text": "blockAdv=-24; invuln=1-9 Air; airborne=9-31 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 33,
+       "text": "feint-canceled version still maintains anti-air invincibility on frames 1-6"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not applicable (movement, 23 total frames)",
+     "detail": "Capcom states the back dash is invincible to throws between frames 1 and 15. SuperCombo file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 68,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 68,
+       "text": "Invincible to throws between frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Viper Cannon (HPHK)",
+     "startup": "26",
+     "detail": "Super Armor for 2 attacks from frame 1 to frame 27 (both sources agree on 1-27). Universal Drive Impact; the draft's armor list has only OD Focus Force. Drive cost is not stated in either file.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 69,
+       "text": "Drive Impact: Viper Cannon H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 69,
+       "text": "Super Armor for 2 attacks between frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 24,
+       "text": "input=HPHK; name=Viper Cannon; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 24,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held). Universal Drive Parry; not in the draft. Capcom adds it is always in Punish Counter state during execution.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 72,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 72,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 72,
+       "text": "Always in Punish Counter state during execution"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 27,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 15,
+       "text": "\"backdash_total\": \"23\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 68,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "21",
+     "capcom": "21",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 16,
+       "text": "\"forward_dash_total\": \"21\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 67,
+       "text": "Forward Dash |  |  | 21 total frames"
+      }
+     ]
+    },
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP, 5LP)",
+     "capcom": "4 (Standing Light Punch and Crouching Light Punch); light kicks are 5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 20,
+       "text": "\"startup\": 4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 22,
+       "text": "\"2LP\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 23,
+       "text": "\"5LP\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 8 | 4 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 8 | 5 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-7 | 11"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-6 | 9"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "text 4+38+3(6+40+3), prejump 4, total 94",
+     "capcom": "normal jump: not stated. High Jump: 46+3 frames after landing, airborne from frame 7 to 46 (agrees with the bracketed 6+40+3 = 49 in the draft and with SuperCombo's High Jump row, total 49)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 11,
+       "text": "\"text\": \"4+38+3(6+40+3)\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 13,
+       "text": "\"total\": 94"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 25,
+       "text": "High Jump (Forward) |  |  | 46+3 frame(s) after landing"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 25,
+       "text": "Considered airborne from frames 7 - 46"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 25,
+       "text": "Consumes 10000 of the Drive gauge on activation."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 30,
+       "text": "input=2~8; name=High Jump; moveType=Special; startup=6 prejump; active=40 air; recovery=3 land; total=49"
+      }
+     ],
+     "note": "The draft's jump total of 94 equals 45 + 49, i.e. the script added the normal jump (4+38+3) and the High Jump in brackets (6+40+3) together. No source row gives 94; the draft total should not be used as is. Capcom gives no row for the normal jump."
+    },
+    {
+     "field": "armor[OD Focus Force (Lv.1)].startup",
+     "draft": "10 (startup_text 10+10)",
+     "capcom": "20; armor absorbs 1 hit from frames 3 - 10, hold extends to frame 57",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 87,
+       "text": "\"startup_text\": \"10+10\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 88,
+       "text": "\"startup\": 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 54,
+       "text": "OD Focus Force(Lv1) | 20 | 20-31 | 36 | D | -16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 54,
+       "text": "Gains full body armor properties to absorb 1 hit from frames 3 - 10, hold version extends this window until frame 57"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 53,
+       "text": "input=214KK; name=OD Focus Force (Lv.1); moveType=Special; startup=10+10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 53,
+       "text": "armor=3-10(19)"
+      }
+     ],
+     "note": "The draft's numeric startup dropped the '+10' part of SuperCombo's 10+10; Capcom gives 20 for the attack. Armor window 3-10 agrees in both sources."
+    },
+    {
+     "field": "armor[OD Focus Force (Lv.2)].startup",
+     "draft": "20 (startup_text 20~56+10)",
+     "capcom": "30",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 99,
+       "text": "\"startup_text\": \"20~56+10\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 100,
+       "text": "\"startup\": 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 55,
+       "text": "OD Focus Force(Lv2) Hold | 30 | 30-41 | 36 | D | -16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 55,
+       "text": "input=214{KK}; name=OD Focus Force (Lv.2); moveType=Special; startup=20~56+10"
+      }
+     ],
+     "note": "Same '+10' truncation in the draft's numeric startup."
+    },
+    {
+     "field": "armor[OD Focus Force (Lv.3)].startup",
+     "draft": "57 (startup_text 57+10)",
+     "capcom": "67",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 111,
+       "text": "\"startup_text\": \"57+10\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/c-viper.json",
+       "line": 112,
+       "text": "\"startup\": 57"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.capcom.txt",
+       "line": 56,
+       "text": "OD Focus Force(Lv3) Hold | 67 | 67-78 | 36 | D | -10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/c-viper.supercombo.txt",
+       "line": 57,
+       "text": "input=214[KK]; name=OD Focus Force (Lv.3); moveType=Special; startup=57+10"
+      }
+     ],
+     "note": "Same '+10' truncation in the draft's numeric startup."
+    }
+   ],
+   "notes": "No capcom_only or draft_only entries for C.Viper, so there are no differences to resolve; the three matched supers (SA1 8f / 1-11 strike+throw, SA2 7f / 1-10, SA3 and CA 10f / 1-13) read the same in Capcom lines 59-62 and SuperCombo lines 58-61. Near-misses that do NOT meet the by-frame-3 bar: meterless Focus Force Lv1 (214K) has armor only from frame 6 (Capcom line 51 'from frames 6 - 13', SuperCombo line 52 'armor=6-13(19)'); Burning Kicks are airborne from frame 5 and OD Burning Kick (8f startup) from frame 11; High Jump is airborne from frame 7 and costs Drive; Viper Elbow's feet invincibility starts on frame 16. C.Viper has no command grab in either file. Wake-up Drive Reversal (18f, invincible 1-20) matches Capcom line 71."
+  },
+  {
+   "slug": "cammy",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "L Cannon Spike (623LK)",
+     "startup": "5",
+     "detail": "Invincible to mid-air projectiles and strikes with mid-air hitboxes from frame 1 (anti-air invulnerability only, not grounded strikes, so it is not a full reversal). Does not fit the six classes exactly; listed as evasive because it is partial invulnerability from frame 1. Both sources: startup 5, air invulnerability frames 1-14, airborne 7-40, -36 on block.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 33,
+       "text": "L Cannon Spike L | 5 | 5-16 | 24+16 frame(s) after landing | D | -36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 33,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14 Considered airborne from frames 7 - 40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 38,
+       "text": "input=623LK; name=LK Cannon Spike; moveType=special; startup=5"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 38,
+       "text": "blockAdv=-36; invuln=1-14 Air; airborne=7-40 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "M Cannon Spike (623MK)",
+     "startup": "6",
+     "detail": "Invincible to mid-air projectiles and strikes with mid-air hitboxes from frame 1 (anti-air invulnerability only, not grounded strikes, so it is not a full reversal). Does not fit the six classes exactly; listed as evasive because it is partial invulnerability from frame 1. Both sources: startup 6, air invulnerability frames 1-9, airborne 8-42, -36 on block.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 34,
+       "text": "M Cannon Spike M | 6 | 6-17 | 25+16 frame(s) after landing | D | -36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 34,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9 Considered airborne from frames 8 - 42"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 39,
+       "text": "input=623MK; name=MK Cannon Spike; moveType=special; startup=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 39,
+       "text": "blockAdv=-36; invuln=1-9 Air; airborne=8-42 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "H Cannon Spike (623HK)",
+     "startup": "7",
+     "detail": "Invincible to mid-air projectiles and strikes with mid-air hitboxes from frame 1 (anti-air invulnerability only, not grounded strikes, so it is not a full reversal). Does not fit the six classes exactly; listed as evasive because it is partial invulnerability from frame 1. Both sources: startup 7, air invulnerability frames 1-8, -36 on block. The airborne window differs: Capcom says frames 10 - 36, SuperCombo says 9-46. The held version (22f startup) needs the button held for over 15 frames and is only fully invincible on frames 18-23, so it is not a frame-1 option.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 35,
+       "text": "H Cannon Spike H | 7 | 7-18 | 28+16 frame(s) after landing | D | -36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 35,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8 Considered airborne from frames 10 - 36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 40,
+       "text": "input=623HK; name=HK Cannon Spike; moveType=special; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 40,
+       "text": "blockAdv=-36; invuln=1-8 Air; airborne=9-46 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 36,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7 Completely invincible from frames 18 - 23"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 41,
+       "text": "invuln=1-7 Air, 18-23 Full; airborne=24-62 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not applicable (movement, 23 total frames)",
+     "detail": "Capcom states the back dash is invincible to throws from frames 1 to 15. SuperCombo file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 74,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 74,
+       "text": "Invincible to throws from frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Spin Raider (HPHK)",
+     "startup": "26",
+     "detail": "Super Armor for 2 attacks from frame 1 to frame 27 (both sources agree on 1-27). Universal Drive Impact; the draft's armor list is empty. Drive cost is not stated in either file.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 75,
+       "text": "Drive Impact: Spin Raider H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 75,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 27,
+       "text": "input=HPHK; name=Spin Raider; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 27,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held). Universal Drive Parry; not in the draft. Capcom adds it is always in Punish Counter state during execution.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 78,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 78,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 78,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 30,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 15,
+       "text": "\"backdash_total\": \"23\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 74,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "18",
+     "capcom": "18",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 16,
+       "text": "\"forward_dash_total\": \"18\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 73,
+       "text": "Forward Dash |  |  | 18 total frames"
+      }
+     ]
+    },
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP, 5LP)",
+     "capcom": "4 (Standing Light Punch and Crouching Light Punch); light kicks are 5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 20,
+       "text": "\"startup\": 4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 22,
+       "text": "\"2LP\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 23,
+       "text": "\"5LP\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 7 | 5 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 8 | 5 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-7 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-7 | 7"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 11,
+       "text": "\"text\": \"4+38+3\""
+      }
+     ]
+    },
+    {
+     "field": "command_grabs[Fatal Leg Twister].startup",
+     "draft": "20 (startup_text 20+10)",
+     "capcom": "10, counted from the follow-up during Hooligan Combination; only when close to a standing opponent",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 88,
+       "text": "\"startup_text\": \"20+10\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 89,
+       "text": "\"startup\": 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 56,
+       "text": "Fatal Leg Twister (During Hooligan Combination)(When close to a standing opponent) L L | 10 | 10-12 | 30 frame(s) after landing"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 61,
+       "text": "input=236P~LPLK; name=Fatal Leg Twister; moveType=special; startup=20+10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 61,
+       "text": "Throws standing opponents only"
+      }
+     ],
+     "note": "Not a frame-1 wake-up option: it needs Hooligan Combination first. The draft's numeric startup 20 is only the Hooligan part of SuperCombo's 20+10; the throw itself is 10 more frames (Capcom: 10 from the follow-up). Same applies to the OD version (draft 20, SuperCombo 20+10, Capcom 10)."
+    },
+    {
+     "field": "command_grabs[Fatal Leg Twister (HP Hold)].startup",
+     "draft": "38 (startup_text 38+10)",
+     "capcom": "10, counted from the follow-up during the charged Hooligan Combination",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 100,
+       "text": "\"startup_text\": \"38+10\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 101,
+       "text": "\"startup\": 38"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 57,
+       "text": "Fatal Leg Twister(Charged) (During Hooligan Combination)(When close to a standing opponent) L L | 10 | 10-12 | 30 frame(s) after landing"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 45,
+       "text": "Hold the button for more than 18 frames to change its properties"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 62,
+       "text": "input=236[HP]~LPLK; name=Fatal Leg Twister (HP Hold); moveType=special; startup=38+10"
+      }
+     ],
+     "note": "Needs a held charge and Hooligan Combination first. Draft numeric startup 38 drops the '+10'."
+    },
+    {
+     "field": "command_grabs[OD Fatal Leg Twister].startup",
+     "draft": "20 (startup_text 20+10)",
+     "capcom": "10, counted from the follow-up during OD Hooligan Combination",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 112,
+       "text": "\"startup_text\": \"20+10\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/cammy.json",
+       "line": 113,
+       "text": "\"startup\": 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.capcom.txt",
+       "line": 58,
+       "text": "OD Fatal Leg Twister (During Hooligan Combination)(When close to a standing opponent) L L | 10 | 10-12 | 30 frame(s) after landing"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/cammy.supercombo.txt",
+       "line": 63,
+       "text": "input=236PP~LPLK; name=OD Fatal Leg Twister; moveType=special; startup=20+10"
+      }
+     ],
+     "note": "Same '+10' truncation in the draft's numeric startup."
+    }
+   ],
+   "notes": "No capcom_only or draft_only entries for Cammy, so there are no differences to resolve; OD Cannon Spike (6f, invincible 1-7, airborne 8-47), SA1 (9f, strike+throw 1-11) and SA3/CA (9f, 1-13) read the same in Capcom lines 37, 63, 66-67 and SuperCombo lines 42, 67, 70-71. SA2 Killer Bee Spin (13f) has no invulnerability in either source. Near-misses that do NOT meet the by-frame-3 bar: L/M Spiral Arrow are airborne (SuperCombo: throw invulnerable) only from frame 9; Hooligan Combination is airborne and lower-body projectile invulnerable from frame 7 (SuperCombo line 49); M/H/OD Quick Spin Knuckle are projectile invulnerable from frame 9. SuperCombo-only notes not classed: OD Quick Spin Knuckle has no collision box on frames 1-10 (line 46; Capcom line 41 says Cammy goes behind the opponent at close range), and 5HK has a crouch-sized hurtbox on frames 1-28 (line 6). Capcom has no jump row. Wake-up Drive Reversal (18f, invincible 1-20) matches Capcom line 77."
+  },
+  {
+   "slug": "chun-li",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "L Tensho Kicks (22LK)",
+     "startup": "5",
+     "detail": "Invincible to mid-air projectiles and strikes with mid-air hitboxes from frame 1 to frame 10 (anti-air invulnerability only, not grounded strikes, so it is not a full reversal). Does not fit the six classes exactly; listed as evasive because it is partial invulnerability from frame 1. Both sources: startup 5, air invulnerability 1-10, airborne 8-45, -37 on block.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 61,
+       "text": "L Tensho Kicks L | 5 | 5-18 | 27+12 frame(s) after landing | D | -37"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 61,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10 Considered airborne from frames 8 - 45"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 68,
+       "text": "input=22LK; name=LK Tensho Kicks; moveType=Special; startup=5"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 68,
+       "text": "blockAdv=-37; invuln=1-10 Air; airborne=8-45 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "M Tensho Kicks (22MK)",
+     "startup": "7",
+     "detail": "Invincible to mid-air projectiles and strikes with mid-air hitboxes from frame 1 to frame 10 (anti-air invulnerability only, not grounded strikes, so it is not a full reversal). Does not fit the six classes exactly; listed as evasive because it is partial invulnerability from frame 1. Both sources: startup 7, air invulnerability 1-10, airborne 8-51, -41 on block.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 62,
+       "text": "M Tensho Kicks M | 7 | 7-20 | 31+12 frame(s) after landing | D | -41"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 62,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10 Considered airborne from frames 8 - 51"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 69,
+       "text": "input=22MK; name=MK Tensho Kicks; moveType=Special; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 69,
+       "text": "blockAdv=-41; invuln=1-10 Air; airborne=8-51 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "H Tensho Kicks (22HK)",
+     "startup": "9",
+     "detail": "Invincible to mid-air projectiles and strikes with mid-air hitboxes from frame 1 to frame 10 (anti-air invulnerability only, not grounded strikes, so it is not a full reversal). Does not fit the six classes exactly; listed as evasive because it is partial invulnerability from frame 1. Both sources: startup 9, air invulnerability 1-10, airborne 8-69, -57 on block, and invincible to throws on frames 8-9 only (so not throw-immune from frame 1).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 63,
+       "text": "H Tensho Kicks H | 9 | 9-43 | 26+12 frame(s) after landing | D | -57"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 63,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10 Considered airborne from frames 8 - 69 Invincible to throws from frames 8 - 9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 70,
+       "text": "input=22HK; name=HK Tensho Kicks; moveType=Special; startup=9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 70,
+       "text": "blockAdv=-57; invuln=1-10 Air, 8-9 Throw; airborne=8-69 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not applicable (movement, 25 total frames)",
+     "detail": "Capcom states the back dash is invincible to throws from frames 1 to 15. SuperCombo file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 77,
+       "text": "Backward Dash |  |  | 25 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 77,
+       "text": "Invincible to throws from frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Hosen Kick (HPHK)",
+     "startup": "26",
+     "detail": "Super Armor for 2 attacks from frame 1 to frame 27 (both sources agree on 1-27). Universal Drive Impact; the draft's armor list is empty. Drive cost is not stated in either file.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 78,
+       "text": "Drive Impact: Hosen Kick H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 78,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 41,
+       "text": "input=HPHK; name=Hosen Kick; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 41,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held). Universal Drive Parry; not in the draft. Capcom adds it is always in Punish Counter state during execution.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 81,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 81,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 81,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.supercombo.txt",
+       "line": 44,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "backdash_total",
+     "draft": "25",
+     "capcom": "25",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/chun-li.json",
+       "line": 15,
+       "text": "\"backdash_total\": \"25\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 77,
+       "text": "Backward Dash |  |  | 25 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/chun-li.json",
+       "line": 16,
+       "text": "\"forward_dash_total\": \"19\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 76,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    },
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LK, 2LP, 5LP)",
+     "capcom": "4 (Standing Light Punch, Crouching Light Punch, Crouching Light Kick); Standing Light Kick is 5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/chun-li.json",
+       "line": 20,
+       "text": "\"startup\": 4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/chun-li.json",
+       "line": 22,
+       "text": "\"2LK\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/chun-li.json",
+       "line": 23,
+       "text": "\"2LP\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/chun-li.json",
+       "line": 24,
+       "text": "\"5LP\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 7 | 5 | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 7 | 4 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 4 | 4-5 | 10 | 0 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/chun-li.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-7 | 10"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+42+3 (prejump 4, total 49)",
+     "capcom": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/chun-li.json",
+       "line": 11,
+       "text": "\"text\": \"4+42+3\""
+      }
+     ]
+    }
+   ],
+   "notes": "No capcom_only or draft_only entries for Chun-Li, so there are no differences to resolve; OD Tensho Kicks (6f, invincible 1-7, airborne 8-32, -40), SA1 (7f, strike+throw 1-7), SA2 (11f, 1-12) and SA3/CA (8f, 1-9) read the same in Capcom lines 64, 66, 68-70 and SuperCombo lines 71-72, 74-76. Aerial Kikosho has no invulnerability in either source and is airborne-only. Near-misses that do NOT meet the by-frame-3 bar: Serenity Stream (214P) is a crouching state from frame 14 and low profile after that (SuperCombo line 30), and its low-profile follow-ups such as Snake Strike need the stance first (line 33); L Hazanshu is airborne from frame 5 and M/H/OD from frame 6; L Spinning Bird Kick is airborne from frame 8 and needs a down charge. Chun-Li has no command grab in either file. Capcom has no jump row. Wake-up Drive Reversal (18f, invincible 1-20) matches Capcom line 80."
   }
  ]
 }

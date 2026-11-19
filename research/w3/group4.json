@@ -1,0 +1,1322 @@
+{
+ "characters": [
+  {
+   "slug": "elena",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "L Scratch Wheel (623LK)",
+     "startup": "5",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources differ on the window. Capcom: invincible to mid-air projectiles and strikes with mid-air hitboxes on frames 1-7, airborne 7-37. SuperCombo: invuln 1-9 Air, airborne 7-34.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 40,
+       "text": "L Scratch Wheel L | 5 | 5-9 | 25+14 frame(s) after landing | D | -24"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 40,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7 Considered airborne from frames 7 - 37"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 44,
+       "text": "input=623LK; name=LK Scratch Wheel; moveType=Special; startup=5"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 44,
+       "text": "invuln=1-9 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 44,
+       "text": "airborne=7-34 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "M Scratch Wheel (623MK)",
+     "startup": "6",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources differ on the window. Capcom: frames 1-10, airborne 7-42. SuperCombo: invuln 1-11 Air, airborne 7-41.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 41,
+       "text": "M Scratch Wheel M | 6 | 6-11 | 30+14 frame(s) after landing | D | -30"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 41,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 10 Considered airborne from frames 7 - 42"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 45,
+       "text": "input=623MK; name=MK Scratch Wheel; moveType=Special; startup=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 45,
+       "text": "invuln=1-11 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 45,
+       "text": "airborne=7-41 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "H Scratch Wheel (623HK)",
+     "startup": "7",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources differ on the window. Capcom: frames 1-11, airborne 7-46. SuperCombo: invuln 1-12 Air, airborne 7-46.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 42,
+       "text": "H Scratch Wheel H | 7 | 7-12 | 34+14 frame(s) after landing | D | -33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 42,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 11 Considered airborne from frames 7 - 46"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 46,
+       "text": "input=623HK; name=HK Scratch Wheel; moveType=Special; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 46,
+       "text": "invuln=1-12 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 46,
+       "text": "airborne=7-46 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "SA1 Meteor Volley (236236K)",
+     "startup": "7",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources differ on the window. Capcom: frames 1-23, airborne 9-65. SuperCombo: invuln 1-21 Air, airborne 7-63, and its note says it cannot be used as an invincible reversal against grounded strikes, throws or projectiles.",
+     "resource": "super",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 69,
+       "text": "SA1 Meteor Volley | 7 | 7-39 | 55 | D | -68"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 69,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 23 Considered airborne from frames 9 - 65"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 72,
+       "text": "input=236236K; name=Meteor Volley; moveType=Super; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 72,
+       "text": "invuln=1-21 Air; armor=Break; airborne=7-63 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 72,
+       "text": "cannot be used as an invincible reversal against grounded strikes/throws/projectiles"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Lynx Song (236LP / 236MP / 236HP / 236PP)",
+     "startup": "no attack; 28 / 36 / 38 / 29 total frames",
+     "detail": "SuperCombo only: crouch-sized hurtbox on frames 3-26 (still considered standing), on all four strengths. Capcom's rows give the same total frames but state only projectile invincibility, which starts at frame 11 (frame 8 for OD), and say nothing about the hurtbox.",
+     "resource": "none (L/M/H); Overdrive for 236PP, cost not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 52,
+       "text": "input=236LP; name=LP Lynx Song; moveType=Special; startup=13(16)~; active=-; recovery=28 total; total=28"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 52,
+       "text": "crouch-sized hurtbox 3-26f (but still considered standing)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 53,
+       "text": "crouch-sized hurtbox 3-26f (but still considered standing)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 54,
+       "text": "crouch-sized hurtbox 3-26f (but still considered standing)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 55,
+       "text": "crouch-sized hurtbox 3-26f (but still considered standing)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 44,
+       "text": "L Lynx Song L |  |  | 28 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 44,
+       "text": "Projectile invincibility from frames 11 - 21"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 45,
+       "text": "M Lynx Song M |  |  | 36 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 46,
+       "text": "H Lynx Song H |  |  | 38 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 47,
+       "text": "OD Lynx Song |  |  | 29 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 47,
+       "text": "Projectile invincibility from frames 8 - 26"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash",
+     "startup": "not an attack; 23 total frames",
+     "detail": "Universal movement option. Capcom: throw-invulnerable on frames 1-15 of the 23-frame backdash; no strike invulnerability is stated. The SuperCombo rows file has no backdash row. The draft carries only backdash_total, not the throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 78,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 78,
+       "text": "Invincible to throws between frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Giraffe Neck (HPHK)",
+     "startup": "26",
+     "detail": "Universal system mechanic. Capcom: Super Armor for 2 attacks on frames 1-27. SuperCombo: armor=1-27. The sources agree. The draft's armor list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 79,
+       "text": "Drive Impact: Giraffe Neck H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 79,
+       "text": "Super Armor for 2 attacks between frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 34,
+       "text": "input=HPHK; name=Giraffe Neck; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 34,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal system mechanic. Capcom: start-up 1, parry active on frames 1-12 (longer while held), 33 recovery. SuperCombo: startup=1, active 12 or until released. The sources agree. The draft has no parry entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 82,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.supercombo.txt",
+       "line": 37,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP)",
+     "capcom": "4 (Crouching Light Punch); other light normals are 5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 8 | 5 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 5 | 5-8 | 8 | 4 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-7 | 11 | 2 | -4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-7 | 8 | 3 | -1"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 78,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "20",
+     "capcom": "20",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 77,
+       "text": "Forward Dash |  |  | 20 total frames"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full, block -6",
+     "capcom": "startup 18, completely invincible frames 1-20, block -6",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 81,
+       "text": "Drive Reversal (while recovering): Boar Charge (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/elena.capcom.txt",
+       "line": 81,
+       "text": "Completely invincible between frames 1 - 20"
+      }
+     ]
+    }
+   ],
+   "notes": "_capcom_check.json lists no capcom_only or draft_only entries for Elena, so there were no differences to resolve. No meterless move in either file is strike-invulnerable from frame 1; the three Scratch Wheel strengths and SA1 are anti-air only, and the two sources give different end frames for all four. Not listed because they miss the brief's thresholds or need a prior move: Lynx Whirl and the Lynx Song follow-ups (need Lynx Song first), the low-crush notes on 5HK, 4HK and Mallet Smash (start later than frame 3), and the 2LP topmost-hurtbox note on SuperCombo line 7. No command grab in either file. Neither file has a jump row, so the draft's jump figures cannot be checked here; the SuperCombo rows file also has no dash rows."
+  },
+  {
+   "slug": "guile",
+   "differences": [
+    {
+     "entry": "[4]646P Sonic Hurricane",
+     "verdict": "same_move_values_agree",
+     "capcom": {
+      "name": "SA1 Sonic Hurricane(Side)",
+      "startup": "8",
+      "active": "8-58",
+      "total": "89",
+      "block": "-26",
+      "invulnerable": "1-8 throws and strikes"
+     },
+     "supercombo": {
+      "name": "Sonic Hurricane",
+      "startup": "8(11)",
+      "total": "89",
+      "block": "-26",
+      "invulnerable": "1-8 Strike/Throw"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 68,
+       "text": "SA1 Sonic Hurricane(Side) L M | 8 | 8-58 | 89 total frames | D | -26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 68,
+       "text": "Invincible to throws and strikes from frames 1 - 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 59,
+       "text": "input=[4]646P; name=Sonic Hurricane; moveType=super; startup=8(11); active=51; recovery=81; total=89; guard=LH; hitAdv=KD +41; blockAdv=-26; invuln=1-8 Strike/Throw; armor=Break"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 59,
+       "text": "(essentially has 11f startup as a long-range punish tool"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 59,
+       "text": "notes=45f charge (charge lasts 22f after releasing back direction)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 67,
+       "text": "SA1 Sonic Hurricane(Up) H | 7 | 7-58 | 75 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 60,
+       "text": "input=[4]646HP; name=Sonic Hurricane; moveType=super; startup=7"
+      }
+     ],
+     "note": "Same move. Capcom names the row 'Sonic Hurricane(Side)' and words the invulnerability as 'throws and strikes', which is why the script did not match it. Start-up 8, total 89, block -26 and invulnerability 1-8 agree; SuperCombo's bracketed 11 is its figure for the long-range combo-only hitbox, not a disagreement. The separate upward version (Capcom line 67, SuperCombo line 60) has start-up 7 and no invulnerability stated in either source, so only the side version is a reversal. SuperCombo says the move needs a 45-frame back charge; the files do not say whether charge can be held through a knockdown. The brief names a held charge as a possible ground for not_a_wakeup_reversal, so the caller may want to treat it like the draft's other charge reversal, OD Somersault Kick."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "L Somersault Kick ([2]8LK)",
+     "startup": "5",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources agree: air invulnerability on frames 1-7, airborne 8-36. Capcom's (Perfect timing) row on the next line gives the same frames.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 42,
+       "text": "L Somersault Kick L | 5 | 5-10 | 26+15 frame(s) after landing | D | -30"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 42,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 7 Considered airborne from frames 8 - 36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 44,
+       "text": "input=[2]8LK; name=LK Somersault Kick; moveType=special; startup=5"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 44,
+       "text": "invuln=1-7 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 44,
+       "text": "airborne=8-36 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "M Somersault Kick ([2]8MK)",
+     "startup": "6",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources agree: air invulnerability on frames 1-8, airborne 8-38. Capcom's (Perfect timing) row on the next line gives the same frames.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 44,
+       "text": "M Somersault Kick M | 6 | 6-11 | 27+15 frame(s) after landing | D | -31"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 44,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8 Considered airborne from frames 8 - 38"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 45,
+       "text": "input=[2]8MK; name=MK Somersault Kick; moveType=special; startup=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 45,
+       "text": "invuln=1-8 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 45,
+       "text": "airborne=8-38 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "H Somersault Kick ([2]8HK)",
+     "startup": "7",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources agree: air invulnerability on frames 1-9, airborne 8-40. Capcom's (Perfect timing) row on the next line gives the same frames.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 46,
+       "text": "H Somersault Kick H | 7 | 7-12 | 28+15 frame(s) after landing | D | -32"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 46,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9 Considered airborne from frames 8 - 40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 46,
+       "text": "input=[2]8HK; name=HK Somersault Kick; moveType=special; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 46,
+       "text": "invuln=1-9 Air"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 46,
+       "text": "airborne=8-40 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash",
+     "startup": "not an attack; 23 total frames",
+     "detail": "Universal movement option. Capcom: throw-invulnerable on frames 1-15 of the 23-frame backdash; no strike invulnerability is stated. The SuperCombo rows file has no backdash row. The draft carries only backdash_total, not the throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 79,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 79,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Blitz Combination (HPHK)",
+     "startup": "26",
+     "detail": "Universal system mechanic. Capcom: Super Armor for 2 attacks on frames 1-27. SuperCombo: armor=1-27. The sources agree. The draft's armor list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 80,
+       "text": "Drive Impact: Blitz Combination H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 80,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 34,
+       "text": "input=HPHK; name=Blitz Combination; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 34,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal system mechanic. Capcom: start-up 1, parry active on frames 1-12 (longer while held), 33 recovery. SuperCombo: startup=1, active 12 or until released. The sources agree. The draft has no parry entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 83,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.supercombo.txt",
+       "line": 37,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP)",
+     "capcom": "4 (Crouching Light Punch); standing lights are 5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 8 | 5 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 5 | 5-7 | 7 | 4 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-6 | 12 | 3 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-6 | 12 | 1 | -3"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 79,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "21",
+     "capcom": "21",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 78,
+       "text": "Forward Dash |  |  | 21 total frames"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full, block -6",
+     "capcom": "startup 18, completely invincible frames 1-20, block -6",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 82,
+       "text": "Drive Reversal (while recovering): Strike Eagle (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/guile.capcom.txt",
+       "line": 82,
+       "text": "Completely invincible on frames 1 - 20"
+      }
+     ]
+    }
+   ],
+   "notes": "No meterless move in either file is strike-invulnerable from frame 1; the three Somersault Kick strengths are anti-air only and both sources agree on their frames. Not listed because the window starts later than frame 3: Reverse Spin Kick 6HK throw and low invulnerability (Capcom line 28, SuperCombo line 24), and the low-crush notes on Rolling Sobat (Capcom lines 26-27, SuperCombo line 23) and Knee Bazooka (SuperCombo line 22). The 2LP and 2MP topmost-hurtbox notes (SuperCombo lines 7-8) are also not listed. SA2 Solid Puncher has no invulnerability in either source. No command grab; the two air throws need a jump. Neither file has a jump row, so the draft's jump figures cannot be checked here. Capcom's Jumping Light Punch is also 4 frames but is air-only, so the draft's fastest_normals stands."
+  },
+  {
+   "slug": "ingrid",
+   "differences": [
+    {
+     "entry": "360+KK Sun Octopus",
+     "verdict": "only_in_supercombo",
+     "capcom": {
+      "present": "no row"
+     },
+     "supercombo": {
+      "startup": "6+0",
+      "total": "108",
+      "guard": "T",
+      "invulnerable": "1-7 Full",
+      "condition": "Dark Ingrid only"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 77,
+       "text": "input=360+KK; name=Sun Octopus; moveType=super; startup=6+0; active=2; recovery=101; total=108; guard=T; hitAdv=HKD +36; blockAdv=-; invuln=1-7 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 77,
+       "text": "notes=Dark Ingrid only; command grab Super"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 73,
+       "text": "input LP~LP~4~LK~HK (Modern: L~L~4~M~H) to absorb the Monoid and transform into a more powerful version (\"Dark Ingrid\")"
+      }
+     ],
+     "note": "Capcom's table has no Sun Octopus row and no row mentioning Dark Ingrid or the Monoid. SuperCombo marks the move 'Dark Ingrid only', a form reached through the Back Taunt sequence on line 73, so it is not available on an ordinary wake-up. The files do not say how long the form lasts. The draft lists this move without that condition in three places: reversals, throw_immune_from_frame_1 and command_grabs."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "counter",
+     "move": "OD Sun Veil (22KK)",
+     "startup": "1",
+     "detail": "Missing from the draft entirely. Capcom: start-up 1, absorbs projectiles, attacks and throws on frames 1-20, then counter-attacks; 35 recovery, -3 on block. SuperCombo: startup 1, active 20, total 55, a counter that absorbs strikes and throws. The sources agree on the frames.",
+     "resource": "Overdrive (cost not stated in the rows)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 56,
+       "text": "OD Sun Veil | 1 | 1-20 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 56,
+       "text": "Absorbs projectiles, attacks, and throws from frames 1-20. Absorbing an attack or throw transitions to a counter attack"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 59,
+       "text": "input=22KK; name=OD Sun Veil; moveType=Special; startup=1; active=20; recovery=35; total=55; guard=LH; hitAdv=KD +52; blockAdv=-3; invuln=1-20 FullAttack: 1-11 Full; armor=Break (counter)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 59,
+       "text": "notes=Counter that can absorb strikes/throws (resulting in a counter-attack) or dissipate non-Super projectiles"
+      }
+     ]
+    },
+    {
+     "class": "reversal",
+     "move": "OD Sun Veil (22KK)",
+     "startup": "1",
+     "detail": "SuperCombo's invuln field reads '1-20 FullAttack: 1-11 Full', two values run together: 1-20 Full for the stance and 1-11 Full for the counter-attack. That makes it strike-invulnerable from frame 1 on SuperCombo's reading. Capcom words the same frames as absorbing attacks, not as invincibility. The run-together field is the likely reason the parser dropped it.",
+     "resource": "Overdrive (cost not stated in the rows)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 59,
+       "text": "input=22KK; name=OD Sun Veil; moveType=Special; startup=1; active=20; recovery=35; total=55; guard=LH; hitAdv=KD +52; blockAdv=-3; invuln=1-20 FullAttack: 1-11 Full; armor=Break (counter)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 59,
+       "text": "notes=Counter that can absorb strikes/throws (resulting in a counter-attack) or dissipate non-Super projectiles"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 56,
+       "text": "OD Sun Veil | 1 | 1-20 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 56,
+       "text": "Absorbs projectiles, attacks, and throws from frames 1-20. Absorbing an attack or throw transitions to a counter attack"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 59,
+       "text": "counter-attack has 6f startup / 6f active / 21f recovery / 40f total animation / 1-11 fully invuln"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "OD Sun Veil (22KK)",
+     "startup": "1",
+     "detail": "Throws are caught from frame 1: Capcom says it absorbs throws on frames 1-20 and counter-attacks; SuperCombo says it absorbs strikes/throws and gives invuln 1-20 Full.",
+     "resource": "Overdrive (cost not stated in the rows)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 56,
+       "text": "OD Sun Veil | 1 | 1-20 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 56,
+       "text": "Absorbs projectiles, attacks, and throws from frames 1-20. Absorbing an attack or throw transitions to a counter attack"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 59,
+       "text": "input=22KK; name=OD Sun Veil; moveType=Special; startup=1; active=20; recovery=35; total=55; guard=LH; hitAdv=KD +52; blockAdv=-3; invuln=1-20 FullAttack: 1-11 Full; armor=Break (counter)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 59,
+       "text": "notes=Counter that can absorb strikes/throws (resulting in a counter-attack) or dissipate non-Super projectiles"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "L Sun Rise (236LK)",
+     "startup": "8",
+     "detail": "Anti-air invulnerability only, listed under evasive as the closest class: it is not invulnerable to grounded strikes or to throws, so it is not a reversal in the brief's sense, but it does beat jump-in attacks from frame 1. The sources agree: air invulnerability on frames 1-14, throw invulnerability only on frames 8-10, airborne 8-38. The M, H and OD versions have no invulnerability in either source.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 51,
+       "text": "L Sun Rise L | 8 | 8-17 | 34 | D | -24"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 51,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14 Invincible to throws from frames 8 - 10 Considered airborne from frames 8 - 38"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 54,
+       "text": "input=236LK; name=LK Sun Rise; moveType=Special; startup=8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 54,
+       "text": "invuln=1-14 Air; 8-10 Throw; airborne=8-38 (FKD)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Vanishing Sun (Back) (4KKK); Capcom name: Vanishing Sun (Backward)",
+     "startup": "13 (no attack; 48 total frames)",
+     "detail": "Teleport. Not invulnerable at the start: both sources put full invulnerability at 13-26, so the frames before that are vulnerable. The sources agree on the frames.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 57,
+       "text": "Vanishing Sun (Backward) |  |  | 48 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 57,
+       "text": "Completely invincible between frames 13 - 26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 62,
+       "text": "input=4KKK; name=Vanishing Sun (Back); moveType=Special; startup=13"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 62,
+       "text": "invuln=13-26 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 62,
+       "text": "Teleports away from the opponent"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 62,
+       "text": "Ingrid is in a counter-hit state on frames 1-12 (before disappearing)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Vanishing Sun (Forward) (6KKK); Capcom name: Vanishing Sun (Forward)",
+     "startup": "36",
+     "detail": "Teleport. Not invulnerable at the start: both sources put full invulnerability at 13-27, so the frames before that are vulnerable. The sources agree on the frames.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 59,
+       "text": "Vanishing Sun (Forward) | 36 | 36-39 | 18 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 59,
+       "text": "Completely invincible between frames 13 - 27 Considered airborne from frames 21 - 46"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 60,
+       "text": "input=6KKK; name=Vanishing Sun (Forward); moveType=Special; startup=36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 60,
+       "text": "invuln=13-27 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 60,
+       "text": "airborne=21-46 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 60,
+       "text": "Teleports forward to the opponent's location"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Vanishing Sun (Down) (2KKK); Capcom name: Vanishing Sun (Upward)",
+     "startup": "43",
+     "detail": "Teleport. Not invulnerable at the start: both sources put full invulnerability at 13-27, so the frames before that are vulnerable. The sources agree on the frames.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 58,
+       "text": "Vanishing Sun (Upward) | 43 | 43-46 | 13 | D | 2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 58,
+       "text": "Completely invincible between frames 13 - 27 Considered airborne from frames 20 - 48"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 61,
+       "text": "input=2KKK; name=Vanishing Sun (Down); moveType=Special; startup=43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 61,
+       "text": "invuln=13-27 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 61,
+       "text": "airborne=20-48 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 61,
+       "text": "Teleports above the opponent"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash",
+     "startup": "not an attack; 23 total frames",
+     "detail": "Universal movement option. Capcom: throw-invulnerable on frames 1-15 of the 23-frame backdash; no strike invulnerability is stated. The SuperCombo rows file has no backdash row. The draft carries only backdash_total, not the throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 74,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 74,
+       "text": "Invincible to throws between frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Twinkle Kick (HPHK)",
+     "startup": "26",
+     "detail": "Universal system mechanic. Capcom: Super Armor for 2 attacks on frames 1-27. SuperCombo: armor=1-27. The sources agree. The draft's armor list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 75,
+       "text": "Drive Impact: Twinkle Kick H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 75,
+       "text": "Super Armor for 2 attacks between frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 29,
+       "text": "input=HPHK; name=Twinkle Kick; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 29,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal system mechanic. Capcom: start-up 1, parry active on frames 1-12 (longer while held), 33 recovery. SuperCombo: startup=1, active 12 or until released. The sources agree. The draft has no parry entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 78,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.supercombo.txt",
+       "line": 32,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP, 5LP)",
+     "capcom": "4 (Standing Light Punch and Crouching Light Punch)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 7 | 5 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 9 | 4 | -1"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 74,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "20",
+     "capcom": "20",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 73,
+       "text": "Forward Dash |  |  | 20 total frames"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full, block -6",
+     "capcom": "startup 18, completely invincible frames 1-20, block -6",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 77,
+       "text": "Drive Reversal (while recovering): Odd Flight (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ingrid.capcom.txt",
+       "line": 77,
+       "text": "Completely invincible between frames 1 - 20"
+      }
+     ]
+    }
+   ],
+   "notes": "OD Sun Veil is three of the missed entries (counter, reversal, throw_immune) because it belongs in each of those draft lists; it is one move. Not listed because the window starts later than frame 3: meterless Sun Veil 22K (Capcom line 55, SuperCombo line 58), the low-crush notes on Halo Flight and M/H/OD Sun Rise, and the Glowing Touch foot-hurtbox note. Also not listed: the other SuperCombo rows marked Dark Ingrid only (lines 75-76) and the Monoid rows (lines 78-83), none of which appear in Capcom's table. SA2 Order of the Sun has no invulnerability in either source. Neither file has a jump row, so the draft's jump figures cannot be checked here."
+  },
+  {
+   "slug": "jp",
+   "differences": [
+    {
+     "entry": "22KK OD Amnesia",
+     "verdict": "same_move_values_agree",
+     "capcom": {
+      "startup": "1",
+      "active": "1-20",
+      "recovery": "35",
+      "invulnerable": "not stated"
+     },
+     "supercombo": {
+      "startup": "1",
+      "active": "20",
+      "recovery": "35(17~21)",
+      "total": "55",
+      "invulnerable": "1-20 Strike/Throw"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 50,
+       "text": "OD Amnesia | 1 | 1-20 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 50,
+       "text": "Fires a projectile if the move is successful * Combo scaling occurs after the 3rd hit"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 56,
+       "text": "input=22KK; name=OD Amnesia; moveType=special; startup=1; active=20; recovery=35(17~21); total=55; guard=-; hitAdv=-; blockAdv=-; invuln=1-20 Strike/Throw"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 56,
+       "text": "notes=Counters strikes and throws (but not projectiles) on frames 1-20"
+      }
+     ],
+     "note": "Same move in both sources, and the numbers both state agree: start-up 1, active through frame 20, 35 recovery. Capcom's row has no invincibility wording at all, only that the move does something 'if the move is successful', which is why the script found no Capcom reversal to match. SuperCombo's own note describes it as a counter that catches strikes and throws but not projectiles, so it fits the brief's counter class better than reversal: it is a frame-1 answer to a meaty strike or throw, and loses to a meaty projectile."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "counter",
+     "move": "Amnesia (22K)",
+     "startup": "3",
+     "detail": "Meterless counter, missing from the draft. Capcom: start-up 3, active 3-20, 35 recovery, with no wording on what it catches. SuperCombo: counters strikes, but not projectiles or throws, on frames 3-20; JP is in a counter-hit state on frames 1-2. The sources agree on the frames.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 49,
+       "text": "Amnesia | 3 | 3-20 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 54,
+       "text": "input=22K; name=Amnesia; moveType=special; startup=3; active=18; recovery=35(17); total=55"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 54,
+       "text": "invuln=3-20 Strike"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 54,
+       "text": "notes=Counters strikes (but not projectiles or throws) on frames 3-20; JP is in a counter-hit state on frames 1-2, then a Punish Counter state until end of recovery"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash",
+     "startup": "not an attack; 23 total frames",
+     "detail": "Universal movement option. Capcom: throw-invulnerable on frames 1-15 of the 23-frame backdash; no strike invulnerability is stated. The SuperCombo rows file has no backdash row. The draft carries only backdash_total, not the throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 68,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 68,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Espada (HPHK)",
+     "startup": "26",
+     "detail": "Universal system mechanic. Capcom: Super Armor for 2 attacks on frames 1-27. SuperCombo: armor=1-27. The sources agree. The draft's armor list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 69,
+       "text": "Drive Impact: Espada H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 69,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 30,
+       "text": "input=HPHK; name=Espada; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 30,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Universal system mechanic. Capcom: start-up 1, parry active on frames 1-12 (longer while held), 33 recovery. SuperCombo: startup=1, active 12 or until released. The sources agree. The draft has no parry entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 72,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 33,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP)",
+     "capcom": "4 (Crouching Light Punch); Standing Light Kick is 5, Standing Light Punch and Crouching Light Kick are 6",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 6 | 6-8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 6 | 6-7"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 68,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "22",
+     "capcom": "22",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 67,
+       "text": "Forward Dash |  |  | 22 total frames"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full, block -6",
+     "capcom": "startup 18, completely invincible frames 1-20, block -6",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 71,
+       "text": "Drive Reversal (while recovering): Exilio (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 71,
+       "text": "Completely invincible on frames 1 - 20"
+      }
+     ]
+    },
+    {
+     "field": "command_grabs startup (Embrace, OD Embrace)",
+     "draft": "26~",
+     "capcom": "26 at close range",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 55,
+       "text": "Embrace | 26 |  | 72 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 56,
+       "text": "OD Embrace | 26 |  | 72 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.capcom.txt",
+       "line": 55,
+       "text": "Start up value listed is when the attack is performed at close range"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jp.supercombo.txt",
+       "line": 52,
+       "text": "input=214K; name=Embrace; moveType=special; startup=26~"
+      }
+     ]
+    }
+   ],
+   "notes": "Not listed: Departure: Window teleport (Capcom line 47, SuperCombo line 44) needs an active Departure portal, and SuperCombo line 42 says the portal disappears if JP is hit or thrown, so it is not there after a knockdown. The air-invulnerability fields on 5HK and 6HK (SuperCombo lines 6 and 22) start later than frame 3. SA2 Lovushka has no invulnerability in either source. Embrace and OD Embrace are already in the draft as command grabs. Neither file has a jump row, so the draft's jump figures cannot be checked here."
+  }
+ ]
+}

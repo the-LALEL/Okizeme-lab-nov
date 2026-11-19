@@ -256,6 +256,1034 @@
     }
    ],
    "notes": "Neither roster_text file for Jamie has a jump row, so the draft's jump value cannot be checked from these files. Draft reversals already present (OD Arrow Kick, both supers, CA) and command grabs (Tenshin, OD Tenshin, Drink level 3 or higher) match Capcom's rows on start-up. Bakkai (Drink level 2 or higher) has projectile-only invulnerability starting frame 3-5; projectile invulnerability is not one of the brief's classes so it is not listed, but the sources differ on its end frame (Capcom line 84 'frames 3 - 24' vs SuperCombo line 97 'invuln=3-43 Projectile'). Luminous Dive Kick is jump-only and was excluded."
+  },
+  {
+   "slug": "juri",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "Drive Impact: Sekkan Kick (HPHK)",
+     "startup": "26",
+     "detail": "Capcom: Super Armor for 2 attacks from frames 1 - 27. SuperCombo: armor=1-27. Draft 'armor' list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 87,
+       "text": "Drive Impact: Sekkan Kick H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 87,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 52,
+       "text": "input=HPHK; name=Sekkan Kick; moveType=drive; startup=26;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 52,
+       "text": "armor=1-27;"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active '12 or until released'). The draft has no parry/counter entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 90,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 90,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 55,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released;"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not stated",
+     "detail": "Capcom only: invincible to throws from frame 1 to frame 15 of a 23-frame back dash. SuperCombo file has no back dash row. Draft records backdash_total but not this throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 86,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 86,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "M Tensenrin (623MP)",
+     "startup": "5",
+     "detail": "Not strike-invulnerable, but invulnerable to airborne attacks from frame 1: Capcom frames 1 - 8 (mid-air projectiles and strikes with mid-air hitboxes); SuperCombo invuln=1-8 Air. Airborne start differs: Capcom 'frames 8 - 48', SuperCombo airborne=9-48. Nearest brief class is evasive; this is anti-air invulnerability, not upper-body invulnerability, and the airborne state starts too late to count as throw-immune by frame 3.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 67,
+       "text": "M Tensenrin M | 5 | 5-24 | 14 frame(s) after landing | D | -37"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 67,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8 Considered airborne from frames 8 - 48"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 72,
+       "text": "input=623MP; name=MP Tensenrin; moveType=Special; startup=5;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 72,
+       "text": "blockAdv=-37; invuln=1-8 Air; airborne=9-48 (FKD);"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "H Tensenrin (623HP)",
+     "startup": "5",
+     "detail": "Invulnerable to airborne attacks from frame 1: Capcom frames 1 - 8; SuperCombo invuln=1-8 Air. Airborne start differs: Capcom 'frames 8 - 48', SuperCombo airborne=7-48. Block advantage: Capcom -37, SuperCombo -37(-41). Anti-air invulnerability, not upper-body.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 68,
+       "text": "H Tensenrin H | 5 | 5-24 | 14 frame(s) after landing | D | -37"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 68,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8 Considered airborne from frames 8 - 48"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 73,
+       "text": "input=623HP; name=HP Tensenrin; moveType=Special; startup=5;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 73,
+       "text": "blockAdv=-37(-41); invuln=1-8 Air; airborne=7-48 (FKD);"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [2LP, 2LP (FSE Chain), 5LP, 5LP (FSE Chain)]",
+     "capcom": "Standing Light Punch 4 and Crouching Light Punch 4 (plus their [Chain combo] rows, also 4); no faster grounded normal. Jumping Light Kick is also 4 but is jump-only.",
+     "supercombo": "5LP startup=4, 2LP startup=4",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-7 | 7 | 5 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 15,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 8 | 4 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 4,
+       "text": "[Chain combo]Standing Light Punch L | 4 | 4-7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 16,
+       "text": "[Chain combo]Crouching Light Punch L | 4 | 4-6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 1,
+       "text": "input=5LP; name=Standing Light Punch; moveType=ground_normal; startup=4;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 13,
+       "text": "input=2LP; name=Crouching Light Punch; moveType=ground_normal; startup=4;"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "supercombo": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 86,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "22",
+     "capcom": "22",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 85,
+       "text": "Forward Dash |  |  | 22 total frames"
+      }
+     ]
+    }
+   ],
+   "other_source_disagreements": [
+    {
+     "entry": "214214K Kaisen Dankai Raku (SA3) and its CA version: block advantage (entry was matched by the script, so it is not in capcom_only/draft_only)",
+     "capcom": {
+      "startup": "10",
+      "block": "-31",
+      "invulnerable": "completely, frames 1 - 13"
+     },
+     "supercombo": {
+      "startup": "10",
+      "block": "-36",
+      "invulnerable": "1-13 Full"
+     },
+     "draft": {
+      "block_text": "-36"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 78,
+       "text": "SA3 Kaisen Dankai Raku | 10 | 10-13 | 52 | D | -31"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.capcom.txt",
+       "line": 79,
+       "text": "CA Kaisen Dankai Raku (when under 25% vitality) | 10 | 10-13 | 52 | D | -31"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 83,
+       "text": "input=214214K; name=Kaisen Dankai Raku; moveType=Super; startup=10; active=4; recovery=52; total=65;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 83,
+       "text": "blockAdv=-36; invuln=1-13 Full; armor=Break"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/juri.supercombo.txt",
+       "line": 84,
+       "text": "blockAdv=-36; invuln=1-13 Full; armor=Break"
+      }
+     ],
+     "note": "Start-up and invulnerable window agree; the block advantage differs by 5 frames (Capcom -31, SuperCombo -36). The draft carries SuperCombo's -36."
+    }
+   ],
+   "notes": "The check file lists no capcom_only or draft_only entries for Juri, so there are no differences to resolve. Neither roster_text file has a jump row. Draft command_grabs is empty and that matches both files: the only throws are the two ground throws and the air throw Zanka-sen (jump-only), none a special or super. Ankensatsu's anti-air invulnerability/airborne state starts on frame 8 (Capcom line 60, SuperCombo line 65), too late for the brief's classes, and Shiku-sen is jump-only; both excluded. Feng Shui Engine (hold) shows armor=Break in SuperCombo (line 82), which is not hit absorption, so it is not listed as armor."
+  },
+  {
+   "slug": "ken",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "Drive Impact: Flame Strike (HPHK)",
+     "startup": "26",
+     "detail": "Capcom: Super Armor for 2 attacks from frames 1 - 27. SuperCombo: armor=1-27. Draft 'armor' list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 76,
+       "text": "Drive Impact: Flame Strike H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 76,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 25,
+       "text": "input=HPHK; name=Flame Strike; moveType=drive; startup=26;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 25,
+       "text": "armor=1-27;"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active '12 or until released'). The draft has no parry/counter entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 79,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 79,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 28,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released;"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not stated",
+     "detail": "Capcom only: invincible to throws from frames 1 - 15 of a 23-frame back dash. SuperCombo file has no back dash row. Draft records backdash_total but not this throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 75,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 75,
+       "text": "Invincible to throws from frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "L Shoryuken (623LP)",
+     "startup": "5",
+     "detail": "Not strike-invulnerable, but invulnerable to airborne attacks from frame 1: Capcom frames 1 - 14 (mid-air projectiles and strikes with mid-air hitboxes); SuperCombo invuln=1-14 Air. Airborne from frame 7 in both sources. Nearest brief class is evasive; this is anti-air invulnerability, not upper-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 35,
+       "text": "L Shoryuken L | 5 | 5-14 | 21+12 frame(s) after landing | D | -23"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 35,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14 Considered airborne from frames 7 - 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 35,
+       "text": "input=623LP; name=LP Shoryuken; moveType=special; startup=5;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 35,
+       "text": "blockAdv=-23; invuln=1-14 Air; airborne=7-35 (FKD);"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "M Shoryuken (623MP)",
+     "startup": "6",
+     "detail": "Invulnerable to airborne attacks from frame 1: Capcom frames 1 - 8; SuperCombo invuln=1-8 Air. Airborne from frame 8 in both sources. Anti-air invulnerability, not upper-body.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 36,
+       "text": "M Shoryuken M | 6 | 6-15 | 28+12 frame(s) after landing | D | -28"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 36,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 8 Considered airborne from frames 8 - 43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 36,
+       "text": "input=623MP; name=MP Shoryuken; moveType=special; startup=6;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 36,
+       "text": "blockAdv=-28; invuln=1-8 Air; airborne=8-43 (FKD);"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "H Shoryuken (623HP)",
+     "startup": "7",
+     "detail": "Invulnerable to airborne attacks from frame 1: Capcom frames 1 - 9, plus projectile-invulnerable frames 5 - 11; SuperCombo invuln=1-9 Air, 5-11 Projectile. Airborne from frame 9 in both sources. Block advantage: Capcom -36, SuperCombo -36(-38). Anti-air invulnerability, not upper-body.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 37,
+       "text": "H Shoryuken H | 7 | 7-16 | 35+15 frame(s) after landing | D | -36"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 37,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 9 Invincible to projectiles from frames 5 - 11 Considered airborne from frames 9 - 51"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 37,
+       "text": "input=623HP; name=HP Shoryuken; moveType=special; startup=7;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 37,
+       "text": "blockAdv=-36(-38); invuln=1-9 Air, 5-11 Projectile; airborne=9-51 (FKD);"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [2LP, 5LP]",
+     "capcom": "Standing Light Punch 4 and Crouching Light Punch 4; no faster normal",
+     "supercombo": "5LP startup=4, 2LP startup=4",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 7 | 4 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 9 | 5 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 1,
+       "text": "input=5LP; name=Standing Light Punch; moveType=ground_normal; startup=4;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 7,
+       "text": "input=2LP; name=Crouching Light Punch; moveType=ground_normal; startup=4;"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "supercombo": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 75,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 74,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    }
+   ],
+   "excluded_near_misses": [
+    {
+     "move": "L Tatsumaki Senpu-kyaku (214LK)",
+     "why_excluded": "4-frame start-up special that becomes airborne on frame 5 in both sources; the brief's throw_immune class needs frame 1 to at least frame 3, so it does not qualify. Neither source states throw invulnerability for it.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 40,
+       "text": "L Tatsumaki Senpu-kyaku L | 4 | 4-14 | 32 | D | -14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 40,
+       "text": "Considered airborne from frames 5 - 28."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 39,
+       "text": "input=214LK; name=LK Tatsumaki Senpu-kyaku; moveType=special; startup=4;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 39,
+       "text": "blockAdv=-14; airborne=5-28 (FKD);"
+      }
+     ]
+    },
+    {
+     "move": "Dragonlash Kick (623LK / 623MK / 623HK / 623KK)",
+     "why_excluded": "SuperCombo notes say it can dodge lows until frame 32 / 37 / 40 / 32, but the first frame of that low evasion is not stated, so 'starting by frame 3' cannot be confirmed. Capcom says nothing about low evasion; airborne starts on frame 9 or later in both sources.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 45,
+       "text": "Can dodge lows until frame 32"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 46,
+       "text": "Can dodge lows until frame 37"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 47,
+       "text": "Can dodge lows until frame 40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 48,
+       "text": "Can dodge lows until frame 32"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.supercombo.txt",
+       "line": 45,
+       "text": "airborne=9-27 (FKD);"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/ken.capcom.txt",
+       "line": 47,
+       "text": "Considered airborne from frames 9 - 28"
+      }
+     ]
+    }
+   ],
+   "notes": "The check file lists no capcom_only or draft_only entries for Ken, so there are no differences to resolve. Neither roster_text file has a jump row. Draft command_grabs is empty and that matches both files (only the two normal throws exist). Quick Dash follow-ups (including [Quick Dash] Shoryuken, air-invulnerable from frame 1 but only out of the dash) need a previous move and were excluded. SA2 Shippu Jinrai-kyaku has no invulnerability stated in either source. Standing Medium Kick's raised leg hurtbox starts on frame 4 (SuperCombo line 5) and so misses the frame-3 cut-off. For LK Dragonlash Kick the last airborne frame differs (Capcom 9 - 28, SuperCombo 9-27)."
+  },
+  {
+   "slug": "kimberly",
+   "differences": [
+    {
+     "entry": "SA1 Bushin Beats (capcom_only)",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "name": "SA1 Bushin Beats",
+      "startup": "10",
+      "invulnerable": "strikes and throws, frames 1 - 14",
+      "block": "-25"
+     },
+     "supercombo": {
+      "name": "236236K Bushin Beats",
+      "startup": "10",
+      "invulnerable": "1-12 Strike/Throw",
+      "block": "-25"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 74,
+       "text": "SA1 Bushin Beats | 10 | 10-24 | 40 | D | -25"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 74,
+       "text": "Invincible to strikes and throws on frames 1 - 14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 75,
+       "text": "input=236236K; name=Bushin Beats; moveType=super; startup=10;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 75,
+       "text": "blockAdv=-25; invuln=1-12 Strike/Throw; armor=Break"
+      }
+     ],
+     "note": "Same move as the draft_only entry '236236K Bushin Beats'. Start-up (10) and block (-25) agree; the last invulnerable frame differs: Capcom 14, SuperCombo 12. Both values reported; no winner picked."
+    },
+    {
+     "entry": "236236K Bushin Beats (draft_only)",
+     "verdict": "same_move_values_differ",
+     "capcom": {
+      "name": "SA1 Bushin Beats",
+      "startup": "10",
+      "invulnerable": "strikes and throws, frames 1 - 14",
+      "block": "-25"
+     },
+     "supercombo": {
+      "name": "236236K Bushin Beats",
+      "startup": "10",
+      "invulnerable": "1-12 Strike/Throw",
+      "block": "-25"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 74,
+       "text": "SA1 Bushin Beats | 10 | 10-24 | 40 | D | -25"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 74,
+       "text": "Invincible to strikes and throws on frames 1 - 14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 75,
+       "text": "input=236236K; name=Bushin Beats; moveType=super; startup=10;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 75,
+       "text": "blockAdv=-25; invuln=1-12 Strike/Throw; armor=Break"
+      }
+     ],
+     "note": "This is the other half of the capcom_only entry above: one move, unmatched because the invulnerable end frame differs (14 vs 12). The draft carries SuperCombo's 1-12."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "throw_immune",
+     "move": "SA2 Bushin Scramble (214214P)",
+     "startup": "13",
+     "detail": "Not in the draft at all. Capcom: completely invincible on the 1st frame and considered airborne from frames 1- 20. SuperCombo: no invuln field, airborne=2-20, and a note that it becomes airborne during screen freeze and can dodge grounded attacks despite not having invincibility. Sources differ on frame 1 (Capcom invincible and airborne; SuperCombo airborne from frame 2, no invincibility) and on block advantage (Capcom -25, SuperCombo -26(-20)). By Capcom's wording it also meets the letter of the reversal class for frame 1 only.",
+     "resource": "super",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 76,
+       "text": "SA2 Bushin Scramble | 13 | 13-20 | 39 frame(s) after landing | D | -25"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 76,
+       "text": "Completely invincible on the 1st frame Considered airborne from frames 1- 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 77,
+       "text": "input=214214P; name=Bushin Scramble; moveType=super; startup=13;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 77,
+       "text": "blockAdv=-26(-20); armor=Break; airborne=2-20 (FKD);"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 77,
+       "text": "Becomes airborne during screen freeze (can dodge grounded attacks despite not having invincibility)"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Steadfast Strike (HPHK)",
+     "startup": "26",
+     "detail": "Capcom: Super Armor for 2 hits from frames 1 - 27. SuperCombo: armor=1-27. Draft 'armor' list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 86,
+       "text": "Drive Impact: Steadfast Strike H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 86,
+       "text": "Super Armor for 2 hits from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 35,
+       "text": "input=HPHK; name=Steadfast Strike; moveType=drive; startup=26;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 35,
+       "text": "armor=1-27;"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active '12 or until released'). The draft has no parry/counter entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 89,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 89,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 38,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released;"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not stated",
+     "detail": "Capcom only: invincible to throws from frame 1 to frame 15 of a 23-frame back dash. SuperCombo file has no back dash row. Draft records backdash_total but not this throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 85,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 85,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "OD Bushin Senpukyaku (214KK)",
+     "startup": "6",
+     "detail": "Not strike-invulnerable, but invulnerable to airborne attacks from frame 1: Capcom frames 1 - 11 (mid-air projectiles and strikes with mid-air hitboxes); SuperCombo invuln=1-11 Air. Both sources: airborne from frame 7 and throw-invulnerable frames 7 - 11, which is too late for the throw_immune class. Nearest brief class is evasive; this is anti-air invulnerability, not upper-body invulnerability. The L/M/H versions start their air invulnerability on frame 5 or later and are not listed.",
+     "resource": "Overdrive (cost not stated in the files; the draft labels OD moves '2 Drive bars')",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 38,
+       "text": "OD Bushin Senpukyaku | 6 | 6-35 | 17 frame(s) after landing | D | -40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 38,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 11 Considered airborne from frames 7 - 47 Invincible to throws from frames 7 - 11"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 44,
+       "text": "input=214KK; name=OD Bushin Senpukyaku; moveType=special; startup=6;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 44,
+       "text": "blockAdv=-40; invuln=1-11 Air, 7-11 Throw, 7-47 Lower Body Projectile; airborne=7-47 (FKD);"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Hidden Variable (214P, can be held) - teleport",
+     "startup": "19",
+     "detail": "Teleport (SuperCombo calls it a teleport and describes Kimberly reappearing). Both sources: completely invincible only on frames 19 - 26, so frames 1-18 are not protected; 43 total frames. Listed because the brief's evasive class includes teleports without a frame condition.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 61,
+       "text": "Hidden Variable |  |  | 43 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 61,
+       "text": "Completely invincible from frames 19 - 26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 67,
+       "text": "input=214P (HOLD OK); name=Hidden Variable; moveType=special; startup=19;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 67,
+       "text": "invuln=19-26 Full;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 67,
+       "text": "can hold the button to make Kimberly reappear a short distance in front of her rather than in front of the opponent"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 67,
+       "text": "longer distance if whiffing a normal out of teleport"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "OD Hidden Variable (214PP) - teleport",
+     "startup": "19 (SuperCombo); Capcom start-up cell is empty",
+     "detail": "Overdrive teleport. Invincible window differs: Capcom completely invincible frames 20 - 27; SuperCombo invuln=19-26 Full, airborne=22-42. Neither source protects the first 18 frames.",
+     "resource": "Overdrive (cost not stated in the files; the draft labels OD moves '2 Drive bars')",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 62,
+       "text": "OD Hidden Variable |  |  | 3 frame(s) after landing"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 62,
+       "text": "Completely invincible from frames 20 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 68,
+       "text": "input=214PP; name=OD Hidden Variable; moveType=special; startup=19;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 68,
+       "text": "invuln=19-26 Full; airborne=22-42 (FKD);"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [2LP]",
+     "capcom": "Crouching Light Punch 4; Standing Light Punch is 5; no other grounded normal is 4 or faster (Jumping Light Punch is 4 but jump-only)",
+     "supercombo": "2LP startup=4",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-6 | 7 | 4 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 5 | 5-6 | 8 | 5 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 7,
+       "text": "input=2LP; name=Crouching Light Punch; moveType=ground_normal; startup=4;"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "supercombo": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 85,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "18",
+     "capcom": "18",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 84,
+       "text": "Forward Dash |  |  | 18 total frames"
+      }
+     ]
+    }
+   ],
+   "other_source_disagreements": [
+    {
+     "entry": "236236[K] Bushin Thunderous Beats (SA1, hold, needs a Shuriken Bomb stock): invulnerable end frame (not listed in capcom_only/draft_only)",
+     "capcom": {
+      "startup": "10",
+      "invulnerable": "strikes and throws, frames 1 - 14",
+      "block": "-25"
+     },
+     "supercombo": {
+      "startup": "10",
+      "invulnerable": "1-12 Strike/Throw",
+      "block": "-25"
+     },
+     "draft": {
+      "invuln_text": "1-12 Strike/Throw"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 75,
+       "text": "SA1 Bushin Thunderous Beats (With at least 1 Shuriken Bomb stock) Hold | 10 | 10-24 | 40 | D | -25"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 75,
+       "text": "Invincible to strikes and throws on frames 1 - 14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 76,
+       "text": "input=236236[K]; name=Bushin Thunderous Beats; moveType=super; startup=10;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 76,
+       "text": "blockAdv=-25; invuln=1-12 Strike/Throw; armor=Break"
+      }
+     ],
+     "note": "Same 14 vs 12 disagreement as Bushin Beats."
+    },
+    {
+     "entry": "L / M / H Bushin Senpukyaku: first air-invulnerable frame",
+     "capcom": {
+      "L": "frames 6 - 11",
+      "M": "frames 7 - 12",
+      "H": "frames 8 - 13"
+     },
+     "supercombo": {
+      "L": "5-11 Air",
+      "M": "6-12 Air",
+      "H": "7-13 Air"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 35,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 6 - 11"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 36,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 7 - 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 37,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 8 - 13"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 41,
+       "text": "invuln=5-11 Air, 7-11 Throw, 7-42 Lower Body Projectile;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 42,
+       "text": "invuln=6-12 Air, 8-12 Throw, 8-45 Lower Body Projectile;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 43,
+       "text": "invuln=7-13 Air, 9-13 Throw, 9-49 Lower Body Projectile;"
+      }
+     ],
+     "note": "SuperCombo starts the air invulnerability one frame earlier than Capcom on all three strengths. None starts by frame 3, so none is a wake-up option under the brief."
+    }
+   ],
+   "draft_entries_questioned": [
+    {
+     "entry": "command_grabs: 236K (close)~P Bushin Izuna Otoshi and 236KK (close)~P OD Bushin Izuna Otoshi",
+     "verdict": "not_a_wakeup_reversal",
+     "why": "Needs a previous move: Capcom lists it as 'During Arc Step' (Arc Step itself comes out of Sprint), and SuperCombo's start-up is 8+15+13 / 8+13+13, not the 8 the draft stores in 'startup'.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 53,
+       "text": "Bushin Izuna Otoshi (During Arc Step) | 13 | 13-18 | 40 frame(s) after landing"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 51,
+       "text": "Arc Step (Automatically activates after getting close with Sprint) | 6 | 6-15"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 58,
+       "text": "input=236K (close)~P; name=Bushin Izuna Otoshi; moveType=special; startup=8+15+13;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 66,
+       "text": "input=236KK (close)~P; name=OD Bushin Izuna Otoshi; moveType=special; startup=8+13+13;"
+      }
+     ]
+    },
+    {
+     "entry": "command_grabs: j.236P Nue Twister and j.236PP OD Nue Twister",
+     "verdict": "not_a_wakeup_reversal",
+     "why": "Airborne-only: Capcom lists it as 'During a jump', SuperCombo input is j.236P with airborne=Until Land.",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.capcom.txt",
+       "line": 71,
+       "text": "Nue Twister (During a jump) (When near opponent) | 5 | 5-7 | 20 frame(s) after landing"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 73,
+       "text": "input=j.236P; name=Nue Twister; moveType=special; startup=5;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/kimberly.supercombo.txt",
+       "line": 73,
+       "text": "airborne=Until Land (FKD);"
+      }
+     ]
+    }
+   ],
+   "notes": "The capcom_only and draft_only entries are one move (SA1 Bushin Beats) whose invulnerable window ends on frame 14 in Capcom and frame 12 in SuperCombo. Neither roster_text file has a jump row. Kimberly has no meterless or Overdrive move that either source calls strike-invulnerable from frame 1; the draft's reversal list (SA1, SA1 hold, SA3, CA) is complete for that class apart from the SA2 frame-1 question above. Sprint follow-ups (OD Shadow Slide low profile from frame 4, Shadow Slide from frame 6) need Sprint first, Water Slicer Slide's low profile starts on frame 9 (SuperCombo line 19), and Standing Heavy Kick's upper-body air invulnerability starts on frame 10 (SuperCombo line 6); all excluded as too late or needing a previous move."
   }
  ]
 }

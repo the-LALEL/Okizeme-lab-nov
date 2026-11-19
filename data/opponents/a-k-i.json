@@ -85,7 +85,7 @@
    "name": "Entrapment",
    "move_id": "a.k.i._2pp_lplk",
    "startup_text": "11+23",
-   "startup": 11,
+   "startup": 34,
    "invuln_text": "",
    "armor_text": "",
    "block_text": "-",

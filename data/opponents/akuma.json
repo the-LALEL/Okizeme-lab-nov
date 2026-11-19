@@ -125,7 +125,7 @@
    "name": "Oboro Throw",
    "move_id": "akuma_6kkk_lplk",
    "startup_text": "(21~37)+8",
-   "startup": 21,
+   "startup": null,
    "invuln_text": "",
    "armor_text": "",
    "block_text": "-",

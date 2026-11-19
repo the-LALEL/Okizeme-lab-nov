@@ -10,7 +10,7 @@
  "jump": {
   "text": "4+38+3(6+40+3)",
   "prejump": 4,
-  "total": 94
+  "total": 45
  },
  "backdash_total": "23",
  "forward_dash_total": "21",
@@ -85,7 +85,7 @@
    "name": "OD Focus Force (Lv.1)",
    "move_id": "c.viper_214kk",
    "startup_text": "10+10",
-   "startup": 10,
+   "startup": 20,
    "invuln_text": "",
    "armor_text": "3-10(19)",
    "block_text": "-16",
@@ -109,7 +109,7 @@
    "name": "OD Focus Force (Lv.3)",
    "move_id": "c.viper_214kk_hold",
    "startup_text": "57+10",
-   "startup": 57,
+   "startup": 67,
    "invuln_text": "",
    "armor_text": "3-57",
    "block_text": "-10",

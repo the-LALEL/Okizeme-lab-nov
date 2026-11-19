@@ -46,9 +46,15 @@ def resource(row):
     return "none"
 
 
+def startup_frames(text):
+    """'7' -> 7; '10+10' -> 20 (a lead-in plus the attack); '6+0' -> 6; '5(2)' -> 5; '' -> None."""
+    m = re.match(r"\s*(\d+(?:\s*\+\s*\d+)*)", text)
+    return sum(int(x) for x in re.findall(r"\d+", m.group(1))) if m else None
+
+
 def move_ref(row):
     return {"input": row["input"], "name": clean(row["name"]), "move_id": row["moveId"],
-            "startup_text": clean(row["startup"]), "startup": (ints(clean(row["startup"])) or [None])[0],
+            "startup_text": clean(row["startup"]), "startup": startup_frames(clean(row["startup"])),
             "invuln_text": clean(row["invuln"]), "armor_text": clean(row["armor"]),
             "block_text": clean(row["blockAdv"]), "total_text": clean(row["total"]), "resource": resource(row)}
 
@@ -66,7 +72,7 @@ def main():
     roster = []
     for chara in sorted(by_char):
         st = stats.get(chara) or stats.get(chara.replace("_", " ")) or {}
-        jump = ints(clean(st.get("jumpSpd", "")))
+        jump = ints(clean(st.get("jumpSpd", "")).split("(")[0])   # a bracketed second jump (High Jump) is not the normal jump
         profile = {
             "character": chara.replace("_", " "),
             "slug": slug(chara),
