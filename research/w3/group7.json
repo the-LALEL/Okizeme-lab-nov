@@ -335,6 +335,381 @@
     }
    ],
    "notes": "Draft reversals/command grabs otherwise match both files: SA2 Étoile 7 / 1-9 in both; CA Pas de Deux is Capcom line 52 with the same 7 / 1-8 as SA3 (SuperCombo line 57 \"6+1\" / \"1-8 Full\"); Manège Doré start-ups 10/8/5/8 agree in both. Not listed as missed because they fall outside the six classes or start too late: L/M/H Renversé projectile invulnerability from frame 3 (projectile-only); OD Rond-point air invulnerability from frame 4; H Dégagé low invulnerability from frame 9; OD Dégagé airborne from frame 9 and throw invulnerability from frame 11. Borderline, not listed: SuperCombo line 7 says 2LP's \"topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes\" (a hurtbox remark, not labelled as invulnerability). Drive gauge costs for Drive Impact/Parry and the Overdrive cost are not stated in either file; \"2 Drive bars\" follows the draft's own label for OD moves."
+  },
+  {
+   "slug": "marisa",
+   "differences": [],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "OD Gladius (236PP; hold = 236[PP])",
+     "startup": "19 (35 when fully held)",
+     "detail": "Upper-body super armor for 2 hits from frame 1 to 22 (frame 1 to 38 on the held version); SuperCombo labels it High/Mid and says the armor loses to low attacks. The draft armor list has only Scutum and OD Scutum.",
+     "resource": "2 Drive bars (Overdrive)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 52,
+       "text": "OD Gladius | 19 | 19-22 | 21 | D | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 52,
+       "text": "Upper body has Super Armor for 2 hits from frames 1 - 22"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 53,
+       "text": "Upper body has Super Armor for 2 hits from frames 1 - 38"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 56,
+       "text": "input=236PP; name=OD Gladius; moveType=special; startup=19"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 56,
+       "text": "armor=Break; 1-22 (2-hit, High/Mid)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 56,
+       "text": "Armor loses to low attacks"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 57,
+       "text": "armor=Break; 1-38 (2-hit, High/Mid)"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "SA1 Javelin of Marisa (236236P, not held)",
+     "startup": "19",
+     "detail": "Super armor for 2 hits from frame 1 to 23 in both sources. SuperCombo additionally lists strike/throw invulnerability on frame 1 only (\"invuln=1 Strike/Throw\"); Capcom does not mention any invulnerability on this version.",
+     "resource": "super (level 1)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 79,
+       "text": "SA1 Javelin of Marisa | 19 | 19-23 | 60 | D | -43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 79,
+       "text": "Super Armor for 2 hits from frames 1 - 23"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 82,
+       "text": "input=236236P; name=Javelin of Marisa; moveType=super; startup=19"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 82,
+       "text": "invuln=1 Strike/Throw; armor=Break; 1-23 (2 hits)"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "SA1 Javelin of Marisa, held (236236[P])",
+     "startup": "42 if nothing is absorbed; counterattack 7 after absorbing",
+     "detail": "Holding the button makes frames 1-27 a counter that triggers on a strike OR a throw, then releases a fully invincible counterattack (start-up 7, invincible 1-10). This is how the draft's reversal entry \"236236[P] Javelin of Marisa (Counter)\" is reached: it cannot be pressed directly. Sources differ on the held armor window: Capcom says counter on frames 1-27 then upper-body armor 28-47; SuperCombo says armor 1-47 (2 hits) plus frame-1 strike/throw invulnerability.",
+     "resource": "super (level 1)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 80,
+       "text": "Transitions to attack when hit by an opponent's attack or throw between frames 1 - 27 Upper body has Super Armor for 2 hits from frames 28 - 47"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 80,
+       "text": "SA1 Javelin of Marisa(Charged) Hold | 42 | 42-47 | 60 | D | -42"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 81,
+       "text": "SA1 Javelin of Marisa(Physical counter version) | 7 | 7-9 | 54 | D | -37"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 81,
+       "text": "Completely invincible from frames 1 - 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 83,
+       "text": "input=236236[P]; name=Javelin of Marisa; moveType=super; startup=42"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 83,
+       "text": "invuln=1 Strike/Throw; armor=Break; 1-47 (2 hits)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 83,
+       "text": "if frames 1-27 absorb a strike or throw, results in Counterattack version instead"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 84,
+       "text": "Automatically triggers counterattack after Held SA1 armor absorbs a strike or throw on frames 1-27; can be baited with safe jump timing"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "no attack (25 total frames)",
+     "detail": "Throw-invulnerable from frame 1 to 15 (Capcom only; the SuperCombo file has no dash row).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 90,
+       "text": "Backward Dash |  |  | 25 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 90,
+       "text": "Invincible to throws from frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Secutor (HPHK)",
+     "startup": "26",
+     "detail": "Super armor absorbing 2 attacks from frame 1 to 27 (SuperCombo armor=1-27).",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 91,
+       "text": "Drive Impact: Secutor H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 91,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 44,
+       "text": "input=HPHK; name=Secutor; moveType=drive; startup=26; active=2; recovery=35; total=62"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 44,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held); 33 frames recovery; in Punish Counter state throughout.",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 94,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 94,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 47,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released; recovery=33(1)(11); total=45(3)"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2LP)",
+     "capcom": "4 (Crouching Light Punch); next fastest rows are 5 (Crouching Light Kick) and 6 (Standing Light Punch / Kick)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 11,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 10 | 4 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 12,
+       "text": "Crouching Light Kick L | 5 | 5-7 | 12 | 2 | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 6 | 6-8 | 11 | 0 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 9,
+       "text": "Marisa's only 4f normal"
+      }
+     ],
+     "note": "Confirmed."
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": [],
+     "note": "Neither file has a jump row; only jumping-attack rows."
+    },
+    {
+     "field": "backdash_total",
+     "draft": "25",
+     "capcom": "25",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 90,
+       "text": "Backward Dash |  |  | 25 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "22",
+     "capcom": "22",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 89,
+       "text": "Forward Dash |  |  | 22 total frames"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full",
+     "capcom": "startup 18, completely invincible frames 1 - 20",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 93,
+       "text": "Love Tap (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 93,
+       "text": "Completely invincible on frames 1 - 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 46,
+       "text": "input=6HPHK; name=Love Tap (Recovery); moveType=drive; startup=18"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 46,
+       "text": "invuln=1-20 Full"
+      }
+     ]
+    },
+    {
+     "field": "armor: OD Scutum (214KK) coverage",
+     "draft": "1-28(58) 2-hit",
+     "capcom": "Upper body, 2 hits, frames 1 - 28",
+     "supercombo": "1-28(58) 2-hit, described as full-body armor",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 72,
+       "text": "Upper body has Super Armor for 2 hits from frames 1 - 28"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 75,
+       "text": "armor=1-28(58) 2-hit"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 75,
+       "text": "Stance with 2-hit full-body armor can be extended an extra 30f by holding a kick button"
+      }
+     ],
+     "note": "Frames and hit count agree, but the sources disagree on coverage: Capcom says upper body only, SuperCombo says full body. Whether a low beats OD Scutum therefore cannot be settled from these files."
+    },
+    {
+     "field": "armor: Scutum (214K)",
+     "draft": "3-28(118) Upper Body, startup 3(8)",
+     "capcom": "Upper body, 1 hit, frames 3 - 28; 54 total frames; counterattack start-up 7",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 70,
+       "text": "Upper body has Super Armor for 1 hit from frames 3 - 28"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 71,
+       "text": "Scutum(Physical counter version) *Take an attack during Scutum | 7 | 7-10 | 20 | -1 | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 74,
+       "text": "armor=3-28(118) Upper Body"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 74,
+       "text": "no armor on lower half of body"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 74,
+       "text": "absorbing an attack automatically triggers counterattack follow-up"
+      }
+     ],
+     "note": "Confirmed. Both sources say absorbing a hit auto-triggers a counterattack (start-up 7), so the stance is also a counter, not only armor."
+    },
+    {
+     "field": "command_grabs: Enfold start-up",
+     "draft": "startup 8 (startup_text \"8+5\")",
+     "capcom": "5 measured from the Scutum stance; stance branches available from frames 9 - 14",
+     "supercombo": "8+5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 77,
+       "text": "Enfold (During Scutum) L L | 5 | 5-7 | 54 | D"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.capcom.txt",
+       "line": 70,
+       "text": "Can transition to branching attacks from frames 9 - 14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 81,
+       "text": "input=214K~LPLK; name=Enfold; moveType=special; startup=8+5; active=3; recovery=54; total=61; guard=T"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/marisa.supercombo.txt",
+       "line": 74,
+       "text": "cancelable into follow-ups after 8f"
+      }
+     ],
+     "note": "Correction: the draft's parsed startup of 8 is only the stance portion of \"8+5\". Capcom lists 5 for the throw itself and requires the Scutum stance first, so from wake-up the throw is the two parts combined, not 8."
+    }
+   ],
+   "notes": "No capcom_only / draft_only entries for Marisa. Supers in the draft agree with Capcom: Meteorite 9 / 1-16, Goddess of the Hunt (SA3 and CA) 13 / 1-19, counter version of SA1 7 / 1-10. Small source difference outside the wake-up window: Meteorite airborne frames are 16 - 48 in Capcom and 17-47 in SuperCombo. Not listed as missed because they start after frame 3: L/M/H Gladius upper-body armor (from frame 5), Phalanx armor (from frame 6/7/10), Dimachaerus air invulnerability (from frame 5/6/10). 2HK projectile-only hurtbox invulnerability on frames 1-7 is outside the six classes. Drive gauge costs are not stated in either file; \"2 Drive bars\" follows the draft's own label for OD moves."
   }
  ]
 }
