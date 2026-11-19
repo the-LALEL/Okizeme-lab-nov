@@ -33,12 +33,15 @@ def record(snapshot_id, data, *, url, route, family, independence_group, note=""
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_bytes(data)
     manifest = load_manifest()
+    previous = manifest.get(snapshot_id, {})
     entry = {
         "url": url,
         "route": route,
         "family": family,
         "independence_group": independence_group,
-        "retrieved_on": datetime.date.today().isoformat(),
+        # an unchanged source keeps the date it was first saved, so re-runs are reproducible
+        "retrieved_on": previous["retrieved_on"] if previous.get("sha256") == hashlib.sha256(data).hexdigest()
+        else datetime.date.today().isoformat(),
         "sha256": hashlib.sha256(data).hexdigest(),
         "bytes": len(data),
     }

@@ -1,0 +1,267 @@
+{
+ "characters": [
+  {
+   "slug": "blanka",
+   "differences": [
+    {
+     "entry": "[2]8KK OD Vertical Rolling Attack",
+     "verdict": "same_move_values_agree",
+     "capcom": {
+      "startup": "7",
+      "invulnerable": "Completely invincible to attacks from frames 1 - 10",
+      "airborne": "frames 4 - 53",
+      "block": "-40"
+     },
+     "supercombo": {
+      "startup": "7",
+      "invulnerable": "1-10 Full",
+      "airborne": "4-53 (FKD)",
+      "block": "-40"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 52,
+       "text": "OD Vertical Rolling Attack | 7 | 7-22 | 31+17 frame(s) after landing | D | -40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 52,
+       "text": "Considered airborne from frames 4 - 53 Completely invincible to attacks from frames 1 - 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 53,
+       "text": "[Lightning Beast] OD Vertical Rolling Attack | 7 | 7-22 | 31+17 frame(s) after landing | D | -40"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 53,
+       "text": "Considered airborne from frames 4 - 53 Completely invincible to attacks from frames 1 - 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 60,
+       "text": "input=[2]8KK; name=OD Vertical Rolling Attack; moveType=special; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 60,
+       "text": "blockAdv=-40; invuln=1-10 Full; airborne=4-53 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 61,
+       "text": "input=[2]8KK; name=OD Vertical Rolling Attack (SA2); moveType=special; startup=7"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 61,
+       "text": "blockAdv=-40; invuln=1-10 Full; airborne=4-53 (FKD)"
+      }
+     ],
+     "note": "Same move in both sources; startup 7, invulnerable frames 1-10, airborne 4-53 and -40 on block all agree, for the base and the Lightning Beast (SA2) version. Capcom's wording is 'Completely invincible to attacks' where SuperCombo says 'Full'; Capcom's own SA3 row says 'Completely invincible' without 'to attacks', so whether Capcom means throws are included on this move is not spelled out. The script most likely failed on Capcom's wording."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not applicable (movement, 23 total frames)",
+     "detail": "Capcom states the back dash is invincible to throws from frame 1 to frame 15. SuperCombo file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 90,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 90,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "Wild Edge (4MK)",
+     "startup": "9",
+     "detail": "SuperCombo lists head invulnerability on frames 1-3 and head invulnerability against air attacks on frames 4-14. Capcom's row for Wild Edge states no invulnerability (only SuperCombo has this).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 22,
+       "text": "input=4MK; name=Wild Edge; moveType=ground_normal; startup=9"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 22,
+       "text": "invuln=1-3 (Head), 4-14 Air (Head)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 25,
+       "text": "Wild Edge M | 9 | 9-14 | 12 | 8 | 2 | C"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 25,
+       "text": "4 frames of recovery added when the attack misses"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Wild Scratch (HPHK)",
+     "startup": "26",
+     "detail": "Super Armor for 2 hits from frame 1 to frame 27 (both sources agree on 1-27). Universal Drive Impact; the draft's armor list is empty. Drive cost is not stated in either file.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 91,
+       "text": "Drive Impact: Wild Scratch H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 91,
+       "text": "Super Armor for 2 hits from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 28,
+       "text": "input=HPHK; name=Wild Scratch; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 28,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held). Universal Drive Parry; not in the draft. Capcom adds that it is always in Punish Counter state during execution; neither file says it can be thrown, and neither says it cannot.",
+     "resource": "Drive gauge (amount not stated)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 94,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 94,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 94,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 31,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/blanka.json",
+       "line": 15,
+       "text": "\"backdash_total\": \"23\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 90,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/blanka.json",
+       "line": 16,
+       "text": "\"forward_dash_total\": \"19\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 89,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    },
+    {
+     "field": "fastest_normals",
+     "draft": "4 (5LK)",
+     "capcom": "4 (Standing Light Kick); other grounded lights are 5, 6 and 5",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/blanka.json",
+       "line": 20,
+       "text": "\"startup\": 4"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/blanka.json",
+       "line": 22,
+       "text": "\"5LK\""
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 4 | 4-7 | 7 | 5 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 5 | 5-7 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 6 | 6-8 | 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-6 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/blanka.supercombo.txt",
+       "line": 4,
+       "text": "input=5LK; name=Standing Light Kick; moveType=ground_normal; startup=4"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/data/opponents/blanka.json",
+       "line": 11,
+       "text": "\"text\": \"4+38+3\""
+      }
+     ]
+    }
+   ],
+   "notes": "Capcom's table has no jump row, so the jump figures cannot be checked against Capcom. Near-misses that do NOT meet the by-frame-3 bar: Surprise Forward Hop (6KKK) has no head hurtbox from frame 4 and no collision box from frame 4 (SuperCombo notes, line 37); Coward Crouch (2PP) is low profile / upper-body projectile invulnerable only from frame 9 (SuperCombo line 34); meterless Vertical Rolling Attacks are airborne from frame 6 and air-invulnerable from frame 8 in both sources. Rolling Cannon (3f startup) needs Lightning Beast plus a preceding rolling special, so it is not a wake-up option. Draft reversals, the four Wild Hunt command grabs and the wake-up Drive Reversal (startup 18, invincible 1-20) match Capcom lines 52-53, 79, 82-83, 70-73 and 93."
+  }
+ ]
+}

@@ -51,6 +51,15 @@ const { chromium } = require('playwright');
     await page.click('#per-kd-list a');
     await page.waitForFunction(() => document.getElementById('ender').textContent === 'Knockdown +40');
 
+    await page.selectOption('#pick-ender', 'lk-tatsu');
+    await page.selectOption('#pick-opp', 'ken');
+    expect((await text('#opp-h') || '').startsWith('Ken'), 'Ken profile should show');
+    expect(await count('#opp-list li') >= 3, 'Ken should list at least 3 reversals');
+    expect((await text('#tiers .tier .versus') || '').includes('Against Ken'), 'picks should say what they block against Ken');
+    expect(await sideways() <= 0, 'opponent view scrolls sideways');
+    await page.screenshot({ path: path.join(outDir, `ken-${scheme}.png`), fullPage: true });
+    await page.selectOption('#pick-opp', '');
+
     await page.selectOption('#pick-ender', 'back-throw');
     expect((await text('#reach') || '').startsWith('Reach:'), 'back throw should show its reach note');
     expect(errors.length === 0, `script errors ${errors.join(' | ')}`);

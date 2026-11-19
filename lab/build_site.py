@@ -238,6 +238,33 @@ def build_card(ender, move_flags, ctx, published=frozenset(), named=True):
     return card
 
 
+def opponents_for_page():
+    """Wake-up profiles (lab/opponents.py), each labelled by how it fared against Capcom's official page
+    (lab/opponents_check.py). Selection and labelling only."""
+    folder = ROOT / "data" / "opponents"
+    if not (folder / "_roster.json").exists():
+        return []
+    check_path = folder / "_capcom_check.json"
+    check = json.loads(check_path.read_text())["characters"] if check_path.exists() else {}
+    out = []
+    for entry in json.loads((folder / "_roster.json").read_text()):
+        prof = json.loads((folder / f"{entry['slug']}.json").read_text())
+        diff = check.get(entry["slug"])
+        open_items = (len(diff["capcom_only"]) + len(diff["draft_only"])) if diff else None
+        out.append({
+            "slug": prof["slug"], "character": prof["character"],
+            "status": "pending" if diff is None else ("matches Capcom" if open_items == 0 else "under review"),
+            "open_items": open_items,
+            "fastest_normal": prof["fastest_normals"]["startup"],
+            "jump": prof["jump"]["text"], "backdash": prof["backdash_total"],
+            "reversals": [{"name": m["name"], "input": m["input"], "startup": m["startup"],
+                           "startup_text": m["startup_text"], "invuln": m["invuln_text"], "resource": m["resource"],
+                           "on_block": m["block_text"]} for m in prof["reversals"]],
+            "command_grabs": len(prof["command_grabs"]), "armor": len(prof["armor"]),
+        })
+    return out
+
+
 PAGE_RULES = ["R04", "R07", "R05", "R06", "R03", "R02", "R10", "R11", "R13", "R15", "R18", "R12", "R16", "R17"]
 
 
@@ -309,6 +336,10 @@ def build_data(named, every_k, lock):
                       "cannot be thrown (rule R04), and any later than that loses to a 4-frame button, because a "
                       "strike beats a throw on the same frame (rule R07).",
         "rules": rules_for_page(),
+        "opponents": opponents_for_page(),
+        "opponent_rule": "A reversal is listed as blockable when its startup is at least the pick's block number. "
+                         "Supers freeze the screen and are not judged yet. Opponent data is parsed from SuperCombo's "
+                         "database and compared with Capcom's official page.",
         "late_rule": "These come out 1 or 2 frames after the first wake-up frame, so they hit on their first "
                      "active frame with no late-frame bonus. They still beat a 4-frame button. Shown only where "
                      "they give more block advantage than the true meaty at the same Drive cost.",

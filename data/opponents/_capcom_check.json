@@ -1,0 +1,486 @@
+{
+ "totals": {
+  "matched": 84,
+  "capcom_only": 10,
+  "draft_only": 27
+ },
+ "characters": {
+  "a-k-i": {
+   "character": "A.K.I.",
+   "matched": 1,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 42,
+     "invulnerable_to_frame": 34,
+     "input": "236KK",
+     "name": "OD Snake Step",
+     "invuln_text": "1-34 Strike, 1-42 Projectile"
+    }
+   ]
+  },
+  "akuma": {
+   "character": "Akuma",
+   "matched": 4,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 5,
+     "invulnerable_to_frame": 11,
+     "input": "214214K",
+     "name": "Misogi",
+     "invuln_text": "1-11 Full"
+    }
+   ]
+  },
+  "alex": {
+   "character": "Alex",
+   "matched": 2,
+   "capcom_only": [
+    {
+     "startup": 9,
+     "invulnerable_to_frame": 8,
+     "name": "SA1 Raging Spear",
+     "startup_text": "9",
+     "kind": "Invincible to strikes and throws"
+    }
+   ],
+   "draft_only": [
+    {
+     "startup": 9,
+     "invulnerable_to_frame": 9,
+     "input": "236236K",
+     "name": "Raging Spear",
+     "invuln_text": "1-9 Strike/Throw"
+    }
+   ]
+  },
+  "arjun": {
+   "character": "Arjun",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "blanka": {
+   "character": "Blanka",
+   "matched": 2,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 7,
+     "invulnerable_to_frame": 10,
+     "input": "[2]8KK",
+     "name": "OD Vertical Rolling Attack",
+     "invuln_text": "1-10 Full"
+    }
+   ]
+  },
+  "c-viper": {
+   "character": "C.Viper",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "cammy": {
+   "character": "Cammy",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "chun-li": {
+   "character": "Chun-Li",
+   "matched": 4,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "dee-jay": {
+   "character": "Dee Jay",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 1,
+     "invulnerable_to_frame": 151,
+     "input": "~HK (End)",
+     "name": "Encore Beat",
+     "invuln_text": "1-151 Full"
+    },
+    {
+     "startup": 1,
+     "invulnerable_to_frame": 181,
+     "input": "~HP (End)",
+     "name": "Climactic Strike",
+     "invuln_text": "1-181 Full"
+    }
+   ]
+  },
+  "dhalsim": {
+   "character": "Dhalsim",
+   "matched": 2,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 23,
+     "invulnerable_to_frame": 9,
+     "input": "214214{K}",
+     "name": "Yoga Sunburst",
+     "invuln_text": "1-9 Full"
+    },
+    {
+     "startup": 71,
+     "invulnerable_to_frame": 9,
+     "input": "214214[K]",
+     "name": "Yoga Sunburst",
+     "invuln_text": "1-9 Full"
+    }
+   ]
+  },
+  "e-honda": {
+   "character": "E.Honda",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "ed": {
+   "character": "Ed",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "elena": {
+   "character": "Elena",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "guile": {
+   "character": "Guile",
+   "matched": 2,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 8,
+     "invulnerable_to_frame": 8,
+     "input": "[4]646P",
+     "name": "Sonic Hurricane",
+     "invuln_text": "1-8 Strike/Throw"
+    }
+   ]
+  },
+  "ingrid": {
+   "character": "Ingrid",
+   "matched": 2,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 6,
+     "invulnerable_to_frame": 7,
+     "input": "360+KK",
+     "name": "Sun Octopus",
+     "invuln_text": "1-7 Full"
+    }
+   ]
+  },
+  "jp": {
+   "character": "JP",
+   "matched": 2,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 1,
+     "invulnerable_to_frame": 20,
+     "input": "22KK",
+     "name": "OD Amnesia",
+     "invuln_text": "1-20 Strike/Throw"
+    }
+   ]
+  },
+  "jamie": {
+   "character": "Jamie",
+   "matched": 2,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 8,
+     "invulnerable_to_frame": 12,
+     "input": "236236K",
+     "name": "Breakin'",
+     "invuln_text": "1-12 Strike/Throw"
+    }
+   ]
+  },
+  "juri": {
+   "character": "Juri",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "ken": {
+   "character": "Ken",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "kimberly": {
+   "character": "Kimberly",
+   "matched": 1,
+   "capcom_only": [
+    {
+     "startup": 10,
+     "invulnerable_to_frame": 14,
+     "name": "SA1 Bushin Beats",
+     "startup_text": "10",
+     "kind": "Invincible to strikes and throws"
+    }
+   ],
+   "draft_only": [
+    {
+     "startup": 10,
+     "invulnerable_to_frame": 12,
+     "input": "236236K",
+     "name": "Bushin Beats",
+     "invuln_text": "1-12 Strike/Throw"
+    }
+   ]
+  },
+  "lily": {
+   "character": "Lily",
+   "matched": 1,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 5,
+     "invulnerable_to_frame": 8,
+     "input": "214214P",
+     "name": "Raging Typhoon",
+     "invuln_text": "1-8 Full"
+    },
+    {
+     "startup": 9,
+     "invulnerable_to_frame": 12,
+     "input": "j.236236K",
+     "name": "Soaring Thunderbird",
+     "invuln_text": "1-12 Full, 13-41 Projectile"
+    }
+   ]
+  },
+  "luke": {
+   "character": "Luke",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": [
+    {
+     "startup": 10,
+     "invulnerable_to_frame": 13,
+     "input": "236236K",
+     "name": "Pale Rider",
+     "invuln_text": "1-13 Full"
+    }
+   ]
+  },
+  "m-bison": {
+   "character": "M.Bison",
+   "matched": 2,
+   "capcom_only": [
+    {
+     "startup": 24,
+     "invulnerable_to_frame": 25,
+     "name": "SA2 Psycho Punisher",
+     "startup_text": "24",
+     "kind": "Completely invincible"
+    }
+   ],
+   "draft_only": [
+    {
+     "startup": 15,
+     "invulnerable_to_frame": 18,
+     "input": "623PP",
+     "name": "Psycho Burst",
+     "invuln_text": "1-18 Full"
+    },
+    {
+     "startup": 24,
+     "invulnerable_to_frame": 30,
+     "input": "214214K",
+     "name": "Psycho Punisher",
+     "invuln_text": "1-30 Full"
+    },
+    {
+     "startup": 9,
+     "invulnerable_to_frame": 69,
+     "input": "214214P",
+     "name": "Final Psycho Crusher",
+     "invuln_text": "1-69 Full"
+    },
+    {
+     "startup": null,
+     "invulnerable_to_frame": 16,
+     "input": "6 or 4 + PPP/KKK",
+     "name": "Bison Warp",
+     "invuln_text": "1-16 Full"
+    }
+   ]
+  },
+  "mai": {
+   "character": "Mai",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "manon": {
+   "character": "Manon",
+   "matched": 1,
+   "capcom_only": [
+    {
+     "startup": 7,
+     "invulnerable_to_frame": 8,
+     "name": "SA3 Pas de Deux (When near opponent)",
+     "startup_text": "7",
+     "kind": "Completely invincible"
+    }
+   ],
+   "draft_only": [
+    {
+     "startup": 10,
+     "invulnerable_to_frame": 13,
+     "input": "236236K",
+     "name": "Arabesque",
+     "invuln_text": "1-13 Strike/Throw"
+    },
+    {
+     "startup": 6,
+     "invulnerable_to_frame": 8,
+     "input": "236236P",
+     "name": "Pas de Deux",
+     "invuln_text": "1-8 Full"
+    }
+   ]
+  },
+  "marisa": {
+   "character": "Marisa",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "rashid": {
+   "character": "Rashid",
+   "matched": 2,
+   "capcom_only": [
+    {
+     "startup": 9,
+     "invulnerable_to_frame": 16,
+     "name": "SA1 Super Rashid Kick",
+     "startup_text": "9",
+     "kind": "Invincible to strikes and throws"
+    },
+    {
+     "startup": 11,
+     "invulnerable_to_frame": 16,
+     "name": "SA3 Altair",
+     "startup_text": "11",
+     "kind": "Completely invincible"
+    }
+   ],
+   "draft_only": [
+    {
+     "startup": 11,
+     "invulnerable_to_frame": 15,
+     "input": "236236P",
+     "name": "Altair",
+     "invuln_text": "1-15 Full"
+    },
+    {
+     "startup": 9,
+     "invulnerable_to_frame": 15,
+     "input": "236236K",
+     "name": "Super Rashid Kick",
+     "invuln_text": "1-15 Strike/Throw"
+    }
+   ]
+  },
+  "ryu": {
+   "character": "Ryu",
+   "matched": 4,
+   "capcom_only": [
+    {
+     "startup": 20,
+     "invulnerable_to_frame": 9,
+     "name": "SA2 Shin Hashogeki（Lv2）",
+     "startup_text": "20",
+     "kind": "Completely invincible"
+    },
+    {
+     "startup": 70,
+     "invulnerable_to_frame": 9,
+     "name": "SA2 Shin Hashogeki（Lv3）",
+     "startup_text": "70",
+     "kind": "Completely invincible"
+    }
+   ],
+   "draft_only": [
+    {
+     "startup": 18,
+     "invulnerable_to_frame": 9,
+     "input": "214214{P}",
+     "name": "Denjin Hashogeki Lv.2",
+     "invuln_text": "1-9 Full"
+    },
+    {
+     "startup": 50,
+     "invulnerable_to_frame": 9,
+     "input": "214214[P]",
+     "name": "Denjin Hashogeki Lv.3",
+     "invuln_text": "1-9 Full"
+    }
+   ]
+  },
+  "sagat": {
+   "character": "Sagat",
+   "matched": 4,
+   "capcom_only": [],
+   "draft_only": []
+  },
+  "terry": {
+   "character": "Terry",
+   "matched": 5,
+   "capcom_only": [
+    {
+     "startup": 24,
+     "invulnerable_to_frame": 25,
+     "name": "Jumping Lariat M M M",
+     "startup_text": "24",
+     "kind": "Completely invincible"
+    }
+   ],
+   "draft_only": []
+  },
+  "yasmine": {
+   "character": "Yasmine",
+   "matched": 2,
+   "capcom_only": [
+    {
+     "startup": 7,
+     "invulnerable_to_frame": 8,
+     "name": "SA1 Hiwa ng Kalangitan",
+     "startup_text": "7",
+     "kind": "Invincible to strikes and throws"
+    }
+   ],
+   "draft_only": [
+    {
+     "startup": 7,
+     "invulnerable_to_frame": 9,
+     "input": "236236K",
+     "name": "Hiwa ng Kalangitan",
+     "invuln_text": "1-9 Strike/Throw"
+    }
+   ]
+  },
+  "zangief": {
+   "character": "Zangief",
+   "matched": 3,
+   "capcom_only": [],
+   "draft_only": []
+  }
+ }
+}

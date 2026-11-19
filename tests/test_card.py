@@ -180,3 +180,18 @@ def test_late_strikes_and_block_numbers_come_from_the_extension_layer(lab):
     k17 = next(c for c in lab["by_k"] if c["kd"] == 17)
     top = k17["late"]["rows"][k17["late"]["tiers"][0]["pick"]]
     assert (top["prep"], top["meaty"], top["block"][0]) == ([], "6HP", 3)
+
+
+def test_opponent_profiles_on_the_page_are_the_data_files(lab):
+    folder = ROOT / "data" / "opponents"
+    roster = json.loads((folder / "_roster.json").read_text())
+    check = json.loads((folder / "_capcom_check.json").read_text())["characters"]
+    assert [o["slug"] for o in lab["opponents"]] == [e["slug"] for e in roster] and len(roster) == 32
+    for shown in lab["opponents"]:
+        prof = json.loads((folder / f"{shown['slug']}.json").read_text())
+        assert [(m["name"], m["startup"], m["invuln"]) for m in shown["reversals"]] == \
+            [(m["name"], m["startup"], m["invuln_text"]) for m in prof["reversals"]]
+        differs = len(check[shown["slug"]]["capcom_only"]) + len(check[shown["slug"]]["draft_only"])
+        assert shown["status"] == ("matches Capcom" if differs == 0 else "under review")
+    ken = next(o for o in lab["opponents"] if o["slug"] == "ken")
+    assert ken["status"] == "matches Capcom" and any(m["name"] == "OD Shoryuken" and m["startup"] == 6 for m in ken["reversals"])

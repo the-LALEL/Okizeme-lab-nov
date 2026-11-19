@@ -58,7 +58,17 @@ body { background: var(--paper); color: var(--ink); font-family: var(--font-body
 .picker .k-entry input { border: 0; padding-left: 0.125rem; background: transparent; font-family: var(--font-data); }
 .picker select:focus-visible, .picker .k-entry:focus-within { outline: 2px solid var(--accent); outline-offset: 2px; }
 .picker .k-entry input:focus { outline: none; }
+.picker .wide { grid-column: 1 / -1; }
 @media (max-width: 22rem) { .picker { grid-template-columns: minmax(0, 1fr); } }
+.opp { display: flex; flex-direction: column; gap: 0.5rem; }
+.opp p { margin: 0; font-size: 0.875rem; color: var(--ink-2); }
+.opp ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; }
+.opp li { display: grid; grid-template-columns: 3.25rem minmax(0, 1fr); gap: 0.125rem 0.75rem; padding: 0.5rem 0; border-bottom: 1px solid var(--rule); }
+.opp li b { font-family: var(--font-data); color: var(--accent); grid-row: span 2; }
+.opp li span { overflow-wrap: anywhere; }
+.opp li small { font-size: 0.8125rem; color: var(--ink-2); }
+.versus { font-size: 0.875rem; padding-left: 0.75rem; border-left: 3px solid var(--accent); }
+.versus b { font-weight: 600; }
 
 /* Situation */
 .situation { display: flex; flex-direction: column; gap: 0.5rem; border-bottom: 2px solid var(--ink); padding-bottom: 1rem; }
@@ -156,6 +166,10 @@ footer p { margin: 0; }
       <label class="label" for="pick-k">Or the meter showed</label>
       <div class="k-entry"><span aria-hidden="true">+</span><input id="pick-k" type="number" inputmode="numeric" placeholder="number"></div>
     </div>
+    <div class="field wide">
+      <label class="label" for="pick-opp">Against</label>
+      <select id="pick-opp"></select>
+    </div>
   </nav>
 
   <header class="situation">
@@ -165,6 +179,13 @@ footer p { margin: 0; }
     <p class="reach" id="reach" hidden></p>
     <p id="status"></p>
   </header>
+
+  <section class="opp" id="opp" aria-labelledby="opp-h" hidden>
+    <span class="label" id="opp-h"></span>
+    <p id="opp-status"></p>
+    <ul id="opp-list"></ul>
+    <p id="opp-rule"></p>
+  </section>
 
   <section class="tiers" id="tiers" aria-label="Picks by Drive cost"></section>
 
@@ -274,6 +295,22 @@ footer p { margin: 0; }
     d.title = lab.blocks_rule;
     return d;
   }
+  var opponent = null;
+  function versusLine(row) {
+    // Comparison only: a reversal can be blocked when its startup is at least the pick's block number.
+    if (!opponent) return null;
+    var judged = opponent.reversals.filter(function (m) { return m.resource !== 'super' && m.startup != null; });
+    if (!judged.length) return null;
+    var can = judged.filter(function (m) { return m.startup >= row.blocks_from; });
+    var cannot = judged.filter(function (m) { return m.startup < row.blocks_from; });
+    var d = el('div', 'versus');
+    d.appendChild(el('b', null, 'Against ' + opponent.character + ': '));
+    var names = function (list) { return list.map(function (m) { return m.name + ' (' + m.startup + 'f)'; }).join(', '); };
+    d.appendChild(document.createTextNode(
+      (can.length ? 'you recover in time to block ' + names(can) + '. ' : '')
+      + (cannot.length ? 'You cannot block ' + names(cannot) + '.' : '')));
+    return d;
+  }
   function advLine(row) {
     var a = el('div', 'adv');
     var b = el('span'); b.appendChild(el('span', 'block', adv(row.block))); b.appendChild(el('span', 'unit', ' on block'));
@@ -310,6 +347,7 @@ footer p { margin: 0; }
   }
 
   function show(card) {
+    current = card;
     $('eyebrow').textContent = card.named ? 'After you land' : 'After any knockdown of';
     $('ender').textContent = card.ender;
     $('kd').textContent = card.named ? 'Knockdown ' + kdText(card.kd) : '';
@@ -338,6 +376,7 @@ footer p { margin: 0; }
       pick.appendChild(steps(row));
       pick.appendChild(contact(row));
       pick.appendChild(blocksLine(row));
+      var v = versusLine(row); if (v) pick.appendChild(v);
       var n = notes(row); if (n) pick.appendChild(n);
       if (t.sturdier != null) {
         var s = card.rows[t.sturdier], box = el('div', 'sturdier');
@@ -501,6 +540,37 @@ footer p { margin: 0; }
   sel.appendChild(ranked); sel.appendChild(unranked);
   var kIn = $('pick-k');
   kIn.min = lab.k_range[0]; kIn.max = lab.k_range[1];
+
+  var current = null;
+  function showOpponent() {
+    $('opp').hidden = !opponent;
+    clear($('opp-list'));
+    if (!opponent) return;
+    $('opp-h').textContent = opponent.character + ' on wake-up';
+    $('opp-status').textContent = 'Fastest button ' + opponent.fastest_normal + 'f \u00B7 back dash ' + opponent.backdash
+      + 'f \u00B7 jump ' + opponent.jump + ' \u00B7 profile ' + (opponent.status === 'matches Capcom'
+        ? 'matches Capcom\u2019s official page.' : opponent.status === 'under review'
+          ? 'under review (' + opponent.open_items + ' entries differ from Capcom\u2019s page).' : 'not yet checked.');
+    opponent.reversals.forEach(function (m) {
+      var li = el('li');
+      li.appendChild(el('b', null, m.startup_text + 'f'));
+      li.appendChild(el('span', null, m.name + ' (' + m.input + ')'));
+      li.appendChild(el('small', null, 'invulnerable ' + m.invuln + ' \u00B7 ' + (m.resource === 'none' ? 'no meter' : m.resource)
+        + (m.on_block ? ' \u00B7 ' + m.on_block + ' on block' : '')));
+      $('opp-list').appendChild(li);
+    });
+    $('opp-rule').textContent = lab.opponent_rule;
+  }
+  var oppSel = $('pick-opp');
+  var any = el('option', null, 'Any opponent'); any.value = ''; oppSel.appendChild(any);
+  lab.opponents.forEach(function (o) {
+    var op = el('option', null, o.character + (o.status === 'matches Capcom' ? '' : ' (under review)')); op.value = o.slug; oppSel.appendChild(op);
+  });
+  oppSel.addEventListener('change', function () {
+    opponent = lab.opponents.filter(function (o) { return o.slug === oppSel.value; })[0] || null;
+    showOpponent();
+    if (current) show(current);
+  });
 
   function go(id) { if (byId[id]) { show(byId[id]); if (location.hash !== '#' + id) location.hash = id; } }
   sel.addEventListener('change', function () { if (sel.value) go(sel.value); });

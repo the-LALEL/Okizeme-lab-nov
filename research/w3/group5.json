@@ -1,0 +1,261 @@
+{
+ "characters": [
+  {
+   "slug": "jamie",
+   "differences": [
+    {
+     "entry": "236236K Breakin' (draft_only)",
+     "verdict": "same_move_values_agree",
+     "capcom": {
+      "name": "SA1 Breakin'",
+      "startup": "8",
+      "invulnerable": "throws and strikes, frames 1 - 12",
+      "block": "-60*-93"
+     },
+     "supercombo": {
+      "name": "Breakin'",
+      "startup": "8",
+      "invulnerable": "1-12 Strike/Throw",
+      "block": "-60"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 93,
+       "text": "SA1 Breakin' | 8 | 8-133 | 74*107 | D | -60*-93"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 93,
+       "text": "Invincible to throws and strikes from frames 1 - 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 103,
+       "text": "input=236236K; name=Breakin'; moveType=super; startup=8;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 103,
+       "text": "blockAdv=-60; invuln=1-12 Strike/Throw; armor=Break"
+      }
+     ],
+     "note": "Same move, same start-up and same invulnerable window; Capcom words it 'throws and strikes'. Capcom's one row also covers the hold-Down drink ender (recovery 74*107, block -60*-93), which SuperCombo lists as a separate row 236236K~[2] (line 104, block -93, same 1-12 Strike/Throw)."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "armor",
+     "move": "Drive Impact: Vainglory Strike (HPHK)",
+     "startup": "26",
+     "detail": "Capcom: Super Armor for 2 attacks from frames 1 - 27. SuperCombo: armor=1-27. Draft 'armor' list is empty.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 103,
+       "text": "Drive Impact: Vainglory Strike H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 103,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 42,
+       "text": "input=HPHK; name=Vainglory Strike; moveType=drive; startup=26;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 42,
+       "text": "armor=1-27;"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active '12 or until released'). The draft has no parry/counter entry.",
+     "resource": "not stated",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 106,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 106,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 45,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released;"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "not stated",
+     "detail": "Capcom only: invincible to throws from frames 1 - 15 of a 23-frame back dash. SuperCombo file has no back dash row. Draft records backdash_total but not this throw immunity.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 102,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 102,
+       "text": "Invincible to throws from frames 1 - 15"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "L Arrow Kick (623LK)",
+     "startup": "5",
+     "detail": "Not strike-invulnerable, but invulnerable to airborne attacks from frame 1: Capcom says frames 1 - 12 (mid-air projectiles and strikes with mid-air hitboxes); SuperCombo says 1-11 Air, then 5-22 Lower Body. The two sources differ on the last air-invulnerable frame (12 vs 11). Nearest brief class is evasive; this is anti-air invulnerability, not upper-body invulnerability.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 76,
+       "text": "L Arrow Kick L | 5 | 5-50 | 52 | D | -45"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 76,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 91,
+       "text": "input=623LK; name=LK Arrow Kick; moveType=special; startup=5;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 91,
+       "text": "blockAdv=-44; invuln=1-11 Air, 5-22 Lower Body;"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "M Arrow Kick (623MK)",
+     "startup": "8",
+     "detail": "Invulnerable to airborne attacks from frame 1: Capcom frames 1 - 14; SuperCombo 1-14 Air, then 8-23 Lower Body (lower-body part starts after frame 3). Anti-air invulnerability, not upper-body.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 77,
+       "text": "M Arrow Kick M | 8 | 8-43 | 51 | D | -43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 77,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 14"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 92,
+       "text": "input=623MK; name=MK Arrow Kick; moveType=special; startup=8;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 92,
+       "text": "invuln=1-14 Air, 8-23 Lower Body;"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "H Arrow Kick (623HK)",
+     "startup": "10",
+     "detail": "Invulnerable to airborne attacks from frame 1: Capcom frames 1 - 16; SuperCombo 1-16 Air, then 10-25 Lower Body (lower-body part starts after frame 3). Anti-air invulnerability, not upper-body.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 78,
+       "text": "H Arrow Kick H | 10 | 10-57 | 51 | D | -43"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 78,
+       "text": "Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1 - 16"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 93,
+       "text": "input=623HK; name=HK Arrow Kick; moveType=special; startup=10;"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 93,
+       "text": "invuln=1-16 Air, 10-25 Lower Body;"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [2LP]",
+     "capcom": "Crouching Light Punch start-up 4; no other normal in Capcom's Normal Moves block is 4 or faster",
+     "supercombo": "2LP startup=4",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 9 | 5 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.supercombo.txt",
+       "line": 8,
+       "text": "input=2LP; name=Crouching Light Punch; moveType=ground_normal; startup=4;"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "supercombo": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 102,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/jamie.capcom.txt",
+       "line": 101,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    }
+   ],
+   "notes": "Neither roster_text file for Jamie has a jump row, so the draft's jump value cannot be checked from these files. Draft reversals already present (OD Arrow Kick, both supers, CA) and command grabs (Tenshin, OD Tenshin, Drink level 3 or higher) match Capcom's rows on start-up. Bakkai (Drink level 2 or higher) has projectile-only invulnerability starting frame 3-5; projectile invulnerability is not one of the brief's classes so it is not listed, but the sources differ on its end frame (Capcom line 84 'frames 3 - 24' vs SuperCombo line 97 'invuln=3-43 Projectile'). Luminous Dive Kick is jump-only and was excluded."
+  }
+ ]
+}

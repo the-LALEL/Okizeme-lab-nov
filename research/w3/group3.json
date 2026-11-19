@@ -1,0 +1,322 @@
+{
+ "characters": [
+  {
+   "slug": "dee-jay",
+   "differences": [
+    {
+     "entry": "~HP (End) Climactic Strike",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "startup": "11",
+      "active": "11-97",
+      "invulnerable": "not stated",
+      "condition": "After Marvelous / Headliner Sunrise Festival connects"
+     },
+     "supercombo": {
+      "startup": "1",
+      "invulnerable": "1-181 Full",
+      "condition": "only possible after landing all rhythm timings"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 87,
+       "text": "SA2 Climactic Strike (Marvelous) (After Marvelous Sunrise Festival connects) H | 11 | 11-97 | 84"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 88,
+       "text": "SA2 Climactic Strike (Headliner) (After Headliner Sunrise Festival connects) H | 11 | 11-97 | 84"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 83,
+       "text": "input=~HP (End); name=Climactic Strike; moveType=super; startup=1; active=-; recovery=181 total; total=181; guard=-; hitAdv=HKD +24(+18); blockAdv=-; invuln=1-181 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 83,
+       "text": "only possible after landing all rhythm timings"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 92,
+       "text": "input=~HP (End); name=Climactic Strike; moveType=super; startup=1; active=-; recovery=181 total; guard=-; hitAdv=HKD +24(+18); blockAdv=-; invuln=1-181 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 92,
+       "text": "only possible after landing all rhythm timings"
+      }
+     ],
+     "note": "Cinematic ender of SA2 (Marvelous and Headliner versions; two SuperCombo rows, two Capcom rows). It needs the previous Sunrise Festival hits to connect, so it cannot be done on wake-up. The sources also describe it differently: Capcom gives start-up 11 and states no invincibility; SuperCombo gives startup 1 and invuln 1-181 Full."
+    },
+    {
+     "entry": "~HK (End) Encore Beat",
+     "verdict": "not_a_wakeup_reversal",
+     "capcom": {
+      "startup": "33",
+      "active": "33-39",
+      "invulnerable": "not stated",
+      "condition": "After Marvelous / Headliner Sunrise Festival connects"
+     },
+     "supercombo": {
+      "startup": "1",
+      "invulnerable": "1-151 Full",
+      "condition": "only possible after landing all rhythm timings"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 89,
+       "text": "SA2 Encore Beat (Marvelous) (After Marvelous Sunrise Festival connects) H | 33 | 33-39 | 112"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 90,
+       "text": "SA2 Encore Beat (Headliner) (After Headliner Sunrise Festival connects) H | 33 | 33-39 | 112"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 84,
+       "text": "input=~HK (End); name=Encore Beat; moveType=super; startup=1; active=-; recovery=151 total; total=151; guard=-; hitAdv=HKD +34(+37); blockAdv=-; invuln=1-151 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 84,
+       "text": "only possible after landing all rhythm timings"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 93,
+       "text": "input=~HK (End); name=Encore Beat; moveType=super; startup=1; active=-; recovery=151 total; guard=-; hitAdv=HKD +34(+37); blockAdv=-; invuln=1-151 Full"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 93,
+       "text": "only possible after landing all rhythm timings"
+      }
+     ],
+     "note": "Cinematic ender of SA2 (Marvelous and Headliner versions). It needs the previous Sunrise Festival hits to connect, so it cannot be done on wake-up. The sources also describe it differently: Capcom gives start-up 33 and states no invincibility; SuperCombo gives startup 1 and invuln 1-151 Full."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "MK Jackknife Maximum ([2]8MK)",
+     "startup": "6",
+     "detail": "Not a full reversal: invulnerable only to airborne attacks (Capcom: mid-air projectiles and strikes with mid-air hitboxes) on frames 1-5; throw invulnerable only from frame 5 (Capcom 5-6, SuperCombo 5-6); airborne from frame 5. Beats jump-in meaties, loses to grounded strikes and to throws on frames 1-4. Charge input (SuperCombo: 40f charge).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 41,
+       "text": "M Jackknife Maximum M | 6 | 6-22"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 41,
+       "text": "Considered airborne from frames 5 - 44 Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1- 5 Invincible to throws from frames 5 - 6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 43,
+       "text": "input=[2]8MK; name=MK Jackknife Maximum; moveType=special; startup=6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 43,
+       "text": "invuln=1-5 Air, 5-6 Throw; airborne=5-44 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 43,
+       "text": "notes=40f charge time (holds charge for 12f after release)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "HK Jackknife Maximum ([2]8HK)",
+     "startup": "5",
+     "detail": "Not a full reversal: invulnerable only to airborne attacks (Capcom: mid-air projectiles and strikes with mid-air hitboxes) on frames 1-9; airborne from frame 5. Throw invulnerability differs between sources: Capcom frames 5 - 6, SuperCombo frame 5 only. Charge input (SuperCombo: 40f charge).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 42,
+       "text": "H Jackknife Maximum H | 5 | 5-33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 42,
+       "text": "Considered airborne from frames 5 - 51 Invincible against mid-air projectiles and strikes with mid-air hitboxes from frames 1- 9 Invincible to throws from frames 5 - 6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 44,
+       "text": "input=[2]8HK; name=HK Jackknife Maximum; moveType=special; startup=5"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 44,
+       "text": "invuln=1-9 Air, 5 Throw; airborne=5-50 (FKD)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 44,
+       "text": "notes=40f charge time (holds charge for 12f after release)"
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Wild Beat (HPHK) [universal system move]",
+     "startup": "26",
+     "detail": "Super Armor for 2 hits from frame 1 to frame 27 (both sources agree on 1-27). Draft armor list is empty.",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 105,
+       "text": "Drive Impact: Wild Beat H H | 26 | 26-27 | 35"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 105,
+       "text": "Super Armor for 2 hits from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 32,
+       "text": "input=HPHK; name=Wild Beat; moveType=drive; startup=26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 32,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK) [universal system move]",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (Capcom active 1-12, extended while held; SuperCombo active 12 or until released). Catches strikes from frame 1; does not stop throws (Capcom: always in Punish Counter state during execution).",
+     "resource": "not stated in these rows",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 108,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 108,
+       "text": "*2 Parry hitbox is extended for as long as the buttons are held"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 108,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 35,
+       "text": "input=MPMK; name=Drive Parry"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 35,
+       "text": "startup=1; active=12 or until released"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44) [universal system move]",
+     "startup": "not stated",
+     "detail": "Capcom: invincible to throws from frames 1 - 15 of the 23-frame back dash. SuperCombo text file has no back dash row.",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 104,
+       "text": "Backward Dash |  |  | 23 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 104,
+       "text": "Invincible to throws from frames 1 - 15"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "startup 4, inputs [5LP]",
+     "capcom": "4 (Standing Light Punch); next fastest grounded normals are 5 (Standing Light Kick, Crouching Light Punch, Crouching Light Kick)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 4,
+       "text": "Standing Light Kick L | 5 | 5-6 | 12"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 5 | 5-7 | 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 10,
+       "text": "Crouching Light Kick L | 5 | 5-6 | 10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.supercombo.txt",
+       "line": 1,
+       "text": "input=5LP; name=Standing Light Punch; moveType=ground_normal; startup=4"
+      }
+     ]
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3",
+     "capcom": "not stated",
+     "quotes": []
+    },
+    {
+     "field": "backdash_total",
+     "draft": "23",
+     "capcom": "23",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 104,
+       "text": "Backward Dash |  |  | 23 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "19",
+     "capcom": "19",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/dee-jay.capcom.txt",
+       "line": 103,
+       "text": "Forward Dash |  |  | 19 total frames"
+      }
+     ]
+    }
+   ],
+   "notes": "Capcom's table has no jump row, and the SuperCombo text file has no jump, dash or back dash rows, so the draft jump value cannot be checked from these files. Drive Impact, Drive Parry and back dash throw invulnerability are universal system options listed because the draft does not contain them. Not listed because they start after frame 3 or need the Jus Cool stance first: 2HK (invuln 12-23 Air), 4HK (4-12 Air), SA1 (SuperCombo note: 4-14f low crush, cannot be used as a reversal), Juggling Dash and OD Maximum Strike. No command grab found in either file."
+  }
+ ]
+}

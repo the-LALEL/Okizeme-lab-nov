@@ -1,0 +1,340 @@
+{
+ "characters": [
+  {
+   "slug": "manon",
+   "differences": [
+    {
+     "entry": "SA3 Pas de Deux (When near opponent) [capcom_only]",
+     "verdict": "same_move_values_agree",
+     "capcom": {
+      "startup": "7",
+      "active": "7-8",
+      "invulnerable": "Completely invincible from frames 1 - 8"
+     },
+     "supercombo": {
+      "startup": "6+1",
+      "active": "2",
+      "total": "80",
+      "invulnerable": "1-8 Full"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 51,
+       "text": "SA3 Pas de Deux (When near opponent) | 7 | 7-8 | 72 | D"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 51,
+       "text": "Completely invincible from frames 1 - 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 56,
+       "text": "input=236236P; name=Pas de Deux; moveType=super; startup=6+1; active=2; recovery=72; total=80; guard=T"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 56,
+       "text": "invuln=1-8 Full"
+      }
+     ],
+     "note": "Same move as draft 236236P Pas de Deux. Invulnerability window is identical (1-8). Start-up is written differently: Capcom \"7\", SuperCombo \"6+1\" (the two parts sum to 7; the script read it as 6, which is why the match failed). Both strings reported; neither file explains the \"+1\"."
+    },
+    {
+     "entry": "236236K Arabesque [draft_only]",
+     "verdict": "same_move_values_agree",
+     "capcom": {
+      "startup": "10",
+      "active": "10-13",
+      "invulnerable": "Invincible against strikes and throws from frames 1 - 13",
+      "block": "-49"
+     },
+     "supercombo": {
+      "startup": "10",
+      "active": "4",
+      "invulnerable": "1-13 Strike/Throw",
+      "block": "-49(-46)"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 49,
+       "text": "SA1 Arabesque | 10 | 10-13 | 65 | D | -49"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 49,
+       "text": "Invincible against strikes and throws from frames 1 - 13"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 54,
+       "text": "input=236236K; name=Arabesque; moveType=super; startup=10; active=4; recovery=65; total=78"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 54,
+       "text": "invuln=1-13 Strike/Throw"
+      }
+     ],
+     "note": "Capcom has the row (SA1 Arabesque) with the same start-up and the same 1-13 window; it is absent from capcom_only, so the script did not read Capcom's wording \"Invincible against strikes and throws\" as a reversal."
+    },
+    {
+     "entry": "236236P Pas de Deux [draft_only]",
+     "verdict": "same_move_values_agree",
+     "capcom": {
+      "startup": "7",
+      "active": "7-8",
+      "invulnerable": "Completely invincible from frames 1 - 8"
+     },
+     "supercombo": {
+      "startup": "6+1",
+      "active": "2",
+      "total": "80",
+      "invulnerable": "1-8 Full"
+     },
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 51,
+       "text": "SA3 Pas de Deux (When near opponent) | 7 | 7-8 | 72 | D"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 51,
+       "text": "Completely invincible from frames 1 - 8"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 56,
+       "text": "input=236236P; name=Pas de Deux; moveType=super; startup=6+1; active=2; recovery=72; total=80; guard=T"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 56,
+       "text": "invuln=1-8 Full"
+      }
+     ],
+     "note": "Other half of the first entry: same move, same 1-8 window, start-up notation \"7\" (Capcom) vs \"6+1\" (SuperCombo). The draft's parsed startup of 6 comes from reading only the first part of \"6+1\"."
+    }
+   ],
+   "missed_options": [
+    {
+     "class": "evasive",
+     "move": "OD Renversé (236PP)",
+     "startup": "25",
+     "detail": "Invulnerable to strikes above the knee (SuperCombo: upper/mid body) and to projectiles from frame 3 to 26; low attacks still hit. Hits on frame 25.",
+     "resource": "2 Drive bars (Overdrive)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 45,
+       "text": "Invincible against strikes from the knee and up from frames 3 - 26 Invincible against projectiles from frames 3 - 26"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 49,
+       "text": "input=236PP; name=OD Renversé; moveType=special; startup=25; active=2; recovery=34; total=60"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 49,
+       "text": "invuln=3-26 Projectile (All); 3-26 Strike (Upper/Mid Body)"
+      }
+     ]
+    },
+    {
+     "class": "evasive",
+     "move": "OD Renversé Feint (236[PP], hold the button)",
+     "startup": "no attack (27 total frames)",
+     "detail": "Feint of OD Renversé: upper/mid-body strike and projectile invulnerability from frame 3 to 16 (SuperCombo); 27 frames total in both sources; vulnerable to lows.",
+     "resource": "2 Drive bars (Overdrive)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 51,
+       "text": "input=236[PP]; name=OD Renversé Feint; moveType=special; startup=-; active=-; recovery=27; total=27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 51,
+       "text": "invuln=3-16 Projectile, Strike (Upper/Mid Body)"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 51,
+       "text": "Susceptible to low attacks during invincibility window"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 45,
+       "text": "Transition into feint by holding the button (total 27 frames)"
+      }
+     ]
+    },
+    {
+     "class": "throw_immune",
+     "move": "Backward Dash (44)",
+     "startup": "no attack (25 total frames)",
+     "detail": "Throw-invulnerable from frame 1 to frame 15 (Capcom only; the SuperCombo file has no dash row).",
+     "resource": "none",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 58,
+       "text": "Backward Dash |  |  | 25 total frames"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 58,
+       "text": "Invincible to throws from frame 1 to frame 15."
+      }
+     ]
+    },
+    {
+     "class": "armor",
+     "move": "Drive Impact: Glissade (HPHK)",
+     "startup": "26",
+     "detail": "Super armor absorbing 2 attacks from frame 1 to 27 (SuperCombo armor=1-27).",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 59,
+       "text": "Drive Impact: Glissade H H | 26 | 26-27 | 35 | D | -3"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 59,
+       "text": "Super Armor for 2 attacks from frames 1 - 27"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 28,
+       "text": "input=HPHK; name=Glissade; moveType=drive; startup=26; active=2; recovery=35; total=62"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 28,
+       "text": "armor=1-27"
+      }
+     ]
+    },
+    {
+     "class": "counter",
+     "move": "Drive Parry (MPMK)",
+     "startup": "1",
+     "detail": "Parry active from frame 1 (frames 1-12, longer while held); 33 frames recovery; in Punish Counter state throughout, so it loses to throws for a punish counter.",
+     "resource": "Drive gauge (cost not stated in these files)",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 62,
+       "text": "Drive Parry M M | 1 | [*2] 1-12 | 33"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 62,
+       "text": "Always in Punish Counter state during execution."
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 31,
+       "text": "input=MPMK; name=Drive Parry; moveType=drive; startup=1; active=12 or until released; recovery=33(1)(11); total=45(3)"
+      }
+     ]
+    }
+   ],
+   "stats_check": [
+    {
+     "field": "fastest_normals",
+     "draft": "4 (2HP~HP, 2LP, 5LP)",
+     "capcom": "4 for Standing Light Punch and Crouching Light Punch; also 4 for Allongé (H H), which is the follow-up to crouching heavy punch",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 3,
+       "text": "Standing Light Punch L | 4 | 4-6 | 10 | 4 | -1"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 9,
+       "text": "Crouching Light Punch L | 4 | 4-5 | 11 | 3 | -2"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 28,
+       "text": "Allongé H H | 4 | 4-7 | 26 | 1 | -10"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 25,
+       "text": "input=2HP~HP; name=Allongé; moveType=ground_normal; startup=4"
+      }
+     ],
+     "note": "Start-up 4 confirmed for 5LP and 2LP. Correction: 2HP~HP (Allongé) is a target-combo follow-up that needs 2HP first, so it is not a wake-up button and should be dropped from the inputs list."
+    },
+    {
+     "field": "jump",
+     "draft": "4+38+3 (prejump 4, total 45)",
+     "capcom": "not stated",
+     "quotes": [],
+     "note": "The Capcom file has no jump row (only \"Jumping ...\" attack rows with \"3 frame(s) after landing\"), and the SuperCombo file has no jump row either, so the draft value cannot be checked against these files."
+    },
+    {
+     "field": "backdash_total",
+     "draft": "25",
+     "capcom": "25",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 58,
+       "text": "Backward Dash |  |  | 25 total frames"
+      }
+     ]
+    },
+    {
+     "field": "forward_dash_total",
+     "draft": "21",
+     "capcom": "21",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 57,
+       "text": "Forward Dash |  |  | 21 total frames"
+      }
+     ]
+    },
+    {
+     "field": "drive_reversal_on_wakeup",
+     "draft": "startup 18, invuln 1-20 Full",
+     "capcom": "startup 18, completely invincible frames 1 - 20",
+     "quotes": [
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 61,
+       "text": "Écarté (During knockdown recovery) H H | 18 | 18-20 | 26 | D | -6"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.capcom.txt",
+       "line": 61,
+       "text": "Completely invincible on frames 1 - 20"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 30,
+       "text": "input=6HPHK; name=Écarté (Recovery); moveType=drive; startup=18"
+      },
+      {
+       "file": "/home/user/Okizeme-lab-nov/sources/raw/roster_text/manon.supercombo.txt",
+       "line": 30,
+       "text": "invuln=1-20 Full"
+      }
+     ]
+    }
+   ],
+   "notes": "Draft reversals/command grabs otherwise match both files: SA2 Étoile 7 / 1-9 in both; CA Pas de Deux is Capcom line 52 with the same 7 / 1-8 as SA3 (SuperCombo line 57 \"6+1\" / \"1-8 Full\"); Manège Doré start-ups 10/8/5/8 agree in both. Not listed as missed because they fall outside the six classes or start too late: L/M/H Renversé projectile invulnerability from frame 3 (projectile-only); OD Rond-point air invulnerability from frame 4; H Dégagé low invulnerability from frame 9; OD Dégagé airborne from frame 9 and throw invulnerability from frame 11. Borderline, not listed: SuperCombo line 7 says 2LP's \"topmost hurtbox on frames 1-5 is vulnerable only to aerial strikes\" (a hurtbox remark, not labelled as invulnerability). Drive gauge costs for Drive Impact/Parry and the Overdrive cost are not stated in either file; \"2 Drive bars\" follows the draft's own label for OD moves."
+  }
+ ]
+}
